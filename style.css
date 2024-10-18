@@ -1,6 +1,11 @@
 .container {
-    background-color: aqua;
+    display: grid;
+    grid-template-rows:  100px 100px 100px 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px 100px;
+    gap: 10px;
 }
-body {
-    background-color: red;
+.item {
+    grid-row: span 1;
+    grid-column: span 1;
+    background-color: black;
 }
