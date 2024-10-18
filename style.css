@@ -5,7 +5,7 @@ body {
 
 /* Header styling */
 .site-header {
-    background-color: #000;
+    background-color: yellow;
     color: #fff;
     position: sticky;
     top: 0;
@@ -24,8 +24,12 @@ body {
 }
 
 /* Logo */
-.logo img {
+.logo-header img {
     width: 150px;
+}
+
+.søk-meny-logo{
+    width: 50px;
 }
 
 /* Search box */
@@ -51,56 +55,37 @@ body {
     color: #000;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
+    font-family: sans-serif;
 }
 
-/* Navigation */
-.navbar ul {
-    list-style: none;
-    display: flex;
+.menu-icon {
     position: relative;
+    cursor: pointer;
 }
 
-.navbar ul li {
-    margin-left: 20px;
-    position: relative;
-}
-
-.navbar ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 8px 16px;
-}
-
-.navbar ul li:hover .dropdown {
-    display: block;
-}
-
-/* Dropdown menu */
-.dropdown {
+.dropdown-menu {
     display: none;
     position: absolute;
     background-color: yellow;
-    color: #000;
-    top: 100%;
-    left: 0;
-    min-width: 150px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    top: 45px;
 }
 
-.dropdown li {
-    margin: 0;
-}
-
-.dropdown li a {
-    padding: 8px 16px;
+.menu-icon:hover .dropdown-menu {
     display: block;
-    color:black;
 }
 
-.dropdown li a:hover {
-    background-color: #f1c40f;
+.dropdown-menu a {
+    color: black;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
 }
+
+.dropdown-menu a:hover {
+    background-color: yellow;
+}
+
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
@@ -109,22 +94,12 @@ body {
         align-items: center; /* Center content on small screens */
     }
 
-    .navbar ul {
-        flex-direction: column;
-        width: 100%; /* Full width for mobile menu */
-    }
-
     .search-box {
         margin: 10px 0;
         width: 100%; /* Make search box full width */
         display: flex;
         justify-content: center;
     }
-
-    .navbar ul li {
-        margin: 10px 0;
-    }
-
     .search-box input {
         max-width: 100%;
     }

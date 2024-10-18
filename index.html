@@ -3,41 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Header</title>
+    <title>Oslomet</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="site-header">
         <div class="header-wrapper">
             
-            <div class="logo">
+            <div class="logo-header">
                 <a href="#"><img src="oslometlogo.png" alt="Logo"></a>
             </div>
 
             <div class="search-box">
-                <input type="text" placeholder="Søk...">
-                <button type="submit">Søk</button>
+                <input type="text" placeholder="Søk">
+                <button type="submit">
+                    <img class="søk-meny-logo" src="search2.png" alt="Søk">
+                </button>
             </div>
 
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#">Meny</a></li>
-                        <ul class="dropdown">
-                            <li><a href="#">Underpunkt 1</a></li>
-                            <li><a href="#">Underpunkt 2</a></li>
-                            <li><a href="#">Underpunkt 1</a></li>
-                            <li><a href="#">Underpunkt 1</a></li>
-                            <li><a href="#">Underpunkt 1</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+            <div class="menu-icon">
+                <button type="submit">
+                <img class="søk-meny-logo" src="menyicon.png" alt="Meny">
+                    </button>
+                <div class="dropdown-menu">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                    <a href="#">Link 3</a>
+                    <a href="#">Link 3</a>
+                </div>
+
+
+            
         </div>
     </header>
 
     <main>
-        <!-- Main content here -->
-        <p>Lorem ipsum dolor sit amet...</p>
+        
     </main>
 </body>
 </html>
