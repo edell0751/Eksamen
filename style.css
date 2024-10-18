@@ -23,13 +23,15 @@ body {
     padding: 0 20px;
 }
 
+
 /* Logo */
 .logo-header img {
     width: 150px;
 }
 
 .søk-meny-logo{
-    width: 50px;
+    width: 25px;
+
 }
 
 /* Search box */
@@ -61,7 +63,9 @@ body {
 .menu-icon {
     position: relative;
     cursor: pointer;
+    color: black;
 }
+
 
 .dropdown-menu {
     display: none;
