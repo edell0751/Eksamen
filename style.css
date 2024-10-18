@@ -7,6 +7,10 @@
 .Searchbar__header{
     flex: 1;
   }
+
+  .logo__header{
+    font-size: 40px;
+  }
   
   
   /* Add a black background color to the top navigation */
