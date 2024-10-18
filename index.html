@@ -1,39 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oslomet Eksamen</title>
+    <title>Responsive Header</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="site-header">
-        <div class="site-header__wrapper">
-            <div class="oslometlogo__header">
-                <a href="#" class="logo__header"> <img src="oslometlogo.png" alt="Oslomet logo"></a>
+        <div class="header-wrapper">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#"><img src="logo.png" alt="Logo"></a>
             </div>
-            <div class="Searchbar__header">
+
+            <!-- Search Box -->
+            <div class="search-box">
                 <input type="text" placeholder="Søk...">
                 <button type="submit">Søk</button>
             </div>
-            <nav class="menu__header">
+
+            <!-- Navigation Menu -->
+            <nav class="navbar">
                 <ul>
                     <li><a href="#">Studier</a></li>
                     <li><a href="#">Forskning</a></li>
-                    <li><a href="#">Om Oslomet</a></li>
-                    <li><a href="#">Kontakt oss</a></li>
+                    <li><a href="#">Om OsloMet</a></li>
+                    <li><a href="#">Kontakt oss</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Underpunkt 1</a></li>
+                            <li><a href="#">Underpunkt 2</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
-            
         </div>
-
-
     </header>
+
     <main>
-
+        <!-- Main content here -->
+        <p>Lorem ipsum dolor sit amet...</p>
     </main>
-    <footer>
-
-    </footer>
-
 </body>
 </html>
+
