@@ -3,9 +3,15 @@
     grid-template-rows:  100px 100px 100px 100px 100px 100px;
     grid-template-columns: 100px 100px 100px 100px;
     gap: 10px;
+   
 }
 .item {
     grid-row: span 1;
     grid-column: span 1;
     background-color: black;
+}
+body {
+    display: grid;
+    place-items: center; /* Centers the grid container both vertically and horizontally */
+    height: 150vh; /* Full viewport height */
 }
