@@ -1,3 +1,8 @@
-head{
-    color: blue;
-}
+.site-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+.Searchbar__header{
+    flex: 1;
+  }
