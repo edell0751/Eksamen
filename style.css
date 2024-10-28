@@ -88,6 +88,7 @@ a {
 .header-right {
 	display: flex;
 	gap: 30px;
+    position: relative;
 }
 
 .header-search,
