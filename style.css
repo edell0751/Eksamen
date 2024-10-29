@@ -1,4 +1,16 @@
-h1{
-    color: aliceblue;
-    text-align: center;
+body{
+    background-color: rgb(99, 169, 254);
+}
+footer{
+    background-color: rgb(99, 169, 254);
+    text-align: left;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 2em;
+    margin-bottom: 4em;
+
+
+}
+.footer-logo{
+    align-items: center;
 }
