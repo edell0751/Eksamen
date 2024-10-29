@@ -1,18 +1,27 @@
 .container {
     display: grid;
     grid-template-rows:  100px 100px 100px 100px 100px 100px;
-    grid-template-columns: 100px 100px 100px 100px;
-    gap: 10px;
+    grid-template-columns: 200px 200px 200px 200px;
+    gap: 20px;
+
+    border-bottom: 2px solid grey;
    
 }
 .item {
     grid-row: span 1;
     grid-column: span 1;
     background-color: white;
-    border-top: 2px solid black;
+    border: 1px solid black;
+    text-align: center;
+       
 }
 body {
     display: grid;
     place-items: center; /* Centers the grid container both vertically and horizontally */
-    height: 150vh; /* Full viewport height */
+    height: 150vh; 
+    background-color: lightgray;
+
+}
+h1 {
+    text-align: left;
 }
