@@ -34,3 +34,14 @@
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
+
+.accordiontext{
+  font-size: 15px;
+  background-color:gainsboro;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-weight:lighter;
+}
