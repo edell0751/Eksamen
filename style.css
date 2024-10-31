@@ -128,23 +128,6 @@ a {
 	display: none;
 }
 
-.main-content {
-	margin-top: 40px;
-}
-
-.title .headline {
-	font-size: 48px;
-	color: #222222;
-}
-
-.title .headline-para {
-	font-size: 24px;
-	color: #222;
-	font-weight: 400;
-	line-height: 36px;
-	margin-top: 5px;
-}
-
 /* Full-Screen Menu Styling */
 .menu {
 	position: fixed;
@@ -176,4 +159,32 @@ a {
 	font-size: 2rem;
 	font-weight: 700;
 	color: #222;
+}
+
+/* Video Section */
+section {
+	padding: 50px 15%;
+}
+
+.video-player {
+	width: 100%;
+	/* max-width: 800px; */
+	height: 650px;
+}
+
+.main-content {
+	margin-top: 40px;
+}
+
+.title .headline {
+	font-size: 48px;
+	color: #222222;
+}
+
+.title .headline-para {
+	font-size: 24px;
+	color: #222;
+	font-weight: 400;
+	line-height: 36px;
+	margin-top: 5px;
 }
