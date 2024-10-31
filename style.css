@@ -127,6 +127,10 @@ a {
 .close {
 	display: none;
 }
+#top-header{
+    margin: 10px;
+
+}
 
 /* Full-Screen Menu Styling */
 .menu {
