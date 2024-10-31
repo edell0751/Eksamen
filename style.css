@@ -1,3 +1,18 @@
+.wrapper {
+    border: 2px solid black; /* Visible border around all content */
+    padding: 20px; /* Space inside the wrapper border */
+    max-width: calc(4 * 200px + 3 * 20px); /* Matches the container's grid width */
+    width: 110%; /* Ensures the wrapper spans available width */
+    box-sizing: border-box; /* Includes padding within the border */
+    margin: 0 auto; /* Centers the wrapper */
+    background-color: white; /* Optional: Adds background to wrapper */
+    height: 70vh;
+}
+
+
+
+
+
 .container {
     display: grid;
     grid-template-rows:  100px 100px 100px 100px 100px 100px;
@@ -18,8 +33,13 @@ body {
     place-items: center; /* Centers the grid container both vertically and horizontally */
     height: 150vh; 
     background-color: lightgray;
+    place-items: center;
+    margin: 0;
 
 }
-h1 {
+h1 {  /* Matches the width of the grid container */
     text-align: left;
+    margin: 0;
+    padding: 10px; /* Optional: small padding for better appearance */
 }
+
