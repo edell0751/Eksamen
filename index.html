@@ -1,29 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="java" href="java.js">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <h2>
-    <button class="accordion">Section 1</button>
+  <h2>
+    <button class="accordion">Opptakskrav og Poeng</button>
     <div class="panel">
-      <p>Lorem ipsum...</p>
+      <p>Opptakskravene er....</p>
     </div>
-    
-    <button class="accordion">Section 2</button>
+    <button class="accordion">Slik søker du</button>
     <div class="panel">
-      <p>Lorem ipsum...</p>
+      <p>Du søker på denne måten....</p>
     </div>
-    
-    <button class="accordion">Section 3</button>
+    <button class="accordion">Hva lærer du?</button>
     <div class="panel">
-      <p>Lorem ipsum...</p>
+      <p>Du lærer dette....</p>
     </div>
- </h2>  
+    <button class="accordion">Studiets opppbygging</button>
+    <div class="panel">
+      <p>Brick for brick....</p>
+    </div>
+    <button class="accordion">Hvordan foregår undervisningen?</button>
+    <div class="panel">
+      <p>I et klasserom osv.....</p>
+    </div>
+    <button class="accordion">Hva koster det?</button>
+    <div class="panel">
+      <p>En del ass brur....</p>
+    </div>
+    <button class="accordion">Hva kan du jobbe som?</button>
+    <div class="panel">
+      <p>Du kan bli en av kodegutta.....</p>
+    </div>
+    <button class="accordion">Utveksling</button>
+    <div class="panel">
+      <p>Du må dra hjem!....</p>
+    </div>
+    <button class="accordion">Videre studiemuligheter ved OsloMet</button>
+    <div class="panel">
+      <p>Nørd!</p>
+    </div>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+var i;
 
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+    </script>
+  </h2>
+  
 </body>
 </html>
