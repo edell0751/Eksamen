@@ -4,8 +4,6 @@
     grid-template-columns: 200px 200px 200px 200px;
     gap: 20px;
 
-    border-bottom: 2px solid grey;
-   
 }
 .item {
     grid-row: span 1;
