@@ -7,6 +7,7 @@
     margin: 0 auto; /* Centers the wrapper */
     height: 60vh;
     text-align: center;
+    background-color: #ecf0f1;
 
 }
 
@@ -37,10 +38,9 @@
        
 }
 body {
-    display: grid;
     place-items: center; /* Centers the grid container both vertically and horizontally */
     height: 150vh; 
-    background-color: lightgray;
+    background-color: white;
     place-items: center;
     margin: 0;
 
@@ -57,5 +57,43 @@ h2 {
     font-family: sans-serif;
     font-weight: 400;
 }
+* {
+   margin: 0;
+   padding: 0;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 16px;
+   color: white;
+}
+footer {
+    background: purple;
+    padding-top: 50px;
+}
+.container-2 {
+    width: 1140px;
+    margin: auto;
+    display: flex;
+}
+.footer {
+    width: 33.3%;
+}
+.title {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footer-C p{
+    width: 90px;
+    margin: auto;
+    padding: 7px;
+
+}
+.footer-C ul{
+    text-align: center;
+}
+
+
+
+
 
 
