@@ -300,12 +300,6 @@ span {
 	font-size: 1.25rem;
 	font-weight: 700;
 }
-.article-faq {
-	margin-bottom: 20px;
-	padding: 30px 100px;
-	border-bottom: 1px solid #e2e2e2;
-}
-
 .article-wrapper-heading {
 	width: 62%;
 	margin: 0 auto;
@@ -318,42 +312,102 @@ span {
 	line-height: 36px;
 	color: #222;
 }
+/* Wrapper styling */
+.article-faq {
+    margin-bottom: 20px;
+    padding: 30px 100px;
+    border-bottom: 1px solid #e2e2e2;
+}
 
+/* Accordion Title */
 .accordion-h2 {
-	display: flex;
-	align-items: center;
-	gap: 35px;
-	cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    cursor: pointer;
 }
 
+/* Accordion Button */
 .accordion-btn {
-	background-color: grey;
-	background-image: url(https://www.oslomet.no/build/images/plus-icon.svg);
-	background-position: 50%;
-	background-repeat: no-repeat;
-	border: none;
-	cursor: pointer;
-	display: inline-block;
-	height: 2.5rem;
-	min-width: 2.5rem;
-	width: 2.5rem;
+    background-color: grey;
+    background-image: url(https://www.oslomet.no/build/images/plus-icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    height: 2.5rem;
+    min-width: 2.5rem;
+    width: 2.5rem;
 }
 
+/* Accordion Content */
 .accordion-text {
-	display: none; /* Initially hidden */
-	margin-bottom: 30px;
-	overflow: hidden;
-	padding-left: 75px;
-	padding-right: 120px;
-	padding-top: 35px;
-	position: relative;
-	transition: height 0.3s cubic-bezier(0.24, 0.59, 0.38, 0.94);
+    display: none; /* Initially hidden */
+    margin-bottom: 30px;
+    overflow: hidden;
+    padding-left: 75px;
+    padding-right: 120px;
+    padding-top: 35px;
+    position: relative;
+    transition: max-height 0.3s cubic-bezier(0.24, 0.59, 0.38, 0.94);
+    max-height: 0; /* For smooth open/close transition */
 }
 
+/* Show content when checkbox is checked */
+.accordion-checkbox:checked + .accordion-h2 + .accordion-text {
+    display: block;
+    max-height: 1000px; /* Adjust to accommodate your content */
+}
+
+/* Paragraph styling */
 .accordion-text-para {
+    color: #222;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.para-2,
+.para-3 {
+	margin-top: 20px;
+}
+
+/* List Styling */
+
+.a-list {
 	color: #222;
-	font-family: inherit;
+	font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 27px;
+	list-style: none;
+	margin-top: 18px;
+}
+
+.a-list li {
+	margin-bottom: 0.625rem;
+	padding-left: 0.9375rem;
+	position: relative;
+	list-style: disc;
+}
+
+.a-list li a {
+	color: #222;
+	font-size: 1.125rem;
+	font-weight: 700;
+	text-decoration: none;
+	transition: border 0.1s cubic-bezier(0.24, 0.59, 0.38, 0.94);
+}
+
+.a-list li a span {
+	background: url(https://www.oslomet.no/build/images/link-decoration-grey.svg)
+		repeat-x 100% 100%;
+	padding-bottom: 0.0625rem;
+}
+
+/* Hide Checkbox */
+.accordion-checkbox {
+    display: none;
 }
