@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 	font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
 }
-.a-paragraph-ingress{
+/*.a-paragraph-ingress{
     color:black;
     font-size: 1.6em;
     margin-top: 20px;
@@ -73,6 +73,7 @@ button{
     background-color: none ;
     text-decoration-style: solid;
     }
+    */
 
 a {
 	color: #222;
@@ -196,9 +197,9 @@ a {
 .close {
 	display: none;
 }
+
 #top-header{
     margin: 10px;
-
 }
 
 /* Full-Screen Menu Styling */
@@ -298,4 +299,61 @@ li {
 span {
 	font-size: 1.25rem;
 	font-weight: 700;
+}
+.article-faq {
+	margin-bottom: 20px;
+	padding: 30px 100px;
+	border-bottom: 1px solid #e2e2e2;
+}
+
+.article-wrapper-heading {
+	width: 62%;
+	margin: 0 auto;
+	border-bottom: 1px solid #e2e2e2;
+	padding-bottom: 40px;
+}
+
+.article-wrapper-para {
+	font-size: 24px;
+	line-height: 36px;
+	color: #222;
+}
+
+.accordion-h2 {
+	display: flex;
+	align-items: center;
+	gap: 35px;
+	cursor: pointer;
+}
+
+.accordion-btn {
+	background-color: grey;
+	background-image: url(https://www.oslomet.no/build/images/plus-icon.svg);
+	background-position: 50%;
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	display: inline-block;
+	height: 2.5rem;
+	min-width: 2.5rem;
+	width: 2.5rem;
+}
+
+.accordion-text {
+	display: none; /* Initially hidden */
+	margin-bottom: 30px;
+	overflow: hidden;
+	padding-left: 75px;
+	padding-right: 120px;
+	padding-top: 35px;
+	position: relative;
+	transition: height 0.3s cubic-bezier(0.24, 0.59, 0.38, 0.94);
+}
+
+.accordion-text-para {
+	color: #222;
+	font-family: inherit;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 27px;
 }
