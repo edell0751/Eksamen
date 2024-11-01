@@ -286,7 +286,7 @@ span {
 /* Show content when checkbox is checked */
 .accordion-checkbox:checked + .accordion-h2 + .accordion-text {
     display: block;
-    max-height: 1000px; /* Adjust to accommodate your content */
+    max-height: 1000px; /* Adjusting to fit content */
 }
 
 /* Paragraph styling */
@@ -331,7 +331,6 @@ span {
 }
 
 .a-list li a span {
-	background: url(https://www.oslomet.no/build/images/link-decoration-grey.svg)
 		repeat-x 100% 100%;
 	padding-bottom: 0.0625rem;
 }
