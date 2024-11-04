@@ -1,10 +1,17 @@
 
 footer{
     text-align: left;
+    
 }
 .footer-logo{
     align-items: center;
 }
 .a-link_black{
     color: black;
+}
+.footer-grid{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
 }
