@@ -8,11 +8,14 @@ a {
 	color: #222;
 	text-decoration: none;
 }
+
+
 .header-up {
     display: flex;
     justify-content: space-between;
     padding: 2% 15%;
     background: grey;
+
 }
 
 .header-right {
@@ -229,6 +232,12 @@ span {
 	font-size: 1.25rem;
 	font-weight: 700;
 }
+.article-faq {
+	margin-bottom: 20px;
+	padding: 30px 100px;
+	border-bottom: 1px solid #e2e2e2;
+}
+
 .article-wrapper-heading {
 	width: 62%;
 	margin: 0 auto;
@@ -241,69 +250,45 @@ span {
 	line-height: 36px;
 	color: #222;
 }
-/* Wrapper styling */
-.article-faq {
-    margin-bottom: 20px;
-    padding: 30px 100px;
-    border-bottom: 1px solid #e2e2e2;
-}
 
-/* Accordion Title */
 .accordion-h2 {
-    display: flex;
-    align-items: center;
-    gap: 35px;
-    cursor: pointer;
+	display: flex;
+	align-items: center;
+	gap: 35px;
+	cursor: pointer;
 }
 
-/* Accordion Button */
 .accordion-btn {
-    background-color: grey;
-    background-image: url(https://www.oslomet.no/build/images/plus-icon.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    display: inline-block;
-    height: 2.5rem;
-    min-width: 2.5rem;
-    width: 2.5rem;
+	background-color: grey;
+	background-image: url(https://www.oslomet.no/build/images/plus-icon.svg);
+	background-position: 50%;
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	display: inline-block;
+	height: 2.5rem;
+	min-width: 2.5rem;
+	width: 2.5rem;
 }
 
-/* Accordion Content */
 .accordion-text {
-    display: none; /* Initially hidden */
-    margin-bottom: 30px;
-    overflow: hidden;
-    padding-left: 75px;
-    padding-right: 120px;
-    padding-top: 35px;
-    position: relative;
-    transition: max-height 0.3s cubic-bezier(0.24, 0.59, 0.38, 0.94);
-    max-height: 0; /* For smooth open/close transition */
+	display: none; /* Initially hidden */
+	margin-bottom: 30px;
+	overflow: hidden;
+	padding-left: 75px;
+	padding-right: 120px;
+	padding-top: 35px;
+	position: relative;
+	transition: height 0.3s cubic-bezier(0.24, 0.59, 0.38, 0.94);
 }
 
-/* Show content when checkbox is checked */
-.accordion-checkbox:checked + .accordion-h2 + .accordion-text {
-    display: block;
-    max-height: 1000px; /* Adjusting to fit content */
-}
-
-/* Paragraph styling */
 .accordion-text-para {
-    color: #222;
-    font-family: inherit;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 27px;
+	color: #222;
+	font-family: inherit;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 27px;
 }
-
-.para-2,
-.para-3 {
-	margin-top: 20px;
-}
-
-/* List Styling */
 
 .a-list {
 	color: #222;
@@ -331,10 +316,103 @@ span {
 }
 
 .a-list li a span {
+    text-decoration: underline grey;
+		repeat-x 100% 100%;
 	padding-bottom: 0.0625rem;
 }
 
-/* Hide Checkbox */
-.accordion-checkbox {
-    display: none;
+.para-2,
+.para-3 {
+	margin-top: 20px;
+}
+.para-3-links{
+    text-decoration: underline grey;
+    font-weight: 700;
+}
+
+.accordion-h2.active .accordion-btn {
+	background-image: url(https://www.oslomet.no/build/images/minus-icon.svg);
+}
+
+/* For expanding and collapsing */
+.accordion-h2.active + .accordion-text {
+	display: block;
+}
+
+.study-plan {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.study-plan h2 {	
+	font-size: 20px;
+    background-color: #f4f4f4;
+    padding: 8px 8px 8px 20px;
+}
+
+.study-plan h3 {
+	font-size: 18px;
+}
+
+
+.study-plan h2,.study-plan h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.semester {
+    margin-bottom: 30px;
+}
+
+.subjects {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subject {
+    text-align: left;
+	width: 25%;
+    margin-right: 20px;
+	border-top: 1px solid #222;
+    padding-top: 15px;
+}
+
+.study-plan a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    position: relative;
+	font-size: 14px;
+}
+
+.study-plan a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: grey;
+    bottom: 0;
+    left: 0;
+}
+
+.study-plan span {
+    font-size: 14px;
+    color: #666;
+}
+
+.no-padding {
+	padding: 35px 0;
+}
+
+.flex {
+	display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.semester-headline {
+	font-size: 18px;
+	color: #222222;
 }
