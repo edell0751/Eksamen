@@ -39,6 +39,7 @@ li {
 @media(footer-container)
     {
 .footer-container{
+    flex-direction: column;
     max-width: 800px;
 }
 }
