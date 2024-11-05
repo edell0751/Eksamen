@@ -1,7 +1,8 @@
 
 footer{
     text-align: left;
-    
+    padding: 0px;
+    margin: 0px;
 }
 .footer-logo{
     align-items: center;
@@ -28,6 +29,8 @@ footer{
     grid-template-columns: repeat(12, 1fr);
 }
 .footer-linker{
+    grid-column-start: 7;
+    grid-column-end: span 3;
     list-style: none;
     list-style-position: initial;
     list-style-image: initial;
