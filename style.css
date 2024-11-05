@@ -61,13 +61,21 @@ details details > summary::before{
 }
 
 details details {
-    font-size: 1.1em;
+    font-size: 1em;
     margin-left: 1%;
 }
 details details > summary{
     margin:5px auto;
+	font-size: 1.1em;
 }
-
+.list-inside-details{
+	list-style: circle;
+	margin-left: 30px;
+}
+.button-inside-details{
+	margin-left: 30px;
+	margin-top:10px;
+}
 
 button{
     background-color: none ;
