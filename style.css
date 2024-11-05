@@ -17,8 +17,9 @@ hr{
     border: none;
     border-top: 1px solid black;
     width: 70%;              
-    margin: 20px auto; 
+    margin: 30px auto; 
 }
+
 h2{
     font-size: 1.5.em;
 }
@@ -41,19 +42,36 @@ summary{
 summary::before{
     content: "+";
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 15px;
     font-size: 1.2em;
     vertical-align: middle;
+	width: 1.3em;
+    height: 1.3em;
+    text-align: center;
+    line-height: 1.3em;
+  
+    border-radius: 5px; 
+    background-color: lightgray;
 }
+
 details{
     margin-left: 15%;
 }
+
+details > p{
+	width: 80%;
+}
+
 details > summary::before{
     content: "+";
-
+	
 }
+
 details[open] > summary::before{
     content: "-";
+}
+details[open] > summary{
+	margin-bottom: 10px;
 }
 
 details details > summary::before{
@@ -73,8 +91,19 @@ details details > summary{
 	margin-left: 30px;
 }
 .button-inside-details{
-	margin-left: 30px;
-	margin-top:10px;
+	margin-left: none;
+	border:none;
+	background-color: transparent;
+}
+.button-inside-details > p{
+	color: black;
+	text-decoration:underline gray;
+	font-size: 1.2em;
+	font-weight: regular;
+}
+.button-inside-details>p:hover{
+	text-decoration: underline black;
+	font-weight: bold ;
 }
 
 button{
