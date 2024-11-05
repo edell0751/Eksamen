@@ -678,6 +678,7 @@
 
     </main>
     <script>
+        // Setting up javascript for menu and search-bar
             const hamburger = document.querySelector('.hamburger');
 			const closeIcon = document.querySelector('.close');
 			const fullMenu = document.getElementById('fullMenu');
@@ -700,7 +701,7 @@
 				'.header-search .search-input'
 			);
 
-			// Show search input when icon is clicked
+			// Show search input when search-icon is clicked
 			searchIcon.addEventListener('click', (e) => {
 				e.stopPropagation(); // Prevent this click from triggering the page click event
 				headerSearch.classList.toggle('active');
