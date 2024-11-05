@@ -36,3 +36,9 @@ li {
     display: flex;
     flex-direction: row;
 }
+@media(footer-container)
+    {
+.footer-container{
+    max-width: 800px;
+}
+}
