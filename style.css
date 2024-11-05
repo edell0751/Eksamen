@@ -317,7 +317,6 @@ span {
 
 .a-list li a span {
     text-decoration: underline grey;
-		repeat-x 100% 100%;
 	padding-bottom: 0.0625rem;
 }
 
