@@ -59,7 +59,7 @@ details{
 }
 
 details > p{
-	width: 80%;
+	width: 70%;
 }
 
 details > summary::before{
