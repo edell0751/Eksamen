@@ -17,8 +17,9 @@ hr{
     border: none;
     border-top: 1px solid black;
     width: 70%;              
-    margin: 20px auto; 
+    margin: 30px auto; 
 }
+
 h2{
     font-size: 1.5.em;
 }
@@ -53,17 +54,13 @@ summary::before{
     background-color: lightgray;
 }
 
-
 details{
     margin-left: 15%;
 }
 
-details >p{
-	margin-top: 15px;
+details > p{
 	width: 80%;
 }
-
-
 
 details > summary::before{
     content: "+";
@@ -72,6 +69,9 @@ details > summary::before{
 
 details[open] > summary::before{
     content: "-";
+}
+details[open] > summary{
+	margin-bottom: 10px;
 }
 
 details details > summary::before{
@@ -91,8 +91,19 @@ details details > summary{
 	margin-left: 30px;
 }
 .button-inside-details{
-	margin-left: 20px;
-	margin-top:10px;
+	margin-left: none;
+	border:none;
+	background-color: transparent;
+}
+.button-inside-details > p{
+	color: black;
+	text-decoration:underline gray;
+	font-size: 1.2em;
+	font-weight: regular;
+}
+.button-inside-details>p:hover{
+	text-decoration: underline black;
+	font-weight: bold ;
 }
 
 button{
