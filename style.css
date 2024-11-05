@@ -4,6 +4,11 @@ footer{
     padding: 0px;
     margin: 0px;
 }
+li {
+    list-style: none;
+    list-style-position: initial;
+    list-style-image: initial;
+}
 .footer-logo{
     align-items: center;
 }
@@ -12,8 +17,12 @@ footer{
     text-decoration: none;
 }
 .footer-info{
-    grid-column-start: 2;
-    grid-column-end: span 5;
+    padding: 10px;
+    flex: 50%;
+}
+.footer-linker{
+    padding: 10px;
+    flex: 50%;;
 }
 .footer-info-action{
     list-style-position: initial;
@@ -23,15 +32,7 @@ footer{
     color: black;
     text-decoration: none;
 }
-.footer-grid{
-    display: grid;
-    grid-column-gap: 1.25rem;
-    grid-template-columns: repeat(12, 1fr);
-}
-.footer-linker{
-    grid-column-start: 7;
-    grid-column-end: span 3;
-    list-style: none;
-    list-style-position: initial;
-    list-style-image: initial;
+.footer-container{
+    display: flex;
+    flex-direction: row;
 }
