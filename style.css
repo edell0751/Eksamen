@@ -49,7 +49,7 @@ summary::before{
     height: 1.3em;
     text-align: center;
     line-height: 1.3em;
-    border: 1px solid #000;
+  
     border-radius: 5px; 
     background-color: lightgray;
 }
