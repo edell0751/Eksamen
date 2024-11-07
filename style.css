@@ -36,10 +36,5 @@ li {
     display: flex;
     flex-direction: row;
 }
-@media(footer-container)
-    {
-.footer-container{
-    flex-direction: column;
-    max-width: 800px;
-}
-}
+@media (max-width: 800px) {/*Mobile*/
+  }
