@@ -17,11 +17,11 @@ li {
     text-decoration: none;
 }
 .footer-info{
-    padding: 10px;
+    padding: 0px;
     flex: 50%;
 }
 .footer-linker{
-    padding: 10px;
+    padding: 0px;
     flex: 50%;;
 }
 .footer-info-action{
