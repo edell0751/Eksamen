@@ -12,21 +12,21 @@ li {
 .footer-logo{
     align-items: center;
 }
-.fia-link_black{
-    color: black;
-    text-decoration: none;
-}
 .footer-info{
     padding: 0px;
     flex: 50%;
 }
-.footer-linker{
-    padding: 0px;
-    flex: 50%;;
-}
 .footer-info-action{
     list-style-position: initial;
     list-style: none;
+}
+.fia-link_black{
+    color: black;
+    text-decoration: none;
+}
+.footer-linker{
+    padding: 0px;
+    flex: 50%;;
 }
 .f-link_black{
     color: black;
