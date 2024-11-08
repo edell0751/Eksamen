@@ -681,8 +681,108 @@
 				</div>
 			</article>
 
+            <section class="life">
+                <h2 class="Andrefag-h2">Du er også kanskje interresert i disse? </h2>
+                <div class="life-container">
+                  <!-- Four figure elements with same class containing a photo with a belonging caption 
+                    wrapped in an a-element to make it interactive -->
+                  <!-- First life article -->
+                  <figure class="life-column">
+                    <a href="https://www.oslomet.no/forskning/forskningsnyheter/trenger-ledere-som-skjonner-digitalisering"
+                      target="_blank">
+                     <!-- Image wrapped in a picture element for flexibility-->
+                      <picture>
+                        <!-- Photo: Private -->
+                        <img src="./images-kopi/petition.png" alt="A petition to fire Joe Biden." class="life-img">
+                      </picture>
+                      <figcaption class="life-cards">
+                        <!-- Caption defined in different p-classes to style them differently with ease -->
+                        <p class="life-title">Sign the petition fire Joe Biden</p>
+                        <p class="life-faculty">Petition, Education</p>
+                        <p class="life-explanation">Most students are not satisfied with the new director of TKD.
+                          Join us and sign the petition to fire Joe Biden!</p>
+                      </figcaption>
+                    </a>
+                  </figure>
+
+                  <!-- Second life article -->
+                  <figure class="life-column">
+                    <a href="https://student.oslomet.no/treningstilbud" target="_blank">
+                      <picture>
+                        <!-- Photo: Patrick Case, from https://www.pexels.com/nb-no/@case-originals/  -->
+                        <img src="./images-kopi/cricket.jpg" alt="Cricket player hitting a ball." class="life-img">
+                      </picture>
+                      <figcaption class="life-cards">
+                        <p class="life-title">Join a cricket team</p>
+                        <p class="life-faculty">Sports</p>
+                        <p class="life-explanation">Would you like valuable experience, friends from India and a
+                          much more enjoyable study time? Then you should join one of our cricket teams!</p>
+                      </figcaption>
+                    </a>
+                  </figure>
+                  <!-- third life article -->
+                  <figure class="life-column">
+                    <a href="https://student.oslomet.no/treningstilbud" target="_blank">
+                      <picture>
+                        <!-- Photo: Patrick Case, from https://www.pexels.com/nb-no/@case-originals/  -->
+                        <img src="./images-kopi/cricket.jpg" alt="Cricket player hitting a ball." class="life-img">
+                      </picture>
+                      <figcaption class="life-cards">
+                        <p class="life-title">Join a cricket team</p>
+                        <p class="life-faculty">Sports</p>
+                        <p class="life-explanation">Would you like valuable experience, friends from India and a
+                          much more enjoyable study time? Then you should join one of our cricket teams!</p>
+                      </figcaption>
+                    </a>
+                  </figure>
+                <div class="extra-cards" style="display: none;">
+                    <figure class="life-column">
+                        <a href="https://student.oslomet.no/treningstilbud" target="_blank">
+                            <picture>
+                                <img src="./images/cricket.jpg" alt="Cricket player hitting a ball." class="life-img">
+                            </picture>
+                            <figcaption class="life-cards">
+                                <p class="life-title">Join a cricket team</p>
+                                <p class="life-faculty">Sports</p>
+                                <p class="life-explanation">Would you like valuable experience, friends from India and a
+                                  much more enjoyable study time? Then you should join one of our cricket teams!</p>
+                            </figcaption>
+                        </a>
+                    </figure>
+                    <figure class="life-column">
+                        <a href="https://www.oslomet.no/forskning/forskningsnyheter/trenger-ledere-som-skjonner-digitalisering" target="_blank">
+                            <picture>
+                                <img src="./images/petition.png" alt="A petition to fire Joe Biden." class="life-img">
+                            </picture>
+                            <figcaption class="life-cards">
+                                <p class="life-title">Sign the petition fire Joe Biden</p>
+                                <p class="life-faculty">Petition, Education</p>
+                                <p class="life-explanation">Most students are not satisfied with the new director of TKD.
+                                  Join us and sign the petition to fire Joe Biden!</p>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </div>
+            </div>
+            <button class="show-more-btn" onclick="toggleExtraCards()">Vis mer</button>
+        </section>
+
+    
+
     </main>
     <script>
+
+            function toggleExtraCards() {
+                const extraCards = document.querySelector('.extra-cards');
+                const btn = document.querySelector('.show-more-btn');
+                if (extraCards.style.display === 'none') {
+                    extraCards.style.display = 'grid';
+                    btn.innerText = 'Vis mindre';
+                } else {
+                    extraCards.style.display = 'none';
+                    btn.innerText = 'Vis mer';
+                }
+            }
         // Setting up javascript for menu and search-bar
             const hamburger = document.querySelector('.hamburger');
 			const closeIcon = document.querySelector('.close');
