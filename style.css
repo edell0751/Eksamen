@@ -175,7 +175,8 @@ section {
 .video-player {
 	width: 100%;
 	/* max-width: 800px; */
-	height: 650px;
+	height: 550px;
+    border:8px solid grey;
 }
 
 .main-content {
