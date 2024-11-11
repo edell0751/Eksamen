@@ -449,7 +449,7 @@ span {
 
 .life-title {
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #222;
 }
 
@@ -462,9 +462,14 @@ span {
 
 .life-explanation {
     font-size: 1rem;
-    line-height: 1.4;
+    line-height: 1.2;
     color: #333;
+    margin-bottom: 0.6rem;
 }
+.hidden {
+    display: none;
+}
+
 
 .show-more-btn {
     display: block;
