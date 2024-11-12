@@ -40,6 +40,8 @@ li {
     display: flex;
     flex-direction: row;
 }
-@media (footer-container) {/*Mobile*/
-    .footer-container{max-width: 800px;}
-  }
+@media (max-width:750px){
+    .footer-container{
+        flex-direction: column;
+    }
+}
