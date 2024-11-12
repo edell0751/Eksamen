@@ -10,11 +10,10 @@
     <header>
         <div class="header-up">
             <div class="header-left">
-                <a href="#" class="logo-header">
-
+                <a href="index.html" class="logo-header">
+                    <picture>
                     <img src="bilder/oslometlogo.png" alt="OsloMet - Front page">
-            
-                    
+                    </picture>   
                 </a>
             </div>
             <div class="header-right">
@@ -76,7 +75,7 @@
 			</div>
 		</div>
 
-        <section>
+        <section class="article-wrapper">
 			<iframe
 				class="video-player"
 				src="https://www.youtube.com/embed/Ip6CrMXGrkE?si=ogHdIJ88Ny_nK7ub"
@@ -84,6 +83,7 @@
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 				allowfullscreen
 			></iframe>
+
 
             <div class="main-content">
                 <div class="title">
@@ -680,6 +680,56 @@
 					</div>
 				</div>
 			</article>
+        
+            <section class="Study-Stories-section">
+                <h2>Studenthistorier</h2>
+                <div class="Study-Stories-container">
+                  <!-- Four div elements, for each research article, with same class containing a title and text 
+                    wrapped in an a-element to make it interactive -->
+                  <!-- First research article -->
+                  <article class="Study-Stories-article">
+                    <a href="https://www.oslomet.no/studier/studenthistorier/spa-fremtiden-matematikk-datavitenskap" target="_blank">
+                      <!-- SOURCE: https://www.oslomet.no/studier/studenthistorier/spa-fremtiden-matematikk-datavitenskap -->
+                      <p class="Study-Stories-title">Spå framtiden med matematikk og datavitenskap</p>
+                      <!-- Text for the title -->
+                      <p class="Study-Stories-caption">Har du lyst til å finne ut hva som vil skje i fremtiden? Lær å bruke verktøy for å forutsi alt fra været og strømprisene til utviklingen i boligmarkedet.</p>
+                    </a>
+                  </article>
+                  <!-- Second research article -->
+                  <article class="Study-Stories-article">
+                    <a href="https://www.oslomet.no/studier/studenthistorier/interessen-for-geoteknikk-oker" target="_blank">
+                      <!-- SOURCE: https://www.oslomet.no/studier/studenthistorier/interessen-for-geoteknikk-oker  -->
+                      <p class="Study-Stories-title">Interessen for geoteknikk øker</p>
+                      <p class="Study-Stories-caption"> Geoteknikk har raskt fanget interessen til kommende ingeniører. Dette speiler behovet i bransjen.</p>
+                    </a>
+                  </article>
+                  <!-- Third research article -->
+                  <article class="Study-Stories-article">
+                    <a href="https://www.oslomet.no/studier/studenthistorier/spennende-praksis"
+                      target="_blank">
+                        <!-- SOURCE: https://www.oslomet.no/studier/studenthistorier/spennende-praksis  -->
+                        <p class="Study-Stories-title">Spennende praksis</p>
+                        <p class="Study-Stories-caption">Motestudent Rebecca fra Manchester hadde sin praksis hos Helly Hansen.
+                             Medstudent Thomas dro omvendt vei, til Skottland og veveriet Johnstons of Elgin.</p>
+                    </a>
+                  </article>
+                  <!-- Fourth research article --> 
+                  <article class="Study-Stories-article">
+                    <a href="https://www.oslomet.no/forskning/forskningsnyheter/bilderboker-de-minste" target="_blank">
+                        <!-- SOURCE: https://www.oslomet.no/forskning/forskningsnyheter/bilderboker-de-minste  -->
+                        <p class="Study-Stories-title">– Styrevervet ga meg mye da jeg skulle søke jobb </p>
+                        <p class="Study-Stories-caption">Som studentvalgt fakultetsstyremedlem fikk Grace nyttig innsikt i hvordan beslutninger blir tatt. 
+                            Det ga ham gode kort å komme med da han skulle søke jobb.
+                         </p>
+                    </a>
+                  </article>
+                </div>
+                <!-- Link to an external page on a new tab -->
+                <a href="https://www.oslomet.no/en/research" target="_blank" class="buttons">
+                  <p>Read more campus research</p>
+                </a>
+              </section>
+          
 
             <section class="life">
                 <h2 class="Andrefag-h2">Du er også kanskje interresert i disse? </h2>
@@ -827,9 +877,46 @@
             <button class="show-more-btn" onclick="toggleExtraCards()">Vis flere</button>
         </section>
 
-    
-
     </main>
+
+    <footer>
+        <div class="container-2">
+            <div class="footer-content">
+                <h3 class="title-footer">Kontakt oss</h3>
+                <p>Oslo Metropolitan University <br>Storbyuniversitetet logo</p>
+                <p>Postboks 4, St. Olavs plass <br> 0130 Oslo</p>
+                <p> Tlf.: 67 23 50 00</p>
+            </div>
+            <div class="footer-content">
+                <h3 class="title-footer">Ressurser og Informasjon</h3>
+                <ul class="list-footer">
+                    <li><a href="">English</a></li>
+                    <li><a href="">Alumni</a></li>
+                    <li><a href="">Ansatteoversikt</a></li>
+                    <li><a href="">Arrangementoversikt</a></li>
+                    <li><a href="">For ansatte</a></li>
+                    <li><a href="">For studenter</a></li>
+                    <li><a href="">Ledige stillinger</a></li>
+                    <li><a href="">Persornvernklæring og informasjonskapslar</a></li>
+                    <li><a href="">Pressekontakt</a></li>
+                    <li><a href="">Tilgjengelegheitserklæring</a></li>
+                    <li><a href="">Admin</a></li>  
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3 class="title-footer">Sosiale Medier</h3>
+                <ul class="social-icons-footer">
+                    <li><a class="footer-a" href=""><i class="fab fa-facebook"></i></a></li>
+                    <li><a class="footer-a" href=""><i class="fab fa-linkedin"></i></a></li>
+                    <li><a class="footer-a" href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a class="footer-a" href=""><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div> 
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; OSLOMET</p>
+        </div>
+    </footer>
 
 
     <script>
