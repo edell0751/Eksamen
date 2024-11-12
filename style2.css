@@ -14,19 +14,17 @@ header {
     left: 0;
     width: 100%;
     padding: 20px 120px;
-    background: black;
     z-index: 1000; /* Ensure header is on top */
+    border-bottom: 2px solid white;
+    background: transparent;
 }
 
-header nav {
-    text-align: right;
-}
 
 nav a {
     color: white;
     text-decoration: none;
-    padding-right: 40px;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: large;
     transition: 0.3s ease-in-out;
 }
 
@@ -36,15 +34,19 @@ nav a:hover {
 
 /* Main section layout */
 main {
-    padding-top: 100px; /* Adjust this based on your header height */
+    margin-top: 0px;
     width: 100%;
 }
 
 /* Activity section styling */
 .activity-section {
-    background-color: blue;
+    background-image: url(./Images/f1background.jpeg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: white;
     width: 100%; /* Full width */
     padding: 20px;
     box-sizing: border-box;
+    height: 100vh;
 }
