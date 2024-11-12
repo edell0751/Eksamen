@@ -169,7 +169,7 @@ a {
 
 
 section {
-	padding: 50px 5%;
+	padding: 50px 15%;
 }
 
 .video-player {
@@ -370,14 +370,9 @@ span {
 .subjects {
     display: flex;
 	flex:50%;
+	flex-wrap: wrap;
 	flex-direction: row;
     justify-content: 30%;
-}
-@media (max-width:800px){
-    .subjects,.footer-container,.metadata-list{
-        flex-direction: column;
-        flex:100%;
-    }
 }
 .subject {
     text-align: left;
@@ -498,4 +493,10 @@ span {
 	display: flex;
 	flex-direction: row;
 	padding: 15%;
+}
+@media (max-width:800px){
+    .subjects,.footer-container,.metadata-list{
+        flex-direction: column;
+        flex:100%;
+    }
 }
