@@ -1,27 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-header * {
+* {
     margin: 0;
     padding: 0;
-    font-family: 'poppins',sans-serif;
-    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box; /* Corrected syntax */
 }
+
+/* Fixed header styling */
 header {
     position: fixed;
     top: 0;
-    left: 0 ;
+    left: 0;
     width: 100%;
     padding: 20px 120px;
     background: black;
+    z-index: 1000; /* Ensure header is on top */
 }
 
 header nav {
     text-align: right;
-    padding-right: 180px;
 }
+
 nav a {
     color: white;
     text-decoration: none;
     padding-right: 40px;
     font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: aqua;
+}
+
+/* Main section layout */
+main {
+    padding-top: 100px; /* Adjust this based on your header height */
+    width: 100%;
+}
+
+/* Activity section styling */
+.activity-section {
+    background-color: blue;
+    color: white;
+    width: 100%; /* Full width */
+    padding: 20px;
+    box-sizing: border-box;
 }
