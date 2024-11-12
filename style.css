@@ -375,9 +375,16 @@ span {
 
 .subjects {
     display: flex;
-    justify-content: space-between;
+	flex:50%;
+	flex-direction: row;
+    justify-content: 30%;
 }
-
+@media (max-width:800px){
+    .subjects{
+        flex-direction: column;
+        flex:100%;
+    }
+}
 .subject {
     text-align: left;
 	width: 25%;
@@ -492,4 +499,15 @@ span {
 
 .show-more-btn:hover {
     background-color: #4b5c5a;
+}
+.footer-container{
+	display: flex;
+	flex-direction: row;
+	padding: 15%;
+}
+@media (max-width:756px){
+    .footer-container{
+        flex-direction: column;
+        flex:50%;
+    }
 }
