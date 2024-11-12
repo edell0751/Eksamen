@@ -494,6 +494,11 @@ span {
 	flex-direction: row;
 	padding: 15%;
 }
+@media (max-width:800px){
+	.main-content{
+		text-align: center;
+	}
+}
 @media (max-width:950px){
 	.life-container{
 		flex-direction: column;
