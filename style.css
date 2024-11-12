@@ -420,8 +420,8 @@ span {
 	color: #222222;
 }
 .life-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+	flex-direction: row;
     gap: 2%;
     width: 100%;
     padding: 2% 0;
@@ -493,6 +493,12 @@ span {
 	display: flex;
 	flex-direction: row;
 	padding: 15%;
+}
+@media (max-width:950px){
+	.life-container{
+		flex-direction: column;
+		flex: 100%;
+	}
 }
 @media (max-width:800px){
     .subjects,.footer-container,.metadata-list{
