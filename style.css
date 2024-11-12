@@ -489,11 +489,6 @@ span {
 .show-more-btn:hover {
     background-color: #4b5c5a;
 }
-.footer-container{
-	display: flex;
-	flex-direction: row;
-	padding: 15%;
-}
 @media (max-width:800px){
 	.main-content{
 		text-align: center;
@@ -506,7 +501,7 @@ span {
 	}
 }
 @media (max-width:800px){
-    .subjects,.footer-container,.metadata-list{
+    .subjects,.metadata-list{
         flex-direction: column;
         flex:100%;
     }
