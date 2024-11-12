@@ -219,7 +219,7 @@ li {
 	position: relative;
 	border-radius: 1px solid #e2e2e2;
 }
-@media (max-width:900px){
+@media (max-width:756px){
     .metadata-list{
         flex-direction: column;
         flex:50%;
