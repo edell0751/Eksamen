@@ -306,7 +306,7 @@ span {
 }
 
 .a-list li a span {
-    text-decoration: underline grey;
+    text-decoration: underline #EF8354;
 	padding-bottom: 0.0625rem;
 }
 
@@ -315,7 +315,7 @@ span {
 	margin-top: 20px;
 }
 .para-3-links{
-    text-decoration: underline grey;
+    text-decoration: underline #EF8354;
     font-weight: 700;
 }
 
@@ -381,7 +381,7 @@ span {
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: grey;
+    background-color: #955c22;
     bottom: 0;
     left: 0;
 }
