@@ -487,12 +487,6 @@ span {
 		text-align: center;
 	}
 }
-@media (max-width:950px){
-	.life-container{
-		flex-direction: column;
-		flex: 100%;
-	}
-}
 @media (max-width:800px){
     .subjects,.metadata-list{
         flex-direction: column;
