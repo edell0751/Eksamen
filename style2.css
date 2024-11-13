@@ -89,7 +89,26 @@ main {
 }
 
 .f1-teams {
+    background: linear-gradient(45deg, blueviolet, lightgreen);
+    padding: 15px 9%;
+    padding-bottom: 100px;
     width: 100%;
-    background-color: red;
     height: 80vh;
+    font-family: 'Poppins', sans-serif;
 }
+
+.f1-teams .f1box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.f1Team-box {
+    border-radius: 5px;
+    background: white;
+    text-align: center;
+    height: 150px;
+    padding: 45px 20px;
+}
+
+
