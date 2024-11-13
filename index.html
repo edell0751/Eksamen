@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </head>
 <body>
         <div class="header-up">
             <div class="header-left">
-                <a href="#" class="logo-header">
-
+                <a href="index.html" class="logo-header">
+                    <picture>
                     <img src="bilder/oslometlogo.png" alt="OsloMet - Front page">
-            
-                    
+                    </picture>   
                 </a>
             </div>
             <div class="header-right">
@@ -43,10 +45,7 @@
         </div>
         <nav class="header-bottom">
             <a href="#" class="header-bottom-link">
-                <img
-                    src="https://www.oslomet.no/build/images/arrow-left.svg"
-                    alt="arrow-left"
-                />
+                <ion-icon name="chevron-forward-outline"></ion-icon>
                 <span id="top-header">Studieoversikt</span>
             </a>
 
@@ -75,7 +74,7 @@
 			</div>
 		</div>
 
-        <section>
+        <section class="article-wrapper">
 			<iframe
 				class="video-player"
 				src="https://www.youtube.com/embed/Ip6CrMXGrkE?si=ogHdIJ88Ny_nK7ub"
@@ -84,9 +83,10 @@
 				allowfullscreen
 			></iframe>
 
+
             <div class="main-content">
                 <div class="title">
-					<h1 class="headline">
+					<h1>
 						Matematisk modellering og datavitenskap - ingeniør
 					</h1>
 					<p class="headline-para">Bachelorprogram</p>
@@ -679,6 +679,57 @@
 					</div>
 				</div>
 			</article>
+        
+            <section class="Study-Stories-section">
+                <h2>Studenthistorier</h2>
+                <div class="Study-Stories-container">
+                  <!-- Four div elements, for each research article, with same class containing a title and text 
+                    wrapped in an a-element to make it interactive -->
+                  <!-- First research article -->
+                  <article class="Study-Stories-article">
+                    <a href="https://www.oslomet.no/studier/studenthistorier/spa-fremtiden-matematikk-datavitenskap" target="_blank">
+                      <!-- SOURCE: https://www.oslomet.no/studier/studenthistorier/spa-fremtiden-matematikk-datavitenskap -->
+                      <p class="Study-Stories-title">Spå framtiden med matematikk og datavitenskap</p>
+                      <!-- Text for the title -->
+                      <p class="Study-Stories-caption">Har du lyst til å finne ut hva som vil skje i fremtiden? Lær å bruke verktøy for å forutsi alt fra været og strømprisene til utviklingen i boligmarkedet.</p>
+                    </a>
+                  </article>
+                  <!-- Second research article -->
+                  <article class="Study-Stories-article">
+                    <a href="https://www.oslomet.no/studier/studenthistorier/interessen-for-geoteknikk-oker" target="_blank">
+                      <!-- SOURCE: https://www.oslomet.no/studier/studenthistorier/interessen-for-geoteknikk-oker  -->
+                      <p class="Study-Stories-title">Interessen for geoteknikk øker</p>
+                      <p class="Study-Stories-caption"> Geoteknikk har raskt fanget interessen til kommende ingeniører. Dette speiler behovet i bransjen.</p>
+                    </a>
+                  </article>
+                  <!-- Third research article -->
+                  <article class="Study-Stories-article">
+                    <a href="https://www.oslomet.no/studier/studenthistorier/spennende-praksis"
+                      target="_blank">
+                        <!-- SOURCE: https://www.oslomet.no/studier/studenthistorier/spennende-praksis  -->
+                        <p class="Study-Stories-title">Spennende praksis</p>
+                        <p class="Study-Stories-caption">Motestudent Rebecca fra Manchester hadde sin praksis hos Helly Hansen.
+                             Medstudent Thomas dro omvendt vei, til Skottland og veveriet Johnstons of Elgin.</p>
+                    </a>
+                  </article>
+                  <!-- Fourth research article --> 
+                  <article class="Study-Stories-article">
+                    <a href="https://www.oslomet.no/forskning/forskningsnyheter/bilderboker-de-minste" target="_blank">
+                        <!-- SOURCE: https://www.oslomet.no/forskning/forskningsnyheter/bilderboker-de-minste  -->
+                        <p class="Study-Stories-title">– Styrevervet ga meg mye da jeg skulle søke jobb </p>
+                        <p class="Study-Stories-caption">Som studentvalgt fakultetsstyremedlem fikk Grace nyttig innsikt i hvordan beslutninger blir tatt. 
+                            Det ga ham gode kort å komme med da han skulle søke jobb.
+                         </p>
+                    </a>
+                  </article>
+                </div>
+                <!-- Link to an external page on a new tab -->
+                <a href="https://www.oslomet.no/studier/studenthistorier" target="_blank" class="study-stories-button">
+                    <p>Les flere studenthistorier</p>
+                </a>
+                
+              </section>
+          
 
             <section class="life">
                 <h2 class="Andrefag-h2">Du er også kanskje interresert i disse? </h2>
@@ -826,9 +877,52 @@
             <button class="show-more-btn" onclick="toggleExtraCards()">Vis flere</button>
         </section>
 
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <h3 class="title-footer">Kontakt oss</h3>
+                <p>Oslo Metropolitan University <br>Storbyuniversitetet logo</p>
+                <p>Postboks 4, St. Olavs plass <br> 0130 Oslo</p>
+                <p> Tlf.: 67 23 50 00</p>
+            </div> 
+            
+            <div class="footer-content">
+                <h3 class="title-footer">Ressurser og Informasjon</h3>
+                <ul class="footer-list">
+                    <li><a class="footer-link" href="">English</a></li>
+                    <li><a class="footer-link" href="">Alumni</a></li>
+                    <li><a class="footer-link" href="">Ansatteoversikt</a></li>
+                    <li><a class="footer-link" href="">Arrangementoversikt</a></li>
+                    <li><a class="footer-link" href="">For ansatte</a></li>
+                    <li><a class="footer-link" href="">For studenter</a></li>
+                    <li><a class="footer-link" href="">Ledige stillinger</a></li>
+                    <li><a class="footer-link" href="">Personvernklæring og informasjonskapslar</a></li>
+                    <li><a class="footer-link" href="">Pressekontakt</a></li>
+                    <li><a class="footer-link" href="">Tilgjengelegheitserklæring</a></li>
+                    <li><a class="footer-link" href="">Admin</a></li>  
+                </ul>
+            </div>
+    
+            <div class="footer-content">
+                <h3 class="title-footer">Sosiale Medier</h3>
+                <ul class="footer-social-icons">
+                    <li><a class="footer-link" href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li><a class="footer-link" href=""><ion-icon name="logo-facebook"></ion-icon></i></a></li>
+                    <li><a class="footer-link" href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a class="footer-link" href=""><ion-icon name="logo-linkedin"></ion-icon></i></a></li>
+                </ul>
+            </div> 
+        </div>
+        
+        <div class="footer-bottom-bar">
+            <p>&copy; OSLOMET</p>
+        </div>
+    </footer>
     
 
-    </main>
+
     <script>
         function toggleExtraCards() {
         const extraCards = document.querySelectorAll('.life-container .life-column:nth-child(n+4)');
