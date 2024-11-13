@@ -8,8 +8,15 @@ html{
 	font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
 }
 a {
-	color: #222;
+    color: black;
 	text-decoration: none;
+}
+h1{
+    font-size: 48px;
+}
+
+body{
+    background-color: #F1E4E8;
 }
 
 
@@ -17,7 +24,6 @@ a {
     display: flex;
     justify-content: space-between;
     padding: 2% 15%;
-    background: grey;
 
 }
 
@@ -49,7 +55,7 @@ a {
     opacity: 0;
     width: 250px;
     padding: 8px;
-    border: 1px solid #222;
+    border: 1px solid black;
     border-radius: 4px;
     transition: all 0.4s ease;
     font-size: 1rem;
@@ -66,14 +72,13 @@ a {
 
 .header-bottom nav {
     padding: 2% 15%;
-    background: grey;
 }
 
 .header-bottom-link span {
     font-size: 1.125rem;
     font-weight: 700;
-    color: #222;
-    border-bottom: 2px solid #222;
+    color: black;
+    border-bottom: 2px solid black;
 }
 
 .menu-icon {
@@ -84,7 +89,7 @@ a {
 	display: flex;
 	justify-content: space-between;
 	padding: 2% 15%;
-	background: grey;
+	background-color: #2D3142;
 	position: sticky;
 	top: 0;
 	z-index: 1000; /* Ensure it stays on top */
@@ -111,15 +116,9 @@ a {
 
 .header-bottom {
 	padding: 2% 15%;
-	background: grey;
+	background: #2D3142;
 }
 
-.header-bottom-link span {
-	font-size: 1.125rem;
-	font-weight: 700;
-	color: #222;
-	border-bottom: 2px solid #222;
-}
 .logo-header img {  /*justerer størrelse på logo i header*/
     width: 90px;
 	height: 60px;
@@ -144,7 +143,7 @@ a {
 	left: 0;
 	width: 100%;
 	height: 100vh;
-	background-color: grey;
+	background-color: #2D3142;
 	display: none;
 	align-items: center;
 	z-index: 999;
@@ -165,7 +164,7 @@ a {
 	margin: 20px 0;
 	font-size: 2rem;
 	font-weight: 700;
-	color: #222;
+	
 }
 /*  it sections the class to keep its almost centered position*/
  .article-wrapper{
@@ -176,21 +175,20 @@ a {
 .video-player {
 	width: 100%;
 	height: 550px;
-    border:8px solid grey;
+    border:8px solid #EF8354;
 }
 
 .main-content {
 	margin-top: 40px;
 }
 
-.title .headline {
+.title {
 	font-size: 48px;
-	color: #222222;
+
 }
 
 .title .headline-para {
 	font-size: 24px;
-	color: #222;
 	font-weight: 400;
 	line-height: 36px;
 	margin-top: 5px;
@@ -214,7 +212,7 @@ li {
 	border-radius: 1px solid #e2e2e2;
 }
 .metadata-list-item {
-	border-top: 0.0575rem solid #222;
+	border-top: 0.0575rem solid black;
 	flex: 1 0 calc(25% - 1.25rem);
 	font-size: 1.125rem;
 	line-height: 1.5;
@@ -243,7 +241,6 @@ span {
 .article-wrapper-para {
 	font-size: 24px;
 	line-height: 36px;
-	color: #222;
 }
 
 .accordion-h2 {
@@ -254,7 +251,7 @@ span {
 }
 
 .accordion-btn {
-	background-color: grey;
+	background-color: #EF8354;
 	background-image: url(https://www.oslomet.no/build/images/plus-icon.svg);
 	background-position: 50%;
 	background-repeat: no-repeat;
@@ -278,7 +275,6 @@ span {
 }
 
 .accordion-text-para {
-	color: #222;
 	font-family: inherit;
 	font-size: 18px;
 	font-weight: 400;
@@ -286,7 +282,6 @@ span {
 }
 
 .a-list {
-	color: #222;
 	font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	font-weight: 400;
@@ -303,7 +298,7 @@ span {
 }
 
 .a-list li a {
-	color: #222;
+	
 	font-size: 1.125rem;
 	font-weight: 700;
 	text-decoration: none;
@@ -369,7 +364,7 @@ span {
     text-align: left;
 	width: 25%;
     margin-right: 20px;
-	border-top: 1px solid #222;
+	border-top: 1px solid black;
     padding-top: 15px;
 }
 
@@ -444,7 +439,6 @@ span {
 .life-title {
     font-weight: bold;
     font-size: 1.2rem;
-    color: #222;
 }
 
 .life-faculty {
@@ -467,17 +461,19 @@ span {
 
 .show-more-btn {
     display: block;
+    width: fit-content;
     margin: 20px auto;
-    padding: 10px 20px;
-    font-size: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
     cursor: pointer;
-    background-color: grey;
+    background-color: #EF8354;
     border: none;
     transition: background-color 0.3s ease;
 }
 
 .show-more-btn:hover {
-    background-color: #4b5c5a;
+    background-color: #955c22;;
 }
 
 .Study-Stories-section {
@@ -553,7 +549,7 @@ h2{
     padding: 1rem 2rem; /* Bruker rem for responsiv padding */
     font-size: 1.2rem; /* Større skriftstørrelse for mer fremtredende tekst */
     font-weight: bold;
-    background-color: grey; /* Knappens bakgrunnsfarge */
+    background-color: #EF8354; /* Knappens bakgrunnsfarge */
     border: none;
     text-decoration: none;
     transition: background-color 0.3s ease;
@@ -562,12 +558,11 @@ h2{
 }
 
 .study-stories-button:hover {
-    background-color: #4b5c5a; /* Mørkere farge ved hover */
+    background-color: #955c22; /* Mørkere farge ved hover */
 }
 .footer {
-    background: #1c1f2b;
+    background: #2D3142;
     padding-top: 50px;
-    color: white;
     width: 100%;
     margin: 0;
 }
@@ -584,7 +579,7 @@ h2{
     width: 33.3%;
 }
 
-.footer h3 {
+h3 {
     font-size: 28px;
     margin-bottom: 15px;
     text-align: center;
@@ -620,7 +615,7 @@ h2{
     top: 100%;
     width: 0;
     height: 2px;
-    background: #c85189;
+    background: #EF8354;
     transition-duration: 0.5s;
 }
 
@@ -639,26 +634,17 @@ h2{
     padding: 5px;
 }
 
-.footer-social-icons i {
-    color: white;
-    font-size: 25px;
-}
-
-.footer-link {
-    text-decoration: none;
-    color: white;
-}
 
 .footer-link:hover {
-    color: #f1309d;
+    color: #EF8354;
 }
 
 .footer-social-icons i:hover {
-    color: #484847;
+    color: #EF8354;
 }
 
 .footer-bottom-bar {
-    background: #444747;
+    background: #EF8354;
     text-align: center;
     padding: 10px 0;
     margin-top: 50px;
@@ -666,7 +652,7 @@ h2{
 }
 
 .footer-bottom-bar p {
-    color: white;
+    font-weight: bold;
     margin: 0;
     font-size: 16px;
     padding: 7px;
