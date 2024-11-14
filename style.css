@@ -210,7 +210,6 @@ li {
 	margin-top: 50px;
 	position: relative;
 	border-radius: 1px solid #e2e2e2;
-	flex: 100%;
 }
 .metadata-list-item {
 	border-top: 0.0575rem solid black;
@@ -233,7 +232,7 @@ span {
 }
 
 .article-wrapper-heading {
-	width: 100%;
+	width: 62%;
 	margin: 0 auto;
 	border-bottom: 1px solid #e2e2e2;
 	padding-bottom: 40px;
@@ -358,12 +357,9 @@ span {
 
 .subjects {
     display: flex;
-	flex:50%;
-	flex-wrap: wrap;
-	flex-direction: row;
-    justify-content: 30%;
     margin: 5px;
 }
+
 .subject {
     text-align: left;
 	width: 25%;
@@ -410,10 +406,10 @@ span {
 	color: #222222;
 }
 .life-container {
-    display: flex;
-	flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2%;
-    width: 90%;
+    width: 100%;
     padding: 2% 0;
     margin: 0 auto;
 }
@@ -424,9 +420,6 @@ span {
     transition: transform 0.2s;
     overflow: hidden;
     cursor: pointer;
-	min-width: 200px;
-	flex: 1 1 calc(33.333% - 2%);
-	margin-bottom: 2%;
 }
 
 .life-column:hover {
@@ -481,17 +474,6 @@ span {
 
 .show-more-btn:hover {
     background-color: #955c22;;
-}
-@media (max-width:800px){
-	.main-content{
-		text-align: center;
-	}
-}
-@media (max-width:800px){
-    .subjects,.metadata-list{
-        flex-direction: column;
-        flex:100%;
-    }
 }
 
 .Study-Stories-section {
