@@ -11,9 +11,10 @@ html {
     box-sizing: border-box; /* Corrected syntax */
 }
 
+
 /* Fixed header styling */
 header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -47,11 +48,11 @@ main {
 .activity-section {
     background-image: url(./Images/f1background.jpeg);
     background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     color: white;
     width: 100%; /* Full width */
     padding: 20px;
