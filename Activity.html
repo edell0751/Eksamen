@@ -7,8 +7,28 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style2.css"> 
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const header = document.querySelector("header");
+            const sectionOne = document.querySelector(".activity-section");
 
+            const sectionOneOptions = { rootMargin: "-100px 0px 0px 0px"};
+
+            const sectionOneObserver = new IntersectionObserver(function(entries, sectionOneObserver) {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) {
+                        header.classList.add("nav-scrolled");
+                    } else {
+                        header.classList.remove("nav-scrolled");
+                    }
+                });
+            }, sectionOneOptions);
+
+            sectionOneObserver.observe(sectionOne);
+        });
+    </script>
     <title>Document</title>
+
 </head>
 <body>
 <header>
@@ -87,8 +107,12 @@
             <img src="./Images/hamilton.jpg" alt="#">
             <div class="f1-content">
                 <h3>Mercedes</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
+                <ul>
+                    <li><strong>Constructor Titles:</strong> 6</li>
+                    <li><strong>Drivers' Championships:</strong> 7</li>
+                    <li><strong>Race Wins:</strong> 121+</li>
+                    <li><strong>Pole Positions:</strong> 281+</li>
+                </ul>
                 <a href="">Read more</a>
                 </div>
             </div>
@@ -97,18 +121,26 @@
             <img src="./Images/hamilton.jpg" alt="#">
             <div class="f1-content">
                 <h3>Mercedes</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
+                <ul>
+                    <li><strong>Constructor Titles:</strong> 6</li>
+                    <li><strong>Drivers' Championships:</strong> 7</li>
+                    <li><strong>Race Wins:</strong> 121+</li>
+                    <li><strong>Pole Positions:</strong> 281+</li>
+                </ul>
                 <a href="">Read more</a>
                 </div>
             </div>
         </div>  
         <div class="f1box-container">
-            <img src="./Images/hamilton.jpg" alt="#">
+            <img src="./Images/Ferrari.png" alt="#">
             <div class="f1-content">
                 <h3>Mercedes</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
+                <ul>
+                    <li><strong>Constructor Titles:</strong> 6</li>
+                    <li><strong>Drivers' Championships:</strong> 7</li>
+                    <li><strong>Race Wins:</strong> 121+</li>
+                    <li><strong>Pole Positions:</strong> 281+</li>
+                </ul>
                 <a href="">Read more</a>
                 </div>
             </div>
