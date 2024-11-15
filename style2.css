@@ -212,11 +212,16 @@ nav a:hover::after {
     margin-left: 0; /* Aligns with the left padding of .f1-content */
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
-
 .f1Teams-button:hover {
     background: white;
     color: black;
 }
+.f1-drivers {
+    background-color: #585858;
+    color: white;
+}  
+
+
 
 
 
