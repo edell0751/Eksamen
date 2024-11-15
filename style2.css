@@ -157,18 +157,24 @@ nav a:hover::after {
     justify-content: center;  
     flex-wrap: wrap;
     width: 100%;
-    background: linear-gradient(to bottom, #272727, #565656);
+    background: #181818;
     height: 100%;
 }
 .f1box-container{
     width: 325px;
-    height: 380px;
-    background-color: white;
+    height: 390px;
+    background-color: #181818;
     border-radius: 8px;
-    border: 2px solid aqua;
+    border-right: 2px;
+	border-left: 0;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, aqua, aqua, rgb(49, 133, 133)) 1 100%;
     overflow: hidden;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     margin: 50px;
+}
+.f1-content li {
+    color: white;
 }
 .f1box-container img {
     width: 325px;
@@ -180,15 +186,39 @@ nav a:hover::after {
 }
 .f1box-container h3 {
     font-size: 1.5rem;
+    color: white;
 }
 
 .f1box-container ul {
     list-style-type: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
 }
 .f1box-container a {
     text-decoration: none;
+    color: white
 }
+
+.f1Teams-button {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    width: 6rem; /* Adjusted width */
+    height: 2rem; /* Adjusted height */
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    font-weight: 500;
+    margin-top: 0.5rem; /* Adds space from the list */
+    margin-left: 0; /* Aligns with the left padding of .f1-content */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.f1Teams-button:hover {
+    background: white;
+    color: black;
+}
+
+
 
 
 
