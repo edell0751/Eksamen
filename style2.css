@@ -18,6 +18,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    height: 80px;
     width: 100%;
     z-index: 1000; /* Ensure header is on top */    
     background: transparent;
@@ -117,6 +118,15 @@ nav a::after {
 nav a:hover::after {
     width: 100%; /* Extends the line to full width */
 }
+.nav-scrolled {
+    background: linear-gradient(
+        180deg,
+        rgba(45, 45, 28, 1) 10%,
+        rgba(45, 45, 28, 0.75) 40%,
+        rgba(45, 45, 28, 0.5) 64%,
+        rgba(255, 255, 255, 0) 100%
+      );;
+}
 .activity-section h1 {
     font-family: "Roboto", sans-serif;
     font-size: 70px;
@@ -147,21 +157,22 @@ nav a:hover::after {
     justify-content: center;  
     flex-wrap: wrap;
     width: 100%;
-    background: linear-gradient(45deg, grey, white);
+    background: linear-gradient(to bottom, #272727, #565656);
+    height: 100%;
 }
 .f1box-container{
     width: 325px;
-    height: 420px;
+    height: 380px;
     background-color: white;
     border-radius: 8px;
-    border: 2px solid;
+    border: 2px solid aqua;
     overflow: hidden;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     margin: 50px;
 }
 .f1box-container img {
     width: 325px;
-    height: 220px;
+    height: 180px;
 
 }
 .f1-content {
@@ -173,6 +184,7 @@ nav a:hover::after {
 
 .f1box-container ul {
     list-style-type: none;
+    border-bottom: 1px solid black;
 }
 .f1box-container a {
     text-decoration: none;
