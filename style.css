@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -5,8 +8,15 @@
 	font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
 }
 a {
-	color: #222;
+    color: black;
 	text-decoration: none;
+}
+h1{
+    font-size: 48px;
+}
+
+body{
+    background-color: #F1E4E8;
 }
 
 
@@ -14,7 +24,6 @@ a {
     display: flex;
     justify-content: space-between;
     padding: 2% 15%;
-    background: grey;
 
 }
 
@@ -46,7 +55,7 @@ a {
     opacity: 0;
     width: 250px;
     padding: 8px;
-    border: 1px solid #222;
+    border: 1px solid black;
     border-radius: 4px;
     transition: all 0.4s ease;
     font-size: 1rem;
@@ -61,16 +70,15 @@ a {
     z-index: 1;
 }
 
-.header-bottom {
+.header-bottom nav {
     padding: 2% 15%;
-    background: grey;
 }
 
 .header-bottom-link span {
     font-size: 1.125rem;
     font-weight: 700;
-    color: #222;
-    border-bottom: 2px solid #222;
+    color: black;
+    border-bottom: 2px solid black;
 }
 
 .menu-icon {
@@ -81,7 +89,7 @@ a {
 	display: flex;
 	justify-content: space-between;
 	padding: 2% 15%;
-	background: grey;
+	background-color: #2D3142;
 	position: sticky;
 	top: 0;
 	z-index: 1000; /* Ensure it stays on top */
@@ -108,15 +116,9 @@ a {
 
 .header-bottom {
 	padding: 2% 15%;
-	background: grey;
+	background: #2D3142;
 }
 
-.header-bottom-link span {
-	font-size: 1.125rem;
-	font-weight: 700;
-	color: #222;
-	border-bottom: 2px solid #222;
-}
 .logo-header img {  /*justerer størrelse på logo i header*/
     width: 90px;
 	height: 60px;
@@ -141,12 +143,11 @@ a {
 	left: 0;
 	width: 100%;
 	height: 100vh;
-	background-color: grey;
+	background-color: #2D3142;
 	display: none;
-	/* justify-content: center; */
 	align-items: center;
 	z-index: 999;
-	/* padding-top: 80px; Push menu content down to not overlap with header */
+	padding-top: 1rem; /*Push menu content down to not overlap with header*/
 }
 
 .menu.show {
@@ -156,7 +157,6 @@ a {
 .menu-items {
 	text-align: left;
 	margin-left: 15%;
-	/* margin-top: 30px; */
 }
 
 .menu-items a {
@@ -164,42 +164,34 @@ a {
 	margin: 20px 0;
 	font-size: 2rem;
 	font-weight: 700;
-	color: #222;
+	
 }
-
-/* Video Section */
-section {
+/*  it sections the class to keep its almost centered position*/
+ .article-wrapper{
 	padding: 50px 15%;
 }
 
+
 .video-player {
 	width: 100%;
-	/* max-width: 800px; */
 	height: 550px;
-    border:8px solid grey;
+    border:8px solid #EF8354;
 }
 
 .main-content {
 	margin-top: 40px;
 }
 
-.title .headline {
+.title {
 	font-size: 48px;
-	color: #222222;
+
 }
 
 .title .headline-para {
 	font-size: 24px;
-	color: #222;
 	font-weight: 400;
 	line-height: 36px;
 	margin-top: 5px;
-}
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
 }
 body.no-scroll {
 	overflow: hidden;
@@ -218,16 +210,10 @@ li {
 	margin-top: 50px;
 	position: relative;
 	border-radius: 1px solid #e2e2e2;
-}
-@media (max-width:756px){
-    .metadata-list{
-        flex-direction: column;
-        flex:50%;
-
-    }
+	flex: 100%;
 }
 .metadata-list-item {
-	border-top: 0.0575rem solid #222;
+	border-top: 0.0575rem solid black;
 	flex: 1 0 calc(25% - 1.25rem);
 	font-size: 1.125rem;
 	line-height: 1.5;
@@ -247,7 +233,7 @@ span {
 }
 
 .article-wrapper-heading {
-	width: 62%;
+	width: 100%;
 	margin: 0 auto;
 	border-bottom: 1px solid #e2e2e2;
 	padding-bottom: 40px;
@@ -256,7 +242,6 @@ span {
 .article-wrapper-para {
 	font-size: 24px;
 	line-height: 36px;
-	color: #222;
 }
 
 .accordion-h2 {
@@ -267,7 +252,7 @@ span {
 }
 
 .accordion-btn {
-	background-color: grey;
+	background-color: #EF8354;
 	background-image: url(https://www.oslomet.no/build/images/plus-icon.svg);
 	background-position: 50%;
 	background-repeat: no-repeat;
@@ -291,7 +276,6 @@ span {
 }
 
 .accordion-text-para {
-	color: #222;
 	font-family: inherit;
 	font-size: 18px;
 	font-weight: 400;
@@ -299,7 +283,6 @@ span {
 }
 
 .a-list {
-	color: #222;
 	font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	font-weight: 400;
@@ -316,7 +299,7 @@ span {
 }
 
 .a-list li a {
-	color: #222;
+	
 	font-size: 1.125rem;
 	font-weight: 700;
 	text-decoration: none;
@@ -324,7 +307,7 @@ span {
 }
 
 .a-list li a span {
-    text-decoration: underline grey;
+    text-decoration: underline #EF8354;
 	padding-bottom: 0.0625rem;
 }
 
@@ -333,7 +316,7 @@ span {
 	margin-top: 20px;
 }
 .para-3-links{
-    text-decoration: underline grey;
+    text-decoration: underline #EF8354;
     font-weight: 700;
 }
 
@@ -375,14 +358,17 @@ span {
 
 .subjects {
     display: flex;
-    justify-content: space-between;
+	flex:50%;
+	flex-wrap: wrap;
+	flex-direction: row;
+    justify-content: 30%;
+    margin: 5px;
 }
-
 .subject {
     text-align: left;
 	width: 25%;
     margin-right: 20px;
-	border-top: 1px solid #222;
+	border-top: 1px solid black;
     padding-top: 15px;
 }
 
@@ -399,7 +385,7 @@ span {
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: grey;
+    background-color: #EF8354;
     bottom: 0;
     left: 0;
 }
@@ -424,10 +410,10 @@ span {
 	color: #222222;
 }
 .life-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+	flex-wrap: wrap;
     gap: 2%;
-    width: 100%;
+    width: 90%;
     padding: 2% 0;
     margin: 0 auto;
 }
@@ -438,6 +424,9 @@ span {
     transition: transform 0.2s;
     overflow: hidden;
     cursor: pointer;
+	min-width: 200px;
+	flex: 1 1 calc(33.333% - 2%);
+	margin-bottom: 2%;
 }
 
 .life-column:hover {
@@ -457,7 +446,6 @@ span {
 .life-title {
     font-weight: bold;
     font-size: 1.2rem;
-    color: #222;
 }
 
 .life-faculty {
@@ -480,16 +468,285 @@ span {
 
 .show-more-btn {
     display: block;
+    width: fit-content;
     margin: 20px auto;
-    padding: 10px 20px;
-    font-size: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
     cursor: pointer;
-    background-color: #617574;
-    color: white;
+    background-color: #EF8354;
     border: none;
     transition: background-color 0.3s ease;
 }
 
 .show-more-btn:hover {
-    background-color: #4b5c5a;
+    background-color: #955c22;;
 }
+@media (max-width:800px){
+	.main-content{
+		text-align: center;
+	}
+}
+@media (max-width:800px){
+    .subjects,.metadata-list{
+        flex-direction: column;
+        flex:100%;
+    }
+}
+
+.Study-Stories-section {
+    width: 100vw; /* Full skjermbredde */
+    margin: 2%; /* adding a little margin */
+    padding: 8% 0; /* Tilpass padding etter behov */
+    background-color: #f6f6f3;
+    position: relative; /* Sørg for at den bryter ut fra omkringliggende rammen */
+    left: 50%; /* Plasser i midten */
+    transform: translateX(-50%); /* Juster slik at den dekker hele bredden */
+}
+
+
+.Study-Stories-container {
+    width: 100%; /* Sørg for at den dekker hele bredden på sin seksjon */
+    margin: 0 auto; /* Sentraliser eventuelle subelementer */
+    padding: 0 4%; /* Litt side-padding hvis ønsket */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+}
+h2{
+    margin-bottom: 10px;
+    font-size: 36px;
+    text-align: center;
+}
+
+
+.Study-Stories-article {
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+  color: black;
+  transition-duration: 0.5s;
+}
+
+.Study-Stories-article:hover {
+  background-color: #70858462;
+}
+
+.Study-Stories-container .Study-Stories-article:nth-child(even) {
+  justify-self: end;
+}
+.Study-Stories-article a {
+  color: black;
+  text-decoration: none;
+}
+
+.Study-Stories-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.Study-Stories-column p {
+  margin-left: 0.4em;
+}
+
+.rStudy-Stories-arrow {
+  float: right;
+}
+
+.Study-Stories-caption{
+  font-size: 1rem;
+}
+
+.Study-Stories-section {
+    text-align: center; /* Sentrerer knappen og annet innhold */
+}
+
+.study-stories-button {
+    display: inline-block; /* For å tillate sentrering */
+    width: fit-content; /* Tilpasser seg tekstinnholdet */
+    padding: 1rem 2rem; /* Bruker rem for responsiv padding */
+    font-size: 1.2rem; /* Større skriftstørrelse for mer fremtredende tekst */
+    font-weight: bold;
+    background-color: #EF8354; /* Knappens bakgrunnsfarge */
+    border: none;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.study-stories-button:hover {
+    background-color: #955c22; /* Mørkere farge ved hover */
+}
+
+.button-link{
+    display: block; /* Gjør knappen til et blokkelement */
+    margin: 10px auto; /* Sentrerer knappen horisontalt */
+    border: none;
+    background: none;
+    text-align: center; /* Sentrerer knappeteksten */
+    cursor: pointer;
+}
+.button-link > p{
+    color: black;
+    text-decoration:underline darkorange;
+    font-size: 1.2em;
+    font-weight: bold;
+	transition: transform 0.2s;
+    align-items: center;
+}
+.button-link>p:hover{
+    text-decoration: underline black;
+    font-weight: bolder;
+	transform: scale(1.05);
+}
+.hr-short{
+	width: 40%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+}
+
+.medium-image{
+	width: 130px;
+	height: auto;
+    margin-right: 20px; /* Avstand mellom bilde og tekst */;
+    display: block;
+}
+
+.life-row {
+    align-self: center;
+	display: flex;       /* Gjør containeren fleksibel for horisontal plassering */
+  	align-items: center; /* Vertikalt sentrer bildet og teksten */
+    width: 355px;
+    margin: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: white;
+}
+
+.life-row:hover {
+    transform: scale(1.05);
+}
+
+.article-inside-figure {
+	margin-left:none;  /* Legger litt avstand mellom bildet og teksten */
+	max-width: 80%;     /* Sørger for at teksten ikke blir for bred */
+  }
+  
+  .article-inside-figure h3,h4 {
+	margin: none;
+	color: #333;
+  }
+  
+  .article-inside-figure p {
+	margin: none;
+	color: #555;
+	font-size: 0.9em;
+  }
+
+.study-info h2,p,button {
+    align-items: center;
+}
+
+.footer {
+    background: #2D3142;
+    padding-top: 50px;
+    width: 100%;
+    margin: 0;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content {
+    width: 33.3%;
+}
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footer-content p {
+    width: 190px;
+    margin: auto;
+    padding: 7px;
+}
+
+.footer-content ul {
+    text-align: center;
+}
+
+.footer-list {
+    padding: 0;
+}
+
+.footer-list li {
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+}
+
+.footer-list li::before {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #EF8354;
+    transition-duration: 0.5s;
+}
+
+.footer-list li:hover::before {
+    width: 70px;
+}
+
+.footer-social-icons {
+    text-align: center;
+    padding: 0;
+}
+
+.footer-social-icons li {
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+
+
+.footer-link:hover {
+    color: #EF8354;
+}
+
+.footer-social-icons i:hover {
+    color: #EF8354;
+}
+
+.footer-bottom-bar {
+    background: #EF8354;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.footer-bottom-bar p {
+    font-weight: bold;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+}
+
+
