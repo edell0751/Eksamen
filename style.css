@@ -307,7 +307,7 @@ span {
 }
 
 .a-list li a span {
-    text-decoration: underline grey;
+    text-decoration: underline #EF8354;
 	padding-bottom: 0.0625rem;
 }
 
@@ -316,7 +316,7 @@ span {
 	margin-top: 20px;
 }
 .para-3-links{
-    text-decoration: underline grey;
+    text-decoration: underline #EF8354;
     font-weight: 700;
 }
 
@@ -385,7 +385,7 @@ span {
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: grey;
+    background-color: #EF8354;
     bottom: 0;
     left: 0;
 }
@@ -578,6 +578,79 @@ h2{
 .study-stories-button:hover {
     background-color: #955c22; /* Mørkere farge ved hover */
 }
+
+.button-link{
+    display: block; /* Gjør knappen til et blokkelement */
+    margin: 10px auto; /* Sentrerer knappen horisontalt */
+    border: none;
+    background: none;
+    text-align: center; /* Sentrerer knappeteksten */
+    cursor: pointer;
+}
+.button-link > p{
+    color: black;
+    text-decoration:underline darkorange;
+    font-size: 1.2em;
+    font-weight: bold;
+	transition: transform 0.2s;
+    align-items: center;
+}
+.button-link>p:hover{
+    text-decoration: underline black;
+    font-weight: bolder;
+	transform: scale(1.05);
+}
+.hr-short{
+	width: 40%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+}
+
+.medium-image{
+	width: 130px;
+	height: auto;
+    margin-right: 20px; /* Avstand mellom bilde og tekst */;
+    display: block;
+}
+
+.life-row {
+    align-self: center;
+	display: flex;       /* Gjør containeren fleksibel for horisontal plassering */
+  	align-items: center; /* Vertikalt sentrer bildet og teksten */
+    width: 355px;
+    margin: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: white;
+}
+
+.life-row:hover {
+    transform: scale(1.05);
+}
+
+.article-inside-figure {
+	margin-left:none;  /* Legger litt avstand mellom bildet og teksten */
+	max-width: 80%;     /* Sørger for at teksten ikke blir for bred */
+  }
+  
+  .article-inside-figure h3,h4 {
+	margin: none;
+	color: #333;
+  }
+  
+  .article-inside-figure p {
+	margin: none;
+	color: #555;
+	font-size: 0.9em;
+  }
+
+.study-info h2,p,button {
+    align-items: center;
+}
+
 .footer {
     background: #2D3142;
     padding-top: 50px;
