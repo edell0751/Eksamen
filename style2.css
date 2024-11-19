@@ -220,18 +220,33 @@ nav a:hover::after {
 
 /* Slideshow container */
 .f1-drivers {
-    max-width: 1000px;
+    width: 100%;
     position: relative;
     margin: auto;
-    background-color: #585858;
+    background-color: black;
     color: white;
-    height: 70vh;
+    height: 80vh; /* Set a smaller height */
+    padding: 20px;
   }
   
-  /* Hide the images by default */
+  /* Hide the images by50%default */
   .mySlides {
-    display: none;
+    height: 100%; /* Ensure slides take full height of the section */
+    width: 100%; /* Allow flexibility for responsive design */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center images inside slides */
+    overflow: hidden; 
+
   }
+
+  .mySlides img {
+    width: 100%; /* Maintain aspect ratio */
+    height: 100%; /* Constrain the height to fit the section */
+    object-fit: contain; /* Ensure the image scales properly within the section */
+    display: block; /* Prevent inline spacing issues */
+    margin: 0 auto; /* Center the images horizontally */
+}
   
   /* Next & previous buttons */
   .prev, .next {
@@ -306,6 +321,41 @@ nav a:hover::after {
     from {opacity: .4}
     to {opacity: 1}
   }
+ .f1Drivers-hover{
+    position: absolute; /* Position the overlay over the image */
+    top: 0;
+    left: 0;
+    width: 100%; /* Match the image's width */
+    height: 100%; /* Match the image's height */
+    backdrop-filter: blur(15px);
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; 
+
+}
+.mySlides:hover .f1Drivers-hover {
+    opacity: 1; /* Show the overlay on hover */
+}
+
+h6 {
+    display: flex;
+    justify-content: center;
+    padding-top: 125px;
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 0;
+}
+.f1Drivers-text {
+    font-size: 1rem; /* Adjust the font size for compactness */
+    line-height: 1.2; /* Reduce line spacing */
+    margin: 0; /* Remove external margins */
+    padding: 20px 200px;
+    text-align: center; /* Optional: Center the text if needed */
+    color: white; /* Ensure text remains readable */
+}
+
+
+
+
 
 
 
