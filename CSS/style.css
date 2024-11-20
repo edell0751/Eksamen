@@ -119,7 +119,7 @@ body{
 	padding: 2% 15%;
 	background: #2D3142;
 }
-.header-bottom ion-icon {
+ion-icon {
 	color: white;}
 
 .logo-header img {  /*justerer størrelse på logo i header*/
