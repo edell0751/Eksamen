@@ -12,7 +12,7 @@ a {
 	text-decoration: none;
 }
 h1{
-    font-size: 48px;
+    font-size: 3rem;
 }
 
 body{
@@ -21,7 +21,7 @@ body{
 
 
 .header-up {
-    display: flex;
+    display: flex; /*Learnt to use display flex from https://www.w3schools.com/css/css3_flexbox.asp*/
     justify-content: space-between;
     padding: 2% 15%;
 
@@ -183,11 +183,11 @@ ion-icon {
 
 .main-content {
 	margin-top: 5%;
-
+    width: 100%;
 }
 
 .title {
-	font-size: 48px;
+	font-size: 3rem;
 
 }
 
@@ -210,11 +210,13 @@ li {
 }
 .metadata-list {
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: wrap; /*Learnt to use flex-wrap from https://www.w3schools.com/css/css3_flexbox_container.asp*/
 	margin-top: 50px;
+    margin-right: auto;
 	position: relative;
 	border-radius: 1px solid #e2e2e2;
 	flex: 100%;
+    width: 100%;
 }
 .metadata-list-item {
 	border-top: 0.0575rem solid black;
@@ -486,7 +488,7 @@ span {
 .show-more-btn:hover {
     background-color: #955c22;;
 }
-@media (max-width:800px){
+@media /*learnt to use @media from https://www.w3schools.com/css/css3_mediaqueries.asp */(max-width:800px){
 	.main-content{
 		text-align: center;
 	}
@@ -631,11 +633,11 @@ h2{
     cursor: pointer;
     background-color: white;
 }
-@media (max-width:800px){
+@media (max-width:900px){
     .life-row{
         flex-direction: column;
         flex:100%;
-        width: calc(100%);
+        width: calc(80%);
     }
 }
 
