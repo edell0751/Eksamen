@@ -617,7 +617,7 @@ h2{
 .life-row {
     align-self: center;
 	display: flex;       /* Gjør containeren fleksibel for horisontal plassering */
-  	align-items: center; /* Vertikalt sentrer bildet og teksten */
+  	align-items: center; /* Vertikalt sentrerer bildet og teksten */
     width: 355px;
     margin: auto;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
