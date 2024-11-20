@@ -120,7 +120,8 @@ body{
 	background: #2D3142;
 }
 ion-icon {
-	color: white;}
+	color: white;
+}
 
 .logo-header img {  /*justerer størrelse på logo i header*/
     width: 90px;
