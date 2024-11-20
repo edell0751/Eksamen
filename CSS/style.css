@@ -368,11 +368,12 @@ span {
 }
 
 .semester {
-    margin-bottom: 30px;
+    margin-bottom: 10%;
 }
 
 .subjects {
     display: flex;
+    flex-wrap: wrap;
     margin: 5px;
 }
 
