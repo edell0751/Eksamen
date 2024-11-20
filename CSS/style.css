@@ -77,8 +77,8 @@ body{
 .header-bottom-link span {
     font-size: 1.125rem;
     font-weight: 700;
-    color: black;
-    border-bottom: 2px solid black;
+    color: white;
+    border-bottom: 2px solid white;
 }
 
 .menu-icon {
@@ -112,16 +112,19 @@ body{
 .header-menu p {
 	font-weight: 700;
 	text-transform: uppercase;
+	color: white;
 }
 
 .header-bottom {
 	padding: 2% 15%;
 	background: #2D3142;
 }
+.header-bottom ion-icon {
+	color: white;}
 
 .logo-header img {  /*justerer størrelse på logo i header*/
     width: 90px;
-	height: 60px;
+	height: auto;
 }
 
 .menu-icon {
@@ -617,7 +620,7 @@ h2{
 .life-row {
     align-self: center;
 	display: flex;       /* Gjør containeren fleksibel for horisontal plassering */
-  	align-items: center; /* Vertikalt sentrer bildet og teksten */
+  	align-items: center; /* Vertikalt sentrerer bildet og teksten */
     width: 355px;
     margin: auto;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -668,6 +671,8 @@ h2{
 
 .footer-content {
     width: 33.3%;
+	color: white;
+
 }
 
 h3 {
@@ -684,10 +689,12 @@ h3 {
 
 .footer-content ul {
     text-align: center;
+	
 }
 
 .footer-list {
     padding: 0;
+	
 }
 
 .footer-list li {
@@ -696,6 +703,7 @@ h3 {
     list-style-type: none;
     padding: 7px;
     position: relative;
+	
 }
 
 .footer-list li::before {
@@ -725,6 +733,9 @@ h3 {
     padding: 5px;
 }
 
+.footer-link {
+	color: white;
+}
 
 .footer-link:hover {
     color: #EF8354;
