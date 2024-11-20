@@ -122,6 +122,11 @@ body{
 ion-icon {
 	color: white;
 }
+.menu-icon.hamburger,
+.menu-icon.close {
+    font-size: 20px; /* For hamburger-knappen og lukk-knappen*/ /* KOMMENTAR SOM IKKE SKAL MED I ENDELIG KODE
+    SER UT TIL AT DEN HAR EN MAKS-GRENSE PÅ 20PX TF?*/
+  }
 
 .logo-header img {  /*justerer størrelse på logo i header*/
     width: 90px;
