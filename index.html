@@ -10,6 +10,7 @@
 
 </head>
 <body>
+	<header>
         <div class="header-up">
             <div class="header-left">
                 <a href="index.html" class="logo-header">
@@ -21,11 +22,7 @@
             <div class="header-right">
                 <div class="header-search">
                     <p class="search-text">Søk</p>
-                    <img
-                        src="https://www.oslomet.no/build/images/search-icon.svg"
-                        alt="search-icon"
-                        class="search-icon"
-                    />
+                    <ion-icon name="search-outline" class="search-icon"></ion-icon>
                     <input type="text" class="search-input" placeholder="Søk..." />
                 </div>
                 <div class="header-menu">
@@ -196,10 +193,8 @@
 						<ul class="a-list">
 							<li>15. april: ordinær søknadsfrist</li>
 							<li>1. mars: frist for enkelte søkere</li>
-                            <a href="#" class="para-3-links">
-                                <li class="">Mer om å søke på bachelor</li>
-                                </a>
 						</ul>
+						<a href="#" class="para-3-links">Mer om å søke på bachelor</a>
                         
 					</div>
 				</div>
@@ -639,38 +634,47 @@
 				<div class="accordion-block">
 					<h2 class="accordion-h2">
 						<button class="accordion-btn"></button>
-						<span>Videre studiemuligheter ved OsloMet</span>
+						<span>Hva koster det?</span>
 					</h2>
 					<div class="accordion-text">
 						<p class="accordion-text-para">
-							For å søke på dette programmet må du ha
+							<a href="#" class="para-3-links">Du betaler en semesteravgift hver semester ( student.oslomet.no )</a>
 						</p>
+						<br>
 
-						<ul class="a-list">
-							<li>
-								<a href="#" class="">
-									<span>generell studiekompetanse (samordnaopptak.no)</span>
-								</a>
-								eller&nbsp;
-								<a href="#" class="">
-									<span>oppfylle kravene til realkompetanse</span>
-								</a>
-							</li>
-							<li>matematikk R1 og&nbsp;R2</li>
-							<li>fysikk 1</li>
-						</ul>
-						<p class="accordion-text-para para-2">
-							Det kan være konkurranse om plassene. Ved forrige opptak kom alle
-							kvalifiserte søkere inn.
-						</p>
-						<p class="accordion-text-para para-3">
-							Hvis du mangler generell studiekompetanse eller enkelte fag fra
-							videregående skole, kan du søke på dette studiet om du har bestått
-							ettårig forkurs for ingeniørutdanning.
+						<p class="accordion-text-para 2">
+							<a href="#" class="para-3-links">Er du internasjonal student fra utenfor EU og EØS, 
+								må du betale studieavgift (student.oslomet.no). </a>
+								Det er mulig å søke om unntak for betaling av denne studieavgiften.
+							
 						</p>
 					</div>
 				</div>
 			</article>
+			<article class="article-faq">
+				<div class="accordion-block">
+					<h2 class="accordion-h2">
+						<button class="accordion-btn"></button>
+						<span>Videre studiemuligheter ved OsloMet</span>
+					</h2>
+					<div class="accordion-text">
+						<p class="accordion-text-para">
+							Vi har et Masterprogram man kan søke seg inn på etter fullført bachelor.
+						</p>
+
+						<ul class="a-list">
+							<li>
+								<a href="https://www.oslomet.no/studier/tkd/anvendt-data-informasjonsteknologi">
+									<span>Anvendt data-  og informasjonsteknologi (ACIT)</span>
+								</a>
+						</ul>
+						<p class="accordion-text-para para-2">
+							Det kan være konkurranse om plassene.
+						</p>
+					</div>
+				</div>
+			</article>
+
         
             <section class="Study-Stories-section">
                 <h2>Studenthistorier</h2>
@@ -723,143 +727,144 @@
               </section>
           
 
-            <section class="life">
-                <h2 class="Andrefag-h2">Du er også kanskje interresert i disse? </h2>
-                <div class="life-container">
+            <section class="Otherstudies">
+                <h2>Du er også kanskje interresert i disse? </h2>
+                <div class="OtherStudies-container">
                   <!-- three figure elements with same class containing a photo with a belonging title and caption 
                     wrapped in an a-element to make it interactive -->
-                  <!-- First life article -->
-                  <figure class="life-column">
+                  <!-- First OtherStudies article -->
+                  <figure class="OtherStudies-column">
                     <a href="https://www.oslomet.no/studier/tkd/anvendt-datateknologi"
                       target="_blank">
                      <!-- Image wrapped in a picture element for flexibility-->
                       <picture>
                         <!-- Photo: Oslomet Anvendt Datateknologi front page , from https://www.oslomet.no/studier/tkd/anvendt-datateknologi  -->
-                        <img src="./bilder/anvendt.jpg" alt="Anvendt datateknologi" class="life-img">
+                        <img src="./bilder/anvendt.jpg" alt="Anvendt datateknologi" class="OtherStudies-img">
                       </picture>
-                      <figcaption class="life-cards">
+                      <figcaption class="OtherStudies-cards">
                         <!-- Caption defined in different p-classes to style them differently with ease -->
-                        <p class="life-title">Anvendt Datateknologi</p>
-                        <p class="life-faculty">Varighet: 3 år <br> Studiested: Oslo <br> Omfang: Heltid</p>
-                        <p class="life-explanation">Lær hvordan du utvikler nye løsninger for samspill mellom mennesker og datateknologi.
+                        <p class="OtherStudies-title">Anvendt Datateknologi</p>
+                        <p class="OtherStudies-faculty">Varighet: 3 år <br> Studiested: Oslo <br> Omfang: Heltid</p>
+                        <p class="OtherStudies-explanation">Lær hvordan du utvikler nye løsninger for samspill mellom mennesker og datateknologi.
                             Fra andre studieår kan du spesialisere deg i enda mer programmering eller brukerforståelse.</p>
                       </figcaption>
                     </a>
                   </figure>
 
-                  <!-- Second life article -->
-                  <figure class="life-column">
+                  <!-- Second OtherStudies article -->
+                  <figure class="OtherStudies-column">
                     <a href="https://www.oslomet.no/studier/tkd/bioteknologi-kjemiingenior" target="_blank">
                       <picture>
                         <!-- Photo: Benjamin, A. Ward. , from https://www.oslomet.no/studier/tkd/bioteknologi-kjemiingenior  -->
-                        <img src="./bilder/bioteknologi.jpg" alt="Bioteknologi og kjemi ingeniør " class="life-img">
+                        <img src="./bilder/bioteknologi.jpg" alt="Bioteknologi og kjemi ingeniør " class="OtherStudies-img">
                       </picture>
-                      <figcaption class="life-cards">
-                        <p class="life-title">Bioteknologi og kjemi ingeniør</p>
-                        <p class="life-faculty">Varighet: 3 år <br> Studiested: Oslo <br> Omfang: Heltid</p>
-                        <p class="life-explanation">Som bioteknologi- og kjemiingeniør kan du blant annet jobbe med medisinsk forskning,
+                      <figcaption class="OtherStudies-cards">
+                        <p class="OtherStudies-title">Bioteknologi og kjemi ingeniør</p>
+                        <p class="OtherStudies-faculty">Varighet: 3 år <br> Studiested: Oslo <br> Omfang: Heltid</p>
+                        <p class="OtherStudies-explanation">Som bioteknologi- og kjemiingeniør kan du blant annet jobbe med medisinsk forskning,
                              bioanalytiske og rettsmedisinske analyser, legemidler, matvarer, vannrensing og biodrivstoff.</p>
                       </figcaption>
                     </a>
                   </figure>
-                  <!-- third life article -->
-                  <figure class="life-column">
+                  <!-- third OtherStudies article -->
+                  <figure class="OtherStudies-column">
                     <a href="https://www.oslomet.no/studier/tkd/byggingenior" target="_blank">
                       <picture>
                         <!-- Photo: Oslomet Byggingeniør front page , from https://www.oslomet.no/studier/tkd/byggingenior -->
-                        <img src="./bilder/byggingeniør.jpg" alt="byggingeniør" class="life-img">
+                        <img src="./bilder/byggingeniør.jpg" alt="byggingeniør" class="OtherStudies-img">
                       </picture>
-                      <figcaption class="life-cards">
-                        <p class="life-title">Byggingeniør</p>
-                        <p class="life-faculty">Varighet: 3 år <br> Studiested: Oslo <br> Omfang: Heltid</p>
-                        <p class="life-explanation">Som byggingeniør er du ettertraktet i arbeidsmarkedet og 
+                      <figcaption class="OtherStudies-cards">
+                        <p class="OtherStudies-title">Byggingeniør</p>
+                        <p class="OtherStudies-faculty">Varighet: 3 år <br> Studiested: Oslo <br> Omfang: Heltid</p>
+                        <p class="OtherStudies-explanation">Som byggingeniør er du ettertraktet i arbeidsmarkedet og 
                             jobber med moderne teknologi innen konstruksjons<wbr>teknikk, vann og miljø, infrastruktur og byutvikling.</p>
                       </figcaption>
                     </a>
                   </figure>
 
-                  <!-- fourth life article, which is also hidden under the "vis flere" button -->
+                  <!-- fourth OtherStudies article, which is also hidden under the "vis flere" button -->
                   
-                  <figure class="life-column hidden">
+                  <figure class="OtherStudies-column hidden">
                     <a href="https://www.oslomet.no/studier/tkd/dataingenior" target="_blank">
                       <picture>
                         <!-- Photo: Benjamin, A. Ward. , from https://www.oslomet.no/studier/tkd/dataingenior  -->
-                        <img src="./bilder/dataingeniør.jpg" alt="dataingeniør" class="life-img">
+                        <img src="./Bilder/dataingeniør.jpg" alt="dataingeniør" class="OtherStudies-img">
                       </picture>
-                      <figcaption class="life-cards">
-                        <p class="life-title">Dataingeniør</p>
-                        <p class="life-faculty">Varighet: 3 år <br> Studiested: Oslo <br> Omfang: Heltid</p>
-                        <p class="life-explanation">Ønsker du å utvikle dataprogrammer for web, mobil, eller datasentre?
-                             Er du glad i naturfag og matematikk? Dataingeniørstudiet kan være veien til målet</p>
+                      <figcaption class="OtherStudies-cards">
+                        <p class="OtherStudies-title">Dataingeniør</p>
+                        <p class="OtherStudies-faculty">Varighet: 3 år <br> Studiested: Oslo <br> Omfang: Heltid</p>
+                        <p class="OtherStudies-explanation">Ønsker du å utvikle dataprogrammer for <br> web, mobil, eller datasentre?<br>
+                        	 Er du glad i naturfag og matematikk? Dataingeniørstudiet kan være veien til det store målet.
+							 etter en kul og morsom studietid vil arbeidslivet by på masse kult!</p>
                       </figcaption>
                     </a>
                   </figure>
 
-                    <!-- fifth life article, which is also hidden under the "vis flere" button -->
+                    <!-- fifth OtherStudies article, which is also hidden under the "vis flere" button -->
 
-                  <figure class="life-column hidden">
+                  <figure class="OtherStudies-column hidden">
                     <a href="https://www.oslomet.no/studier/tkd/elektronikkingenior" target="_blank">
                       <picture>
                         <!-- Photo: Benjamin, A. Ward. , from https://www.oslomet.no/studier/tkd/elektronikkingenior  -->
-                        <img src="./bilder/elektronikk.jpg" alt="elektronikkingeniør" class="life-img">
+                        <img src="./bilder/elektronikk.jpg" alt="elektronikkingeniør" class="OtherStudies-img">
                       </picture>
-                      <figcaption class="life-cards">
-                        <p class="life-title">Elektronikkingeniør</p>
-                        <p class="life-faculty">Varighet: 3 år <br> Studiested: Oslo <br> Omfang: Heltid</p>
-                        <p class="life-explanation">Som elektronikkingeniør vil du forbedre eksisterende teknologi og utvikle nye teknologiske løsninger.
+                      <figcaption class="OtherStudies-cards">
+                        <p class="OtherStudies-title">Elektronikkingeniør</p>
+                        <p class="OtherStudies-faculty">Varighet: 3 år <br> Studiested: Oslo <br> Omfang: Heltid</p>
+                        <p class="OtherStudies-explanation">Som elektronikkingeniør vil du forbedre eksisterende teknologi og utvikle nye teknologiske løsninger.
                              I vårt høyteknologiske samfunn er ingeniøren viktigere enn noensinne. Vi bruker mer og mer elektronikk. 
                              Snart er 200 milliarder enheter koblet til internett.</p>
                       </figcaption>
                     </a>
                   </figure>
 
-                  <!-- sixth life article, which is also hidden under the "vis flere" button -->
+                  <!-- sixth OtherStudies article, which is also hidden under the "vis flere" button -->
 
-                  <figure class="life-column hidden">
+                  <figure class="OtherStudies-column hidden">
                     <a href="https://www.oslomet.no/studier/tkd/informasjonsteknologi" target="_blank">
                       <picture>
                         <!-- Photo: Benjamin, A. Ward. , from https://www.oslomet.no/studier/tkd/informasjonsteknologi   -->
-                        <img src="./bilder/informasjonsteknologi.jpg" alt="informasjonsteknologi" class="life-img">
+                        <img src="./bilder/informasjonsteknologi.jpg" alt="informasjonsteknologi" class="OtherStudies-img">
                       </picture>
-                      <figcaption class="life-cards">
-                        <p class="life-title">Informasjonsteknologi</p>
-                        <p class="life-faculty">Varighet: 3 år <br> Studiested: Oslo <br> Omfang: Heltid</p>
-                        <p class="life-explanation">Ta OsloMets mest omfattende utdanning innen programmering og app-utvikling.
+                      <figcaption class="OtherStudies-cards">
+                        <p class="OtherStudies-title">Informasjonsteknologi</p>
+                        <p class="OtherStudies-faculty">Varighet: 3 år <br> Studiested: Oslo <br> Omfang: Heltid</p>
+                        <p class="OtherStudies-explanation">Ta OsloMets mest omfattende utdanning innen programmering og app-utvikling.
                              Du får mulighet til å studere bredt og dypt innen design, utvikling, administrasjon og vedlikehold av datasystem.</p>
                       </figcaption>
                     </a>
                   </figure>
 
-                  <!-- seventh life article, which is also hidden under the "vis flere" button -->
+                  <!-- seventh OtherStudies article, which is also hidden under the "vis flere" button -->
 
-                  <figure class="life-column hidden">
+                  <figure class="OtherStudies-column hidden">
                     <a href="https://www.oslomet.no/studier/tkd/maskiningenior" target="_blank">
                       <picture>
                         <!-- Photo: Benjamin, A. Ward. , from https://www.oslomet.no/studier/tkd/maskiningenior  -->
-                        <img src="./bilder/Maskiningeniør.jpg" alt="Maskiningeniør" class="life-img">
+                        <img src="./bilder/Maskiningeniør.jpg" alt="Maskiningeniør" class="OtherStudies-img">
                       </picture>
-                      <figcaption class="life-cards">
-                        <p class="life-title">Maskiningeniør</p>
-                        <p class="life-faculty">Varighet: 3 år <br> Studiested: Oslo <br> Omfang: Heltid</p>
-                        <p class="life-explanation">En maskiningeniør blir ofte omtalt som den klassiske ingeniøren.
+                      <figcaption class="OtherStudies-cards">
+                        <p class="OtherStudies-title">Maskiningeniør</p>
+                        <p class="OtherStudies-faculty">Varighet: 3 år <br> Studiested: Oslo <br> Omfang: Heltid</p>
+                        <p class="OtherStudies-explanation">En maskiningeniør blir ofte omtalt som den klassiske ingeniøren.
                              Studiet er for deg som vil bruke kunnskaper innen matematikk, fysikk og materialvitenskap
                               til å designe og utvikle teknisk utstyr og anlegg som kan brukes på alle samfunnsområder.</p>
                       </figcaption>
                     </a>
                   </figure>
 
-                  <!-- eighth life article, which is also hidden under the "vis flere" button -->
+                  <!-- eighth OtherStudies article, which is also hidden under the "vis flere" button -->
 
-                  <figure class="life-column hidden">
+                  <figure class="OtherStudies-column hidden">
                     <a href="https://www.oslomet.no/studier/tkd/tre-termin-ingenior" target="_blank">
                       <picture>
                         <!-- Photo: Benjamin, A. Ward. , from https://www.oslomet.no/studier/tkd/tre-termin-ingenior  -->
-                        <img src="./bilder/tre-terminsordning.jpg" alt="Tre-terminsordning til ingeniørutdanning" class="life-img">
+                        <img src="./bilder/tre-terminsordning.jpg" alt="Tre-terminsordning til ingeniørutdanning" class="OtherStudies-img">
                       </picture>
-                      <figcaption class="life-cards">
-                        <p class="life-title">Tre-terminsordning til ingeniørutdanning</p>
-                        <p class="life-faculty">Varighet: 3 år <br> Studiested: Oslo <br> Omfang: Heltid</p>
-                        <p class="life-explanation">Tre-terminsordningen er et tilbud til deg som har generell studiekompetanse, 
+                      <figcaption class="OtherStudies-cards">
+                        <p class="OtherStudies-title">Tre-terminsordning til ingeniørutdanning</p>
+                        <p class="OtherStudies-faculty">Varighet: 3 år <br> Studiested: Oslo <br> Omfang: Heltid</p>
+                        <p class="OtherStudies-explanation">Tre-terminsordningen er et tilbud til deg som har generell studiekompetanse, 
                             men som mangler nødvendig matematikk og/eller fysikk for opptak til ingeniørutdanning.</p>
                       </figcaption>
                     </a>
@@ -878,20 +883,21 @@
 			<button type = "button" class="button-link"><p>Har du spørsmål om utdanningen, 
 			kontakt oss gjennom vårt kontaktskjema.</p></button>
 			<br>
-			<figure class="life-row">
-				<picture>
-				<img src="./bilder/KristofferHellton.jpg" alt="KristofferHellton" class="medium-image">
-				</picture>
-				<figcaption>
-					<article class="article-inside-figure">
-						<h3>Faglig leder</h3>
-						<h4>Kristoffer Herland Hellton</h4>
-						<p>førstemansuensis</p>
-						<p>+47 672 37 240 | kristoffer.hellton@oslomet.no</p>
-					</article>
-
-				</figcaption>
-			</figure>
+            <a href="https://www.oslomet.no/om/ansatt/krhel3944/" target="_blank">
+			    <figure class="OtherStudies-row">
+				    <picture>
+				        <img src="./bilder/KristofferHellton.jpg" alt="KristofferHellton" class="medium-image">
+				    </picture>
+				    <figcaption>
+					    <article class="article-inside-figure">
+                            <h3>Faglig leder</h3>
+                            <h4>Kristoffer Herland Hellton</h4>
+                            <p>førstemansuensis</p>
+                            <p>+47 672 37 240 | kristoffer.hellton@oslomet.no</p>
+					    </article>
+				    </figcaption>
+			    </figure>
+            </a>
 		</section>
 
 
@@ -943,7 +949,7 @@
 
     <script>
         function toggleExtraCards() {
-        const extraCards = document.querySelectorAll('.life-container .life-column:nth-child(n+4)');
+        const extraCards = document.querySelectorAll('.OtherStudies-container .OtherStudies-column:nth-child(n+4)');
         const btn = document.querySelector('.show-more-btn');
 
         // Sjekk om de ekstra kortene er synlige eller skjulte

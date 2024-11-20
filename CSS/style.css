@@ -123,7 +123,13 @@ body{
 	background: #2D3142;
 }
 ion-icon {
-	color: white;}
+	color: white;
+}
+.menu-icon.hamburger,
+.menu-icon.close {
+    font-size: 20px; /* For hamburger-knappen og lukk-knappen*/ /* KOMMENTAR SOM IKKE SKAL MED I ENDELIG KODE
+    SER UT TIL AT DEN HAR EN MAKS-GRENSE PÅ 20PX TF?*/
+  }
 
 .logo-header img {  /*justerer størrelse på logo i header*/
     width: 90px;
@@ -170,6 +176,7 @@ ion-icon {
 	margin: 20px 0;
 	font-size: 2rem;
 	font-weight: 700;
+    color: white;
 	
 }
 /*  it sections the class to keep its almost centered position*/
@@ -195,10 +202,10 @@ ion-icon {
 }
 
 .title .headline-para {
-	font-size: 24px;
+	font-size: 1.5rem;
 	font-weight: 400;
-	line-height: 36px;
-	margin-top: 5px;
+	line-height: 2.25rem;
+	margin-top: 0.313rem;
 }
 
 
@@ -241,7 +248,7 @@ span {
 }
 
 .article-wrapper-heading {
-	width: 100%;
+	width: 62%;
 	margin: 0 auto;
 	border-bottom: 1px solid #e2e2e2;
 	padding-bottom: 40px;
@@ -366,12 +373,9 @@ span {
 
 .subjects {
     display: flex;
-	flex:50%;
-	flex-wrap: wrap;
-	flex-direction: row;
-    justify-content: 30%;
     margin: 5px;
 }
+
 .subject {
     text-align: left;
 	width: 25%;
@@ -417,53 +421,50 @@ span {
 	font-size: 18px;
 	color: #222222;
 }
-.life-container {
-    display: flex;
-	flex-wrap: wrap;
+.OtherStudies-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2%;
-    width: 90%;
+    width: 100%;
     padding: 2% 0;
     margin: 0 auto;
 }
 
-.life-column {
+.OtherStudies-column {
     width: 100%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s;
     overflow: hidden;
     cursor: pointer;
-	min-width: 200px;
-	flex: 1 1 calc(33.333% - 2%);
-	margin-bottom: 2%;
 }
 
-.life-column:hover {
+.OtherStudies-column:hover {
     transform: scale(1.05);
 }
 
-.life-img {
+.OtherStudies-img {
     width: 100%;
     height: auto;
 }
 
-.life-cards {
+.OtherStudies-cards {
     padding: 1rem;
     background-color: #fff;
 }
 
-.life-title {
+.OtherStudies-title {
     font-weight: bold;
     font-size: 1.2rem;
 }
 
-.life-faculty {
+.OtherStudies-faculty {
     font-weight: 600;
     color: #5b7588;
     margin-bottom: 0.5em;
     font-size: 1rem;
 }
 
-.life-explanation {
+.OtherStudies-explanation {
     font-size: 1rem;
     line-height: 1.2;
     color: #333;
@@ -622,7 +623,7 @@ h2{
     display: block;
 }
 
-.life-row {
+.OtherStudies-row {
     align-self: center;
 	display: flex;       /* Gjør containeren fleksibel for horisontal plassering */
     flex-direction: row;
@@ -643,7 +644,7 @@ h2{
     }
 }
 
-.life-row:hover {
+.OtherStudies-row:hover {
     transform: scale(1.05);
 }
 
@@ -690,15 +691,15 @@ h2{
 }
 
 h3 {
-    font-size: 28px;
-    margin-bottom: 15px;
+    font-size: 1.75rem;
+    margin-bottom: 0.9rem;
     text-align: center;
 }
 
 .footer-content p {
-    width: 190px;
+    width: 11.8rem;
     margin: auto;
-    padding: 7px;
+    padding: 0.438rem;
 }
 
 .footer-content ul {
@@ -744,7 +745,7 @@ h3 {
 .footer-social-icons li {
     display: inline-block;
     text-align: center;
-    padding: 5px;
+    padding: 0.313rem;
 }
 
 .footer-link {
@@ -770,8 +771,8 @@ h3 {
 .footer-bottom-bar p {
     font-weight: bold;
     margin: 0;
-    font-size: 16px;
-    padding: 7px;
+    font-size: 1rem;
+    padding: 0.45rem;
 }
 
 
