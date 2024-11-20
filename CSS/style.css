@@ -502,7 +502,7 @@ span {
 
 .Study-Stories-section {
     width: 100vw; /* Full skjermbredde */
-    margin: 2%; /* adding a little margin */
+    margin-bottom: 2%; /* adding a little margin */
     padding: 8% 0; /* Tilpass padding etter behov */
     background-color: #f6f6f3;
     position: relative; /* Sørg for at den bryter ut fra omkringliggende rammen */
