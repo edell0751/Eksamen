@@ -621,6 +621,7 @@ h2{
 .life-row {
     align-self: center;
 	display: flex;       /* Gjør containeren fleksibel for horisontal plassering */
+    flex-direction: row;
   	align-items: center; /* Vertikalt sentrerer bildet og teksten */
     width: 355px;
     margin: auto;
@@ -630,6 +631,13 @@ h2{
     cursor: pointer;
     background-color: white;
 }
+@media (max-width:800px){
+    .life-row{
+        flex-direction: column;
+        flex:100%;
+        width: calc(100%);
+    }
+}
 
 .life-row:hover {
     transform: scale(1.05);
@@ -638,6 +646,7 @@ h2{
 .article-inside-figure {
 	margin-left:none;  /* Legger litt avstand mellom bildet og teksten */
 	max-width: 80%;     /* Sørger for at teksten ikke blir for bred */
+    flex-wrap: wrap;
   }
   
   .article-inside-figure h3,h4 {
