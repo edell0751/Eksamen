@@ -704,13 +704,14 @@ h2{
         flex-direction: column;
         flex: 100%;
         justify-content: center;
+        align-items: center;
     }
 }
 
 .footer-content {
     width: 33.3%;
 	color: white;
-
+    text-align: center;
 }
 
 
