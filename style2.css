@@ -388,18 +388,40 @@ h6 {
     display: flex;
 } 
 
-.teams-button {
+#toggleBtn {
     display: flex;
-    text-decoration: none;
-    background-color: #181818;
-    color: rgb(255, 255, 255);
-    width: 10rem;
-    height: 3rem;
     justify-content: center;
     align-items: center;
+    background-color: #181818; /* Match the box color */
+    color: white;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+    cursor: pointer; /* Make it look clickable */
+    border: 1px solid white; /* Optional border for visibility */
 }
 
+#toggleBtn:hover {
+    background-color: white;
+    color: black;
+}
 
+@media (max-width: 1024px) {
+    .f1box-container {
+        flex: 1 1 calc(50% - 40px); /* 2 boxes per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .f1box-container {
+        flex: 1 1 calc(100% - 40px); /* 1 box per row */
+    }
+}
 
 
 
