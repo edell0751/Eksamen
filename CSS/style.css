@@ -1,9 +1,12 @@
 html{
     scroll-behavior: smooth;
 }
+html,body,footer{
+    overflow-x: hidden;/**/
+}
 * {
-	margin: 0;
-	padding: 0;
+	margin: 0%;
+	padding: 0%;
 	box-sizing: border-box;
 	font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
 }
@@ -33,7 +36,7 @@ h4{
 
 
 .header-up {
-    display: flex;
+    display: flex; /*Learnt to use display flex from https://www.w3schools.com/css/css3_flexbox.asp*/
     justify-content: space-between;
     padding: 2% 15%;
 
@@ -132,7 +135,13 @@ h4{
 	background: #2D3142;
 }
 ion-icon {
-	color: white;}
+	color: white;
+}
+.menu-icon.hamburger,
+.menu-icon.close {
+    font-size: 20px; /* For hamburger-knappen og lukk-knappen*/ /* KOMMENTAR SOM IKKE SKAL MED I ENDELIG KODE
+    SER UT TIL AT DEN HAR EN MAKS-GRENSE PÅ 20PX TF?*/
+  }
 
 .logo-header img {  /*justerer størrelse på logo i header*/
     width: 90px;
@@ -193,16 +202,16 @@ ion-icon {
 
 .video-player {
 	width: 100%;
-	height: 550px;
-    border:8px solid #EF8354;
+	height: 40vw;
 }
 
 .main-content {
-	margin-top: 40px;
+	margin-top: 5%;
+    width: 100%;
 }
 
 .title {
-	font-size: 48rem;
+	font-size: 3rem;
 
 }
 
@@ -212,9 +221,7 @@ ion-icon {
 	line-height: 2.25rem;
 	margin-top: 0.313rem;
 }
-body.no-scroll {
-	overflow: hidden;
-}
+
 
 a {
 	text-decoration: none;
@@ -225,20 +232,24 @@ li {
 }
 .metadata-list {
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: wrap; /*Learnt to use flex-wrap from https://www.w3schools.com/css/css3_flexbox_container.asp*/
 	margin-top: 50px;
+    margin-right: auto;
 	position: relative;
 	border-radius: 1px solid #e2e2e2;
+	flex: 100%;
+    width: 100%;
 }
 .metadata-list-item {
 	border-top: 0.0575rem solid black;
-	flex: 1 0 calc(25% - 1.25rem);
+	flex: 1 0 calc(43%);
 	font-size: 1.125rem;
 	line-height: 1.5;
 	margin-right: 1.25rem;
 	padding-bottom: 1.75rem;
 	padding-top: 1.25rem;
 	width: calc(25% - 1.25rem);
+    text-align: center;
 }
 span {
 	font-size: 1.25rem;
@@ -246,7 +257,7 @@ span {
 }
 .article-faq {
 	margin-bottom: 20px;
-	padding: 30px 100px;
+	padding: 30px 10%;
 	border-bottom: 1px solid #e2e2e2;
 }
 
@@ -371,11 +382,15 @@ span {
 }
 
 .semester {
-    margin-bottom: 30px;
+    margin-bottom: 10%;
 }
 
 .subjects {
     display: flex;
+    flex:50%;
+	flex-wrap: wrap;
+	flex-direction: row;
+    justify-content: 30%;
     margin: 5px;
 }
 
@@ -424,11 +439,12 @@ span {
 	font-size: 18px;
 	color: #222222;
 }
+
 .OtherStudies-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 2%;
-    width: 100%;
+    width: 90%;
     padding: 2% 0;
     margin: 0 auto;
 }
@@ -439,6 +455,9 @@ span {
     transition: transform 0.2s;
     overflow: hidden;
     cursor: pointer;
+    min-width: 200px;
+	flex: 1 1 calc(33.333% - 2%);
+	margin-bottom: 2%;
 }
 
 .OtherStudies-column:hover {
@@ -494,10 +513,21 @@ span {
 .show-more-btn:hover {
     background-color: #955c22;;
 }
+@media /*learnt to use @media from https://www.w3schools.com/css/css3_mediaqueries.asp */(max-width:800px){
+	.main-content{
+		text-align: center;
+	}
+}
+@media (max-width:800px){
+    .subjects{
+        flex-direction: column;
+        flex:100%;
+    }
+}
 
 .Study-Stories-section {
     width: 100vw; /* Full skjermbredde */
-    margin: 2%; /* adding a little margin */
+    margin-bottom: 2%; /* adding a little margin */
     padding: 8% 0; /* Tilpass padding etter behov */
     background-color: #f6f6f3;
     position: relative; /* Sørg for at den bryter ut fra omkringliggende rammen */
@@ -618,6 +648,7 @@ h2{
 .OtherStudies-row {
     align-self: center;
 	display: flex;       /* Gjør containeren fleksibel for horisontal plassering */
+    flex-direction: row;
   	align-items: center; /* Vertikalt sentrerer bildet og teksten */
     width: 355px;
     margin: auto;
@@ -635,6 +666,7 @@ h2{
 .article-inside-figure {
 	margin-left:none;  /* Legger litt avstand mellom bildet og teksten */
 	max-width: 80%;     /* Sørger for at teksten ikke blir for bred */
+    flex-wrap: wrap;
   }
   
   .article-inside-figure h3,h4 {
@@ -664,7 +696,15 @@ h2{
     max-width: 1140px;
     margin: auto;
     display: flex;
+    flex-direction: row;
     justify-content: center;
+}
+@media (max-width:700px){
+    .footer-container,.footer-content{
+        flex-direction: column;
+        flex: 100%;
+        justify-content: center;
+    }
 }
 
 .footer-content {
