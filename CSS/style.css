@@ -28,7 +28,7 @@ body{
 h2{
     margin-top: 0.313rem;
     margin-bottom: 0.625rem;
-    font-size: 2.25rem;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -805,10 +805,45 @@ span {
     padding: 0.45rem;
 }
 /* CSS FOR ACCESSIBILITY*/
+.accessibility-main {
+    display: block;
+    max-width: 100%;
+    text-align: center;
+}
+
 .accessibility-p-main {
-    margin-bottom: 2.5rem;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    margin: 0 auto 2rem auto;
+    width: 65%;
+}
+
+.accessibility-figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.accessibility-img {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.accessibility-pic-1 {
+    width: 60%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.accessibility-img figcaption {
+    text-align: center;
+    font-size: smaller;
+    padding-bottom: 2rem;
+    width: 75%;
+}
+
+
+
 
