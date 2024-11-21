@@ -610,23 +610,17 @@ h2{
     background-color: #955c22; /* Mørkere farge ved hover */
 }
 
-.button-link{
-    display: block; /* Gjør knappen til et blokkelement */
-    margin: 10px auto; /* Sentrerer knappen horisontalt */
-    border: none;
-    background: none;
+.bold-underline-link{
+    display: block; /* Gjør linken til et blokkelement */
+    /* Sentrerer knappen horisontalt */
     text-align: center; /* Sentrerer knappeteksten */
-    cursor: pointer;
-}
-.button-link > p{
-    color: black;
     text-decoration:underline darkorange;
     font-size: 1.2em;
     font-weight: bold;
 	transition: transform 0.2s;
-    align-items: center;
 }
-.button-link>p:hover{
+
+.bold-underline-link:hover{
     text-decoration: underline black;
     font-weight: bolder;
 	transform: scale(1.05);
@@ -650,7 +644,7 @@ h2{
 	display: flex;       /* Gjør containeren fleksibel for horisontal plassering */
     flex-direction: row;
   	align-items: center; /* Vertikalt sentrerer bildet og teksten */
-    width: 355px;
+    width: 22.08rem;
     margin: auto;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s;
