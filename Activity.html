@@ -56,6 +56,22 @@
             slides[slideIndex - 1].style.display = "block"; // Ensure the current slide is visible
             dots[slideIndex - 1].className += " active"; // Highlight the corresponding dot
         }
+
+        function toggleTeams() {
+            var moreTeams = document.getElementById("moreTeams");
+            var toggleBtn = document.getElementById("toggleBtn");
+        
+            // Toggle visibility and button text
+            if (moreTeams.style.display === "none" || moreTeams.style.display === "") {
+                moreTeams.style.display = "flex"; // Ensure consistent layout
+                toggleBtn.innerHTML = "<p>Show Less Teams</p>";
+            } else {
+                moreTeams.style.display = "none";
+                toggleBtn.innerHTML = "<p>Show More Teams</p>";
+            }
+        }
+        
+        
                 
     </script>
     <title>Document</title>
@@ -176,6 +192,68 @@
                 </div>
             </div>
         </div>  
+        <div id="moreTeams" style="display: none;">
+            <div class="f1box-container">
+                <img src="./Images/redbull.png" alt="#">
+                <div class="f1-content">
+                    <h3>Red Bull Racing</h3>
+                    <ul>
+                        <li><strong>Constructor Titles:</strong> 6</li>
+                        <li><strong>Drivers' Championships:</strong> 7</li>
+                        <li><strong>Race Wins:</strong> 121+</li>
+                        <li><strong>Pole Positions:</strong> 281+</li>
+                    </ul>
+                    <a href="https://www.redbullracing.com/int-en" class="f1Teams-button">More info</a>
+                </div>
+            </div>
+        
+            <div class="f1box-container">
+                <img src="./Images/ferrari.png" alt="#">
+                <div class="f1-content">
+                    <h3>Ferrari</h3>
+                    <ul>
+                        <li><strong>Constructor Titles:</strong> 16</li>
+                        <li><strong>Drivers' Championships:</strong> 15</li>
+                        <li><strong>Race Wins:</strong> 240+</li>
+                        <li><strong>Pole Positions:</strong> 220+</li>
+                    </ul>
+                    <a href="https://www.ferrari.com/en-EN/formula1" class="f1Teams-button">More info</a>
+                </div>
+            </div>
+        
+            <div class="f1box-container">
+                <img src="./Images/ferrari.png" alt="#">
+                <div class="f1-content">
+                    <h3>Ferrari</h3>
+                    <ul>
+                        <li><strong>Constructor Titles:</strong> 16</li>
+                        <li><strong>Drivers' Championships:</strong> 15</li>
+                        <li><strong>Race Wins:</strong> 240+</li>
+                        <li><strong>Pole Positions:</strong> 220+</li>
+                    </ul>
+                    <a href="https://www.ferrari.com/en-EN/formula1" class="f1Teams-button">More info</a>
+                </div>
+            </div>
+        
+            <div class="f1box-container">
+                <img src="./Images/ferrari.png" alt="#">
+                <div class="f1-content">
+                    <h3>Ferrari</h3>
+                    <ul>
+                        <li><strong>Constructor Titles:</strong> 16</li>
+                        <li><strong>Drivers' Championships:</strong> 15</li>
+                        <li><strong>Race Wins:</strong> 240+</li>
+                        <li><strong>Pole Positions:</strong> 220+</li>
+                    </ul>
+                    <a href="https://www.ferrari.com/en-EN/formula1" class="f1Teams-button">More info</a>
+                </div>
+            </div>
+        </div>
+        
+
+        <button onclick="toggleTeams()" id="toggleBtn" class="teams-button">
+            <p>Show More Teams</p>
+        </button>
         
                
     </section>
