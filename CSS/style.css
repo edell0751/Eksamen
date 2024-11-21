@@ -18,6 +18,18 @@ h1{
 body{
     background-color: #F1E4E8;
 }
+h3 {
+    font-size: 1.75rem;
+    margin-bottom: 0.9rem;
+    text-align: center;
+}
+h4{
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+    text-align: center;
+    font-weight: bold;
+
+}
 
 
 .header-up {
@@ -167,6 +179,9 @@ ion-icon {
 	text-align: left;
 	margin-left: 15%;
 }
+
+/* making the menu items list under eachother and making them  white for good visibility.
+ also giving them reasonable sizes in rem, not px for better accessability*/
 
 .menu-items a {
 	display: block;
@@ -506,8 +521,8 @@ span {
     gap: 5%;
 }
 h2{
-    margin-bottom: 10px;
-    font-size: 36px;
+    margin-bottom: 0.625rem;
+    font-size: 2.25rem;
     text-align: center;
 }
 
@@ -664,11 +679,7 @@ h2{
 
 }
 
-h3 {
-    font-size: 1.75rem;
-    margin-bottom: 0.9rem;
-    text-align: center;
-}
+
 
 .footer-content p {
     width: 11.8rem;
