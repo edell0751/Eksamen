@@ -26,6 +26,7 @@ body{
     background-color: #F1E4E8;
 }
 h2{
+    margin-top: 0.313rem;
     margin-bottom: 0.625rem;
     font-size: 2.25rem;
     text-align: center;
@@ -802,5 +803,11 @@ span {
     font-size: 1rem;
     padding: 0.45rem;
 }
-
+/* CSS FOR ACCESSIBILITY*/
+.accessibility-p-main {
+    margin-bottom: 2.5rem;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
