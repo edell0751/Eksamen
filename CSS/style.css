@@ -644,13 +644,6 @@ h2{
     cursor: pointer;
     background-color: white;
 }
-@media (max-width:900px){
-    .life-row{
-        flex-direction: column;
-        flex:100%;
-        width: calc(80%);
-    }
-}
 
 .OtherStudies-row:hover {
     transform: scale(1.05);
