@@ -1,7 +1,7 @@
 html{
     scroll-behavior: smooth;
 }
-html,body{
+html,body,footer{
     overflow-x: hidden;/**/
 }
 * {
@@ -373,7 +373,10 @@ span {
 
 .subjects {
     display: flex;
-    flex-wrap: wrap;
+    flex:50%;
+	flex-wrap: wrap;
+	flex-direction: row;
+    justify-content: 30%;
     margin: 5px;
 }
 
@@ -422,11 +425,12 @@ span {
 	font-size: 18px;
 	color: #222222;
 }
+
 .OtherStudies-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 2%;
-    width: 100%;
+    width: 90%;
     padding: 2% 0;
     margin: 0 auto;
 }
@@ -437,6 +441,9 @@ span {
     transition: transform 0.2s;
     overflow: hidden;
     cursor: pointer;
+    min-width: 200px;
+	flex: 1 1 calc(33.333% - 2%);
+	margin-bottom: 2%;
 }
 
 .OtherStudies-column:hover {
