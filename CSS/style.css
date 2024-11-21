@@ -768,18 +768,21 @@ h2{
     display: inline-block;
     text-align: center;
     padding: 0.313rem;
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.footer-social-icons li:hover {
+    transform: scale(1.2); /* Gjør ikonene større ved hover */
+    color:#EF8354 ;
 }
 
 .footer-link {
-	color: white;
+    color: white;
+    transition: color 0.3s ease;
 }
 
 .footer-link:hover {
-    color: #EF8354;
-}
-
-.footer-social-icons i:hover {
-    color: #EF8354;
+    color: #EF8354; /* Endrer fargen til oransje */
 }
 
 .footer-bottom-bar {
