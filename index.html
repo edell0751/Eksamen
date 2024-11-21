@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	
 
 </head>
 <body>
@@ -33,12 +34,12 @@
             </div>
         </div>
         <nav class="header-bottom">
-            <a href="#" class="header-bottom-link">
+            <a href="https://www.oslomet.no/studier/studieoversikt" class="header-bottom-link">
                 <ion-icon name="chevron-forward-outline"></ion-icon>
                 <span id="top-header">Studieoversikt</span>
             </a>
 
-            <a href="#" class="header-bottom-link">
+            <a href="Activity.html" class="header-bottom-link">
                 <span id="top-header"> Activity page</span>
             </a>
 
@@ -46,7 +47,7 @@
                 <span id="top-header"> Accessibility</span>
             </a>
 
-			<a href="#" class="header-bottom-link">
+			<a href="Gitpage.html" class="header-bottom-link">
                 <span id="top-header"> GitPage</span>
             </a>
 
@@ -56,24 +57,29 @@
 
 		<div class="menu" id="fullMenu">
 			<div class="menu-items">
-				<a href="#">Studier</a>
-				<a href="#">Forskningen vår</a>
-				<a href="#">Samarbeid</a>
-				<a href="#">Universitetsbiblioteket</a>
-				<a href="#">Om OsloMet</a>
-				<a href="#">Kontakt</a>
-				<a href="#">For studenter</a>
+				<a href="https://www.oslomet.no/studier">Studier</a>
+				<a href="https://www.oslomet.no/forskning">Forskningen vår</a>
+				<a href="https://www.oslomet.no/om/samarbeid">Samarbeid</a>
+				<a href="https://www.oslomet.no/ub">Universitetsbiblioteket</a>
+				<a href="https://www.oslomet.no/om">Om OsloMet</a>
+				<a href="https://www.oslomet.no/om/kontakt">Kontakt</a>
+				<a href="https://www.oslomet.no/om/for-studenter">For studenter</a>
 			</div>
 		</div>
 
         <section class="article-wrapper">
+			<!-- henter inn video fra youtube og tilegner den egenskaper som fullscreen osv
+			 fikser også på title, som gjør det tilgjengelig for screen readers 
+			 og få meg seg hva iframe inneholder.-->
 			<iframe
 				class="video-player"
 				src="https://www.youtube.com/embed/Ip6CrMXGrkE?si=ogHdIJ88Ny_nK7ub"
 				frameborder="0"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 				allowfullscreen
+				title="YouTube-video om bachelorstudier i matematisk modellering"
 			></iframe>
+
 
 
             <div class="main-content">
@@ -148,7 +154,7 @@
 			<article class="article-faq">
 				<div class="accordion-block">
 					<h2 class="accordion-h2">
-						<button class="accordion-btn"></button>
+						<button class="accordion-btn" aria-label="Åpne seksjonen for opptakskrav"></button>
 						<span>Opptakskrav og poeng</span>
 					</h2>
 					<div class="accordion-text">
@@ -185,7 +191,7 @@
 			<article class="article-faq">
 				<div class="accordion-block">
 					<h2 class="accordion-h2">
-						<button class="accordion-btn"></button>
+						<button class="accordion-btn" aria-label="Åpne seksjonen for slik søker du"></button>
 						<span>Slik søker du</span>
 					</h2>
 					<div class="accordion-text">
@@ -205,7 +211,7 @@
 			<article class="article-faq">
 				<div class="accordion-block">
 					<h2 class="accordion-h2">
-						<button class="accordion-btn"></button>
+						<button class="accordion-btn" aria-label="Åpne seksjonen for hva lærer du?"></button>
 						<span>Hva lærer du?</span>
 					</h2>
 					<div class="accordion-text">
@@ -249,7 +255,7 @@
 			<article class="article-faq">
 				<div class="accordion-block">
 					<h2 class="accordion-h2">
-						<button class="accordion-btn"></button>
+						<button class="accordion-btn" aria-label="Åpne seksjonen for studiets oppbygning"></button>
 						<span>Studiets oppbygging</span>
 					</h2>
 					<div class="accordion-text no-padding">
@@ -588,7 +594,7 @@
 			<article class="article-faq">
 				<div class="accordion-block">
 					<h2 class="accordion-h2">
-						<button class="accordion-btn"></button>
+						<button class="accordion-btn" aria-label="Åpne seksjonen for Hvordan foregår undervisningen?"></button>
 						<span>Hvordan foregår undervisningen?</span>
 					</h2>
 					<div class="accordion-text">
@@ -618,7 +624,7 @@
 			<article class="article-faq">
 				<div class="accordion-block">
 					<h2 class="accordion-h2">
-						<button class="accordion-btn"></button>
+						<button class="accordion-btn" aria-label="Åpne seksjonen for Hva kan du jobbe som?"></button>
 						<span>Hva kan du jobbe som?</span>
 					</h2>
 					<div class="accordion-text">
@@ -642,7 +648,7 @@
 			<article class="article-faq">
 				<div class="accordion-block">
 					<h2 class="accordion-h2">
-						<button class="accordion-btn"></button>
+						<button class="accordion-btn" aria-label="Åpne seksjonen for Utveksling"></button>
 						<span>Utveksling</span>
 					</h2>
 					<div class="accordion-text">
@@ -655,7 +661,7 @@
 			<article class="article-faq">
 				<div class="accordion-block">
 					<h2 class="accordion-h2">
-						<button class="accordion-btn"></button>
+						<button class="accordion-btn" aria-label="Åpne seksjonen for Hva koster det?"></button>
 						<span>Hva koster det?</span>
 					</h2>
 					<div class="accordion-text">
@@ -676,7 +682,7 @@
 			<article class="article-faq">
 				<div class="accordion-block">
 					<h2 class="accordion-h2">
-						<button class="accordion-btn"></button>
+						<button class="accordion-btn" aria-label="Åpne seksjonen for Videre studiemuligheter ved OsloMet"></button>
 						<span>Videre studiemuligheter ved OsloMet</span>
 					</h2>
 					<div class="accordion-text">
@@ -956,10 +962,10 @@
             <div class="footer-content">
                 <h3 class="title-footer">Sosiale Medier</h3>
                 <ul class="footer-social-icons">
-                    <li><a class="footer-link" href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
-                    <li><a class="footer-link" href=""><ion-icon name="logo-facebook"></ion-icon></i></a></li>
-                    <li><a class="footer-link" href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
-                    <li><a class="footer-link" href=""><ion-icon name="logo-linkedin"></ion-icon></i></a></li>
+                    <li><a class="footer-link" href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li><a class="footer-link" href="#"><ion-icon name="logo-facebook"></ion-icon></i></a></li>
+                    <li><a class="footer-link" href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a class="footer-link" href="#"><ion-icon name="logo-linkedin"></ion-icon></i></a></li>
                 </ul>
 				<br>
             </div> 
@@ -969,80 +975,76 @@
             <p>&copy; OSLOMET</p>
         </div>
     </footer>
-    
+	<script>
+		function toggleExtraCards() {
+    const extraCards = document.querySelectorAll('.OtherStudies-container .OtherStudies-column:nth-child(n+4)');
+    const btn = document.querySelector('.show-more-btn');
 
+    // Sjekk om de ekstra kortene er synlige eller skjulte
+    let areHidden = extraCards[0].style.display === 'none' || extraCards[0].style.display === '';
 
-    <script>
-        function toggleExtraCards() {
-        const extraCards = document.querySelectorAll('.OtherStudies-container .OtherStudies-column:nth-child(n+4)');
-        const btn = document.querySelector('.show-more-btn');
+    // Veksle synlighet
+    extraCards.forEach(card => {
+        card.style.display = areHidden ? 'block' : 'none';
+    });
 
-        // Sjekk om de ekstra kortene er synlige eller skjulte
-        let areHidden = extraCards[0].style.display === 'none' || extraCards[0].style.display === '';
+    // Oppdater knappetekst basert på synligheten
+    btn.innerText = areHidden ? 'Vis færre' : 'Vis flere';
+}
 
-        // Veksle synlighet
-        extraCards.forEach(card => {
-            card.style.display = areHidden ? 'block' : 'none';
+    // Setting up javascript for menu and search-bar
+        const hamburger = document.querySelector('.hamburger');
+        const closeIcon = document.querySelector('.close');
+        const fullMenu = document.getElementById('fullMenu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.style.display = 'none';
+            closeIcon.style.display = 'block';
+            fullMenu.classList.add('show');
         });
 
-        // Oppdater knappetekst basert på synligheten
-        btn.innerText = areHidden ? 'Vis færre' : 'Vis flere';
-    }
+        closeIcon.addEventListener('click', () => {
+            hamburger.style.display = 'block';
+            closeIcon.style.display = 'none';
+            fullMenu.classList.remove('show');
+        });
 
-        // Setting up javascript for menu and search-bar
-            const hamburger = document.querySelector('.hamburger');
-			const closeIcon = document.querySelector('.close');
-			const fullMenu = document.getElementById('fullMenu');
+        const searchIcon = document.querySelector('.header-search .search-icon');
+        const headerSearch = document.querySelector('.header-search');
+        const searchInput = document.querySelector(
+            '.header-search .search-input'
+        );
 
-			hamburger.addEventListener('click', () => {
-				hamburger.style.display = 'none';
-				closeIcon.style.display = 'block';
-				fullMenu.classList.add('show');
-			});
+        // Show search input when search-icon is clicked
+        searchIcon.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent this click from triggering the page click event
+            headerSearch.classList.toggle('active');
+        });
 
-			closeIcon.addEventListener('click', () => {
-				hamburger.style.display = 'block';
-				closeIcon.style.display = 'none';
-				fullMenu.classList.remove('show');
-			});
+        // Hide search input when clicking anywhere else on the page
+        document.addEventListener('click', (e) => {
+            // Check if the click is outside the header-search container
+            if (!headerSearch.contains(e.target)) {
+                headerSearch.classList.remove('active');
+            }
+        });
 
-            const searchIcon = document.querySelector('.header-search .search-icon');
-			const headerSearch = document.querySelector('.header-search');
-			const searchInput = document.querySelector(
-				'.header-search .search-input'
-			);
+    document.querySelectorAll('.accordion-h2').forEach((accordion) => {
+            accordion.addEventListener('click', function () {
+                // Toggle the active class on the accordion header
+                this.classList.toggle('active');
 
-			// Show search input when search-icon is clicked
-			searchIcon.addEventListener('click', (e) => {
-				e.stopPropagation(); // Prevent this click from triggering the page click event
-				headerSearch.classList.toggle('active');
-			});
-
-			// Hide search input when clicking anywhere else on the page
-			document.addEventListener('click', (e) => {
-				// Check if the click is outside the header-search container
-				if (!headerSearch.contains(e.target)) {
-					headerSearch.classList.remove('active');
-				}
-			});
-
-        document.querySelectorAll('.accordion-h2').forEach((accordion) => {
-				accordion.addEventListener('click', function () {
-					// Toggle the active class on the accordion header
-					this.classList.toggle('active');
-
-					// Select the corresponding accordion-text and toggle its display
-					let accordionText = this.nextElementSibling;
-					if (accordionText.style.display === 'block') {
-						accordionText.style.display = 'none';
-					} else {
-						accordionText.style.display = 'block';
-					}
-				});
-			});
-    </script>
-            
-            
+                // Select the corresponding accordion-text and toggle its display
+                let accordionText = this.nextElementSibling;
+                if (accordionText.style.display === 'block') {
+                    accordionText.style.display = 'none';
+                } else {
+                    accordionText.style.display = 'block';
+                }
+            });
+        });
+	</script>
+    
 </body>
 </html>
 

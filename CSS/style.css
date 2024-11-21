@@ -1,8 +1,11 @@
 html{
     scroll-behavior: smooth;
 }
+
+/*lar ikke oss scrolle i x-retning. låser den slik at den kun kan scrolles nedover,
+og holder contentet innenfor rammene.*/
 html,body,footer{
-    overflow-x: hidden;/**/
+    overflow-x: hidden;
 }
 * {
 	margin: 0%;
