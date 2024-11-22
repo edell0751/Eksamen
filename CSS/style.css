@@ -316,6 +316,12 @@ span {
 	position: relative;
 	transition: height 0.3s cubic-bezier(0.24, 0.59, 0.38, 0.94);
 }
+@media(max-width:850px){
+    .accordion-text{
+        padding-left: 25px;
+        padding-right: 0px;
+    }
+}
 
 .accordion-text-para {
 	font-family: inherit;
