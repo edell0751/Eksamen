@@ -69,7 +69,9 @@
     </section>
     <main class="accessibility-main-section">
         <h1 class="different-pages-title">Accessibility</h1>
+
         <h2>Starting phase</h2>
+
         <p class="accessibility-p-main">Once we started planning our project and the layout of our web-page,
              we addressed the key factors our design would rely on. Our aim was to create a website that fullfills criterias such as clearity, accessibility and creativity.
              We also wanted to make our website more modern, with other color-paletts as we found the regular yellow, black and white palette boring.
@@ -86,7 +88,7 @@
               we did this through color coding our website to make it more accessible.
             for instance we used a pink/orange color on our action buttons, and around elements which would react once you pressed them.
              this makes the user aware that once you press the button, link or video, the page would react. we also got recomended by our mentors to break up the structure
-              a bit to make it look more modern and interesting, and thats why we chose to design the "studiehistorier" this way. we wanted break the flow and remove the centering for this section to add a little of creativity aswell.
+              a bit to make it look more modern and interesting, and thats why we chose to design the "studiehistorier" section the way we did. we wanted to break the flow and remove the centering for this section to add a little of creativity aswell.
                we chose to use a bit of javascript in our coding to make the site smoother
               once you press buttons. we did also run our site through Axe Accessibility Linter Tool´s extension on VS code, and Wave WEB Accessibility Evaluation Tool as a web extension.
             the results gave us feedback on what we needed to change to make the site more accessible and user-friendly.</p>
@@ -94,16 +96,21 @@
             <div class="accessibility-img">
                 <figure class="accessibility-figure">
                     <img class="accessibility-pic-1" src="Bilder/accessibilityVScode.jpg" alt="Accessibility-test from Wave accessibility tool extension in VScode.">
-                <figcaption>Screenshot from VScode, after running Axe accessibility Linter tool extenison. Photo: private</figcaption>
+                <figcaption>Screenshot from VScode, after running Axe accessibility Linter tool extenison. showing errors of buttons. Photo: private</figcaption>
             </figure>
 
             <figure class="accessibility-figure">
-                    <img class="accessibility-pic-1" src="Bilder/accessibilityVScode.jpg" alt="Accessibility-test from Wave accessibility tool extension in VScode.">
-                <figcaption>Screenshot from VScode, after running Axe accessibility Linter tool extenison. Photo: private</figcaption>
+                    <img class="accessibility-pic-1" src="Bilder/Accessibility-web.jpg" alt="Accessibility-test from Wave accessibility tool extension in VScode.">
+                <figcaption>Screenshot from Chrome, after running Wave web accessibility tool extenison. showing errors of buttons and links. Photo: private</figcaption>
             </figure>
             </div>
 
             <h2>Response to feedback</h2>
+
+            <p class="accessibility-p-main"> After reviewing the results of the tes, we got some errors and warnings that we looked deeper into.
+                one of the common issues was that we needed to add an aria-label to our buttons in the accordion section. 
+                the reason these were hit by errors are because the buttons dont have a description of their function in the text of the button. therefor we added aria-labels, to describe what the buttons do.
+                aria-labels are important for these situations and are important for accessibility as screen readers read the aria-labels for information. </p>
 
 
     </main>
