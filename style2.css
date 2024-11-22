@@ -334,7 +334,7 @@ header .activity-nav {
 .mySlides:hover .f1Drivers-hover {
     opacity: 1; /* Show the overlay on hover */
 }
-h3 {
+.f1-drivers h3 {
     font-size: 30px; /* Adjust font size if needed */
     font-weight: 300;
     color: white;
