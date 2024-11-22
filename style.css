@@ -373,6 +373,11 @@ span {
 	border-top: 1px solid black;
     padding-top: 15px;
 }
+@media(max-width:850px){
+    .subject{
+        width: 100%;
+    }
+}
 
 .study-plan a {
     text-decoration: none;
