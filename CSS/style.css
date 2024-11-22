@@ -846,5 +846,54 @@ span {
     width: 75%;
 }
 
+<<<<<<< HEAD
 /* CSS FOR ACTIVITY*/
+=======
+/* Css for GitPage */
+
+.GitPage-main {
+    display: block;
+    max-width: 100%;
+    text-align: center;
+}
+
+.GitPage-p-main {
+    margin: 0 auto 2rem auto;
+    width: 65%;
+}
+
+.GitPage-figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.GitPage-img {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.GitPage-pic-1 {
+    width: 60%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.GitPage-img figcaption {
+    text-align: center;
+    font-size: smaller;
+    padding-bottom: 2rem;
+    width: 75%;
+}
+
+
+
+
+
+
+>>>>>>> main
 
