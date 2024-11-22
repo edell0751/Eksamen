@@ -65,3 +65,67 @@
                 }
             });
         });
+
+        /* JS FOR ACTIVITY*/
+        document.addEventListener("DOMContentLoaded", function() {
+            const header = document.querySelector("header");
+            const sectionOne = document.querySelector(".activity-section");
+
+            const sectionOneOptions = { rootMargin: "-100px 0px 0px 0px"};
+
+            const sectionOneObserver = new IntersectionObserver(function(entries, sectionOneObserver) {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) {
+                        header.classList.add("nav-scrolled");
+                    } else {
+                        header.classList.remove("nav-scrolled");
+                    }
+                });
+            }, sectionOneOptions);  
+
+            sectionOneObserver.observe(sectionOne);
+        });
+        let slideIndex = 1;
+
+        // Ensure the first slide is visible on page load
+        document.addEventListener("DOMContentLoaded", function() {
+            showSlides(slideIndex);
+        });
+        
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1; }
+            if (n < 1) { slideIndex = slides.length; }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block"; // Ensure the current slide is visible
+            dots[slideIndex - 1].className += " active"; // Highlight the corresponding dot
+        }
+
+        function toggleTeams() {
+            var moreTeams = document.getElementById("moreTeams");
+            var toggleBtn = document.getElementById("toggleBtn");
+        
+            // Toggle visibility and button text
+            if (moreTeams.style.display === "none" || moreTeams.style.display === "") {
+                moreTeams.style.display = "flex"; // Ensure consistent layout
+                toggleBtn.innerHTML = "<p>Show Less Teams</p>";
+            } else {
+                moreTeams.style.display = "none";
+                toggleBtn.innerHTML = "<p>Show More Teams</p>";
+            }
+        }
