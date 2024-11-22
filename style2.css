@@ -4,7 +4,7 @@
 html {
     scroll-behavior: smooth;
 }
-* {
+*{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -17,7 +17,7 @@ body {
 }
 
 /* Fixed header styling */
-header {
+.header-activity {
     position: fixed;
     top: 0;
     left: 0;
@@ -27,12 +27,12 @@ header {
     background: transparent;
 }
 
-header nav {
+header .activity-nav {
     margin-top: 20px;
     padding-left: 200px;
 }
 
-figure  {
+figure {
     float: left;
     margin-left: 10px;
     
@@ -43,7 +43,7 @@ figure img {
 }
 
 
-nav a {
+.activity-nav a {
     color: white;
     text-decoration: none;
     font-weight: 600;
@@ -51,10 +51,10 @@ nav a {
     transition: 0.3s ease-in-out;;
 }
 
-nav a:hover {
+.activity-nav a:hover {
     color: aqua;
 }
-nav li{
+.activity-nav li{
     list-style: none;
     display: inline-block;
     margin: 15px 20px;
@@ -165,8 +165,6 @@ nav a:hover::after {
     height: 100%;
 }
 .f1box-container{
-    width: 325px;
-    height: 390px;
     background-color: #181818;
     border-radius: 8px;
     border-right: solid 2px;
@@ -187,7 +185,7 @@ nav a:hover::after {
 .f1-content {
     padding: 16px;
 }
-.f1box-container h3 {
+.f1box-container h2 {
     font-size: 1.5rem;
     color: white;
 }
@@ -250,6 +248,8 @@ nav a:hover::after {
     border-image: linear-gradient(to bottom, aqua, aqua, rgb(49, 133, 133)) 1 100%;
     display: block; /* Ensure the image behaves like a block element */
     margin: 0 auto; /* Center the image within the container */
+    object-fit: cover;
+    
 }
   
   /* Next & previous buttons */
@@ -336,7 +336,7 @@ nav a:hover::after {
 .mySlides:hover .f1Drivers-hover {
     opacity: 1; /* Show the overlay on hover */
 }
-h5 {
+h3 {
     font-size: 30px; /* Adjust font size if needed */
     font-weight: 300;
     color: white;
@@ -351,7 +351,7 @@ h5 {
     justify-content: center;
 }
 
-h5:after, h5:before {
+.f1-drivers h3:after, h3:before {
     content: " ";
     display: block;
     border-bottom: 1px solid white;
@@ -362,7 +362,7 @@ h5:after, h5:before {
 
 /* Source:  https://codepen.io/vedadesigns/pen/GPxYZg */
 
-h6 {
+.f1-drivers h4 {
     display: flex;
     justify-content: center;
     padding-top: 125px;
@@ -409,18 +409,6 @@ h6 {
 #toggleBtn:hover {
     background-color: white;
     color: black;
-}
-
-@media (max-width: 1024px) {
-    .f1box-container {
-        flex: 1 1 calc(50% - 40px); /* 2 boxes per row */
-    }
-}
-
-@media (max-width: 768px) {
-    .f1box-container {
-        flex: 1 1 calc(100% - 40px); /* 1 box per row */
-    }
 }
 
 
