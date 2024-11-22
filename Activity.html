@@ -7,80 +7,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style2.css"> 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const header = document.querySelector("header");
-            const sectionOne = document.querySelector(".activity-section");
-
-            const sectionOneOptions = { rootMargin: "-100px 0px 0px 0px"};
-
-            const sectionOneObserver = new IntersectionObserver(function(entries, sectionOneObserver) {
-                entries.forEach(entry => {
-                    if (!entry.isIntersecting) {
-                        header.classList.add("nav-scrolled");
-                    } else {
-                        header.classList.remove("nav-scrolled");
-                    }
-                });
-            }, sectionOneOptions);  
-
-            sectionOneObserver.observe(sectionOne);
-        });
-        let slideIndex = 1;
-
-        // Ensure the first slide is visible on page load
-        document.addEventListener("DOMContentLoaded", function() {
-            showSlides(slideIndex);
-        });
-        
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-        
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-        
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1; }
-            if (n < 1) { slideIndex = slides.length; }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block"; // Ensure the current slide is visible
-            dots[slideIndex - 1].className += " active"; // Highlight the corresponding dot
-        }
-
-        function toggleTeams() {
-            var moreTeams = document.getElementById("moreTeams");
-            var toggleBtn = document.getElementById("toggleBtn");
-        
-            // Toggle visibility and button text
-            if (moreTeams.style.display === "none" || moreTeams.style.display === "") {
-                moreTeams.style.display = "flex"; // Ensure consistent layout
-                toggleBtn.innerHTML = "<p>Show Less Teams</p>";
-            } else {
-                moreTeams.style.display = "none";
-                toggleBtn.innerHTML = "<p>Show More Teams</p>";
-            }
-        }
-        
-        
-                
-    </script>
+    <script src="./activityj.js"></script>
     <title>Document</title>
 
 </head>
 <body>
 <header class="header-activity">
     <figure class="f1-logo">
-        <img src="./Images/f1logo.png" alt="">
+        <img src="../Images/f1logo.png" alt="">
     </figure>
     <nav class="activity-nav">
        <ul>
@@ -106,7 +40,7 @@
 
     <section id="f1-teams" class="f1-teams">
        <div class="f1box-container">
-            <img src="./Images/mercedes.png" alt="#">
+            <img src="../Images/mercedes.png" alt="#">
             <div class="f1-content">
                 <h2>Mercedes F1 Team</h2>
                 <ul>
@@ -122,7 +56,7 @@
             </div>
         </div>  
         <div class="f1box-container">
-            <img src="./Images/mclaren.png" alt="#">
+            <img src="../Images/mclaren.png" alt="#">
             <div class="f1-content">
                 <h2>Mclaren</h2>
                 <ul>
@@ -137,7 +71,7 @@
             </div>
         </div>  
         <div class="f1box-container">
-            <img src="./Images/redbull.png" alt="#">
+            <img src="../Images/redbull.png" alt="#">
             <div class="f1-content">
                 <h2 class="h2-activity">Red Bull</h2>
                 <ul>
@@ -151,7 +85,7 @@
             </div>
         </div>  
         <div class="f1box-container">
-            <img src="./Images/Alpine.png" alt="#">
+            <img src="../Images/Alpine.png" alt="#">
             <div class="f1-content">
                 <h2>Mercedes</h2>
                 <ul>
@@ -165,7 +99,7 @@
             </div>
         </div>  
         <div class="f1box-container">
-            <img src="./Images/Aston.png" alt="#">
+            <img src="../Images/Aston.png" alt="#">
             <div class="f1-content">
                 <h2>Mercedes</h2>
                 <ul>
@@ -179,7 +113,7 @@
             </div>
         </div>  
         <div class="f1box-container">
-            <img src="./Images/Ferrari.png" alt="#">
+            <img src="../Images/Ferrari.png" alt="#">
             <div class="f1-content">
                 <h2>Mercedes</h2>
                 <ul>
@@ -194,7 +128,7 @@
         </div>  
         <div id="moreTeams" style="display: none;">
             <div class="f1box-container">
-                <img src="./Images/redbull.png" alt="#">
+                <img src="../Images/redbull.png" alt="#">
                 <div class="f1-content">
                     <h2>Red Bull Racing</h2>
                     <ul>
@@ -208,7 +142,7 @@
             </div>
         
             <div class="f1box-container">
-                <img src="./Images/ferrari.png" alt="#">
+                <img src="../Images/ferrari.png" alt="#">
                 <div class="f1-content">
                     <h2>Ferrari</h2>
                     <ul>
@@ -222,7 +156,7 @@
             </div>
         
             <div class="f1box-container">
-                <img src="./Images/ferrari.png" alt="#">
+                <img src="../Images/ferrari.png" alt="#">
                 <div class="f1-content">
                     <h2>Ferrari</h2>
                     <ul>
@@ -236,7 +170,7 @@
             </div>
         
             <div class="f1box-container">
-                <img src="./Images/ferrari.png" alt="#">
+                <img src="../Images/ferrari.png" alt="#">
                 <div class="f1-content">
                     <h2>Ferrari</h2>
                     <ul>
@@ -259,9 +193,9 @@
     </section>
      
     <section class="f1-drivers">
-        <h3>F1 drivers</h3>
+        <h3 class="h3-activity">F1 drivers</h3>
         <div class="mySlides fade">
-            <img src="./Images/hamilton.png" class="f1Drivers-image">
+            <img src="../Images/hamilton.png" class="f1Drivers-image">
             <figure class="f1Drivers-hover">
                 <h4> Lewis Hamilton</h4>
                 <p class="f1Drivers-text">
@@ -274,49 +208,49 @@
           </div>
         
           <div class="mySlides fade">
-            <img src="./Images/russel.png">
+            <img src="../Images/russel.png">
              <figure class="f1Drivers-hover">
                 <h4>George Russel</h4>
              </figure>
           </div>
         
           <div class="mySlides fade">
-            <img src="./Images/verstappen.png" >
+            <img src="../Images/verstappen.png" >
             <figure class="f1Drivers-hover">
                 <h4>Max Verstappen</h4>
             </figure>
           </div>
 
           <div class="mySlides fade">
-            <img src="./Images/perez.png" >
+            <img src="../Images/perez.png" >
             <figure class="f1Drivers-hover">
                 <h4>Sergio Perez</h4>
             </figure>
           </div>
 
           <div class="mySlides fade">
-            <img src="./Images/leclerc.png" >
+            <img src="../Images/leclerc.png" >
             <figure class="f1Drivers-hover">
                 <h4>Leclerc</h4>
             </figure>
           </div>
 
           <div class="mySlides fade">
-            <img src="./Images/sainz.png" >
+            <img src="../Images/sainz.png" >
             <figure class="f1Drivers-hover">
                 <h4>Sainz</h4>
             </figure>
           </div>
 
           <div class="mySlides fade">
-            <img src="./Images/norris.png" >
+            <img src="../Images/norris.png" >
             <figure class="f1Drivers-hover">
                 <h4>Lando Norris</h4>
             </figure>
           </div>
 
           <div class="mySlides fade">
-            <img src="./Images/piastri.png" >
+            <img src="../Images/piastri.png" >
             <figure class="f1Drivers-hover">
                 <h4>Oscar Piastri</h4>
             </figure>
