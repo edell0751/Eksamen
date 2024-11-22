@@ -67,6 +67,7 @@
         });
 
         /* JS FOR ACTIVITY*/
+
         document.addEventListener("DOMContentLoaded", function() {
             const header = document.querySelector("header");
             const sectionOne = document.querySelector(".activity-section");
