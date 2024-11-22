@@ -6,6 +6,8 @@ html{
 	padding: 0;
 	box-sizing: border-box;
 	font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
+    hyphens: auto;/*Deler opp ordene og gir de bindestrek*/
+    overflow-wrap: break-word;/*Deler opp ordene som stikker utenfor plaseringen sin*/
 }
 a {
     color: black;
@@ -579,27 +581,21 @@ h2{
     background-color: #955c22; /* Mørkere farge ved hover */
 }
 
-.button-link{
-    display: block; /* Gjør knappen til et blokkelement */
-    margin: 10px auto; /* Sentrerer knappen horisontalt */
-    border: none;
-    background: none;
+.bold-underline-link{
+    display: block; /* Gjør linken til et blokkelement */
     text-align: center; /* Sentrerer knappeteksten */
-    cursor: pointer;
-}
-.button-link > p{
-    color: black;
     text-decoration:underline darkorange;
     font-size: 1.2em;
     font-weight: bold;
-	transition: transform 0.2s;
-    align-items: center;
+    transition: transform 0.2s;
 }
-.button-link>p:hover{
+
+.bold-underline-link:hover{
     text-decoration: underline black;
     font-weight: bolder;
-	transform: scale(1.05);
+    transform: scale(1.05);
 }
+
 .hr-short{
 	width: 40%;
 	margin-top: 10px;
@@ -667,12 +663,8 @@ h2{
 }
 
 .footer-content {
-    width: 33.3%;
-}
-
-h3 {
-    font-size: 28px;
-    margin-bottom: 15px;
+    padding: 5%;
+	color: white;
     text-align: center;
 }
 
