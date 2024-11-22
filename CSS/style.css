@@ -1,0 +1,850 @@
+html{
+    scroll-behavior: smooth;
+}
+
+/*lar ikke oss scrolle i x-retning. låser den slik at den kun kan scrolles nedover,
+og holder contentet innenfor rammene.*/
+html,body,footer{
+    overflow-x: hidden;
+}
+* {
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+	font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
+    hyphens: auto;/*Deler opp ordene og gir de bindestrek*/
+    overflow-wrap: break-word;/*Deler opp ordene som stikker utenfor plaseringen sin*/
+}
+a {
+    color: black;
+	text-decoration: none;
+}
+h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+body{
+    background-color: #F1E4E8;
+}
+h2{
+    margin-top: 0.313rem;
+    margin-bottom: 0.625rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.75rem;
+    margin-bottom: 0.9rem;
+    text-align: center;
+}
+h4{
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+
+.header-up {
+    display: flex; /*Learnt to use display flex from https://www.w3schools.com/css/css3_flexbox.asp*/
+    justify-content: space-between;
+    padding: 2% 15%;
+
+}
+
+.header-right {
+    display: flex;
+    gap: 30px;
+    position: relative;
+}
+
+.header-search {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header-search p {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.search-icon {
+    width: 20px;
+    cursor: pointer;
+}
+
+.search-input {
+    position: absolute;
+    right: -300px;  /* Hidden to the right */
+    opacity: 0;
+    width: 250px;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+    transition: all 0.4s ease;
+    font-size: 1rem;
+    background: #fff;
+    z-index: -1;
+}
+
+/* Active class to slide input from the right */
+.header-search.active .search-input {
+    right: 0;  /* Move it into view */
+    opacity: 1;
+    z-index: 1;
+}
+
+.header-bottom nav {
+    padding: 2% 15%;
+}
+
+.header-bottom-link span {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.menu-icon {
+    width: 20px;
+    cursor: pointer;
+}
+.header-up {
+	display: flex;
+	justify-content: space-between;
+	padding: 2% 15%;
+	background-color: #2D3142;
+	position: sticky;
+	top: 0;
+	z-index: 1000; /* Ensure it stays on top */
+}
+
+.header-right {
+	display: flex;
+	gap: 30px;
+    position: relative;
+}
+
+.header-search,
+.header-menu {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.header-search,
+.header-menu p {
+	font-weight: 700;
+	text-transform: uppercase;
+	color: black;
+}
+
+.header-bottom {
+	padding: 2% 15%;
+	background: #2D3142;
+}
+ion-icon {
+	color: white;
+}
+.menu-icon.hamburger,
+.menu-icon.close {
+    font-size: 20px; /* For hamburger-knappen og lukk-knappen*/ /* KOMMENTAR SOM IKKE SKAL MED I ENDELIG KODE
+    SER UT TIL AT DEN HAR EN MAKS-GRENSE PÅ 20PX TF?*/
+  }
+
+.logo-header img {  /*justerer størrelse på logo i header*/
+    width: 90px;
+	height: auto;
+}
+
+.menu-icon {
+	width: 20px;
+}
+
+.close {
+	display: none;
+}
+
+#top-header{
+    margin: 5px;
+}
+
+/* Full-Screen Menu Styling */
+.menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: #2D3142;
+	display: none;
+	align-items: center;
+	z-index: 999;
+	padding-top: 1rem; /*Push menu content down to not overlap with header*/
+}
+
+.menu.show {
+	display: flex;
+}
+
+.menu-items {
+	text-align: left;
+	margin-left: 15%;
+}
+
+/* making the menu items list under eachother and making them  white for good visibility.
+ also giving them reasonable sizes in rem, not px for better accessability*/
+
+.menu-items a {
+	display: block;
+	margin: 20px 0;
+	font-size: 2rem;
+	font-weight: 700;
+    color: white;
+	
+}
+/*  it sections the class to keep its almost centered position*/
+ .article-wrapper{
+	padding: 50px 15%;
+}
+
+
+.video-player {
+	width: 100%;
+	height: 40vw;
+    border: 8px solid #EF8354;
+}
+
+.main-content {
+	margin-top: 5%;
+    width: 100%;
+}
+
+.title {
+	font-size: 3rem;
+
+}
+
+.title .headline-para {
+	font-size: 1.5rem;
+	font-weight: 400;
+	line-height: 2.25rem;
+	margin-top: 0.313rem;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+.metadata-list {
+	display: flex;
+	flex-wrap: wrap; /*Learnt to use flex-wrap from https://www.w3schools.com/css/css3_flexbox_container.asp*/
+	margin-top: 50px;
+    margin-right: auto;
+	position: relative;
+	flex: 100%;
+    width: 100%;
+}
+.metadata-list-item {
+	border-top: 0.0575rem solid black;
+	flex: 1 0 calc(43%);
+	font-size: 1.125rem;
+	line-height: 1.5;
+	margin-right: 1.25rem;
+	padding-bottom: 1.75rem;
+	padding-top: 1.25rem;
+	width: calc(25% - 1.25rem);
+    text-align: center;
+}
+span {
+	font-size: 1.25rem;
+	font-weight: 700;
+}
+.article-faq {
+	margin-bottom: 20px;
+	padding: 30px 10%;
+	border-bottom: 1px solid #e2e2e2;
+}
+
+.article-wrapper-heading {
+	width: 62%;
+	margin: 0 auto;
+	border-bottom: 1px solid #e2e2e2;
+	padding-bottom: 40px;
+}
+
+.article-wrapper-para {
+	font-size: 24px;
+	line-height: 36px;
+}
+
+.accordion-h2 {
+	display: flex;
+	align-items: center;
+	gap: 35px;
+	cursor: pointer;
+}
+
+.accordion-btn {
+	background-color: #EF8354;
+	background-image: url(https://www.oslomet.no/build/images/plus-icon.svg);
+	background-position: 50%;
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	display: inline-block;
+	height: 2.5rem;
+	min-width: 2.5rem;
+	width: 2.5rem;
+}
+
+.accordion-text {
+	display: none; /* Initially hidden */
+	margin-bottom: 30px;
+	overflow: hidden;
+	padding-left: 75px;
+	padding-right: 120px;
+	padding-top: 35px;
+	position: relative;
+	transition: height 0.3s cubic-bezier(0.24, 0.59, 0.38, 0.94);
+}
+
+.accordion-text-para {
+	font-family: inherit;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 27px;
+}
+
+.a-list {
+	font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 27px;
+	list-style: none;
+	margin-top: 18px;
+}
+
+.a-list li {
+	margin-bottom: 0.625rem;
+	padding-left: 0.9375rem;
+	position: relative;
+	list-style: disc;
+}
+
+.a-list li a {
+	
+	font-size: 1.125rem;
+	font-weight: 700;
+	text-decoration: none;
+	transition: border 0.1s cubic-bezier(0.24, 0.59, 0.38, 0.94);
+}
+
+.a-list li a span {
+    text-decoration: underline #EF8354;
+	padding-bottom: 0.0625rem;
+}
+
+.para-2,
+.para-3 {
+	margin-top: 20px;
+}
+.para-3-links{
+    text-decoration: underline #EF8354;
+    font-weight: 700;
+}
+
+.accordion-h2.active .accordion-btn {
+	background-image: url(https://www.oslomet.no/build/images/minus-icon.svg);
+}
+
+/* For expanding and collapsing */
+.accordion-h2.active + .accordion-text {
+	display: block;
+}
+
+.study-plan {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.study-plan h2 {	
+	font-size: 20px;
+    background-color: #f4f4f4;
+    padding: 8px 8px 8px 20px;
+}
+
+.study-plan h3 {
+	font-size: 18px;
+}
+
+
+.study-plan h2,.study-plan h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.semester {
+    margin-bottom: 10%;
+}
+
+.subjects {
+    display: flex;
+    flex:50%;
+	flex-wrap: wrap;
+	flex-direction: row;
+    justify-content: 30%;
+    margin: 5px;
+}
+
+.subject {
+    text-align: left;
+	width: 25%;
+    margin-right: 20px;
+	border-top: 1px solid black;
+    padding-top: 15px;
+}
+@media(max-width:850px){
+    .subject{
+        width: 100%;
+    }
+}
+
+.study-plan a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    position: relative;
+	font-size: 14px;
+}
+
+.study-plan a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #EF8354;
+    bottom: 0;
+    left: 0;
+}
+
+.study-plan span {
+    font-size: 14px;
+    color: #666;
+}
+
+.no-padding {
+	padding: 35px 0;
+}
+
+.flex {
+	display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.semester-headline {
+	font-size: 18px;
+	color: #222222;
+}
+
+.OtherStudies-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    width: 90%;
+    padding: 2% 0;
+    margin: 0 auto;
+}
+
+.OtherStudies-column {
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    overflow: hidden;
+    cursor: pointer;
+    min-width: 200px;
+	flex: 1 1 calc(33.333% - 2%);
+	margin-bottom: 2%;
+}
+
+.OtherStudies-column:hover {
+    transform: scale(1.05);
+}
+
+.OtherStudies-img {
+    width: 100%;
+    height: auto;
+}
+
+.OtherStudies-cards {
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.OtherStudies-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.OtherStudies-faculty {
+    font-weight: 600;
+    color: #5b7588;
+    margin-bottom: 0.5em;
+    font-size: 1rem;
+}
+
+.OtherStudies-explanation {
+    font-size: 1rem;
+    line-height: 1.2;
+    color: #333;
+    margin-bottom: 0.6rem;
+}
+.hidden {
+    display: none;
+}
+
+
+.show-more-btn {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #EF8354;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.show-more-btn:hover {
+    background-color: #955c22;;
+}
+@media /*learnt to use @media from https://www.w3schools.com/css/css3_mediaqueries.asp */(max-width:800px){
+	.main-content{
+		text-align: center;
+	}
+}
+@media (max-width:800px){
+    .subjects{
+        flex-direction: column;
+        flex:100%;
+    }
+}
+
+.Study-Stories-section {
+    width: 100vw; /* Full skjermbredde */
+    margin-bottom: 2%; /* adding a little margin */
+    padding: 8% 0; /* Tilpass padding etter behov */
+    background-color: #f6f6f3;
+    position: relative; /* Sørg for at den bryter ut fra omkringliggende rammen */
+    left: 50%; /* Plasser i midten */
+    transform: translateX(-50%); /* Juster slik at den dekker hele bredden */
+}
+
+
+.Study-Stories-container {
+    width: 100%; /* Sørg for at den dekker hele bredden på sin seksjon */
+    margin: 0 auto; /* Sentraliser eventuelle subelementer */
+    padding: 0 4%; /* Litt side-padding hvis ønsket */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+}
+
+
+
+.Study-Stories-article {
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+  color: black;
+  transition-duration: 0.5s;
+}
+
+.Study-Stories-article:hover {
+  background-color: #70858462;
+}
+
+.Study-Stories-container .Study-Stories-article:nth-child(even) {
+  justify-self: end;
+}
+.Study-Stories-article a {
+  color: black;
+  text-decoration: none;
+}
+
+.Study-Stories-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.Study-Stories-column p {
+  margin-left: 0.4em;
+}
+
+.rStudy-Stories-arrow {
+  float: right;
+}
+
+.Study-Stories-caption{
+  font-size: 1rem;
+}
+
+.Study-Stories-section {
+    text-align: center; /* Sentrerer knappen og annet innhold */
+}
+
+.study-stories-button {
+    display: inline-block; /* For å tillate sentrering */
+    width: fit-content; /* Tilpasser seg tekstinnholdet */
+    padding: 1rem 2rem; /* Bruker rem for responsiv padding */
+    font-size: 1.2rem; /* Større skriftstørrelse for mer fremtredende tekst */
+    font-weight: bold;
+    background-color: #EF8354; /* Knappens bakgrunnsfarge */
+    border: none;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.study-stories-button:hover {
+    background-color: #955c22; /* Mørkere farge ved hover */
+}
+
+.bold-underline-link{
+    display: block; /* Gjør linken til et blokkelement */
+    text-align: center; /* Sentrerer knappeteksten */
+    text-decoration:underline darkorange;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.bold-underline-link:hover{
+    text-decoration: underline black;
+    font-weight: bolder;
+    transform: scale(1.05);
+}
+
+.hr-short{
+	width: 40%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+}
+
+.medium-image{
+	width: 130px;
+	height: auto;
+    margin-right: 20px; /* Avstand mellom bilde og tekst */;
+    display: block;
+}
+
+.OtherStudies-row {
+    align-self: center;
+	display: flex;       /* Gjør containeren fleksibel for horisontal plassering */
+    flex-direction: row;
+  	align-items: center; /* Vertikalt sentrerer bildet og teksten */
+    width: 355px;
+    margin: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: white;
+}
+
+.OtherStudies-row:hover {
+    transform: scale(1.05);
+}
+
+.article-inside-figure {
+	margin-left:none;  /* Legger litt avstand mellom bildet og teksten */
+	max-width: 80%;     /* Sørger for at teksten ikke blir for bred */
+    flex-wrap: wrap;
+  }
+  
+  .article-inside-figure h3,h4 {
+	margin: none;
+	color: #333;
+  }
+  
+  .article-inside-figure p {
+	margin: none;
+	color: #555;
+	font-size: 0.9em;
+  }
+
+.study-info h2,p,button {
+    align-items: center;
+}
+
+.footer {
+    background: #2D3142;
+    padding-top: 50px;
+    width: 100%;
+    margin: 0;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+@media (max-width:700px){
+    .footer-container,.footer-content{
+        flex-direction: column;
+        flex: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.footer-content {
+    padding: 5%;
+	color: white;
+    text-align: center;
+}
+
+
+
+.footer-content p {
+    width: 11.8rem;
+    margin: auto;
+    padding: 0.438rem;
+}
+
+.footer-content ul {
+    text-align: center;
+	
+}
+
+.footer-list {
+    padding: 0;
+	
+}
+
+.footer-list li {
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+	
+}
+
+.footer-list li::before {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #EF8354;
+    transition-duration: 0.5s;
+}
+
+.footer-list li:hover::before {
+    width: 70px;
+}
+
+.footer-social-icons {
+    text-align: center;
+    padding: 0;
+}
+
+.footer-social-icons li {
+    display: inline-block;
+    text-align: center;
+    padding: 0.313rem;
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.footer-social-icons li:hover {
+    transform: scale(1.2); /* Gjør ikonene større ved hover */
+    color:#EF8354 ;
+}
+
+.footer-link {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #EF8354; /* Endrer fargen til oransje */
+}
+
+.footer-bottom-bar {
+    background: #EF8354;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.footer-bottom-bar p {
+    font-weight: bold;
+    margin: 0;
+    font-size: 1rem;
+    padding: 0.45rem;
+}
+/* CSS FOR ACCESSIBILITY*/
+.accessibility-main {
+    display: block;
+    max-width: 100%;
+    text-align: center;
+}
+
+.accessibility-p-main {
+    margin: 0 auto 2rem auto;
+    width: 65%;
+}
+
+.accessibility-figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.accessibility-img {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.accessibility-pic-1 {
+    width: 60%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.accessibility-img figcaption {
+    text-align: center;
+    font-size: smaller;
+    padding-bottom: 2rem;
+    width: 75%;
+}
+
+
+
+

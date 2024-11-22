@@ -3,60 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Oslomet-Matematisk Modellering</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+	<!-- script to ion icons styling icons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	
+
 </head>
 <body>
-	<script src="script.js"></script>
+	<header>
         <div class="header-up">
             <div class="header-left">
                 <a href="index.html" class="logo-header">
                     <picture>
-                    <img src="bilder/oslometlogo.png" alt="OsloMet - Front page">
+                    <img src="bilder/Oslomet-logo-hvit.png" alt="OsloMet - Front page">
                     </picture>   
                 </a>
             </div>
             <div class="header-right">
                 <div class="header-search">
                     <p class="search-text">Søk</p>
-                    <img
-                        src="https://www.oslomet.no/build/images/search-icon.svg"
-                        alt="search-icon"
-                        class="search-icon"
-                    />
+                    <ion-icon name="search-outline" class="search-icon"></ion-icon>
                     <input type="text" class="search-input" placeholder="Søk..." />
                 </div>
                 <div class="header-menu">
                     <p>Meny</p>
-                    <img
-                        src="./bilder/hamburger.png"
-                        alt="menu-icon"
-                        class="menu-icon hamburger"
-                        onclick = myFunction()
-                    />
-                    <img
-                        src="./bilder/close.png"
-                        alt="close-icon"
-                        class="menu-icon close"
-                    />
-                    <script src="script.js"></script>
+                    <ion-icon name="menu-outline" class="menu-icon hamburger"></ion-icon>
+                    <ion-icon name="close-outline" class="menu-icon close"></ion-icon>
                 </div>
             </div>
         </div>
         <nav class="header-bottom">
-            <a href="#" class="header-bottom-link">
+            <a href="index.html" class="header-bottom-link">
                 <ion-icon name="chevron-forward-outline"></ion-icon>
-                <span id="top-header">Studieoversikt</span>
+                <span id="top-header">Home</span>
             </a>
 
-            <a href="#" class="header-bottom-link">
-                <span id="top-header"> Activity page</span>
+            <a href="Activity.html" class="header-bottom-link">
+                <span id="top-header"> Activity</span>
             </a>
 
-            <a href="#" class="header-bottom-link">
+            <a href="Accessibility.html" class="header-bottom-link">
                 <span id="top-header"> Accessibility</span>
+            </a>
+
+			<a href="Gitpage.html" class="header-bottom-link">
+                <span id="top-header"> GitPage</span>
             </a>
 
         </nav>
@@ -65,25 +58,30 @@
 
 		<div class="menu" id="fullMenu">
 			<div class="menu-items">
-				<a href="#">Studier</a>
-				<a href="#">Forskningen vår</a>
-				<a href="#">Samarbeid</a>
-				<a href="#">Universitetsbiblioteket</a>
-				<a href="#">Om OsloMet</a>
-				<a href="#">Kontakt</a>
-				<a href="#">For studenter</a>
-				<a href="#">Activity Page</a>
+				<a href="https://www.oslomet.no/studier">Studier</a>
+				<a href="https://www.oslomet.no/forskning">Forskningen vår</a>
+				<a href="https://www.oslomet.no/om/samarbeid">Samarbeid</a>
+				<a href="https://www.oslomet.no/ub">Universitetsbiblioteket</a>
+				<a href="https://www.oslomet.no/om">Om OsloMet</a>
+				<a href="https://www.oslomet.no/om/kontakt">Kontakt</a>
+				<a href="https://www.oslomet.no/om/for-studenter">For studenter</a>
+				<a href="https://www.oslomet.no/studier/studieoversikt">Studieoversikt</a>
 			</div>
 		</div>
 
         <section class="article-wrapper">
+			<!-- henter inn video fra youtube og tilegner den egenskaper som fullscreen osv
+			 fikser også på title, som gjør det tilgjengelig for screen readers 
+			 og få meg seg hva iframe inneholder.-->
 			<iframe
 				class="video-player"
 				src="https://www.youtube.com/embed/Ip6CrMXGrkE?si=ogHdIJ88Ny_nK7ub"
 				frameborder="0"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 				allowfullscreen
+				title="YouTube-video om bachelorstudier i matematisk modellering"
 			></iframe>
+
 
 
             <div class="main-content">
@@ -125,7 +123,7 @@
                         </ul>
                     </div>
                     <div class="metadata-list-item">
-                        <span class="metadata-headline">Undervisnings<wbr>språk</span>
+                        <span class="metadata-headline">Undervisningsspråk</span>
                         <ul class="items">
                             <li>Norsk</li>
                             <li>Engelsk</li>
@@ -158,7 +156,7 @@
 			<article class="article-faq">
 				<div class="accordion-block">
 					<h2 class="accordion-h2">
-						<button class="accordion-btn"></button>
+						<button class="accordion-btn" aria-label="Åpne seksjonen for opptakskrav"></button>
 						<span>Opptakskrav og poeng</span>
 					</h2>
 					<div class="accordion-text">
@@ -195,7 +193,7 @@
 			<article class="article-faq">
 				<div class="accordion-block">
 					<h2 class="accordion-h2">
-						<button class="accordion-btn"></button>
+						<button class="accordion-btn" aria-label="Åpne seksjonen for slik søker du"></button>
 						<span>Slik søker du</span>
 					</h2>
 					<div class="accordion-text">
@@ -206,10 +204,8 @@
 						<ul class="a-list">
 							<li>15. april: ordinær søknadsfrist</li>
 							<li>1. mars: frist for enkelte søkere</li>
-                            <a href="#" class="para-3-links">
-                                <li class="">Mer om å søke på bachelor</li>
-                                </a>
 						</ul>
+						<a href="#" class="para-3-links">Mer om å søke på bachelor</a>
                         
 					</div>
 				</div>
@@ -217,31 +213,51 @@
 			<article class="article-faq">
 				<div class="accordion-block">
 					<h2 class="accordion-h2">
-						<button class="accordion-btn"></button>
+						<button class="accordion-btn" aria-label="Åpne seksjonen for hva lærer du?"></button>
 						<span>Hva lærer du?</span>
 					</h2>
 					<div class="accordion-text">
 						<p class="accordion-text-para">
 							Bachelor i matematisk modellering og datavitenskap kobler sammen
-							matematikk, informatikk, fysikk og statistikk. <br /><br />
+							matematikk, informatikk, fysikk og statistikk. <br><br>
 							Du får innsikt i matematiske modeller som brukes i praktisk
 							problemløsning blant annet i medisinsk kjemi, biologiske prosesser
-							og ulike samfunnssystemer. <br /><br />
+							og ulike samfunnssystemer. <br><br>
 							Det første studieåret har du emner i blant annet matematikk,
 							programmering, fysikk og kjemi for å få en felles forståelse av
-							tematikken. <br /><br />
+							tematikken. <br><br>
 							Det siste semesteret skriver du en bacheloroppgave tett knyttet
-							til problemstillinger i arbeidslivet. <br /><br />
+							til problemstillinger i arbeidslivet. <br><br>
 							Første året velger du hvilken av disse spesialiseringene du vil
 							ta.
 						</p>
+						<br>
+						<h4>Statistiske og datadrevne metoder</h4>
+						<p class="accordion-text-para 3">Du lærer om hvordan du kan bruke målte data koblet med datadrevne
+							og statistiske metoder til å gjøre beregninger, for eksempel av fremtidige strømpriser.
+							Du lærer hvordan du kan løse komplekse og sammensatte problemer, og utforske høydimensjonale datatyper.
+							Moderne metoder innen maskinlæring og kunstig intelligens står sentralt.
+						</p>
+						<br>
+						<h4>Vitenskapelige beregninger</h4>
+						<p class="accordion-text-para 3">Du lærer å lage effektive algoritmer, datastrukturer og kildekoder
+							 for å løse matematiske og fysiske problemer med numeriske metoder.
+							Du lærer å utvikle kildekode og metodikk knyttet til medisinsk teknologi, biologiske prosesser og annet.
+						</p>
+						<br>
+						<h4>Matematikk og fysikk</h4>
+						<p class="accordion-text-para 3">Du utforsker algebraiske strukturer, blant annet knyttet til dyp læring og kunstig intelligens.
+							Du lærer differensialgeometri på flater, gruppeteori og kodeteori; matematiske strukturer, representasjonsteori og kategoriteori.
+							I fysikk lærer du om termodynamikk og statistisk fysikk.
+						</p>
+
 					</div>
 				</div>
 			</article>
 			<article class="article-faq">
 				<div class="accordion-block">
 					<h2 class="accordion-h2">
-						<button class="accordion-btn"></button>
+						<button class="accordion-btn" aria-label="Åpne seksjonen for studiets oppbygning"></button>
 						<span>Studiets oppbygging</span>
 					</h2>
 					<div class="accordion-text no-padding">
@@ -252,30 +268,30 @@
 								<h3>1. semester</h3>
 								<div class="subjects">
 									<div class="subject">
-										<a href="#">Diskret matematikk</a><br />
+										<a href="#">Diskret matematikk</a><br>
 										<div class="flex">
-											<span>DAPE1300</span><br />
+											<span>DAPE1300</span><br>
 											<span>10 stp.</span>
 										</div>
 									</div>
 									<div class="subject">
-										<a href="#">Programmer<wbr>ing</a><br />
+										<a href="#">Programmering</a><br />
 										<div class="flex">
-											<span>DAPE1400</span><br />
+											<span>DAPE1400</span><br>
 											<span>10 stp.</span>
 										</div>
 									</div>
 									<div class="subject">
-										<a href="#">Teknologi og samfunn for programmerere</a><br />
+										<a href="#">Teknologi og samfunn for programmerere</a><br>
 										<div class="flex">
-											<span>DATA1100</span><br />
+											<span>DATA1100</span><br>
 											<span>5 stp.</span>
 										</div>
 									</div>
 									<div class="subject">
-										<a href="#">Innføring i modeller og beregninger</a><br />
+										<a href="#">Innføring i modeller og beregninger</a><br>
 										<div class="flex">
-											<span>MAMO1100</span><br />
+											<span>MAMO1100</span><br>
 											<span>5 stp.</span>
 										</div>
 									</div>
@@ -286,23 +302,23 @@
 								<h3>2. semester</h3>
 								<div class="subjects">
 									<div class="subject">
-										<a href="#">Matematikk 1000</a><br />
+										<a href="#">Matematikk 1000</a><br>
 										<div class="flex">
-											<span>DAFE1000</span><br />
+											<span>DAFE1000</span><br>
 											<span>10 stp.</span>
 										</div>
 									</div>
 									<div class="subject">
-										<a href="#">Fysikk og kjemi</a><br />
+										<a href="#">Fysikk og kjemi</a><br>
 										<div class="flex">
-											<span>DAPE2101</span><br />
+											<span>DAPE2101</span><br>
 											<span>10 stp.</span>
 										</div>
 									</div>
 									<div class="subject">
-										<a href="#">Databaser</a><br />
+										<a href="#">Databaser</a><br>
 										<div class="flex">
-											<span>DATA1500</span><br />
+											<span>DATA1500</span><br>
 											<span>10 stp.</span>
 										</div>
 									</div>
@@ -315,16 +331,16 @@
 								<h3>3. semester</h3>
 								<div class="subjects">
 									<div class="subject">
-										<a href="#">Matematikk 2000 med statistikk</a><br />
+										<a href="#">Matematikk 2000 med statistikk</a><br>
 										<div class="flex">
-											<span>DAPE2000</span><br />
+											<span>DAPE2000</span><br>
 											<span>10 stp.</span>
 										</div>
 									</div>
 									<div class="subject">
-										<a href="#">Moderne fysikk</a><br />
+										<a href="#">Moderne fysikk</a><br>
 										<div class="flex">
-											<span>MAMO2100</span><br />
+											<span>MAMO2100</span><br>
 											<span>10 stp.</span>
 										</div>
 									</div>
@@ -335,9 +351,9 @@
 								<h3>4. semester</h3>
 								<div class="subjects">
 									<div class="subject">
-										<a href="#">Matematikk 4000</a><br />
+										<a href="#">Matematikk 4000</a><br>
 										<div class="flex">
-											<span>DAVE3705</span><br />
+											<span>DAVE3705</span><br>
 											<span>10 stp.</span>
 										</div>
 									</div>
@@ -346,17 +362,16 @@
 							<h5 class="semester-headline">
 								Emnegruppe: Matematikk og fysikk
 							</h5>
-							<br /><br />
+							<br><br>
 
 							<div class="semester">
 								<h3>3. semester</h3>
 								<div class="subjects">
 									<div class="subject">
-										<a href="#"
-											>Lineær algebra og introduksjon til gruppeteori</a
-										><br />
+										<a href="#">Lineær algebra og introduksjon til gruppeteori</a>
+										<br>
 										<div class="flex">
-											<span>MAMO2300 </span><br />
+											<span>MAMO2300 </span><br>
 											<span>10 stp.</span>
 										</div>
 									</div>
@@ -367,16 +382,16 @@
 								<h3>4. semester</h3>
 								<div class="subjects">
 									<div class="subject">
-										<a href="#">Termo<wbr>dynamikk og statistisk fysikk</a><br />
+										<a href="#">Termodynamikk og statistisk fysikk</a><br />
 										<div class="flex">
-											<span>MAMO2400</span><br />
+											<span>MAMO2400</span><br>
 											<span>10 stp.</span>
 										</div>
 									</div>
 									<div class="subject">
-										<a href="#">Symmetrier og algebraiske strukturer</a><br />
+										<a href="#">Symmetrier og algebraiske strukturer</a><br>
 										<div class="flex">
-											<span>MAMO2500</span><br />
+											<span>MAMO2500</span><br>
 											<span>10 stp.</span>
 										</div>
 									</div>
@@ -386,15 +401,15 @@
 							<h5 class="semester-headline">
 								Emnegruppe: Statistiske og datadrevne metoder
 							</h5>
-							<br /><br />
+							<br><br>
 
 							<div class="semester">
 								<h3>3. semester</h3>
 								<div class="subjects">
 									<div class="subject">
-										<a href="#">Algoritmer og datastrukturer </a><br />
+										<a href="#">Algoritmer og datastrukturer </a><br>
 										<div class="flex">
-											<span>DATS2300 </span><br />
+											<span>DATS2300 </span><br>
 											<span>10 stp.</span>
 										</div>
 									</div>
@@ -405,41 +420,44 @@
 								<h3>4. semester</h3>
 								<div class="subjects">
 									<div class="subject">
-										<a href="#">Statistisk analyse</a><br />
+										<a href="#">Statistisk analyse</a><br>
 										<div class="flex">
-											<span>MAMO3100</span><br />
+											<span>MAMO3100</span><br>
 											<span>10 stp.</span>
 										</div>
 									</div>
 									<div class="subject">
-										<a href="#">Visualisering</a><br />
+										<a href="#">Visualisering</a><br>
 										<div class="flex">
-											<span>ADSE3200</span><br />
+											<span>ADSE3200</span><br>
+											<span>Valgfag</span><br>
 											<span>10 stp.</span>
 										</div>
 									</div>
 									<div class="subject">
-										<a href="#">Avansert modellering og beregninger</a><br />
+										<a href="#">Avansert modellering og beregninger</a><br>
 										<div class="flex">
-											<span>MAMO2200</span><br />
+											<span>MAMO2200</span><br>
+											<span>Valgfag</span><br>
 											<span>10 stp.</span>
 										</div>
 									</div>
 								</div>
 							</div>
+							
 
 							<h5 class="semester-headline">
 								Emnegruppe: Vitenskapelige beregninger
 							</h5>
-							<br /><br />
+							<br><br>
 
 							<div class="semester">
 								<h3>3. semester</h3>
 								<div class="subjects">
 									<div class="subject">
-										<a href="#">Algoritmer og datastrukturer</a><br />
+										<a href="#">Algoritmer og datastrukturer</a><br>
 										<div class="flex">
-											<span>DATS2300 </span><br />
+											<span>DATS2300 </span><br>
 											<span>10 stp.</span>
 										</div>
 									</div>
@@ -450,16 +468,18 @@
 								<h3>4. semester</h3>
 								<div class="subjects">
 									<div class="subject">
-										<a href="#">Ressurseffektive programmer</a><br />
+										<a href="#">Ressurseffektive programmer</a><br>
 										<div class="flex">
-											<span>DAVE3606</span><br />
+											<span>DAVE3606</span><br>
+											<span>Valgfag</span><br>
 											<span>10 stp.</span>
 										</div>
 									</div>
 									<div class="subject">
-										<a href="#">Avansert modellering og beregninger</a><br />
+										<a href="#">Avansert modellering og beregninger</a><br>
 										<div class="flex">
-											<span>MAMO2200</span><br />
+											<span>MAMO2200</span><br>
+											<span>Valgfag</span><br>
 											<span>10 stp.</span>
 										</div>
 									</div>
@@ -472,9 +492,9 @@
 								<h3>5. semester</h3>
 								<div class="subjects">
 									<div class="subject">
-										<a href="#">Matematikk 3000</a><br />
+										<a href="#">Matematikk 3000</a><br>
 										<div class="flex">
-											<span>DAVE3700 </span><br />
+											<span>DAVE3700 </span><br>
 											<span>10 stp.</span>
 										</div>
 									</div>
@@ -485,9 +505,9 @@
 								<h3>6. semester</h3>
 								<div class="subjects">
 									<div class="subject">
-										<a href="#">Bacheloroppgave</a><br />
+										<a href="#">Bacheloroppgave</a><br>
 										<div class="flex">
-											<span>DATA3900</span><br />
+											<span>DATA3900</span><br>
 											<span>20 stp.</span>
 										</div>
 									</div>
@@ -497,91 +517,289 @@
 							<h5 class="semester-headline">
 								Emnegruppe: Matematikk og fysikk
 							</h5>
-							<br /><br />
+							<br><br>
 
 							<div class="semester">
 								<h3>5. semester</h3>
 								<div class="subjects">
 									<div class="subject">
-										<a href="#">Reell analyse</a><br />
+										<a href="#">Reell analyse</a><br>
 										<div class="flex">
-											<span>MAMO3300 </span><br />
+											<span>MAMO3300 </span><br>
 											<span>10 stp.</span>
 										</div>
 									</div>
 									<div class="subject">
-										<a href="#">Introduksjon til IT-forskning</a><br />
+										<a href="#">Introduksjon til IT-forskning</a><br>
 										<div class="flex">
-											<span>DATA3730 </span><br />
+											<span>DATA3730 </span><br>
+											<span>Valgfag</span><br>
 											<span>10 stp.</span>
 										</div>
 									</div>
 									<div class="subject">
 										<a href="#">Introduction to Data Science with Scripting</a
-										><br />
+										><br>
 										<div class="flex">
-											<span>DATA3800 </span><br />
+											<span>DATA3800 </span><br>
+											<span>Valgfag</span><br>
 											<span>10 stp.</span>
 										</div>
 									</div>
 									<div class="subject">
-										<a href="#">Datasikkerhet</a><br />
+										<a href="#">Datasikkerhet</a><br>
 										<div class="flex">
-											<span>ITPE3100 </span><br />
+											<span>ITPE3100 </span><br>
+											<span>Valgfag</span><br>
 											<span>10 stp.</span>
 										</div>
 									</div>
-								</div>
 								<div class="subject">
-									<a href="#">Simulering og visualisering</a><br />
+									<a href="#">Simulering og visualisering</a><br>
 									<div class="flex">
-										<span>MAMO3200 </span><br />
+										<span>MAMO3200 </span><br>
+										<span>Valgfag</span><br>
 										<span>10 stp.</span>
 									</div>
 								</div>
 							</div>
+						</div>
+
+						<div class="semester">
+							<h3>6. semester</h3>
+							<div class="subjects">
+								<div class="subject">
+									<a href="#">Testing av programvare</a><br>
+									<div class="flex">
+										<span>ADTS2310 </span><br>
+										<span>Valgfag</span><br>
+										<span>10 stp.</span>
+									</div>
+								</div>
+								<div class="subject">
+									<a href="#">Datanettverk og skytjenester</a><br>
+									<div class="flex">
+										<span>DATA2410 </span><br>
+										<span>Valgfag</span><br>
+										<span>10 stp.</span>
+									</div>
+								</div>
+								<div class="subject">
+									<a href="#">Anvendt kunstig intelligens og data science</a><br>
+									<div class="flex">
+										<span>DATA3750 </span><br>
+										<span>Valgfag</span><br>
+										<span>10 stp.</span>
+									</div>
+								</div>
+								<div class="subject">
+									<a href="#">Datasikkerhet</a><br>
+									<div class="flex">
+										<span>ITPE3100 </span><br>
+										<span>Valgfag</span><br>
+										<span>10 stp.</span>
+									</div>
+								</div>
+
+							<div class="subject">
+								<a href="#">Simulering og visualisering</a><br>
+								<div class="flex">
+									<span>MAMO3200 </span><br>
+									<span>Valgfag</span><br>
+									<span>10 stp.</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+							<h5 class="semester-headline">
+								Emnegruppe: Statistiske og datadrevne metoder
+							</h5>
+							<br><br>
+
+							<div class="semester">
+								<h3>5. semester</h3>
+								<div class="subjects">
+									<div class="subject">
+										<a href="#">Introduksjon til Kunstig intelligens</a><br>
+										<div class="flex">
+											<span>DAVE3625 </span><br>
+											<span>Valgfag</span><br>
+											<span>10 stp.</span>
+										</div>
+									</div>
+									<div class="subject">
+										<a href="#">Introduksjon til IT-forskning</a><br>
+										<div class="flex">
+											<span>DATA3730 </span><br>
+											<span>Valgfag</span><br>
+											<span>10 stp.</span>
+										</div>
+									</div>
+									<div class="subject">
+										<a href="#">Anvendt kunstig intelligens og data science</a><br>
+										<div class="flex">
+											<span>DATA3750 </span><br>
+											<span>Valgfag</span><br>
+											<span>10 stp.</span>
+										</div>
+									</div>
+									<div class="subject">
+										<a href="#">Datasikkerhet</a><br>
+										<div class="flex">
+											<span>ITPE3100 </span><br>
+											<span>Valgfag</span><br>
+											<span>10 stp.</span>
+										</div>
+									</div>
+								<div class="subject">
+									<a href="#">Simulering og visualisering</a><br>
+									<div class="flex">
+										<span>MAMO3200 </span><br>
+										<span>Valgfag</span><br>
+										<span>10 stp.</span>
+									</div>
+								</div>
+							</div>
+						</div>
 
 							<div class="semester">
 								<h3>6. semester</h3>
 								<div class="subjects">
 									<div class="subject">
-										<a href="#">Visualisering</a><br />
+										<a href="#">Visualisering</a><br>
 										<div class="flex">
-											<span>ADSE3200</span><br />
+											<span>ADSE3200</span><br>
+											<span>Valgfag</span><br>
 											<span>10 stp.</span>
 										</div>
 									</div>
 									<div class="subject">
-										<a href="#">Testing av programvare</a><br />
+										<a href="#">Testing av programvare</a><br>
 										<div class="flex">
-											<span>ADTS2310</span><br />
+											<span>ADTS2310</span><br>
+											<span>Valgfag</span><br>
 											<span>10 stp.</span>
 										</div>
 									</div>
 									<div class="subject">
-										<a href="#">Datanettverk og skytjenester</a><br />
+										<a href="#">Datanettverk og skytjenester</a><br>
 										<div class="flex">
-											<span>DATA2410</span><br />
+											<span>DATA2410</span><br>
+											<span>Valgfag</span><br>
 											<span>10 stp.</span>
 										</div>
 									</div>
 									<div class="subject">
-										<a href="#">Symmetrier og algebraiske strukturer</a><br />
+										<a href="#">Symmetrier og algebraiske strukturer</a><br>
 										<div class="flex">
-											<span>MAMO2500</span><br />
+											<span>MAMO2500</span><br>
+											<span>Valgfag</span><br>
 											<span>10 stp.</span>
 										</div>
 									</div>
 								</div>
 							</div>
+
+							<h5 class="semester-headline">
+								Emnegruppe: Vitenskapelige beregninger
+							</h5>
+							<br><br>
+
+							<div class="semester">
+								<h3>5. semester</h3>
+								<div class="subjects">
+									<div class="subject">
+										<a href="#">Simulering og visualisering</a><br>
+										<div class="flex">
+											<span>MAMO3200 </span><br>
+											<span>Valgfag</span><br>
+											<span>10 stp.</span>
+										</div>
+									</div>
+
+									
+									<div class="subject">
+										<a href="#">Introduksjon til IT-forskning</a><br>
+										<div class="flex">
+											<span>DATA3730 </span><br>
+											<span>Valgfag</span><br>
+											<span>10 stp.</span>
+										</div>
+									</div>
+
+									<div class="subject">
+										<a href="#">Datasikkerhet</a><br>
+										<div class="flex">
+											<span>IPTE3100 </span><br>
+											<span>Valgfag</span><br>
+											<span>10 stp.</span>
+										</div>
+									</div>
+
+									<div class="subject">
+										<a href="#">Lineær algebra og introduksjon til gruppeteori</a><br>
+										<div class="flex">
+											<span>MAMO2300 </span><br>
+											<span>Valgfag</span><br>
+											<span>10 stp.</span>
+										</div>
+									</div>
+
+
+									<div class="subject">
+										<a href="#">Reell analyse</a><br>
+										<div class="flex">
+											<span>MAMO3300 </span><br>
+											<span>Valgfag</span><br>
+											<span>10 stp.</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						<div class="semester">
+							<h3>6. semester</h3>
+							<div class="subjects">
+								<div class="subject">
+									<a href="#">Visualisering</a><br>
+									<div class="flex">
+										<span>ADSE3200 </span><br>
+										<span>Valgfag</span><br>
+										<span>10 stp.</span>
+									</div>
+								</div>
+								<div class="subject">
+									<a href="#">Testing av programvare</a><br>
+									<div class="flex">
+										<span>ADTS2310 </span><br>
+										<span>Valgfag</span><br>
+										<span>10 stp.</span>
+									</div>
+								</div>
+								<div class="subject">
+									<a href="#">Datanettverk og skytjenester</a><br>
+									<div class="flex">
+										<span>DATA2410 </span><br>
+										<span>Valgfag</span><br>
+										<span>10 stp.</span>
+									</div>
+								</div>
+								<div class="subject">
+									<a href="#">Symmetrier og algebraiske strukturer</a><br>
+									<div class="flex">
+										<span>MAMO2500 </span><br>
+										<span>Valgfag</span><br>
+										<span>10 stp.</span>
+									</div>
+								</div>
 						</div>
 					</div>
-				</div>
+				</div>	
 			</article>
 			<article class="article-faq">
 				<div class="accordion-block">
 					<h2 class="accordion-h2">
-						<button class="accordion-btn"></button>
+						<button class="accordion-btn" aria-label="Åpne seksjonen for Hvordan foregår undervisningen?"></button>
 						<span>Hvordan foregår undervisningen?</span>
 					</h2>
 					<div class="accordion-text">
@@ -611,21 +829,21 @@
 			<article class="article-faq">
 				<div class="accordion-block">
 					<h2 class="accordion-h2">
-						<button class="accordion-btn"></button>
+						<button class="accordion-btn" aria-label="Åpne seksjonen for Hva kan du jobbe som?"></button>
 						<span>Hva kan du jobbe som?</span>
 					</h2>
 					<div class="accordion-text">
 						<p class="accordion-text-para">
 							Med dette studiet får du IT-kompetanse som er etterspurt i
 							arbeidslivet, særlig om du velger spesialiseringene vitenskapelige
-							beregninger eller statistiske og datadrevne metoder. <br /><br />
+							beregninger eller statistiske og datadrevne metoder. <br><br>
 							Spesialiseringen i matematikk og fysikk retter seg mer mot videre
 							studier, men også her får du etterspurt kompetanse i arbeidslivet
-							etter bachelorstudiet. <br /><br />
+							etter bachelorstudiet. <br><br>
 							Matematisk modellering og datavitenskap blir stadig viktigere som
 							basisgrunnlag, i for eksempel beregninger knyttet til klima,
 							forsikring og finans, og datadrevne metoder for verdiskaping.
-							<br /><br />
+							<br><br>
 							Datadrevne metoder og maskinlæring er i dag svært mye brukt i
 							arbeidslivet.
 						</p>
@@ -635,7 +853,7 @@
 			<article class="article-faq">
 				<div class="accordion-block">
 					<h2 class="accordion-h2">
-						<button class="accordion-btn"></button>
+						<button class="accordion-btn" aria-label="Åpne seksjonen for Utveksling"></button>
 						<span>Utveksling</span>
 					</h2>
 					<div class="accordion-text">
@@ -648,39 +866,48 @@
 			<article class="article-faq">
 				<div class="accordion-block">
 					<h2 class="accordion-h2">
-						<button class="accordion-btn"></button>
-						<span>Videre studiemuligheter ved OsloMet</span>
+						<button class="accordion-btn" aria-label="Åpne seksjonen for Hva koster det?"></button>
+						<span>Hva koster det?</span>
 					</h2>
 					<div class="accordion-text">
 						<p class="accordion-text-para">
-							For å søke på dette programmet må du ha
+							<a href="#" class="para-3-links">Du betaler en semesteravgift hver semester ( student.oslomet.no )</a>
 						</p>
+						<br>
 
-						<ul class="a-list">
-							<li>
-								<a href="#" class="">
-									<span>generell studiekompetanse (samordnaopptak.no)</span>
-								</a>
-								eller&nbsp;
-								<a href="#" class="">
-									<span>oppfylle kravene til realkompetanse</span>
-								</a>
-							</li>
-							<li>matematikk R1 og&nbsp;R2</li>
-							<li>fysikk 1</li>
-						</ul>
-						<p class="accordion-text-para para-2">
-							Det kan være konkurranse om plassene. Ved forrige opptak kom alle
-							kvalifiserte søkere inn.
-						</p>
-						<p class="accordion-text-para para-3">
-							Hvis du mangler generell studiekompetanse eller enkelte fag fra
-							videregående skole, kan du søke på dette studiet om du har bestått
-							ettårig forkurs for ingeniørutdanning.
+						<p class="accordion-text-para 2">
+							<a href="#" class="para-3-links">Er du internasjonal student fra utenfor EU og EØS, 
+								må du betale studieavgift (student.oslomet.no). </a>
+								Det er mulig å søke om unntak for betaling av denne studieavgiften.
+							
 						</p>
 					</div>
 				</div>
 			</article>
+			<article class="article-faq">
+				<div class="accordion-block">
+					<h2 class="accordion-h2">
+						<button class="accordion-btn" aria-label="Åpne seksjonen for Videre studiemuligheter ved OsloMet"></button>
+						<span>Videre studiemuligheter ved OsloMet</span>
+					</h2>
+					<div class="accordion-text">
+						<p class="accordion-text-para">
+							Vi har et Masterprogram man kan søke seg inn på etter fullført bachelor.
+						</p>
+
+						<ul class="a-list">
+							<li>
+								<a href="https://www.oslomet.no/studier/tkd/anvendt-data-informasjonsteknologi">
+									<span>Anvendt data-  og informasjonsteknologi (ACIT)</span>
+								</a>
+						</ul>
+						<p class="accordion-text-para para-2">
+							Det kan være konkurranse om plassene.
+						</p>
+					</div>
+				</div>
+			</article>
+
         
             <section class="Study-Stories-section">
                 <h2>Studenthistorier</h2>
@@ -733,175 +960,177 @@
               </section>
           
 
-            <section class="life">
-                <h2 class="Andrefag-h2">Du er også kanskje interresert i disse? </h2>
-                <div class="life-container">
+            <section class="Otherstudies">
+                <h2>Du er også kanskje interresert i disse? </h2>
+                <div class="OtherStudies-container">
                   <!-- three figure elements with same class containing a photo with a belonging title and caption 
                     wrapped in an a-element to make it interactive -->
-                  <!-- First life article -->
-                  <figure class="life-column">
+                  <!-- First OtherStudies article -->
+                  <figure class="OtherStudies-column">
                     <a href="https://www.oslomet.no/studier/tkd/anvendt-datateknologi"
                       target="_blank">
                      <!-- Image wrapped in a picture element for flexibility-->
                       <picture>
                         <!-- Photo: Oslomet Anvendt Datateknologi front page , from https://www.oslomet.no/studier/tkd/anvendt-datateknologi  -->
-                        <img src="./bilder/anvendt.jpg" alt="Anvendt datateknologi" class="life-img">
+                        <img src="./bilder/anvendt.jpg" alt="Anvendt datateknologi" class="OtherStudies-img">
                       </picture>
-                      <figcaption class="life-cards">
+                      <figcaption class="OtherStudies-cards">
                         <!-- Caption defined in different p-classes to style them differently with ease -->
-                        <p class="life-title">Anvendt Datateknologi</p>
-                        <p class="life-faculty">Varighet: 3 år <br> Studiested: Oslo <br> Omfang: Heltid</p>
-                        <p class="life-explanation">Lær hvordan du utvikler nye løsninger for samspill mellom mennesker og datateknologi.
+                        <p class="OtherStudies-title">Anvendt Datateknologi</p>
+                        <p class="OtherStudies-faculty">Varighet: 3 år <br> Studiested: Oslo <br> Omfang: Heltid</p>
+                        <p class="OtherStudies-explanation">Lær hvordan du utvikler nye løsninger for samspill mellom mennesker og datateknologi.
                             Fra andre studieår kan du spesialisere deg i enda mer programmering eller brukerforståelse.</p>
                       </figcaption>
                     </a>
                   </figure>
 
-                  <!-- Second life article -->
-                  <figure class="life-column">
+                  <!-- Second OtherStudies article -->
+                  <figure class="OtherStudies-column">
                     <a href="https://www.oslomet.no/studier/tkd/bioteknologi-kjemiingenior" target="_blank">
                       <picture>
                         <!-- Photo: Benjamin, A. Ward. , from https://www.oslomet.no/studier/tkd/bioteknologi-kjemiingenior  -->
-                        <img src="./bilder/bioteknologi.jpg" alt="Bioteknologi og kjemi ingeniør " class="life-img">
+                        <img src="./bilder/bioteknologi.jpg" alt="Bioteknologi og kjemi ingeniør " class="OtherStudies-img">
                       </picture>
-                      <figcaption class="life-cards">
-                        <p class="life-title">Bioteknologi og kjemi ingeniør</p>
-                        <p class="life-faculty">Varighet: 3 år <br> Studiested: Oslo <br> Omfang: Heltid</p>
-                        <p class="life-explanation">Som bioteknologi- og kjemiingeniør kan du blant annet jobbe med medisinsk forskning,
+                      <figcaption class="OtherStudies-cards">
+                        <p class="OtherStudies-title">Bioteknologi og kjemi ingeniør</p>
+                        <p class="OtherStudies-faculty">Varighet: 3 år <br> Studiested: Oslo <br> Omfang: Heltid</p>
+                        <p class="OtherStudies-explanation">Som bioteknologi- og kjemiingeniør kan du blant annet jobbe med medisinsk forskning,
                              bioanalytiske og rettsmedisinske analyser, legemidler, matvarer, vannrensing og biodrivstoff.</p>
                       </figcaption>
                     </a>
                   </figure>
-                  <!-- third life article -->
-                  <figure class="life-column">
+                  <!-- third OtherStudies article -->
+                  <figure class="OtherStudies-column">
                     <a href="https://www.oslomet.no/studier/tkd/byggingenior" target="_blank">
                       <picture>
                         <!-- Photo: Oslomet Byggingeniør front page , from https://www.oslomet.no/studier/tkd/byggingenior -->
-                        <img src="./bilder/byggingeniør.jpg" alt="byggingeniør" class="life-img">
+                        <img src="./bilder/byggingeniør.jpg" alt="byggingeniør" class="OtherStudies-img">
                       </picture>
-                      <figcaption class="life-cards">
-                        <p class="life-title">Byggingeniør</p>
-                        <p class="life-faculty">Varighet: 3 år <br> Studiested: Oslo <br> Omfang: Heltid</p>
-                        <p class="life-explanation">Som byggingeniør er du ettertraktet i arbeidsmarkedet og 
-                            jobber med moderne teknologi innen konstruksjons<wbr>teknikk, vann og miljø, infrastruktur og byutvikling.</p>
+                      <figcaption class="OtherStudies-cards">
+                        <p class="OtherStudies-title">Byggingeniør</p>
+                        <p class="OtherStudies-faculty">Varighet: 3 år <br> Studiested: Oslo <br> Omfang: Heltid</p>
+                        <p class="OtherStudies-explanation">Som byggingeniør er du ettertraktet i arbeidsmarkedet og 
+                            jobber med moderne teknologi innen konstruksjonsteknikk, vann og miljø, infrastruktur og byutvikling.</p>
                       </figcaption>
                     </a>
                   </figure>
 
-                  <!-- fourth life article, which is also hidden under the "vis flere" button -->
+                  <!-- fourth OtherStudies article, which is also hidden under the "vis flere" button -->
                   
-                  <figure class="life-column hidden">
+                  <figure class="OtherStudies-column hidden">
                     <a href="https://www.oslomet.no/studier/tkd/dataingenior" target="_blank">
                       <picture>
                         <!-- Photo: Benjamin, A. Ward. , from https://www.oslomet.no/studier/tkd/dataingenior  -->
-                        <img src="./bilder/dataingeniør.jpg" alt="dataingeniør" class="life-img">
+                        <img src="./Bilder/dataingeniør.jpg" alt="dataingeniør" class="OtherStudies-img">
                       </picture>
-                      <figcaption class="life-cards">
-                        <p class="life-title">Dataingeniør</p>
-                        <p class="life-faculty">Varighet: 3 år <br> Studiested: Oslo <br> Omfang: Heltid</p>
-                        <p class="life-explanation">Ønsker du å utvikle dataprogrammer for web, mobil, eller datasentre?
-                             Er du glad i naturfag og matematikk? Dataingeniørstudiet kan være veien til målet</p>
+                      <figcaption class="OtherStudies-cards">
+                        <p class="OtherStudies-title">Dataingeniør</p>
+                        <p class="OtherStudies-faculty">Varighet: 3 år <br> Studiested: Oslo <br> Omfang: Heltid</p>
+                        <p class="OtherStudies-explanation">Ønsker du å utvikle dataprogrammer for <br> web, mobil, eller datasentre?<br>
+                        	 Er du glad i naturfag og matematikk? Dataingeniørstudiet kan være veien til det store målet.
+							 etter en kul og morsom studietid vil arbeidslivet by på masse kult!</p>
                       </figcaption>
                     </a>
                   </figure>
 
-                    <!-- fifth life article, which is also hidden under the "vis flere" button -->
+                    <!-- fifth OtherStudies article, which is also hidden under the "vis flere" button -->
 
-                  <figure class="life-column hidden">
+                  <figure class="OtherStudies-column hidden">
                     <a href="https://www.oslomet.no/studier/tkd/elektronikkingenior" target="_blank">
                       <picture>
                         <!-- Photo: Benjamin, A. Ward. , from https://www.oslomet.no/studier/tkd/elektronikkingenior  -->
-                        <img src="./bilder/elektronikk.jpg" alt="elektronikkingeniør" class="life-img">
+                        <img src="./bilder/elektronikk.jpg" alt="elektronikkingeniør" class="OtherStudies-img">
                       </picture>
-                      <figcaption class="life-cards">
-                        <p class="life-title">Elektronikkingeniør</p>
-                        <p class="life-faculty">Varighet: 3 år <br> Studiested: Oslo <br> Omfang: Heltid</p>
-                        <p class="life-explanation">Som elektronikkingeniør vil du forbedre eksisterende teknologi og utvikle nye teknologiske løsninger.
+                      <figcaption class="OtherStudies-cards">
+                        <p class="OtherStudies-title">Elektronikkingeniør</p>
+                        <p class="OtherStudies-faculty">Varighet: 3 år <br> Studiested: Oslo <br> Omfang: Heltid</p>
+                        <p class="OtherStudies-explanation">Som elektronikkingeniør vil du forbedre eksisterende teknologi og utvikle nye teknologiske løsninger.
                              I vårt høyteknologiske samfunn er ingeniøren viktigere enn noensinne. Vi bruker mer og mer elektronikk. 
                              Snart er 200 milliarder enheter koblet til internett.</p>
                       </figcaption>
                     </a>
                   </figure>
 
-                  <!-- sixth life article, which is also hidden under the "vis flere" button -->
+                  <!-- sixth OtherStudies article, which is also hidden under the "vis flere" button -->
 
-                  <figure class="life-column hidden">
+                  <figure class="OtherStudies-column hidden">
                     <a href="https://www.oslomet.no/studier/tkd/informasjonsteknologi" target="_blank">
                       <picture>
                         <!-- Photo: Benjamin, A. Ward. , from https://www.oslomet.no/studier/tkd/informasjonsteknologi   -->
-                        <img src="./bilder/informasjonsteknologi.jpg" alt="informasjonsteknologi" class="life-img">
+                        <img src="./bilder/informasjonsteknologi.jpg" alt="informasjonsteknologi" class="OtherStudies-img">
                       </picture>
-                      <figcaption class="life-cards">
-                        <p class="life-title">Informasjonsteknologi</p>
-                        <p class="life-faculty">Varighet: 3 år <br> Studiested: Oslo <br> Omfang: Heltid</p>
-                        <p class="life-explanation">Ta OsloMets mest omfattende utdanning innen programmering og app-utvikling.
+                      <figcaption class="OtherStudies-cards">
+                        <p class="OtherStudies-title">Informasjonsteknologi</p>
+                        <p class="OtherStudies-faculty">Varighet: 3 år <br> Studiested: Oslo <br> Omfang: Heltid</p>
+                        <p class="OtherStudies-explanation">Ta OsloMets mest omfattende utdanning innen programmering og app-utvikling.
                              Du får mulighet til å studere bredt og dypt innen design, utvikling, administrasjon og vedlikehold av datasystem.</p>
                       </figcaption>
                     </a>
                   </figure>
 
-                  <!-- seventh life article, which is also hidden under the "vis flere" button -->
+                  <!-- seventh OtherStudies article, which is also hidden under the "vis flere" button -->
 
-                  <figure class="life-column hidden">
+                  <figure class="OtherStudies-column hidden">
                     <a href="https://www.oslomet.no/studier/tkd/maskiningenior" target="_blank">
                       <picture>
                         <!-- Photo: Benjamin, A. Ward. , from https://www.oslomet.no/studier/tkd/maskiningenior  -->
-                        <img src="./bilder/Maskiningeniør.jpg" alt="Maskiningeniør" class="life-img">
+                        <img src="./bilder/Maskiningeniør.jpg" alt="Maskiningeniør" class="OtherStudies-img">
                       </picture>
-                      <figcaption class="life-cards">
-                        <p class="life-title">Maskiningeniør</p>
-                        <p class="life-faculty">Varighet: 3 år <br> Studiested: Oslo <br> Omfang: Heltid</p>
-                        <p class="life-explanation">En maskiningeniør blir ofte omtalt som den klassiske ingeniøren.
+                      <figcaption class="OtherStudies-cards">
+                        <p class="OtherStudies-title">Maskiningeniør</p>
+                        <p class="OtherStudies-faculty">Varighet: 3 år <br> Studiested: Oslo <br> Omfang: Heltid</p>
+                        <p class="OtherStudies-explanation">En maskiningeniør blir ofte omtalt som den klassiske ingeniøren.
                              Studiet er for deg som vil bruke kunnskaper innen matematikk, fysikk og materialvitenskap
                               til å designe og utvikle teknisk utstyr og anlegg som kan brukes på alle samfunnsområder.</p>
                       </figcaption>
                     </a>
                   </figure>
 
-                  <!-- eighth life article, which is also hidden under the "vis flere" button -->
+                  <!-- eighth OtherStudies article, which is also hidden under the "vis flere" button -->
 
-                  <figure class="life-column hidden">
+                  <figure class="OtherStudies-column hidden">
                     <a href="https://www.oslomet.no/studier/tkd/tre-termin-ingenior" target="_blank">
                       <picture>
                         <!-- Photo: Benjamin, A. Ward. , from https://www.oslomet.no/studier/tkd/tre-termin-ingenior  -->
-                        <img src="./bilder/tre-terminsordning.jpg" alt="Tre-terminsordning til ingeniørutdanning" class="life-img">
+                        <img src="./bilder/tre-terminsordning.jpg" alt="Tre-terminsordning til ingeniørutdanning" class="OtherStudies-img">
                       </picture>
-                      <figcaption class="life-cards">
-                        <p class="life-title">Tre-terminsordning til ingeniørutdanning</p>
-                        <p class="life-faculty">Varighet: 3 år <br> Studiested: Oslo <br> Omfang: Heltid</p>
-                        <p class="life-explanation">Tre-terminsordningen er et tilbud til deg som har generell studiekompetanse, 
+                      <figcaption class="OtherStudies-cards">
+                        <p class="OtherStudies-title">Tre-terminsordning til ingeniørutdanning</p>
+                        <p class="OtherStudies-faculty">Varighet: 3 år <br> Studiested: Oslo <br> Omfang: Heltid</p>
+                        <p class="OtherStudies-explanation">Tre-terminsordningen er et tilbud til deg som har generell studiekompetanse, 
                             men som mangler nødvendig matematikk og/eller fysikk for opptak til ingeniørutdanning.</p>
                       </figcaption>
                     </a>
                   </figure>
                   
                 </div>
-            <button class="show-more-btn" onclick="toggleExtraCards()">Vis flere</button>
+            <button class="show-more-btn" onclick="toggleExtraCards()" aria-label="Åpne seksjonen for ekstra studier under knappen">Vis flere</button>
         </section>
 
 		<section class="Study-info">
 			<br>
-			<h2>Studiested:</h2>
-			<button type = "button" class="button-link"><p>Studiested Pilestredet</p></button>
-			<br>
-			<h2>Spørsmål om utdanningen?</h2>
-			<button type = "button" class="button-link"><p>Har du spørsmål om utdanningen, 
-			kontakt oss gjennom vårt kontaktskjema.</p></button>
-			<br>
-			<figure class="life-row">
-				<picture>
-				<img src="./bilder/KristofferHellton.jpg" alt="KristofferHellton" class="medium-image">
-				</picture>
-				<figcaption>
-					<article class="article-inside-figure">
-						<h3>Faglig leder</h3>
-						<h4>Kristoffer Herland Hellton</h4>
-						<p>førstemansuensis</p>
-						<p>+47 672 37 240 | kristoffer.hellton@oslomet.no</p>
-					</article>
-
-				</figcaption>
-			</figure>
+            <h2>Studiested:</h2>
+            <a class="bold-underline-link" href="https://www.oslomet.no/om/studiested-pilestredet" target="_blank">Studiested Pilestredet</a>
+            <br>
+            <h2>Spørsmål om utdanningen?</h2>
+            <a class="bold-underline-link" href="https://www.oslomet.no/kontaktskjema#Jeg%20vil%20bli%20student"
+            target="_blank">Har du spørsmål om utdanningen, kontakt oss gjennom vårt kontaktskjema</a>
+            <br>
+            <a href="https://www.oslomet.no/om/ansatt/krhel3944/" target="_blank">
+			    <figure class="OtherStudies-row">
+				    <picture>
+				        <img src="./bilder/KristofferHellton.jpg" alt="KristofferHellton" class="medium-image">
+				    </picture>
+				    <figcaption>
+					    <article class="article-inside-figure">
+                            <h3>Faglig leder</h3>
+                            <h4>Kristoffer Herland Hellton</h4>
+                            <p>førstemansuensis</p>
+                            <p>+47 672 37 240 | kristoffer.hellton@oslomet.no</p>
+					    </article>
+				    </figcaption>
+			    </figure>
+            </a>
 		</section>
 
 
@@ -914,6 +1143,7 @@
                 <p>Oslo Metropolitan University <br>Storbyuniversitetet logo</p>
                 <p>Postboks 4, St. Olavs plass <br> 0130 Oslo</p>
                 <p> Tlf.: 67 23 50 00</p>
+				<br>
             </div> 
             
             <div class="footer-content">
@@ -931,23 +1161,95 @@
                     <li><a class="footer-link" href="">Tilgjengelegheitserklæring</a></li>
                     <li><a class="footer-link" href="">Admin</a></li>  
                 </ul>
+				<br>
             </div>
     
             <div class="footer-content">
                 <h3 class="title-footer">Sosiale Medier</h3>
                 <ul class="footer-social-icons">
-                    <li><a class="footer-link" href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
-                    <li><a class="footer-link" href=""><ion-icon name="logo-facebook"></ion-icon></i></a></li>
-                    <li><a class="footer-link" href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
-                    <li><a class="footer-link" href=""><ion-icon name="logo-linkedin"></ion-icon></i></a></li>
+                    <li><a class="footer-link" href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li><a class="footer-link" href="#"><ion-icon name="logo-facebook"></ion-icon></i></a></li>
+                    <li><a class="footer-link" href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a class="footer-link" href="#"><ion-icon name="logo-linkedin"></ion-icon></i></a></li>
                 </ul>
+				<br>
             </div> 
         </div>
         
         <div class="footer-bottom-bar">
             <p>&copy; OSLOMET</p>
         </div>
-    </footer>     
+    </footer>
+	<script>
+		function toggleExtraCards() {
+    const extraCards = document.querySelectorAll('.OtherStudies-container .OtherStudies-column:nth-child(n+4)');
+    const btn = document.querySelector('.show-more-btn');
+
+    // Sjekk om de ekstra kortene er synlige eller skjulte
+    let areHidden = extraCards[0].style.display === 'none' || extraCards[0].style.display === '';
+
+    // Veksle synlighet
+    extraCards.forEach(card => {
+        card.style.display = areHidden ? 'block' : 'none';
+    });
+
+    // Oppdater knappetekst basert på synligheten
+    btn.innerText = areHidden ? 'Vis færre' : 'Vis flere';
+}
+
+    // Setting up javascript for menu and search-bar
+        const hamburger = document.querySelector('.hamburger');
+        const closeIcon = document.querySelector('.close');
+        const fullMenu = document.getElementById('fullMenu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.style.display = 'none';
+            closeIcon.style.display = 'block';
+            fullMenu.classList.add('show');
+        });
+
+        closeIcon.addEventListener('click', () => {
+            hamburger.style.display = 'block';
+            closeIcon.style.display = 'none';
+            fullMenu.classList.remove('show');
+        });
+
+        const searchIcon = document.querySelector('.header-search .search-icon');
+        const headerSearch = document.querySelector('.header-search');
+        const searchInput = document.querySelector(
+            '.header-search .search-input'
+        );
+
+        // Show search input when search-icon is clicked
+        searchIcon.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent this click from triggering the page click event
+            headerSearch.classList.toggle('active');
+        });
+
+        // Hide search input when clicking anywhere else on the page
+        document.addEventListener('click', (e) => {
+            // Check if the click is outside the header-search container
+            if (!headerSearch.contains(e.target)) {
+                headerSearch.classList.remove('active');
+            }
+        });
+
+    document.querySelectorAll('.accordion-h2').forEach((accordion) => {
+            accordion.addEventListener('click', function () {
+                // Toggle the active class on the accordion header
+                this.classList.toggle('active');
+
+                // Select the corresponding accordion-text and toggle its display
+                let accordionText = this.nextElementSibling;
+                if (accordionText.style.display === 'block') {
+                    accordionText.style.display = 'none';
+                } else {
+                    accordionText.style.display = 'block';
+                }
+            });
+        });
+	</script>
+    
 </body>
 </html>
 
