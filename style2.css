@@ -118,7 +118,7 @@ header .activity-nav {
     background-color: aqua; /* Color of the underline */
     transition: width 0.3s ease; /* Controls animation speed */
 }
-. a:hover::after {
+.activity-nav a :hover::after {
     width: 100%; /* Extends the line to full width */
 }
 .nav-scrolled {
