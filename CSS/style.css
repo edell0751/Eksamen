@@ -21,11 +21,19 @@ a {
 }
 h1{
     font-size: 3rem;
+    text-align: center;
 }
 
 body{
     background-color: #F1E4E8;
 }
+h2{
+    margin-top: 0.313rem;
+    margin-bottom: 0.625rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
 h3 {
     font-size: 1.75rem;
     margin-bottom: 0.9rem;
@@ -208,6 +216,7 @@ ion-icon {
 .video-player {
 	width: 100%;
 	height: 40vw;
+    border: 8px solid #EF8354;
 }
 
 .main-content {
@@ -548,11 +557,7 @@ span {
     grid-template-columns: repeat(2, 1fr);
     gap: 5%;
 }
-h2{
-    margin-bottom: 0.625rem;
-    font-size: 2.25rem;
-    text-align: center;
-}
+
 
 
 .Study-Stories-article {
@@ -614,27 +619,21 @@ h2{
     background-color: #955c22; /* Mørkere farge ved hover */
 }
 
-.button-link{
-    display: block; /* Gjør knappen til et blokkelement */
-    margin: 10px auto; /* Sentrerer knappen horisontalt */
-    border: none;
-    background: none;
+.bold-underline-link{
+    display: block; /* Gjør linken til et blokkelement */
     text-align: center; /* Sentrerer knappeteksten */
-    cursor: pointer;
-}
-.button-link > p{
-    color: black;
     text-decoration:underline darkorange;
     font-size: 1.2em;
     font-weight: bold;
-	transition: transform 0.2s;
-    align-items: center;
+    transition: transform 0.2s;
 }
-.button-link>p:hover{
+
+.bold-underline-link:hover{
     text-decoration: underline black;
     font-weight: bolder;
-	transform: scale(1.05);
+    transform: scale(1.05);
 }
+
 .hr-short{
 	width: 40%;
 	margin-top: 10px;
@@ -770,18 +769,21 @@ h2{
     display: inline-block;
     text-align: center;
     padding: 0.313rem;
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.footer-social-icons li:hover {
+    transform: scale(1.2); /* Gjør ikonene større ved hover */
+    color:#EF8354 ;
 }
 
 .footer-link {
-	color: white;
+    color: white;
+    transition: color 0.3s ease;
 }
 
 .footer-link:hover {
-    color: #EF8354;
-}
-
-.footer-social-icons i:hover {
-    color: #EF8354;
+    color: #EF8354; /* Endrer fargen til oransje */
 }
 
 .footer-bottom-bar {
@@ -798,5 +800,46 @@ h2{
     font-size: 1rem;
     padding: 0.45rem;
 }
+/* CSS FOR ACCESSIBILITY*/
+.accessibility-main {
+    display: block;
+    max-width: 100%;
+    text-align: center;
+}
+
+.accessibility-p-main {
+    margin: 0 auto 2rem auto;
+    width: 65%;
+}
+
+.accessibility-figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.accessibility-img {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.accessibility-pic-1 {
+    width: 60%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.accessibility-img figcaption {
+    text-align: center;
+    font-size: smaller;
+    padding-bottom: 2rem;
+    width: 75%;
+}
+
+
 
 
