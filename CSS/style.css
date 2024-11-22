@@ -12,8 +12,6 @@ html,body,footer{
 	padding: 0%;
 	box-sizing: border-box;
 	font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
-    hyphens: auto;/*Deler opp ordene og gir de bindestrek*/
-    overflow-wrap: break-word;/*Deler opp ordene som stikker utenfor plaseringen sin*/
 }
 a {
     color: black;
@@ -140,7 +138,7 @@ h4{
 .header-menu p {
 	font-weight: 700;
 	text-transform: uppercase;
-	color: white;
+	color: black;
 }
 
 .header-bottom {
@@ -316,12 +314,6 @@ span {
 	position: relative;
 	transition: height 0.3s cubic-bezier(0.24, 0.59, 0.38, 0.94);
 }
-@media(max-width:850px){
-    .accordion-text{
-        padding-left: 25px;
-        padding-right: 0px;
-    }
-}
 
 .accordion-text-para {
 	font-family: inherit;
@@ -419,11 +411,6 @@ span {
     margin-right: 20px;
 	border-top: 1px solid black;
     padding-top: 15px;
-}
-@media(max-width:850px){
-    .subject{
-        width: 100%;
-    }
 }
 
 .study-plan a {
@@ -630,21 +617,27 @@ span {
     background-color: #955c22; /* Mørkere farge ved hover */
 }
 
-.bold-underline-link{
-    display: block; /* Gjør linken til et blokkelement */
+.button-link{
+    display: block; /* Gjør knappen til et blokkelement */
+    margin: 10px auto; /* Sentrerer knappen horisontalt */
+    border: none;
+    background: none;
     text-align: center; /* Sentrerer knappeteksten */
+    cursor: pointer;
+}
+.button-link > p{
+    color: black;
     text-decoration:underline darkorange;
     font-size: 1.2em;
     font-weight: bold;
-    transition: transform 0.2s;
+	transition: transform 0.2s;
+    align-items: center;
 }
-
-.bold-underline-link:hover{
+.button-link>p:hover{
     text-decoration: underline black;
     font-weight: bolder;
-    transform: scale(1.05);
+	transform: scale(1.05);
 }
-
 .hr-short{
 	width: 40%;
 	margin-top: 10px;
@@ -723,7 +716,7 @@ span {
 }
 
 .footer-content {
-    padding: 5%;
+    width: 33.3%;
 	color: white;
     text-align: center;
 }
@@ -811,7 +804,9 @@ span {
     font-size: 1rem;
     padding: 0.45rem;
 }
+
 /* CSS FOR ACCESSIBILITY*/
+
 .accessibility-main {
     display: block;
     max-width: 100%;
@@ -850,6 +845,401 @@ span {
     padding-bottom: 2rem;
     width: 75%;
 }
+
+/* CSS FOR ACTIVITY*/
+
+.header-activity {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    z-index: 1000; /* Ensure header is on top */    
+    background: transparent;
+}
+
+header .activity-nav {
+    margin-top: 20px;
+    padding-left: 200px;
+}
+
+.f1-logo{
+    float: left;
+    margin-left: 10px;
+    
+}
+.f1-logo img {
+    width: 150px;
+    height: 100px;
+}
+
+
+.activity-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: large;
+    transition: 0.3s ease-in-out;;
+}
+
+.activity-nav a:hover {
+    color: aqua;
+}
+.activity-nav li{
+    list-style: none;
+    display: inline-block;
+    margin: 15px 20px;
+    text-transform: uppercase;
+   
+}
+
+
+/* Main section layout */
+.activity-main {
+    margin-top: 0px;
+    width: 100%;
+}
+
+/* Activity section styling */
+.activity-section {
+    background-image: url(./Images/f1background.png);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px; /* Set a specific height for the parallax effect */
+    background-attachment: fixed; /* Parallax effect  source: https://www.w3schools.com/howto/howto_css_parallax.asp*/ 
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%; /* Full width */
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100vh;
+}
+.activity-content {
+    display: flex;
+    flex-direction: column;  /* Stacks the elements vertically */
+    justify-content: center;  /* Aligns the children (title, subtitle, button) vertically */
+    align-items: center;  /* Centers them horizontally */
+    gap: 20px;  /* Adds space between the stacked elements */
+    width: 755px;
+}
+
+.read-more-button {
+    display: flex;
+    background-color: red;
+    text-decoration: none;
+    border-radius: 100px;
+    color: rgb(255, 255, 255);
+    width: 10rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+
+}
+.activity-nav a::after {
+    content: ""; /* Creates an empty pseudo-element */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px; /* Thickness of the line */
+    background-color: aqua; /* Color of the underline */
+    transition: width 0.3s ease; /* Controls animation speed */
+}
+.activity-nav a :hover::after {
+    width: 100%; /* Extends the line to full width */
+}
+.nav-scrolled {
+    background: linear-gradient(
+        180deg,
+        rgba(45, 45, 28, 1) 10%,
+        rgba(45, 45, 28, 0.75) 40%,
+        rgba(45, 45, 28, 0.5) 64%,
+        rgba(255, 255, 255, 0) 100%
+      );;
+}
+.activity-section h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 70px;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3), 5px 5px 70px rgba(0, 0, 0, 0.15);
+
+}
+.activity-section p {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15); 
+}
+.read-more-button p {
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+.activity-title {
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 0.866);
+}
+.f1-teams * {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+.f1-teams {
+    display: flex;
+    justify-content: center;  
+    flex-wrap: wrap;
+    width: 100%;
+    background: #181818;
+    height: 100%;
+}
+.f1box-container{
+    background-color: #181818;
+    border-radius: 8px;
+    border-right: solid 2px;
+	border-left: 0;
+    border-image: linear-gradient(to bottom, aqua, aqua, rgb(49, 133, 133)) 1 100%;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 50px;
+}
+.f1-content li {
+    color: white;
+}
+.f1box-container img {
+    width: 325px;
+    height: 180px;
+
+}
+.f1-content {
+    padding: 16px;
+}
+.f1box-container h2 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.f1box-container ul {
+    list-style-type: none;
+    border-bottom: 1px solid white;
+}
+.f1box-container a {
+    text-decoration: none;
+    color: white
+}
+
+.f1Teams-button {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    width: 6rem; /* Adjusted width */
+    height: 2rem; /* Adjusted height */
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    font-weight: 500;
+    margin-top: 0.5rem; /* Adds space from the list */
+    margin-left: 0; /* Aligns with the left padding of .f1-content */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+.f1Teams-button:hover {
+    background: white;
+    color: black;
+}
+
+
+/* Slideshow container */
+.f1-drivers {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    background: rgba(24, 24, 24, 0.98);
+    color: white;
+    height: 80vh; /* Set a smaller height */
+    padding: 20px;
+  }
+  
+  /* Hide the images by50%default */
+  .mySlides {
+    height: 100%; /* Ensure slides take full height of the section */
+    width: 100%; /* Allow flexibility for responsive design */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center images inside slides */
+    overflow: hidden; 
+
+  }
+
+  .mySlides img {
+    width: 80%; /* Set the image width as a percentage of its container */
+    height: 85%; /* Maintain aspect ratio */
+    border: 2px solid; /* Add the border around the image */
+    border-image: linear-gradient(to bottom, aqua, aqua, rgb(49, 133, 133)) 1 100%;
+    display: block; /* Ensure the image behaves like a block element */
+    margin: 0 auto; /* Center the image within the container */
+}
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: aqua;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+.prev {
+    left: 20px; /* Distance from the left edge */
+}
+
+.next {
+    right: 20px; /* Distance from the right edge */
+}
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+ 
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+ .f1Drivers-hover{
+    position: absolute; /* Position the overlay over the image */
+    top: 0;
+    left: 0;
+    width: 100%; /* Match the image's width */
+    height: 100%; /* Match the image's height */
+    backdrop-filter: blur(15px);
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; 
+
+}
+.mySlides:hover .f1Drivers-hover {
+    opacity: 1; /* Show the overlay on hover */
+}
+h3 {
+    font-size: 30px; /* Adjust font size if needed */
+    font-weight: 300;
+    color: white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    display: grid;
+    grid-template-columns: 50px max-content 50px; /* Set fixed width for the lines */
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.f1-drivers h3:after, h3:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    height: 5px;
+    background-color: rgba(24, 24, 24, 0.98);
+}
+
+/* Source:  https://codepen.io/vedadesigns/pen/GPxYZg */
+
+.f1-drivers h4 {
+    display: flex;
+    justify-content: center;
+    padding-top: 125px;
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 0;
+}
+.f1Drivers-text {
+    font-size: 1rem; /* Adjust the font size for compactness */
+    line-height: 1.2; /* Reduce line spacing */
+    margin: 0; /* Remove external margins */
+    padding: 20px 200px;
+    text-align: center; /* Optional: Center the text if needed */
+    color: white; /* Ensure text remains readable */
+} 
+#moreTeams {
+    display: none; /* Initially hidden */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#moreTeams.visible {
+    display: flex;
+} 
+
+#toggleBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #181818; /* Match the box color */
+    color: white;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+    cursor: pointer; /* Make it look clickable */
+    border: 1px solid white; /* Optional border for visibility */
+}
+
+#toggleBtn:hover {
+    background-color: white;
+    color: black;
+}
+
 
 
 
