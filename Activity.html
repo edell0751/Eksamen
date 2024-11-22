@@ -7,6 +7,72 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css"> 
+    <script>
+
+document.addEventListener("DOMContentLoaded", function() {
+            const header = document.querySelector("header");
+            const sectionOne = document.querySelector(".activity-section");
+
+            const sectionOneOptions = { rootMargin: "-100px 0px 0px 0px"};
+
+            const sectionOneObserver = new IntersectionObserver(function(entries, sectionOneObserver) {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) {
+                        header.classList.add("nav-scrolled");
+                    } else {
+                        header.classList.remove("nav-scrolled");
+                    }
+                });
+            }, sectionOneOptions);  
+
+            sectionOneObserver.observe(sectionOne);
+        });
+        let slideIndex = 1;
+
+        // Ensure the first slide is visible on page load
+        document.addEventListener("DOMContentLoaded", function() {
+            showSlides(slideIndex);
+        });
+        
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1; }
+            if (n < 1) { slideIndex = slides.length; }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block"; // Ensure the current slide is visible
+            dots[slideIndex - 1].className += " active"; // Highlight the corresponding dot
+        }
+
+        function toggleTeams() {
+            var moreTeams = document.getElementById("moreTeams");
+            var toggleBtn = document.getElementById("toggleBtn");
+        
+            // Toggle visibility and button text
+            if (moreTeams.style.display === "none" || moreTeams.style.display === "") {
+                moreTeams.style.display = "flex"; // Ensure consistent layout
+                toggleBtn.innerHTML = "<p>Show Less Teams</p>";
+            } else {
+                moreTeams.style.display = "none";
+                toggleBtn.innerHTML = "<p>Show More Teams</p>";
+            }
+        }
+        
+    </script>
     <title>Activity</title>
 
 </head>
@@ -17,10 +83,10 @@
     </figure>
     <nav class="activity-nav">
        <ul>
-            <li class="list-activity"><a href="" class="activity-a">Hjem</a></li>
-            <li class="list-activity"><a href="" class="activity-a">Studieoversikt</a></li>
-            <li class="list-activity"><a href="" class="activity-a">Accessibility</a></li>
-            <li class="list-activity"><a href="" class="activity-a">Activity</a></li>
+            <li class="list-activity"><a href="index.html" class="activity-a">Hjem</a></li>
+            <li class="list-activity"><a href="Activity.html" class="activity-a">Activity</a></li>
+            <li class="list-activity"><a href="Accessibility.html" class="activity-a">Accessibility</a></li>
+            <li class="list-activity"><a href="Gitpage.html" class="activity-a">GitPage</a></li>
         </ul>  
     </nav>
 </header>
@@ -107,7 +173,7 @@
                     <li><strong>Race Wins:</strong> 121+</li>
                     <li><strong>Pole Positions:</strong> 281+</li>
                 </ul>
-                <a href="https://www.astonmartinf1.com/en-GB/" class="f1Teams-button">More info</a>
+                <a href="https://www.astonmartinf1.com/en-GB/" class="f1tseams-button">More info</a>
                 </div>
             </div>
         </div>  
@@ -121,7 +187,7 @@
                     <li><strong>Race Wins:</strong> 121+</li>
                     <li><strong>Pole Positions:</strong> 281+</li>
                 </ul>
-                <a href="https://www.ferrari.com/en-EN/formula1" class="f1Teams-button">More info</a>
+                <a href="https://www.ferrari.com/en-EN/formula1" class="f1teams-button">More info</a>
                 </div>
             </div>
         </div>  
@@ -196,7 +262,7 @@
         <div class="mySlides fade">
             <img src="./Bilder/hamilton.png" class="f1Drivers-image" alt="Hamilton photo">
             <figure class="f1Drivers-hover">
-                <h4> Lewis Hamilton</h4>
+                <h4 class="activity-h4"> Lewis Hamilton</h4>
                 <p class="f1Drivers-text">
                     Lewis Hamilton is a British Formula 1 driver and one of the greatest in the sport's history. Driving for Mercedes-AMG Petronas,
                      he has won 7 World Championships, tying Michael Schumacher's record. Known for his incredible skill, consistency, and adaptability,
@@ -268,6 +334,5 @@
    
 
 </main>
-    <script src="Script/javascript.js"></script>
 </body>
 </html>

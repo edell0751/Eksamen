@@ -1030,7 +1030,7 @@ header .activity-nav {
     color: white
 }
 
-.f1Teams-button {
+.f1teams-button {
     display: flex;
     text-decoration: none;
     color: white;
@@ -1044,7 +1044,7 @@ header .activity-nav {
     margin-left: 0; /* Aligns with the left padding of .f1-content */
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
-.f1Teams-button:hover {
+.f1teams-button:hover {
     background: white;
     color: black;
 }
@@ -1191,7 +1191,7 @@ header .activity-nav {
 
 /* Source:  https://codepen.io/vedadesigns/pen/GPxYZg */
 
-.f1-drivers h4 {
+.f1activity {
     display: flex;
     justify-content: center;
     padding-top: 125px;
@@ -1205,7 +1205,7 @@ header .activity-nav {
     margin: 0; /* Remove external margins */
     padding: 20px 200px;
     text-align: center; /* Optional: Center the text if needed */
-    color: white; /* Ensure text remains readable */
+    color: white; /* Ensure text remaiss readable */
 } 
 #moreTeams {
     display: none; /* Initially hidden */
