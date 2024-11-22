@@ -123,7 +123,7 @@
                         </ul>
                     </div>
                     <div class="metadata-list-item">
-                        <span class="metadata-headline">Undervisnings<wbr>språk</span>
+                        <span class="metadata-headline">Undervisningsspråk</span>
                         <ul class="items">
                             <li>Norsk</li>
                             <li>Engelsk</li>
@@ -275,7 +275,7 @@
 										</div>
 									</div>
 									<div class="subject">
-										<a href="#">Programmering<wbr>ing</a><br>
+										<a href="#">Programmering</a><br />
 										<div class="flex">
 											<span>DAPE1400</span><br>
 											<span>10 stp.</span>
@@ -382,7 +382,7 @@
 								<h3>4. semester</h3>
 								<div class="subjects">
 									<div class="subject">
-										<a href="#">Termodynamikk og statistisk fysikk</a><br>
+										<a href="#">Termodynamikk og statistisk fysikk</a><br />
 										<div class="flex">
 											<span>MAMO2400</span><br>
 											<span>10 stp.</span>
@@ -1010,7 +1010,7 @@
                         <p class="OtherStudies-title">Byggingeniør</p>
                         <p class="OtherStudies-faculty">Varighet: 3 år <br> Studiested: Oslo <br> Omfang: Heltid</p>
                         <p class="OtherStudies-explanation">Som byggingeniør er du ettertraktet i arbeidsmarkedet og 
-                            jobber med moderne teknologi innen konstruksjons<wbr>teknikk, vann og miljø, infrastruktur og byutvikling.</p>
+                            jobber med moderne teknologi innen konstruksjonsteknikk, vann og miljø, infrastruktur og byutvikling.</p>
                       </figcaption>
                     </a>
                   </figure>
@@ -1109,13 +1109,13 @@
 
 		<section class="Study-info">
 			<br>
-			<h2>Studiested:</h2>
-			<button type = "button" class="button-link"><p>Studiested Pilestredet</p></button>
-			<br>
-			<h2>Spørsmål om utdanningen?</h2>
-			<button type = "button" class="button-link"><p>Har du spørsmål om utdanningen, 
-			kontakt oss gjennom vårt kontaktskjema.</p></button>
-			<br>
+            <h2>Studiested:</h2>
+            <a class="bold-underline-link" href="https://www.oslomet.no/om/studiested-pilestredet" target="_blank">Studiested Pilestredet</a>
+            <br>
+            <h2>Spørsmål om utdanningen?</h2>
+            <a class="bold-underline-link" href="https://www.oslomet.no/kontaktskjema#Jeg%20vil%20bli%20student"
+            target="_blank">Har du spørsmål om utdanningen, kontakt oss gjennom vårt kontaktskjema</a>
+            <br>
             <a href="https://www.oslomet.no/om/ansatt/krhel3944/" target="_blank">
 			    <figure class="OtherStudies-row">
 				    <picture>
@@ -1180,76 +1180,7 @@
             <p>&copy; OSLOMET</p>
         </div>
     </footer>
-	<script>
-		function toggleExtraCards() {
-    const extraCards = document.querySelectorAll('.OtherStudies-container .OtherStudies-column:nth-child(n+4)');
-    const btn = document.querySelector('.show-more-btn');
-
-    // Sjekk om de ekstra kortene er synlige eller skjulte
-    let areHidden = extraCards[0].style.display === 'none' || extraCards[0].style.display === '';
-
-    // Veksle synlighet
-    extraCards.forEach(card => {
-        card.style.display = areHidden ? 'block' : 'none';
-    });
-
-    // Oppdater knappetekst basert på synligheten
-    btn.innerText = areHidden ? 'Vis færre' : 'Vis flere';
-}
-
-    // Setting up javascript for menu and search-bar
-        const hamburger = document.querySelector('.hamburger');
-        const closeIcon = document.querySelector('.close');
-        const fullMenu = document.getElementById('fullMenu');
-
-        hamburger.addEventListener('click', () => {
-            hamburger.style.display = 'none';
-            closeIcon.style.display = 'block';
-            fullMenu.classList.add('show');
-        });
-
-        closeIcon.addEventListener('click', () => {
-            hamburger.style.display = 'block';
-            closeIcon.style.display = 'none';
-            fullMenu.classList.remove('show');
-        });
-
-        const searchIcon = document.querySelector('.header-search .search-icon');
-        const headerSearch = document.querySelector('.header-search');
-        const searchInput = document.querySelector(
-            '.header-search .search-input'
-        );
-
-        // Show search input when search-icon is clicked
-        searchIcon.addEventListener('click', (e) => {
-            e.stopPropagation(); // Prevent this click from triggering the page click event
-            headerSearch.classList.toggle('active');
-        });
-
-        // Hide search input when clicking anywhere else on the page
-        document.addEventListener('click', (e) => {
-            // Check if the click is outside the header-search container
-            if (!headerSearch.contains(e.target)) {
-                headerSearch.classList.remove('active');
-            }
-        });
-
-    document.querySelectorAll('.accordion-h2').forEach((accordion) => {
-            accordion.addEventListener('click', function () {
-                // Toggle the active class on the accordion header
-                this.classList.toggle('active');
-
-                // Select the corresponding accordion-text and toggle its display
-                let accordionText = this.nextElementSibling;
-                if (accordionText.style.display === 'block') {
-                    accordionText.style.display = 'none';
-                } else {
-                    accordionText.style.display = 'block';
-                }
-            });
-        });
-	</script>
-    
+	<script src="Script/javascript.js"></script>
 </body>
 </html>
 

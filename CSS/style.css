@@ -12,6 +12,8 @@ html,body,footer{
 	padding: 0%;
 	box-sizing: border-box;
 	font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
+    hyphens: auto;/*Deler opp ordene og gir de bindestrek*/
+    overflow-wrap: break-word;/*Deler opp ordene som stikker utenfor plaseringen sin*/
 }
 a {
     color: black;
@@ -314,6 +316,12 @@ span {
 	position: relative;
 	transition: height 0.3s cubic-bezier(0.24, 0.59, 0.38, 0.94);
 }
+@media(max-width:850px){
+    .accordion-text{
+        padding-left: 25px;
+        padding-right: 0px;
+    }
+}
 
 .accordion-text-para {
 	font-family: inherit;
@@ -411,6 +419,11 @@ span {
     margin-right: 20px;
 	border-top: 1px solid black;
     padding-top: 15px;
+}
+@media(max-width:850px){
+    .subject{
+        width: 100%;
+    }
 }
 
 .study-plan a {
@@ -617,27 +630,21 @@ span {
     background-color: #955c22; /* Mørkere farge ved hover */
 }
 
-.button-link{
-    display: block; /* Gjør knappen til et blokkelement */
-    margin: 10px auto; /* Sentrerer knappen horisontalt */
-    border: none;
-    background: none;
+.bold-underline-link{
+    display: block; /* Gjør linken til et blokkelement */
     text-align: center; /* Sentrerer knappeteksten */
-    cursor: pointer;
-}
-.button-link > p{
-    color: black;
     text-decoration:underline darkorange;
     font-size: 1.2em;
     font-weight: bold;
-	transition: transform 0.2s;
-    align-items: center;
+    transition: transform 0.2s;
 }
-.button-link>p:hover{
+
+.bold-underline-link:hover{
     text-decoration: underline black;
     font-weight: bolder;
-	transform: scale(1.05);
+    transform: scale(1.05);
 }
+
 .hr-short{
 	width: 40%;
 	margin-top: 10px;
@@ -716,7 +723,7 @@ span {
 }
 
 .footer-content {
-    width: 33.3%;
+    padding: 5%;
 	color: white;
     text-align: center;
 }
