@@ -209,6 +209,11 @@ ion-icon {
  .article-wrapper{
 	padding: 50px 15%;
 }
+@media(max-width:450px){
+    .article-wrapper{
+        padding: 50px 5%;
+    }
+}
 
 
 .video-player {
