@@ -1165,7 +1165,7 @@ header .activity-nav {
 .mySlides:hover .f1Drivers-hover {
     opacity: 1; /* Show the overlay on hover */
 }
-h3 {
+.activity-h3 {
     font-size: 30px; /* Adjust font size if needed */
     font-weight: 300;
     color: white;
@@ -1180,7 +1180,7 @@ h3 {
     justify-content: center;
 }
 
-.f1-drivers h3:after, h3:before {
+.activity-h3:after, .activity-h3:before {
     content: " ";
     display: block;
     border-bottom: 1px solid white;
