@@ -575,15 +575,19 @@ span {
     width: 100%; /* Sørg for at den dekker hele bredden på sin seksjon */
     margin: 0 auto; /* Sentraliser eventuelle subelementer */
     padding: 0 4%; /* Litt side-padding hvis ønsket */
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
-
-
+@media(max-width:850px){
+    .Study-Stories-container{
+        flex-direction: column;
+    }
+}
 
 .Study-Stories-article {
   width: 100%;
+  flex: 1 1 calc(50% - 20px);
   height: 100%;
   padding: 2%;
   color: black;
