@@ -12,8 +12,6 @@ html,body,footer{
 	padding: 0%;
 	box-sizing: border-box;
 	font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
-    hyphens: auto;/*Deler opp ordene og gir de bindestrek*/
-    overflow-wrap: break-word;/*Deler opp ordene som stikker utenfor plaseringen sin*/
 }
 a {
     color: black;
