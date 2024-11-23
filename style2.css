@@ -7,7 +7,7 @@ html {
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box; /* Corrected syntax */
 }
 
@@ -129,14 +129,15 @@ header .activity-nav {
         rgba(255, 255, 255, 0) 100%
       );;
 }
-.activity-section h1 {
-    font-family: "Roboto", sans-serif;
-    font-size: 70px;
+.activity-section .h1-activity {
+    
+    font-size: 60px;
     color: white;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3), 5px 5px 70px rgba(0, 0, 0, 0.15);
+    text-align: center;
 
 }
-.activity-section p {
+.activity-section .activity-text {
     font-family: "Roboto", sans-serif;
     font-size: 18px;
     color: white;
@@ -187,6 +188,8 @@ header .activity-nav {
 .f1box-container h2 {
     font-size: 1.5rem;
     color: white;
+    text-align: left;
+    margin: 0;
 }
 
 .f1box-container ul {
@@ -325,7 +328,7 @@ header .activity-nav {
     left: 0;
     width: 100%; /* Match the image's width */
     height: 100%; /* Match the image's height */
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(10px);
     opacity: 0; /* Initially hidden */
     transition: opacity 0.3s ease; 
 
@@ -362,19 +365,36 @@ header .activity-nav {
 .f1-drivers h4 {
     display: flex;
     justify-content: center;
-    padding-top: 125px;
+    padding-top: 10%;
     font-size: 2rem;
     font-family: "Roboto", sans-serif;
     margin-bottom: 0;
+    color: white;
+    text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.9); 
 }
-.f1Drivers-text {
-    font-size: 1rem; /* Adjust the font size for compactness */
-    line-height: 1.2; /* Reduce line spacing */
-    margin: 0; /* Remove external margins */
-    padding: 20px 200px;
-    text-align: center; /* Optional: Center the text if needed */
-    color: white; /* Ensure text remains readable */
-} 
+.hover-list {
+    position: absolute; /* Allow precise placement */
+    top: 50%; /* Move to 50% of the container's height */
+    left: 50%; /* Move to 50% of the container's width */
+    transform: translate(-50%, -50%); /* Center perfectly */
+    text-align: center; /* Centred text when it hovers */
+    text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.9); 
+}
+
+.hover-list ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    color: aqua;
+}
+
+.hover-list li {
+    margin: 5px 0; /* Add spacing between items */
+    font-size: 20px; /* Adjust font size */
+    color: white;
+    
+}
+
 #moreTeams {
     display: none; /* Initially hidden */
     flex-wrap: wrap;
@@ -408,15 +428,8 @@ header .activity-nav {
     color: black;
 }
 
-html{
-    scroll-behavior: smooth;
-}
+/* CSS INDEX */
 
-/*lar ikke oss scrolle i x-retning. låser den slik at den kun kan scrolles nedover,
-og holder contentet innenfor rammene.*/
-html,body,footer{
-    overflow-x: hidden;
-}
 * {
 	margin: 0%;
 	padding: 0%;
@@ -436,7 +449,6 @@ h1{
 
 body{
     background-color: #F1E4E8;
-    overflow: hidden;
 }
 h2{
     margin-top: 0.313rem;
@@ -727,7 +739,6 @@ span {
 	position: relative;
 	transition: height 0.3s cubic-bezier(0.24, 0.59, 0.38, 0.94);
 }
-
 @media(max-width:850px){
     .accordion-text{
         padding-left: 25px;
@@ -1223,23 +1234,91 @@ span {
     font-size: 1rem;
     padding: 0.45rem;
 }
+/* CSS FOR ACCESSIBILITY*/
+.accessibility-main {
+    display: block;
+    max-width: 100%;
+    text-align: center;
+}
 
-.accordion-h2.active {
-    background-color: transparent; /* Change this to prevent gray background when clicking button on in */ 
+.accessibility-p-main {
+    margin: 0 auto 2rem auto;
+    width: 65%;
+}
+
+.accessibility-figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.accessibility-img {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.accessibility-pic-1 {
+    width: 60%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.accessibility-img figcaption {
+    text-align: center;
+    font-size: smaller;
+    padding-bottom: 2rem;
+    width: 75%;
+}
+
+/* Css for GitPage */
+
+.GitPage-main {
+    display: block;
+    max-width: 100%;
+    text-align: center;
+}
+
+.GitPage-p-main {
+    margin: 0 auto 2rem auto;
+    width: 65%;
+}
+
+.GitPage-figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.GitPage-img {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.GitPage-pic-1 {
+    width: 60%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.GitPage-img figcaption {
+    text-align: center;
+    font-size: smaller;
+    padding-bottom: 2rem;
+    width: 75%;
 }
 
 
 
 
 
-
-
-
-
-
-
-
- 
 
 
 
