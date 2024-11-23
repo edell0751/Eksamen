@@ -117,7 +117,7 @@ function toggleExtraCards() {
         document.querySelectorAll('.accordion-h2').forEach((accordion) => {
             accordion.addEventListener('click', function () {
                 // Toggle the active class on the accordion header
-                this.classList.toggle('active');
+                
         
                 // Select the corresponding accordion-text and toggle its display
                 let accordionText = this.nextElementSibling;
