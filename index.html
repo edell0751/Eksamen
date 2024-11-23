@@ -13,66 +13,78 @@
 </head>
 <body>
 	<header>
-        <div class="header-up">
-            <div class="header-left">
-                <a href="index.html" class="logo-header">
-                    <picture>
-                    <img src="bilder/Oslomet-logo-hvit.png" alt="OsloMet - Front page">
-                    </picture>   
-                </a>
-            </div>
-            <div class="header-right">
-                <div class="header-search">
-                    <p class="search-text">Søk</p>
-                    <ion-icon name="search-outline" class="search-icon"></ion-icon>
-                    <input type="text" class="search-input" placeholder="Søk..." aria-label="Search"/>
-                </div>
-                <div class="header-menu">
-                    <p>Meny</p>
-                    <ion-icon name="menu-outline" class="menu-icon hamburger"></ion-icon>
-                    <ion-icon name="close-outline" class="menu-icon close"></ion-icon>
-                </div>
-            </div>
-        </div>
-        <nav class="header-bottom">
-            <a href="index.html" class="header-bottom-link">
-                <ion-icon name="chevron-forward-outline"></ion-icon>
-                <span id="top-header">Home</span>
-            </a>
-
-            <a href="Activity.html" class="header-bottom-link">
-                <span id="top-header"> Activity</span>
-            </a>
-
-            <a href="Accessibility.html" class="header-bottom-link">
-                <span id="top-header"> Accessibility</span>
-            </a>
-
+		<!-- Øvre del av headeren som inneholder logo og søke- og menyikoner -->
+		<div class="header-up">
+			<div class="header-left">
+				<!-- Logo som lenker til hovedsiden -->
+				<a href="index.html" class="logo-header">
+					<picture>
+						<!-- Logo bilde for OsloMet -->
+						<img src="bilder/Oslomet-logo-hvit.png" alt="OsloMet - Forside">
+					</picture>
+				</a>
+			</div>
+			<div class="header-right">
+				<!-- Seksjon for søkefunksjon -->
+				<div class="header-search">
+					<p class="search-text">Søk</p>
+					<!-- Søkeikon for å aktivere søk -->
+					<ion-icon name="search-outline" class="search-icon"></ion-icon>
+					<!-- Søkeinputfelt for brukere -->
+					<input type="text" class="search-input" placeholder="Søk..." aria-label="Søk"/>
+				</div>
+				<!-- Menyikon som aktiverer en meny (mobilvennlig design) -->
+				<div class="header-menu">
+					<p>Meny</p>
+					<!-- Åpne meny-ikon -->
+					<ion-icon name="menu-outline" class="menu-icon hamburger"></ion-icon>
+					<!-- Lukk meny-ikon -->
+					<ion-icon name="close-outline" class="menu-icon close"></ion-icon>
+				</div>
+			</div>
+		</div>
+		<!-- Navigasjonsmeny for nettsiden -->
+		<nav class="header-bottom">
+			<!-- Lenker til de forskjellige sidene activity, hjem(index), accessibility og gitpage -->
+			<a href="index.html" class="header-bottom-link">
+				<ion-icon name="chevron-forward-outline"></ion-icon>
+				<span id="top-header">Home</span>
+			</a>
+	
+			<a href="Activity.html" class="header-bottom-link">
+				<span id="top-header">Activity</span>
+			</a>
+	
+			<a href="Accessibility.html" class="header-bottom-link">
+				<span id="top-header">Accessibility</span>
+			</a>
+	
 			<a href="Gitpage.html" class="header-bottom-link">
-                <span id="top-header"> GitPage</span>
-            </a>
-
-        </nav>
-    </header>
+				<span id="top-header">GitPage</span>
+			</a>
+		</nav>
+	</header>
+	
     <main>
 
+		<!-- Fullskjermmeny som vises når menyikonet aktiveres -->
 		<div class="menu" id="fullMenu">
 			<div class="menu-items">
-				<a href="https://www.oslomet.no/studier">Studier</a>
-				<a href="https://www.oslomet.no/forskning">Forskningen vår</a>
-				<a href="https://www.oslomet.no/om/samarbeid">Samarbeid</a>
-				<a href="https://www.oslomet.no/ub">Universitetsbiblioteket</a>
-				<a href="https://www.oslomet.no/om">Om OsloMet</a>
-				<a href="https://www.oslomet.no/om/kontakt">Kontakt</a>
-				<a href="https://www.oslomet.no/om/for-studenter">For studenter</a>
-				<a href="https://www.oslomet.no/studier/studieoversikt">Studieoversikt</a>
+				<!-- Hovedmeny med lenker til ulike seksjoner på OsloMet-nettsiden -->
+				<a href="https://www.oslomet.no/studier">Studier</a> <!-- Lenke til siden for studier -->
+				<a href="https://www.oslomet.no/forskning">Forskningen vår</a> <!-- Lenke til forskningssiden -->
+				<a href="https://www.oslomet.no/om/samarbeid">Samarbeid</a> <!-- Lenke til informasjon om samarbeid -->
+				<a href="https://www.oslomet.no/ub">Universitetsbiblioteket</a> <!-- Lenke til Universitetsbiblioteket -->
+				<a href="https://www.oslomet.no/om">Om OsloMet</a> <!-- Lenke til generell informasjon om OsloMet -->
+				<a href="https://www.oslomet.no/om/kontakt">Kontakt</a> <!-- Lenke til kontaktsiden -->
+				<a href="https://www.oslomet.no/om/for-studenter">For studenter</a> <!-- Lenke til ressurser for studenter -->
+				<a href="https://www.oslomet.no/studier/studieoversikt">Studieoversikt</a> <!-- Lenke til full oversikt over studier -->
 			</div>
 		</div>
 
+		<!-- Seksjon for å vise en relevant YouTube-video om bachelorstudier i matematisk modellering -->
         <section class="article-wrapper">
-			<!-- henter inn video fra youtube og tilegner den egenskaper som fullscreen osv
-			 fikser også på title, som gjør det tilgjengelig for screen readers 
-			 og få meg seg hva iframe inneholder.-->
+			<!-- Integrerer en video fra YouTube som støtter flere funksjoner som fullskjerm og autoplay -->
 			<iframe
 				class="video-player"
 				src="https://www.youtube.com/embed/Ip6CrMXGrkE?si=ogHdIJ88Ny_nK7ub"
@@ -83,23 +95,32 @@
 			></iframe>
 
 
-
+			<!-- Hovedinnhold som presenterer informasjon om bachelorprogrammet -->
             <div class="main-content">
+				<!-- Tittelområde for studiet -->
                 <div class="title">
+					 <!-- Hovedoverskrift som viser studieprogrammet -->
 					<h1>
 						Matematisk modellering og datavitenskap - ingeniør
 					</h1>
 					<p class="headline-para">Bachelorprogram</p>
 				</div>
+				<!-- Liste med metadata for programmet, som beskriver nøkkeldetaljer -->
                 <div class="metadata-list">
+					<!-- Hvert element i metadata-listen representerer én detalj -->
                     <div class="metadata-list-item">
+						<!-- Overskrift for detaljen: Studiested -->
                         <span class="metadata-headline">Studiested</span>
+						<!-- Innhold for denne detaljen -->
                         <ul class="items">
                             <li>Pilestredet i oslo</li>
                         </ul>
                     </div>
+
                     <div class="metadata-list-item">
+						<!-- Overskrift for detaljen: Varighet -->
                         <span class="metadata-headline">Varighet</span>
+						 <!-- Innhold for denne detaljen -->
                         <ul class="items">
                             <li>3 år</li>
                         </ul>
@@ -146,24 +167,30 @@
             </div>
 
         </section>
+
+		<!-- Seksjon som beskriver innholdet i bachelorstudiet og gir viktig informasjon -->
         <section class="article-wrapper">
+			 <!-- Innledningstekst for studiet -->
 			<article class="article-wrapper-heading">
 				<p class="article-wrapper-para">
 					Få innsikt i matematiske modeller og datadrevne metoder som kan løse
 					mange praktiske og samfunnsnyttige oppgaver.
 				</p>
 			</article>
+			<!-- FAQ (Frequently asked questions): Første seksjon om opptakskrav -->
 			<article class="article-faq">
 				<div class="accordion-block">
+					<!-- Tittel og knapp for å åpne/lukke innhold -->
 					<h2 class="accordion-h2">
 						<button class="accordion-btn" aria-label="Åpne seksjonen for opptakskrav"></button>
 						<span>Opptakskrav og poeng</span>
 					</h2>
+					<!-- Tekst og detaljer om opptakskrav -->
 					<div class="accordion-text">
 						<p class="accordion-text-para">
 							For å søke på dette programmet må du ha
 						</p>
-
+						<!-- Liste over opptakskrav -->
 						<ul class="a-list">
 							<li>
 								<a href="#" class="">
@@ -181,7 +208,8 @@
 							Det kan være konkurranse om plassene. Ved forrige opptak kom alle
 							kvalifiserte søkere inn.
 						</p>
-						
+
+						 <!-- Informasjon om forkurs for søkere uten studiekompetanse -->
 						<p class="accordion-text-para para-3">
 							Hvis du mangler generell studiekompetanse eller enkelte fag fra
 							videregående skole, kan du søke på dette studiet om du har <a href="#" class="para-3-links">bestått
@@ -190,6 +218,8 @@
 					</div>
 				</div>
 			</article>
+
+			<!-- FAQ: Andre seksjon om hvordan man søker -->
 			<article class="article-faq">
 				<div class="accordion-block">
 					<h2 class="accordion-h2">
@@ -200,22 +230,26 @@
 						<p class="accordion-text-para">
 							Du søker på Samordna opptak med studiekode 215 503.
 						</p>
-
+						<!-- Liste med søknadsfrister -->
 						<ul class="a-list">
 							<li>15. april: ordinær søknadsfrist</li>
 							<li>1. mars: frist for enkelte søkere</li>
 						</ul>
+
+						<!-- Lenke til mer informasjon om søknadsprosessen -->
 						<a href="#" class="para-3-links">Mer om å søke på bachelor</a>
                         
 					</div>
 				</div>
 			</article>
+			<!-- FAQ: Tredje seksjon om hva studiet lærer bort -->
 			<article class="article-faq">
 				<div class="accordion-block">
 					<h2 class="accordion-h2">
 						<button class="accordion-btn" aria-label="Åpne seksjonen for hva lærer du?"></button>
 						<span>Hva lærer du?</span>
 					</h2>
+					<!-- Generell beskrivelse av faglig innhold i studiet -->
 					<div class="accordion-text">
 						<p class="accordion-text-para">
 							Bachelor i matematisk modellering og datavitenskap kobler sammen
@@ -232,6 +266,7 @@
 							ta.
 						</p>
 						<br>
+						<!-- Første spesialisering -->
 						<h4>Statistiske og datadrevne metoder</h4>
 						<p class="accordion-text-para 3">Du lærer om hvordan du kan bruke målte data koblet med datadrevne
 							og statistiske metoder til å gjøre beregninger, for eksempel av fremtidige strømpriser.
@@ -239,12 +274,14 @@
 							Moderne metoder innen maskinlæring og kunstig intelligens står sentralt.
 						</p>
 						<br>
+						<!-- Andre spesialisering -->
 						<h4>Vitenskapelige beregninger</h4>
 						<p class="accordion-text-para 3">Du lærer å lage effektive algoritmer, datastrukturer og kildekoder
 							 for å løse matematiske og fysiske problemer med numeriske metoder.
 							Du lærer å utvikle kildekode og metodikk knyttet til medisinsk teknologi, biologiske prosesser og annet.
 						</p>
 						<br>
+						<!-- Tredje spesialisering -->
 						<h4>Matematikk og fysikk</h4>
 						<p class="accordion-text-para 3">Du utforsker algebraiske strukturer, blant annet knyttet til dyp læring og kunstig intelligens.
 							Du lærer differensialgeometri på flater, gruppeteori og kodeteori; matematiske strukturer, representasjonsteori og kategoriteori.
@@ -254,6 +291,8 @@
 					</div>
 				</div>
 			</article>
+			
+			<!-- FAQ: Fjerde seksjon om studiets oppbygning og oversikt -->
 			<article class="article-faq">
 				<div class="accordion-block">
 					<h2 class="accordion-h2">
