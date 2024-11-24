@@ -883,21 +883,9 @@ span {
     }
 }
 
-@media (max-width: 500px) {
+@media(max-width:500px){
     .header-search.active .search-input {
         width: 8.125rem; /* Reduces the width of the search input to 160px when active on very small screens */
-    }
-}
-
-@media(max-width:500px){
-    .header-bottom ,.header-up{
-        padding: 2% 5%;
-    }
-}
-
-@media(max-width:500px){
-    .menu-items{
-        margin-left: 5%;
     }
 }
 
@@ -905,6 +893,9 @@ span {
     .header-up, .header-bottom {
 		padding: 3%;
 	} 
+    .menu-items{
+        margin-left: 5%;
+    }
 }
 
 @media (max-width:700px){
