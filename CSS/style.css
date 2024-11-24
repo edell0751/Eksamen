@@ -982,7 +982,7 @@ span {
 
 @media (max-width: 768px) {
     .accessibility-img {
-        flex-direction: column; /* Endrer fra rad til kolonne */
+        flex-direction: column;
     }
 }
 
