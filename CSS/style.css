@@ -52,46 +52,6 @@ h4{
     padding: 2% 15%;
 
 }
-@media(max-width:500px){
-    .header-up, .header-bottom {
-		padding: 3%;
-	} 
-
-
-	.header-bottom-link span {
-		font-size: 1.025rem;
-	}
-
-    .header-search.active .search-input {
-		right: -24px;
-		opacity: 1;
-		z-index: 1;
-		width: 200px;
-		padding: 8px;
-		font-size: 1rem;
-	}
-
-	.search-input {
-		position: absolute;
-		right: 0;
-		opacity: 0;
-		width: 0;
-		padding: 0;
-		border: 1px solid #222;
-		border-radius: 4px;
-		transition: all 0.4s ease;
-		font-size: 0;
-		background: #fff;
-		z-index: -1;
-	}
-
-}
-
-@media (max-width: 376px) {
-    .header-search.active .search-input {
-        width: 8.125rem; /* Reduces the width of the search input to 160px when active on very small screens */
-    }
-}
 
 .header-right {
     display: flex;
@@ -923,6 +883,12 @@ span {
     }
 }
 
+@media (max-width: 500px) {
+    .header-search.active .search-input {
+        width: 8.125rem; /* Reduces the width of the search input to 160px when active on very small screens */
+    }
+}
+
 @media(max-width:500px){
     .header-bottom ,.header-up{
         padding: 2% 5%;
@@ -933,6 +899,12 @@ span {
     .menu-items{
         margin-left: 5%;
     }
+}
+
+@media(max-width:650px){
+    .header-up, .header-bottom {
+		padding: 3%;
+	} 
 }
 
 @media (max-width:700px){
