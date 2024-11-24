@@ -1235,7 +1235,7 @@ span {
   
   /* Hide the images by50%default */
   .mySlides {
-    height: 100%; /* Ensure slides take full height of the section */
+  
     width: 100%; /* Allow flexibility for responsive design */
     display: flex;
     justify-content: center;
@@ -1422,7 +1422,7 @@ span {
     background-color: white;
     color: black;
 }
-/* Scalling */
+/* Scaling for all sites */
 
 @media screen and (max-width: 580px) {
     .header-activity {
@@ -1474,6 +1474,7 @@ span {
         font-size: 1.5rem; /* Smaller font size for larger screens */
     }
 }
+
 
 
 /* W3schools - "CSS Media Queries" - https://www.w3schools.com/css/css3_mediaqueries.asp */
