@@ -495,11 +495,12 @@ span {
 .OtherStudies-column {
     width: 100%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s;
-    overflow: hidden;
+    transition: transform 0.2s; /* https://www.w3schools.com/css/css3_transitions.asp */
+    overflow: hidden; /*https://www.w3schools.com/cssref/pr_pos_overflow.php*/
     cursor: pointer;
     min-width: 200px;
-	flex: 1 1 calc(33.333% - 2%);
+	flex: 1 1 calc(33.333% - 2%); /*https://www.w3schools.com/cssref/func_calc.php*/
+    /*https://www.w3schools.com/cssref/css3_pr_flex.php*/
 	margin-bottom: 2%;
 }
 
