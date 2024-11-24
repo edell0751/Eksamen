@@ -923,15 +923,11 @@ span {
         padding-left: 25px;
         padding-right: 0px;
     }
-}
 
-@media(max-width:850px){
     .subject{
         width: 100%;
     }
-}
 
-@media(max-width:850px){
     .Study-Stories-container{
         flex-direction: column;
     }
