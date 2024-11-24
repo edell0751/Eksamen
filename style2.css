@@ -293,9 +293,6 @@ html, body {
  
 
   
-  .active, .dot:hover {
-    background-color: #717171;
-  }
   
   /* Fading animation */
   .fade {
