@@ -394,7 +394,7 @@ span {
 	background-image: url(https://www.oslomet.no/build/images/minus-icon.svg);
 }
 
-/* For expanding and collapsing */
+/* For å utvide og kollapse */
 .accordion-h2.active + .accordion-text {
 	display: block;
 }
