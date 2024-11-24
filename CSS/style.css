@@ -122,32 +122,36 @@ h4 {
     transition: border-color 0.3s;
 }
 
+/* Endrer fargen på understreken ved hover på header-link */
 .header-link:hover {
     border-bottom-color: white;
 }
 
-
+/* Stiler for ikonene i headeren */
 .menu-icon {
     width: 20px;
     cursor: pointer;
 }
+
+/* Øvre del av headeren – layout og bakgrunnsfarge */
 .header-up {
 	display: flex;
 	justify-content: space-between;
 	padding: 2% 15%;
 	background-color: #2D3142;
-	position: sticky;
+	position: sticky; /* Holder headeren på toppen ved scroll */
 	top: 0;
-	z-index: 1000; /* Ensure it stays on top */
+	z-index: 1000; /* Plasserer headeren over andre elementer */
 }
 
-
+/* Stil for høyre del av headeren, justerer mellomrom og posisjonering */
 .header-right {
 	display: flex;
 	gap: 30px;
     position: relative;
 }
 
+/* Stil for søke- og menyseksjoner i headeren */
 .header-search,
 .header-menu {
 	display: flex;
@@ -162,35 +166,30 @@ h4 {
 	color: white;
 }
 
+/* Nedre del av headeren – padding og bakgrunnsfarge */
 .header-bottom {
 	padding: 2% 15%;
 	background: #2D3142;
 }
 
+/* Setter fargen på ion-icon til hvit */
 ion-icon {
 	color: white;
 }
+
+/* Ikonstørrelse for meny- og lukk-ikoner */
 .menu-icon.hamburger,
 .menu-icon.close {
-    font-size: 20px; /* For hamburger-knappen og lukk-knappen*/ /* KOMMENTAR SOM IKKE SKAL MED I ENDELIG KODE
-    SER UT TIL AT DEN HAR EN MAKS-GRENSE PÅ 20PX TF?*/
-  }
+    font-size: 20px;
+}
 
-.logo-header img {  /*justerer størrelse på logo i header*/
+/* Logo-størrelse i headeren */
+.logo-header img {
     width: 90px;
 	height: auto;
 }
 
-.menu-icon {
-	width: 20px;
-}
-
-.close {
-	display: none;
-}
-
-
-/* Full-Screen Menu Styling */
+/* Stil for fullskjermmenyen */
 .menu {
 	position: fixed;
 	top: 0;
@@ -201,54 +200,54 @@ ion-icon {
 	display: none;
 	align-items: center;
 	z-index: 999;
-	padding-top: 1rem; /*Push menu content down to not overlap with header*/
-
+	padding-top: 1rem; /* Sørger for at menyinnholdet ikke overlapper headeren */
 }
 
+
+/* Viser menyen i fullskjermmodus når 'show'-klassen er aktiv */
 .menu.show {
 	display: flex;
-    
 }
 
+/* Justerer menyinnholdet til venstre */
 .menu-items {
 	text-align: left;
 	margin-left: 15%;
 }
 
-
-/* making the menu items list under eachother and making them  white for good visibility.
- also giving them reasonable sizes in rem, not px for better accessability*/
-
+/* Menypunktstil: Blokker, vertikal liste. Stor, hvit skrift (i rem) for tilgjengelighet.*/
 .menu-items a {
 	display: block;
 	margin: 20px 0;
 	font-size: 2rem;
 	font-weight: 700;
     color: white;
-	
 }
-/*  it sections the class to keep its almost centered position*/
- .article-wrapper{
+
+/* Seksjon som omgir hovedinnholdet med bred padding */
+.article-wrapper {
 	padding: 50px 15%;
 }
 
-
+/* Videoavspiller: full bredde og ramme for visuell tydelighet */
 .video-player {
 	width: 100%;
 	height: 40vw;
     border: 8px solid #EF8354;
 }
 
+/* Innholdsseksjon med margin for å gi avstand fra header */
 .main-content {
 	margin-top: 5%;
     width: 100%;
 }
 
+/* Stil for hovedtittelen */
 .title {
 	font-size: 3rem;
-
 }
 
+/* Stil for undertekst under tittelen */
 .title .headline-para {
 	font-size: 1.5rem;
 	font-weight: 400;
@@ -257,15 +256,15 @@ ion-icon {
     text-align: center;
 }
 
-
+/* Fjern understrek på lenker */
 a {
 	text-decoration: none;
 }
 
-
+/* Liste for metadata – fleksibel layout og responsiv innpakking */
 .metadata-list {
 	display: flex;
-	flex-wrap: wrap; /*Learnt to use flex-wrap from https://www.w3schools.com/css/css3_flexbox_container.asp*/
+	flex-wrap: wrap; /*Kunnskap om flex-wrap hentet fra https://www.w3schools.com/css/css3_flexbox_container.asp*/
 	margin-top: 50px;
     margin-right: auto;
 	position: relative;
@@ -273,27 +272,33 @@ a {
     width: 100%;
     hyphens: auto;
 }
+
+/* Stil for individuelle metadata-elementer */
 .metadata-list-item {
 	border-top: 0.0575rem solid black;
 	flex: 1 0 calc(43%);
 	font-size: 1.125rem;
 	line-height: 1.5;
 	margin-right: 1.25rem;
-	padding-bottom: 1.75rem;
-	padding-top: 1.25rem;
+	padding: 1.25rem 0 1.75rem 0;
 	width: calc(25% - 1.25rem);
     text-align: center;
 }
+
+/* Stil for <span> elementer med større og fetere tekst */
 span {
 	font-size: 1.25rem;
 	font-weight: 700;
 }
+
+/* Stil for FAQ-artikler, med margin, padding, og en bunnramme */
 .article-faq {
 	margin-bottom: 20px;
 	padding: 30px 10%;
 	border-bottom: 1px solid #e2e2e2;
 }
 
+/* Hovedinnledningen i en artikkelseksjon, sentrert og med bunnramme */
 .article-wrapper-heading {
 	width: 62%;
 	margin: 0 auto;
@@ -301,12 +306,14 @@ span {
 	padding-bottom: 40px;
 }
 
+/* Stil for avsnitt i hovedinnledningen */
 .article-wrapper-para {
 	font-size: 24px;
 	line-height: 36px;
     text-align: center;
 }
 
+/* Stil for FAQ-titler med knapp – fleksibel layout for ikon og tekst */
 .accordion-h2 {
 	display: flex;
 	align-items: center;
@@ -314,6 +321,7 @@ span {
 	cursor: pointer;
 }
 
+/* Knappstil for FAQ-åpne/lukke-knapp med ikon */
 .accordion-btn {
 	background-color: #EF8354;
 	background-image: url(https://www.oslomet.no/build/images/plus-icon.svg);
@@ -327,29 +335,31 @@ span {
 	width: 2.5rem;
 }
 
+/* Skjult tekst for FAQ-seksjonen som vises ved interaksjon */
 .accordion-text {
-	display: none; /* Initially hidden */
+	display: none; /* I utgangspunktet skjult*/
 	margin-bottom: 30px;
 	overflow: hidden;
-	padding-left: 75px;
-	padding-right: 120px;
-	padding-top: 35px;
+	padding: 35px 120px 0 75px;
 	position: relative;
 	transition: height 0.3s cubic-bezier(0.24, 0.59, 0.38, 0.94);
 }
 
-
+/* Tekststil for avsnitt i FAQ-teksten */
 .accordion-text-para {
 	font-family: inherit;
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 27px;
 }
-.bold-p{
+
+/* Stil for fet tekst i spesifikke avsnitt */
+.bold-p {
     font-weight: bold;
     margin-bottom: 0.4rem;
 }
 
+/* Stil for punktlister i FAQ, med tilpasset linjehøyde og font */
 .a-list {
 	font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
 	font-size: 18px;
@@ -360,6 +370,7 @@ span {
     hyphens: auto;
 }
 
+/* Stil for individuelle listeelementer i FAQ-lister */
 .a-list li {
 	margin-bottom: 0.625rem;
 	padding-left: 0.9375rem;
@@ -367,37 +378,44 @@ span {
 	list-style: disc;
 }
 
+/* Stil for lenker i FAQ-lister med understrek for synlighet */
 .a-list li a {
-	
 	font-size: 1.125rem;
 	font-weight: 700;
 	text-decoration: none;
 	transition: border 0.1s cubic-bezier(0.24, 0.59, 0.38, 0.94);
 }
 
+/* Understreker spesifikke spans innen lenker */
 .a-list li a span {
     text-decoration: underline #EF8354;
 	padding-bottom: 0.0625rem;
 }
 
+
+/* Stil for avsnitt med ekstra toppmarginal (para-2 og para-3) */
 .para-2,
 .para-3 {
 	margin-top: 20px;
 }
-.para-3-links{
+
+/* Stil for lenker i para-3, med understrek og fet skrift */
+.para-3-links {
     text-decoration: underline #EF8354;
     font-weight: 700;
 }
 
+/* Bytter ikon til minus når FAQ-seksjonen er aktiv */
 .accordion-h2.active .accordion-btn {
 	background-image: url(https://www.oslomet.no/build/images/minus-icon.svg);
 }
 
-/* For expanding and collapsing */
+/* Vist innhold når FAQ-seksjonen er aktivert */
 .accordion-h2.active + .accordion-text {
 	display: block;
 }
 
+/* Studieplanstil – full bredde og innpakning */
 .study-plan {
     width: 100%;
     margin: 0 auto;
@@ -405,116 +423,134 @@ span {
     background-color: #fff;
 }
 
+/* Stil for overskrifter i studieplanen (h2) */
 .study-plan h2 {	
 	font-size: 20px;
     background-color: #f4f4f4;
     padding: 8px 8px 8px 20px;
 }
 
+/* Stil for underoverskrifter i studieplanen (h3) */
 .study-plan h3 {
 	font-size: 18px;
 }
 
-
+/* Felles stil for overskrifter i studieplanen, farge og margin */
 .study-plan h2,.study-plan h3 {
     margin-bottom: 10px;
     color: #333;
 }
 
+/* Marginbunn for semesterseksjoner */
 .semester {
     margin-bottom: 10%;
 }
 
+/* Layout for emner i studieplanen (flexbox) */
 .subjects {
     display: flex;
-    flex:50%;
+    flex: 50%;
 	flex-wrap: wrap;
 	flex-direction: row;
     justify-content: 30%;
     margin: 5px;
 }
 
+/* Stil for individuelle emner i studieplanen */
 .subject {
     text-align: left;
 	width: 25%;
     margin-right: 20px;
-	border-top: 1px solid black;
+	border-top: 1px solid black; /* Skiller emnene med en linje */
     padding-top: 15px;
 }
 
 
+/* Stil for lenker i studieplanen – uten understrek og med fet skrift */
 .study-plan a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-    position: relative;
-	font-size: 14px;
+    text-decoration: none; 
+    color: #000; 
+    font-weight: bold; 
+    position: relative; /* For å kunne bruke pseudoelementet ::after */
+	font-size: 14px; 
 }
 
+/* Pseudoelement for lenkene som legger til en dekorativ linje under */
 .study-plan a::after {
-    content: '';
+    content: ''; /* Ingen innhold, bare dekorasjon */
     position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #EF8354;
-    bottom: 0;
+    width: 100%; /* Fyller hele lenkens bredde */
+    height: 2px; 
+    background-color: #EF8354; 
+    bottom: 0; /* Plasserer linjen på bunnen av lenken */
     left: 0;
 }
 
+/* Stil for span i studieplanen – grå tekst */
 .study-plan span {
     font-size: 14px;
-    color: #666;
+    color: #666; 
 }
 
+/* Ingen padding for elementer med denne klassen */
 .no-padding {
 	padding: 35px 0;
 }
 
+/* Flexbox-stil for å arrangere elementer horisontalt med plass mellom */
 .flex {
 	display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Fordeler plass mellom elementene */
     margin-top: 5px;
 }
 
+/* Stil for semesteroverskrifter */
 .semester-headline {
 	font-size: 18px;
-	color: #222222;
+	color: #222222; /* Mørk farge for kontrast */
 }
 
+/* Layout for container av andre studier – fleksibel og med mellomrom */
 .OtherStudies-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 2%;
+    gap: 2%; /* Avstand mellom kolonnene */
     width: 100%;
     padding: 2% 0;
     margin: 0 auto;
 }
 
+/* Stil for hver kolonne i "Andre studier" – med skygge og hover-effekt */
 .OtherStudies-column {
     width: 100%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Skaper en skygge for dybde */
+    transition: transform 0.2s; /* Animasjon for transformering */
     overflow: hidden;
-    cursor: pointer;
-    min-width: 200px;
-	flex: 1 1 calc(33.333% - 2%);
-	margin-bottom: 2%;
+    cursor: pointer; /* Angir at elementene er klikkbare */
+    min-width: 200px; /* Minimumsbredden */
+	flex: 1 1 calc(33.333% - 2%); /* Responsiv layout som deler kolonnene i tre */
+	margin-bottom: 2%; /* Avstand nederst på kolonnene */
 }
 
+/* Hover-effekt som zoomer inn på kolonnen */
 .OtherStudies-column:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Øker størrelsen på elementet når musen er over */
 }
 
+/* Bilder i "Andre studier" – full bredde */
 .OtherStudies-img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Bilde tar full bredde av kolonnen */
+    height: auto; /* Beholder proporsjonene på bildet */
 }
 
+/* Stil for kortene i "Andre studier" – padding og bakgrunn */
 .OtherStudies-cards {
     padding: 1rem;
-    background-color: #fff;
-    hyphens: auto;
+    background-color: #fff; /* Hvit bakgrunn for kortene */
+    hyphens: auto; /* Aktivere ordbryting */
 }
+
+
 /* Styling for elementer i "OtherStudies" seksjonen */
 
 /* Tittel: Fet skrift og moderat skriftstørrelse */
