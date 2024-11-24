@@ -174,6 +174,8 @@ html, body {
 
 .f1-content li {
     color: white;
+    margin-top: 5px;
+    font-size: 1.1rem;
 }
 .f1box-container img {
     width: 325px;
@@ -242,8 +244,8 @@ html, body {
   }
 
   .mySlides img {
-    width: 75%; /* Set the image width as a percentage of its container */
-    height: 85%; /* Maintain aspect ratio */
+    width: 70%; /* Set the image width as a percentage of its container */
+    height: 79%; /* Maintain aspect ratio */
     border: 2px solid; /* Add the border around the image */
     border-image: linear-gradient(to bottom, aqua, aqua, rgb(49, 133, 133)) 1 100%;
     display: block; /* Ensure the image behaves like a block element */
@@ -383,7 +385,7 @@ html, body {
     display: flex;
     justify-content: center; /* Centers the button horizontally */
     background-color: #181818;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 #moreTeams {
