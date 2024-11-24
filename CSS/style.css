@@ -96,6 +96,7 @@ h4{
     display: flex;
     gap: 30px;
     position: relative;
+    
 }
 
 .header-search {
@@ -229,10 +230,12 @@ ion-icon {
 	align-items: center;
 	z-index: 999;
 	padding-top: 1rem; /*Push menu content down to not overlap with header*/
+
 }
 
 .menu.show {
 	display: flex;
+    
 }
 
 .menu-items {
