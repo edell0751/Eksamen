@@ -241,9 +241,7 @@ a {
 	text-decoration: none;
 }
 
-li {
-	list-style: none;
-}
+
 .metadata-list {
 	display: flex;
 	flex-wrap: wrap; /*Learnt to use flex-wrap from https://www.w3schools.com/css/css3_flexbox_container.asp*/
@@ -880,9 +878,9 @@ span {
 }
 
 .gitpage-pic-1 {
-    width: 60%;
+    width: 95%;
     margin: 0 auto;
-    height: auto;
+    height: 60%;
 }
 
 .gitpage-img figcaption {
@@ -891,8 +889,19 @@ span {
     padding-bottom: 2rem;
     width: 75%;
 }
+.gitpage-list{
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+}
 
-
+.gitpage-list li{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
 
 
 
