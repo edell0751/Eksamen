@@ -1208,7 +1208,7 @@ span {
   }
 
   .mySlides img {
-    width: 70%; /* Setter bredden som en prosent av containeren*/
+    width: 70%; /* Set the image width as a percentage of its container */
     height: 79%; 
     border: 2px solid; /* Kant rundt bildet */
     border-image: linear-gradient(to bottom, aqua, aqua, rgb(49, 133, 133)) 1 100%;
@@ -1216,7 +1216,7 @@ span {
     margin: 0 auto; 
 }
   
-  /* "Next"- og "previous"-knapper */
+  /* "Next"- og "Previous"-knapp*/
   .prev, .next {
     cursor: pointer;
     position: absolute;
