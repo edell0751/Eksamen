@@ -1114,9 +1114,9 @@ span {
     align-items: center;
     border-radius: 4px;
     font-weight: 500;
-    margin-top: 0.5rem; /* Adds space from the list */
-    margin-left: 0; /* Aligns with the left padding of .f1-content */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    margin-top: 0.5rem; /* Legger til plass på toppen av listen */
+    margin-left: 0; /* Justerer i forhold til venstre padding til .f1-content */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Glatt overgang */
 }
 .f1Teams-button:hover {
     background: white;
@@ -1131,28 +1131,28 @@ span {
     margin: auto;
     background: rgba(24, 24, 24, 0.98);
     color: white;
-    height: 80vh; /* Set a smaller height */
+    height: 80vh; /* Minde høyde */
     padding: 20px;
   }
   
-  /* Hide the images by50%default */
+  
   .mySlides {
-    height: 100%; /* Ensure slides take full height of the section */
-    width: 100%; /* Allow flexibility for responsive design */
+    height: 100%; /* Sørger for at bildene tar hele høyden til seksjonen */
+    width: 100%; 
     display: flex;
     justify-content: center;
-    align-items: center; /* Center images inside slides */
-    overflow: hidden; 
+    align-items: center; /* Sentraliserer bildene inne i seksjonen */
+    overflow: hidden;
 
   }
 
   .mySlides img {
     width: 70%; /* Set the image width as a percentage of its container */
-    height: 79%; /* Maintain aspect ratio */
-    border: 2px solid; /* Add the border around the image */
+    height: 79%; 
+    border: 2px solid; /* Kant rundt bildet */
     border-image: linear-gradient(to bottom, aqua, aqua, rgb(49, 133, 133)) 1 100%;
-    display: block; /* Ensure the image behaves like a block element */
-    margin: 0 auto; /* Center the image within the container */
+    display: block; 
+    margin: 0 auto; 
 }
   
   /* Next & previous buttons */
