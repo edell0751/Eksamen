@@ -918,14 +918,14 @@ span {
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-/* Fixed header styling */
+/* Fiksert header styling */
 .header-activity {
     position: fixed;
     top: 0;
     left: 0;
     height: 80px;
     width: 100%;
-    z-index: 1000; /* Ensure header is on top */    
+    z-index: 1000; /* Sørger for at header er på toppen */    
     background: transparent;
 }
 
@@ -972,25 +972,25 @@ span {
 
 /* Activity section styling */
 .activity-section {
-    background-image: url('../Images/f1background.jpeg'); /* Ensure the image path is correct */
-    background-size: cover; /* Ensures the background scales proportionally */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents tiling */
+    background-image: url('../Images/f1background.jpeg'); /* Sørger for riktig path */
+    background-size: cover; /* Sørger for at bakgrunnen scaler proposjonelt */
+    background-position: center; /* Sentrerer bildet */
+    background-repeat: no-repeat; /* Forhindrer tiling */
     background-attachment: fixed;
-    width: 100%; /* Spans the full width of the screen */
-    height: 100vh; /* Fixed height to match the viewport */
+    width: 100%; /* Strekker til full bredde av skjermen */
+    height: 100vh; /* Fiksert høyde for å matche viewpoint */
     display: flex;
-    align-items: center; /* Centers content vertically */
-    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Sentrerer inholdet vertikalt */
+    justify-content: center; /* Sentrerer innholdet horisontalt */
     padding: 20px;
     box-sizing: border-box; 
 }
 .activity-content {
     display: flex;
-    flex-direction: column;  /* Stacks the elements vertically */
-    justify-content: center;  /* Aligns the children (title, subtitle, button) vertically */
-    align-items: center;  /* Centers them horizontally */
-    gap: 20px;  /* Adds space between the stacked elements */
+    flex-direction: column;  /* Stabler elementene veritkalt */
+    justify-content: center;  /* Justerer children (title, subtitle, button) vertikalt */
+    align-items: center;  /* Sentrerer horisontalt */
+    gap: 20px;  /* Legger til mellomrom mellom stablede elementer */
     width: 755px;
 }
 
@@ -1007,17 +1007,17 @@ span {
 
 }
 .activity-nav a::after {
-    content: ""; /* Creates an empty pseudo-element */
+    content: ""; /* Lager et tomt pseudo-element */
     position: absolute;
     left: 0;
     bottom: 0;
     width: 0;
-    height: 2px; /* Thickness of the line */
-    background-color: aqua; /* Color of the underline */
-    transition: width 0.3s ease; /* Controls animation speed */
+    height: 2px; 
+    background-color: aqua; /* Fargen for understreken */
+    transition: width 0.3s ease; /* Kontrollerer animasjons hastigheten */
 }
 .activity-nav a :hover::after {
-    width: 100%; /* Extends the line to full width */
+    width: 100%; /* Utvider linjen til full bredde  */
 }
 .nav-scrolled {
     background: linear-gradient(
