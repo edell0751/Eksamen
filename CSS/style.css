@@ -26,6 +26,7 @@ a {
 h1 {
     font-size: 3rem;
     text-align: center; /* Sentraliserer teksten */
+    margin: 1rem;
 }
 
 /* Standard stil for body, angir bakgrunnsfarge */
@@ -971,6 +972,11 @@ span {
         flex-direction: column; /* Endrer layout for fagene til en vertikal liste */
         flex: 100%; /* Sørger for at hvert fag tar opp hele bredden */
     }
+
+    /* Stabler bilder relatert til tilgjengelighet vertikalt på små skjermer */
+    .accessibility-img, .gitpage-img{
+        flex-direction: column;
+    }
 }
 
 /* Øker padding for teksten i FAQ-seksjonen for bedre plass på små skjermer */
@@ -989,12 +995,6 @@ span {
     }
 }
 
-/* Stabler bilder relatert til tilgjengelighet vertikalt på små skjermer */
-@media (max-width: 768px) {
-    .accessibility-img {
-        flex-direction: column;
-    }
-}
 
 /*CSS ACTIVITY*/
 
