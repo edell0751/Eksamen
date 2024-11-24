@@ -877,7 +877,7 @@ span {
     width: 75%;
 }
 
-@media(max-width:450px){
+@media(max-width:450px)/*learnt to use @media from https://www.w3schools.com/css/css3_mediaqueries.asp */{
     .article-wrapper{
         padding: 50px 5%;
     }
@@ -907,19 +907,16 @@ span {
     }
 }
 
-@media /*learnt to use @media from https://www.w3schools.com/css/css3_mediaqueries.asp */(max-width:800px){
+@media (max-width:800px){
 	.main-content{
 		text-align: center;
 	}
-}
 
-@media (max-width:800px){
     .subjects{
         flex-direction: column;
         flex:100%;
     }
 }
-
 
 @media(max-width:850px){
     .accordion-text{
