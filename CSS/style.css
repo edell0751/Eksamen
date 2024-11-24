@@ -270,7 +270,7 @@ a {
 
 .metadata-list {
 	display: flex;
-	flex-wrap: wrap; /*Learnt to use flex-wrap from https://www.w3schools.com/css/css3_flexbox_container.asp*/
+	flex-wrap: wrap; /* https://www.w3schools.com/css/css3_flexbox_container.asp */
 	margin-top: 50px;
     margin-right: auto;
 	position: relative;
