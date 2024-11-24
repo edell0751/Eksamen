@@ -1269,7 +1269,7 @@ span {
 .mySlides:hover .f1Drivers-hover {
     opacity: 1; /* Show the overlay on hover */
 }
-.f1-drivers h3 {
+.f1-drivers .h3-activity {
     font-size: 30px; /* Adjust font size if needed */
     font-weight: 300;
     color: white;
@@ -1284,7 +1284,7 @@ span {
     justify-content: center;
 }
 
-.f1-drivers h3:after, h3:before {
+.f1-drivers .h3-activity:after .h3-activity:before {
     content: " ";
     display: block;
     border-bottom: 1px solid white;
