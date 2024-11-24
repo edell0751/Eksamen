@@ -154,7 +154,7 @@ html, body {
 }
 .f1-teams {
     display: flex;
-    justify-content: space-evenly;  
+    justify-content: center;  
     flex-wrap: wrap;
     width: 100%;
     background: #181818;
@@ -170,9 +170,10 @@ html, body {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     margin: 50px;
 }
-.f1-content {
-    padding: 16px;
-}
+
+
+
+
 .f1-content li {
     color: white;
 }
@@ -181,7 +182,9 @@ html, body {
     height: 180px;
 
 }
-
+.f1-content {
+    padding: 16px;
+}
 .f1box-container h2 {
     font-size: 1.5rem;
     color: white;
