@@ -652,13 +652,6 @@ span {
 }
 
 /* Bilder og andre seksjoner */
-
-.hr-short {
-    width: 40%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 .medium-image {
     width: 130px;
     height: auto;
