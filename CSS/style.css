@@ -996,25 +996,25 @@ span {
 /* Global styles for activity section */
 .activity-section {
     background-image: url('../Bilder/f1background.jpeg');
-    background-size: cover; /* Ensures the background scales proportionally */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents tiling */
+    background-size: cover; /* Sørger for at bakgrunnen scaler proposjonelt */
+    background-position: center; /* Sentrerer bildet */
+    background-repeat: no-repeat; /* Forhindrer tiling */
     background-attachment: fixed;
-    width: 100%; /* Full width */
-    height: 100vh; /* Match the viewport height */
+    width: 100%; /* Full bredde */
+    height: 100vh; /* Matcher viewport høyden */
     display: flex;
-    align-items: center; /* Vertically center content */
-    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Sentrerer innholdt vertikalt */
+    justify-content: center; /* Sentrerer innhold horisontalt  */
     padding: 20px;
     box-sizing: border-box;
 }
 
 .activity-content {
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column; /* Stabler elementene vertikalt */
     justify-content: center;
     align-items: center;
-    gap: 20px; /* Space between elements */
+    gap: 20px; /* Mellomrom mellom elementene */
     width: 755px;
     text-align: center;
 }
@@ -1057,7 +1057,7 @@ span {
  
   @media screen and (max-width: 480px) {
     .f1-drivers .h3-activity {
-        font-size: 1.3rem; /* Further reduce font size for very short screens */
+        font-size: 1.3rem; /* Reduserer font størrelse for veldig små skjermer */
     }
 }  
 
