@@ -347,7 +347,7 @@ span {
 	margin-bottom: 0.625rem;
 	padding-left: 0.9375rem;
 	position: relative;
-	list-style: none;
+	list-style: disc;
 }
 
 .a-list li a {
