@@ -34,7 +34,7 @@
             </div>
         </div>
         <nav class="header-bottom">
-            <a href="index.html" class="header-link">Home</a>
+            <a href="index.html" class="header-link">Hjem</a>
     		<a href="Activity.html" class="header-link">Activity</a>
     		<a href="Accessibility.html" class="header-link">Accessibility</a>
     		<a href="Gitpage.html" class="header-link">GitPage</a>
@@ -55,66 +55,82 @@
 		</div>
     </section>
     <main class="accessibility-main-section">
-        <h1 class="different-pages-title">Accessibility</h1>
-
-        <h2>Starting phase</h2>
-
-        <p class="accessibility-p-main">Once we started planning our project and the layout of our web-page,
-             we addressed the key factors our design would rely on. Our aim was to create a website that fullfills criterias such as clearity, accessibility and creativity.
-             We also wanted to make our website more modern, with other color-paletts as we found the regular yellow, black and white palette boring.
-            to make it more modern we decided to use a more dark color and contrast it with a darker shade of white and other colors,
-            because too much white could be tiring for the users eye. another key part of our planning was to make it as accessible as possible.
-             We came with the conclusion to do this through avoid using pixels as much as possible, and instead take usage of more scale-friendly measures such as 
-             rem,vh, percentages and vw.
-            </p>
-
-            <h2>As we were working</h2>
-
-        <p class="accessibility-p-main">Throughout the time we were developing our websites,
-             did we always try to keep the site well structured and clearly visible.
-              we did this through color coding our website to make it more accessible.
-            for instance we used a pink/orange color on our action buttons, and around elements which would react once you pressed them.
-             this makes the user aware that once you press the button, link or video, the page would react. we also got recomended by our mentors to break up the structure
-              a bit to make it look more modern and interesting, and thats why we chose to design the "studiehistorier" section the way we did. we wanted to break the flow and remove the centering for this section to add a little of creativity aswell.
-               we chose to use a bit of javascript in our coding to make the site smoother
-              once you press buttons. we did also run our site through Axe Accessibility Linter Tool´s extension on VS code, and Wave WEB Accessibility Evaluation Tool as a web extension.
-            the results gave us feedback on what we needed to change to make the site more accessible and user-friendly.</p>
-
-            <div class="accessibility-img">
-                <figure class="accessibility-figure">
-                    <img class="accessibility-pic-1" src="Bilder/accessibilityVScode.jpg" alt="Accessibility-test from Wave accessibility tool extension in VScode.">
-                <figcaption>Screenshot from VScode, after running Axe accessibility Linter tool extenison. showing errors of buttons. Photo: private</figcaption>
-            </figure>
-
-            <figure class="accessibility-figure">
-                    <img class="accessibility-pic-1" src="Bilder/Accessibility-web-kopi.jpg" alt="Screenshot from Chrome, after running Wave web accessibility tool extenison. showing errors of buttons and links. Photo: private">
-                <figcaption>Screenshot from Chrome, after running Wave web accessibility tool extenison. showing errors of buttons and links. Photo: private</figcaption>
-            </figure>
-            </div>
-
-            <h2>Response to feedback</h2>
-
-            <p class="accessibility-p-main"> After reviewing the results of the test, we got some errors and warnings that we looked deeper into.
-                one of the common issues was that we needed to add an aria-label to our buttons in the accordion section. 
-                the reason these were hit by errors are because the buttons dont have a description of their function in the text of the button. therefor we added aria-labels, to describe what the buttons do.
-                aria-labels are important for these situations and are important for accessibility as screen readers read the aria-labels for information. </p>
-
-                <div class="accessibility-img">
-                    <figure class="accessibility-figure">
-                        <img class="accessibility-pic-1" src="Bilder/accessibility-0-errors.jpg" alt="Screenshot from Chrome, after running Wave web accessibility tool extenison. showing 0 errors. Photo: private">
-                    <figcaption>Screenshot from Chrome, after running Wave web accessibility tool extenison. showing 0. Photo: private</figcaption>
-                </figure>
-
-                <figure class="accessibility-figure">
-                    <img class="accessibility-pic-1" src="Bilder/accessibility-fraVSeksempel.jpg" alt="Screenshot from VS code in index.html of button change with aria-label. Photo: private">
-                <figcaption>Screenshot from VS, after adding aria-label to the buttons, as we got feedback on.  Photo: private</figcaption>
-            </figure>
-                </div>
-            <p class="accessibility-p-main"> We ran through these test´s often to always be on the lookout. we also changed the colors after getting errors on bad contrasts. </p>
-
-
-    </main>
+        <!-- Hovedinnholdsområde for tilgjengelighet med passende styling-klasse. -->
         
+        <h1 class="different-pages-title">Accessibility</h1>
+        <!-- Tittel på siden: "Accessibility", stylet med klassen 'different-pages-title'. -->
+    
+        <h2>Starting phase</h2>
+        <!-- Seksjon som beskriver hvordan prosjektet ble planlagt med fokus på tilgjengelighet. -->
+    
+        <p class="accessibility-p-main">
+            Once we started planning our project and the layout of our web-page, we addressed the key factors our design would rely on.
+             Our aim was to create a website that fullfills criterias such as clearity, accessibility and creativity.
+              We also wanted to make our website more modern, with other color-paletts as we found the regular yellow, black and white palette boring.
+               to make it more modern we decided to use a more dark color and contrast it with a darker shade of white and other colors, because too much white could be tiring for the users eye.
+                another key part of our planning was to make it as accessible as possible. We came with the conclusion to do this through avoid using pixels as much as possible, 
+                and instead take usage of more scale-friendly measures such as rem,vh, percentages and vw.
+        </p>
+        <!-- Forklarer de første planleggingstankene, med fokus på tilgjengelighet, estetikk og bruk av skalerbare enheter i stedet for faste piksler. -->
+    
+        <h2>As we were working</h2>
+        <!-- Seksjon som forklarer hvordan tilgjengelighet ble vurdert under utviklingen. -->
+    
+        <p class="accessibility-p-main">
+            Throughout the time we were developing our websites, did we always try to keep the site well structured and clearly visible. we did this through color coding our website to make it more accessible. for instance we used a pink/orange color on our action buttons, and around elements which would react once you pressed them. this makes the user aware that once you press the button, link or video, the page would react. we also got recomended by our mentors to break up the structure a bit to make it look more modern and interesting, and thats why we chose to design the "studiehistorier" section the way we did. we wanted to break the flow and remove the centering for this section to add a little of creativity aswell. we chose to use a bit of javascript in our coding to make the site smoother once you press buttons. we did also run our site through Axe Accessibility Linter Tool´s extension on VS code, and Wave WEB Accessibility Evaluation Tool as a web extension. the results gave us feedback on what we needed to change to make the site more accessible and user-friendly.
+        </p>
+        <!-- Beskriver hvordan utviklingen ble gjennomført med tanke på tilgjengelighet, inkludert fargevalg og bruk av JavaScript for å forbedre interaktivitet. Det nevnes også bruk av tilgjengelighetsverktøy som Axe og Wave. -->
+    
+        <div class="accessibility-img">
+            <!-- Container for bilder som viser tilgjengelighetstester i utviklingsverktøyene. -->
+    
+            <figure class="accessibility-figure">
+                <img class="accessibility-pic-1" src="Bilder/accessibilityVScode.jpg" alt="Accessibility-test from Wave accessibility tool extension in VScode.">
+                <!-- Skjermbilde fra VScode, etter kjøring av Axe-verktøyet. -->
+                <figcaption>Screenshot from VScode, after running Axe accessibility Linter tool extension. showing errors of buttons. Photo: private</figcaption>
+            </figure>
+    
+            <figure class="accessibility-figure">
+                <img class="accessibility-pic-1" src="Bilder/Accessibility-web-kopi.jpg" alt="Screenshot from Chrome, after running Wave web accessibility tool extenison. showing errors of buttons and links. Photo: private">
+                <!-- Skjermbilde fra Chrome, etter kjøring av Wave-verktøyet. -->
+                <figcaption>Screenshot from Chrome, after running Wave web accessibility tool extension. showing errors of buttons and links. Photo: private</figcaption>
+            </figure>
+        </div>
+    
+        <h2>Response to feedback</h2>
+        <!-- Seksjon som beskriver responsen på tilbakemeldinger fra tilgjengelighetstestene. -->
+    
+        <p class="accessibility-p-main">
+            After reviewing the results of the test, we got some errors and warnings that we looked deeper into. 
+            one of the common issues was that we needed to add an aria-label to our buttons in the accordion section. 
+            the reason these were hit by errors are because the buttons dont have a description of their function in the text of the button. 
+            therefor we added aria-labels, to describe what the buttons do. aria-labels are important for these situations and are important for 
+            accessibility as screen readers read the aria-labels for information.
+        </p>
+        <!-- Forklarer hvordan teamet håndterte tilgjengelighetsfeil som manglende beskrivelse på knapper ved hjelp av `aria-labels`. -->
+    
+        <div class="accessibility-img">
+            <!-- Container for bilder som viser resultatene etter endringer i henhold til tilbakemeldinger. -->
+    
+            <figure class="accessibility-figure">
+                <img class="accessibility-pic-1" src="Bilder/accessibility-0-errors.jpg" alt="Screenshot from Chrome, after running Wave web accessibility tool extension. showing 0 errors. Photo: private">
+                <!-- Skjermbilde som viser at det nå ikke er noen tilgjengelighetsfeil etter endringene. -->
+                <figcaption>Screenshot from Chrome, after running Wave web accessibility tool extension. showing 0. Photo: private</figcaption>
+            </figure>
+    
+            <figure class="accessibility-figure">
+                <img class="accessibility-pic-1" src="Bilder/accessibility-fraVSeksempel.jpg" alt="Screenshot from VS code in index.html of button change with aria-label. Photo: private">
+                <!-- Skjermbilde fra VS Code som viser endringer i koden etter å ha lagt til aria-labels. -->
+                <figcaption>Screenshot from VS, after adding aria-label to the buttons, as we got feedback on. Photo: private</figcaption>
+            </figure>
+        </div>
+    
+        <p class="accessibility-p-main">
+            We ran through these test´s often to always be on the lookout. we also changed the colors after getting errors on bad contrasts.
+        </p>
+        
+    
+    </main>     
     
 
     <footer class="footer">
