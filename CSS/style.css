@@ -711,25 +711,25 @@ span {
 
 /* Bakgrunn, padding og full bredde for footer */
 .footer {
-    background: #2D3142; /* Mørk bakgrunnsfarge for footer som gir kontrast */
-    padding-top: 50px; /* Legger til 50px topp-padding for luft */
-    width: 100%; /* Sørger for at footer dekker hele bredden */
-    margin: 0; /* Fjerner standard margin */
+    background: #2D3142; 
+    padding-top: 50px; 
+    width: 100%; 
+    margin: 0; 
 }
 
 .footer-container {
     width: 100%; /* Tilpasser bredden til skjermen */
     max-width: 1140px; /* Setter en maks bredde for å begrense innhold på store skjermer */
     margin: auto; /* Sentraliserer containeren */
-    display: flex; /* Bruker fleksibel layout for innhold */
+    display: flex; 
     flex-direction: row; /* Organiserer innhold horisontalt */
-    justify-content: center; /* Sentraliserer innholdet horisontalt */
+    justify-content: center; 
 }
 
 .footer-content {
-    padding: 5%; /* Legger til innvendig padding for luft */
-	color: white; /* Gjør teksten hvit for kontrast mot mørk bakgrunn */
-    text-align: center; /* Sentraliserer tekstinnhold */
+    padding: 5%; 
+	color: white; 
+    text-align: center;
 }
 
 .footer-content p {
@@ -747,9 +747,9 @@ span {
 }
 
 .footer-list li {
-    width: auto; /* Justerer bredden til innholdets størrelse */
-    text-align: center; /* Sentraliserer teksten i listeelementene */
-    list-style-type: none; /* Fjerner standard punktmerking */
+    width: auto; 
+    text-align: center; 
+    list-style-type: none; 
     padding: 7px; /* Gir litt luft mellom listeelementene */
     position: relative; /* Gjør det mulig å bruke ::before for dekorasjon */
 }
@@ -760,9 +760,9 @@ span {
     transform: translate(-50%, -50%); /* Sentraliserer linjen */
     left: 50%; /* Justerer linjen til midten av elementet */
     top: 100%; /* Plasserer linjen rett under elementet */
-    width: 0; /* Starter med 0 bredde */
-    height: 2px; /* Setter linjehøyden */
-    background: #EF8354; /* Oransje farge for hover-effekt */
+    width: 0; 
+    height: 2px; 
+    background: #EF8354; 
     transition-duration: 0.5s; /* Legger til en smooth overgangseffekt */
 }
 
@@ -797,24 +797,24 @@ span {
 }
 
 .footer-bottom-bar {
-    background: #EF8354; /* Oransje bakgrunn for bunnlinjen */
-    text-align: center; /* Sentraliserer tekst i bunnlinjen */
-    padding: 10px 0; /* Gir litt luft over og under teksten */
+    background: #EF8354; 
+    text-align: center; 
+    padding: 10px 0; 
     margin-top: 50px; /* Legger til avstand over bunnlinjen */
-    width: 100%; /* Sørger for at bunnlinjen dekker hele bredden */
+    width: 100%; 
 }
 
 .footer-bottom-bar p {
-    font-weight: bold; /* Gjør teksten fet for vektlegging */
-    margin: 0; /* Fjerner standard margin */
-    font-size: 1rem; /* Setter en moderat skriftstørrelse */
-    padding: 0.45rem; /* Gir litt luft rundt teksten */
+    font-weight: bold; 
+    margin: 0; 
+    font-size: 1rem; 
+    padding: 0.45rem; 
 }
 
 
 /* Accessibility-styling */
 
-/* Sentraliserer hovedinnhold og bilder relatert til tilgjengelighet */
+
 .accessibility-main {
     display: block;
     max-width: 100%;
@@ -836,7 +836,7 @@ span {
     align-items: center;
 }
 
-/* Tilpasser bildestørrelse for tilgjengelighet */
+
 .accessibility-pic-1 {
     width: 60%;
     margin: 0 auto;
