@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 let slideIndex = 1;
 
-// Ensure the first slide is visible on page load
+// Sikrer at den første sliden er synlig når siden laster
 document.addEventListener("DOMContentLoaded", function() {
     showSlides(slideIndex);
 });
@@ -43,8 +43,8 @@ function showSlides(n) {
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[slideIndex - 1].style.display = "block"; // Ensure the current slide is visible
-    dots[slideIndex - 1].className += " active"; // Highlight the corresponding dot
+    slides[slideIndex - 1].style.display = "block"; // Sikrer at nåværende slide er synlig
+    dots[slideIndex - 1].className += " active"; // Fremhever tilsvarende dot
 }
 
 function toggleTeams() {
@@ -52,10 +52,10 @@ function toggleTeams() {
     const toggleBtn = document.getElementById("toggleBtn");
 
     if (moreTeams.style.display === "none" || moreTeams.style.display === "") {
-        moreTeams.style.display = "flex"; // Show additional teams
+        moreTeams.style.display = "flex"; // Vis ytterlig teams
         toggleBtn.innerHTML = "<p>Show Less Teams</p>";
     } else {
-        moreTeams.style.display = "none"; // Hide additional teams
+        moreTeams.style.display = "none"; // Skjul ytterlige teams
         toggleBtn.innerHTML = "<p>Show More Teams</p>";
     }
 }
@@ -80,7 +80,7 @@ function toggleExtraCards() {
     btn.scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 
-    // Setting up javascript for menu and search-bar
+    // Javascript for meny of search-bar
         const hamburger = document.querySelector('.hamburger');
         const closeIcon = document.querySelector('.close');
         const fullMenu = document.getElementById('fullMenu');
@@ -103,15 +103,15 @@ function toggleExtraCards() {
             '.header-search .search-input'
         );
 
-        // Show search input when search-icon is clicked
+        // Viser search input når search-ikon blir klikket
         searchIcon.addEventListener('click', (e) => {
-            e.stopPropagation(); // Prevent this click from triggering the page click event
+            e.stopPropagation(); // Forhindrer dette klikket i å utløse page click event
             headerSearch.classList.toggle('active');
         });
 
-        // Hide search input when clicking anywhere else on the page
+        // Gjemmer søke input når man klikker et annet sted på siden
         document.addEventListener('click', (e) => {
-            // Check if the click is outside the header-search container
+            // Sjekker om klikket skjer utenfor header-search containeren
             if (!headerSearch.contains(e.target)) {
                 headerSearch.classList.remove('active');
             }
@@ -119,10 +119,10 @@ function toggleExtraCards() {
 
         document.querySelectorAll('.accordion-h2').forEach((accordion) => {
             accordion.addEventListener('click', function () {
-                // Toggle the active class on the accordion header
+                // Skrur på den aktive klassen i accordion header
                 
         
-                // Select the corresponding accordion-text and toggle its display
+                // Velger tilsvarende accordion-text og skrur på displayet
                 let accordionText = this.nextElementSibling;
                 if (accordionText.style.display === 'block') {
                     accordionText.style.display = 'none';
