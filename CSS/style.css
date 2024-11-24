@@ -1199,14 +1199,6 @@ span {
     color: black;
 }
 
-@media screen and (max-width: 768px) {
-    .f1box-container {
-        width: 325px; /* Maintain the fixed width */
-        height: 400px; /* beholde en bestemt hø */
-        margin: 2px auto; /* Center the boxes horizontally */
-    }
-}
-
 /* Slideshow container */
 .f1-drivers {
     width: 100%;
@@ -1217,21 +1209,6 @@ span {
     height: 80vh; /* Mindre høyde */
     padding: 20px;
   }
-
-@media screen and (max-width: 768px) {
-    .f1-drivers {
-        height: 50vh; /* Make the height 50% of the viewport */
-        min-height: 250px; /* Ensure a minimum height */
-        padding: 15px; /* Reduce padding for smaller screens */
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .f1-drivers {
-        height: 45vh; /* Slightly taller for very small screens */
-        padding: 10px; /* Further reduce padding */
-    }
-}  
   
   
   .mySlides {
@@ -1432,59 +1409,6 @@ span {
     color: white;
 
 }
-/* Scalling */
-
-@media screen and (max-width: 580px) {
-    .header-activity {
-        position: absolute; /* Ensures the header stays at the top */
-        top: 0;
-        left: 0;
-        height: 70px; /* Adjust height for smaller screens */
-        width: 100%; /* Full width */
-        z-index: 1000; /* Ensure it stays on top of other content */
-
-    }
-
-
-
-    .activity-nav {
-        padding-left: 15px; /* Adjust padding for smaller screens */
-    }
-
-    .activity-nav li {
-        display: block; /* Stack navigation items vertically */
-        margin: 5px 0; /* Add spacing between items */
-    }
-
-    .activity-nav a {
-        font-size: 1rem; /* Adjust font size for readability */
-    }
-}
-@media screen and (max-height: 768px) {
-    .f1-drivers h4 {
-        font-size: 1.5rem; /* Smaller font size for shorter screens */
-    }
-
-    .f1-drivers ul li {
-        font-size: 0.9rem; /* Reduce font size for list items */
-    }
-}
-
-@media screen and (max-height: 480px) {
-    .f1-drivers h4 {
-        font-size: 1.2rem; /* Further reduce font size for very short screens */
-    }
-
-    .f1-drivers ul li {
-        font-size: 0.8rem; /* Even smaller for very short screens */
-    }
-}
-@media screen and (max-width: 768px) {
-    .f1-drivers .h3-activity {
-        font-size: 1.5rem; /* Smaller font size for larger screens */
-    }
-}
-
 
 /* W3schools - "CSS Media Queries" - https://www.w3schools.com/css/css3_mediaqueries.asp */
 
@@ -1502,6 +1426,44 @@ span {
 @media(max-width:500px){
     .header-search.active .search-input {
         width: 8.125rem; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .f1-drivers h4 {
+        font-size: 1.2rem; /* Reduserer font størrelsen enda mer for mindre skjærmer */
+    }
+
+    .f1-drivers ul li {
+        font-size: 0.8rem; /* Enda mindre størrelse for enda mindre skjærm */
+    }
+    .f1-drivers {
+        height: 45vh; /* Slightly taller for very small screens */
+        padding: 10px; /* Further reduce padding */
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .header-activity {
+        position: absolute; /* Ensures the header stays at the top */
+        top: 0;
+        left: 0;
+        height: 70px; /* Adjust height for smaller screens */
+        width: 100%; /* Full width */
+        z-index: 1000; /* Ensure it stays on top of other content */
+    }
+
+    .activity-nav {
+        padding-left: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .activity-nav li {
+        display: block; /* Stack navigation items vertically */
+        margin: 5px 0; /* Add spacing between items */
+    }
+
+    .activity-nav a {
+        font-size: 1rem; /* Adjust font size for readability */
     }
 }
 
@@ -1523,6 +1485,24 @@ span {
         flex: 100%;
         justify-content: center;
         align-items: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    .f1-drivers .h3-activity,  .f1-drivers h4 {
+        font-size: 1.5rem; /* Mindre font størrelse for mindre skjærm */
+    }
+    .f1-drivers ul li {
+        font-size: 0.9rem; /* Reduserer font størrelse for liste gjenstander */
+    }
+    .f1-drivers {
+        height: 50vh; /* Make the height 50% of the viewport */
+        min-height: 250px; /* Ensure a minimum height */
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+    .f1box-container {
+        width: 325px; /* Maintain the fixed width */
+        height: 400px; /* beholde en bestemt hø */
+        margin: 2px auto; /* Center the boxes horizontally */
     }
 }
 
