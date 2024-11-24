@@ -1,4 +1,4 @@
-		function toggleExtraCards() {
+function toggleExtraCards() {
     const extraCards = document.querySelectorAll('.OtherStudies-container .OtherStudies-column:nth-child(n+4)');
     const btn = document.querySelector('.show-more-btn');
 
@@ -12,6 +12,9 @@
 
     // Oppdater knappetekst basert på synligheten
     btn.innerText = areHidden ? 'Vis færre' : 'Vis flere';
+
+    // Sørg for at knappen forblir i fokus
+    btn.scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 
     // Setting up javascript for menu and search-bar
