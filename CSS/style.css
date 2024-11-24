@@ -1365,6 +1365,26 @@ span {
     }
 }
 
+@media screen and (max-width: 580px){ /* Makes sure it stays above other elements */
+        
+
+    .activity-nav {
+        position: fixed;
+        z-index: 1000; /* Makes sure it stays above other elements */
+    }
+    .activity-nav a {
+        float: none; /* Disable floating */
+        display: block; /* Ensure block-level behavior */
+        text-align: left; /* Align text to the left */
+        margin: 10px 0; /* Add spacing between items */
+    }
+    .activity-nav li {
+        display: block; /* Stack list items vertically */
+        width: 100%; /* Ensure full width */
+    }
+    
+}
+
 /* Reduserer padding i headeren for å gi bedre plass på små skjermer */
 @media(max-width:650px){
     .header-up, .header-bottom {
@@ -1418,26 +1438,6 @@ span {
     }
 }
 
-/* Scalling */
-@media screen and (max-width: 580px){ /* Makes sure it stays above other elements */
-        
-
-    .activity-nav {
-        position: fixed;
-        z-index: 1000; /* Makes sure it stays above other elements */
-    }
-    .activity-nav a {
-        float: none; /* Disable floating */
-        display: block; /* Ensure block-level behavior */
-        text-align: left; /* Align text to the left */
-        margin: 10px 0; /* Add spacing between items */
-    }
-    .activity-nav li {
-        display: block; /* Stack list items vertically */
-        width: 100%; /* Ensure full width */
-    }
-    
-}
 
 
 
