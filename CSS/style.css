@@ -187,11 +187,7 @@ h4{
 	padding: 2% 15%;
 	background: #2D3142;
 }
-@media(max-width:500px){
-    .header-bottom ,.header-up{
-        padding: 2% 5%;
-    }
-}
+
 ion-icon {
 	color: white;
 }
@@ -240,11 +236,7 @@ ion-icon {
 	text-align: left;
 	margin-left: 15%;
 }
-@media(max-width:500px){
-    .menu-items{
-        margin-left: 5%;
-    }
-}
+
 
 /* making the menu items list under eachother and making them  white for good visibility.
  also giving them reasonable sizes in rem, not px for better accessability*/
@@ -260,11 +252,6 @@ ion-icon {
 /*  it sections the class to keep its almost centered position*/
  .article-wrapper{
 	padding: 50px 15%;
-}
-@media(max-width:450px){
-    .article-wrapper{
-        padding: 50px 5%;
-    }
 }
 
 
@@ -374,12 +361,7 @@ span {
 	position: relative;
 	transition: height 0.3s cubic-bezier(0.24, 0.59, 0.38, 0.94);
 }
-@media(max-width:850px){
-    .accordion-text{
-        padding-left: 25px;
-        padding-right: 0px;
-    }
-}
+
 
 .accordion-text-para {
 	font-family: inherit;
@@ -483,11 +465,7 @@ span {
 	border-top: 1px solid black;
     padding-top: 15px;
 }
-@media(max-width:850px){
-    .subject{
-        width: 100%;
-    }
-}
+
 
 .study-plan a {
     text-decoration: none;
@@ -559,6 +537,7 @@ span {
 .OtherStudies-cards {
     padding: 1rem;
     background-color: #fff;
+    hyphens: auto;
 }
 
 .OtherStudies-title {
@@ -600,17 +579,7 @@ span {
 .show-more-btn:hover {
     background-color: #955c22;;
 }
-@media /*learnt to use @media from https://www.w3schools.com/css/css3_mediaqueries.asp */(max-width:800px){
-	.main-content{
-		text-align: center;
-	}
-}
-@media (max-width:800px){
-    .subjects{
-        flex-direction: column;
-        flex:100%;
-    }
-}
+
 
 .Study-Stories-section {
     width: 100vw; /* Full skjermbredde */
@@ -631,11 +600,7 @@ span {
     flex-wrap: wrap;
     gap: 20px;
 }
-@media(max-width:850px){
-    .Study-Stories-container{
-        flex-direction: column;
-    }
-}
+
 
 .Study-Stories-article {
   width: 100%;
@@ -780,14 +745,7 @@ span {
     flex-direction: row;
     justify-content: center;
 }
-@media (max-width:700px){
-    .footer-container,.footer-content{
-        flex-direction: column;
-        flex: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-}
+
 
 .footer-content {
     padding: 5%;
@@ -959,9 +917,63 @@ span {
     width: 75%;
 }
 
+@media(max-width:450px){
+    .article-wrapper{
+        padding: 50px 5%;
+    }
+}
+
+@media(max-width:500px){
+    .header-bottom ,.header-up{
+        padding: 2% 5%;
+    }
+}
+
+@media(max-width:500px){
+    .menu-items{
+        margin-left: 5%;
+    }
+}
+
+@media (max-width:700px){
+    .footer-container,.footer-content{
+        flex-direction: column;
+        flex: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media /*learnt to use @media from https://www.w3schools.com/css/css3_mediaqueries.asp */(max-width:800px){
+	.main-content{
+		text-align: center;
+	}
+}
+
+@media (max-width:800px){
+    .subjects{
+        flex-direction: column;
+        flex:100%;
+    }
+}
 
 
+@media(max-width:850px){
+    .accordion-text{
+        padding-left: 25px;
+        padding-right: 0px;
+    }
+}
 
+@media(max-width:850px){
+    .subject{
+        width: 100%;
+    }
+}
 
-
+@media(max-width:850px){
+    .Study-Stories-container{
+        flex-direction: column;
+    }
+}
 
