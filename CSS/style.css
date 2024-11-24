@@ -876,6 +876,12 @@ span {
     width: 75%;
 }
 
+@media(max-width:450px){
+    .article-wrapper{
+        padding: 50px 5%;
+    }
+}
+
 @media(max-width:500px){
     .header-bottom ,.header-up{
         padding: 2% 5%;
@@ -888,22 +894,12 @@ span {
     }
 }
 
-@media(max-width:450px){
-    .article-wrapper{
-        padding: 50px 5%;
-    }
-}
-
-@media(max-width:850px){
-    .accordion-text{
-        padding-left: 25px;
-        padding-right: 0px;
-    }
-}
-
-@media(max-width:850px){
-    .subject{
-        width: 100%;
+@media (max-width:700px){
+    .footer-container,.footer-content{
+        flex-direction: column;
+        flex: 100%;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -920,17 +916,23 @@ span {
     }
 }
 
+
+@media(max-width:850px){
+    .accordion-text{
+        padding-left: 25px;
+        padding-right: 0px;
+    }
+}
+
+@media(max-width:850px){
+    .subject{
+        width: 100%;
+    }
+}
+
 @media(max-width:850px){
     .Study-Stories-container{
         flex-direction: column;
     }
 }
 
-@media (max-width:700px){
-    .footer-container,.footer-content{
-        flex-direction: column;
-        flex: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-}
