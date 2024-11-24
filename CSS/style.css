@@ -945,7 +945,9 @@ span {
     }
 }
 
-@media /*learnt to use @media from https://www.w3schools.com/css/css3_mediaqueries.asp */(max-width:800px){
+/* W3Schools - "CSS Media Queries" - https://www.w3schools.com/css/css3_mediaqueries.asp */
+
+@media (max-width:800px){
 	.main-content{
 		text-align: center;
 	}
@@ -978,7 +980,6 @@ span {
     }
 }
 
-/* W3Schools - "CSS Media Queries" - https://www.w3schools.com/css/css3_mediaqueries.asp */
 @media (max-width: 768px) {
     .accessibility-img {
         flex-direction: column; /* Endrer fra rad til kolonne */
