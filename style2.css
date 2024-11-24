@@ -459,106 +459,123 @@ html, body {
 /* CSS INDEX */
 
 * {
-	margin: 0%;
-	padding: 0%;
-	box-sizing: border-box;
-	font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
-    hyphens: auto;/*Deler opp ordene og gir de bindestrek*/
-    overflow-wrap: break-word;/*Deler opp ordene som stikker utenfor plaseringen sin*/
-}
-a {
-    color: black;
-	text-decoration: none;
-}
-h1{
-    font-size: 3rem;
-    text-align: center;
+	margin: 0; /* Fjerner standard marger for alle elementer */
+	padding: 0; /* Fjerner standard padding */
+	box-sizing: border-box; /* Inkluderer padding og border i elementers totale bredde/høyde */
+	font-family: Moderat, Avenir, Helvetica, Arial, sans-serif; /* Setter standard fontfamilie */
+    list-style: none; /* Fjerner standard punktliste på lister */
 }
 
-body{
-    background-color: #F1E4E8;
+/* Stiler for lenker */
+a {
+    color: black; /* Setter tekstfarge til sort */
+	text-decoration: none; /* Fjerner understreking */
 }
-h2{
+
+/* Stiler for hovedoverskrift (h1), brukt i "title"-seksjonen */
+h1 {
+    font-size: 3rem;
+    text-align: center; /* Sentraliserer teksten */
+}
+
+/* Standard stil for body, angir bakgrunnsfarge */
+body {
+    background-color: #F1E4E8; /* Lys bakgrunnsfarge */
+}
+
+/* Stiler for seksjonsoverskrifter (h2) */
+h2 {
     margin-top: 0.313rem;
     margin-bottom: 0.625rem;
     font-size: 2rem;
-    text-align: center;
+    text-align: center; /* Sentraliserer teksten */
 }
 
+/* Stiler for underoverskrifter (h3) i mindre seksjoner */
 h3 {
     font-size: 1.75rem;
     margin-bottom: 0.9rem;
     text-align: center;
 }
-h4{
+
+/* Stiler for mindre underoverskrifter (h4) i artikler */
+h4 {
     font-size: 1rem;
     margin-bottom: 0.2rem;
     text-align: center;
-    font-weight: bold;
-
+    font-weight: bold; /* Øker vekten på teksten for bedre synlighet */
 }
 
-
+/* Øverste del av headeren, organiserer logo, søk, og meny */
 .header-up {
-    display: flex; /*Learnt to use display flex from https://www.w3schools.com/css/css3_flexbox.asp*/
-    justify-content: space-between;
-    padding: 2% 15%;
-
+    display: flex; /* Bruker flex for å justere elementer horisontalt */
+    justify-content: space-between; /* Fordeler plass mellom logo og ikoner */
+    padding: 2% 15%; /* Polstring for å holde elementer innenfor kanten */
 }
 
+/* Container for elementer på høyre side av headeren */
 .header-right {
     display: flex;
-    gap: 30px;
-    position: relative;
+    gap: 30px; /* Avstand mellom søkefeltet og menyikonet */
+    position: relative; /* Muliggjør posisjonering av underliggende elementer */
 }
 
+
+/* Stiler for søkefunksjonen i headeren */
 .header-search {
-    display: flex;
-    align-items: center;
-    position: relative;
+    display: flex; /* Justerer elementer horisontalt */
+    align-items: center; /* Sentraliserer elementer vertikalt */
+    position: relative; /* For å posisjonere søkeikon og input relativt til container */
 }
 
+/* Tekststil for søketiketten */
 .header-search p {
-    font-weight: 700;
-    text-transform: uppercase;
+    font-weight: 700; /* Gjør teksten fet for synlighet */
+    text-transform: uppercase; /* Endrer tekst til store bokstaver */
 }
 
+/* Stil for søkeikon */
 .search-icon {
-    width: 20px;
-    cursor: pointer;
+    width: 20px; /* Setter bredde på ikonet */
+    cursor: pointer; /* Angir at elementet er klikkbart */
 }
 
+/* Stiler for søkefeltet (skjult som standard) */
 .search-input {
     position: absolute;
-    right: -300px;  /* Hidden to the right */
-    opacity: 0;
+    right: -300px;  /* Plasserer inputfeltet utenfor skjermen til høyre */
+    opacity: 0; /* Gjør feltet usynlig til det aktiveres */
     width: 250px;
     padding: 8px;
-    border: 1px solid black;
-    border-radius: 4px;
-    transition: all 0.4s ease;
+    border: 1px solid black; /* Legger til en sort ramme */
+    border-radius: 4px; /* Runde hjørner for inputfeltet */
+    transition: all 0.4s ease; /* Glatt overgang når feltet vises */
     font-size: 1rem;
-    background: #fff;
-    z-index: -1;
+    background: #fff; /* Hvit bakgrunnsfarge for inputfeltet */
+    z-index: -1; /* Legger feltet under andre elementer som standard */
 }
 
-/* Active class to slide input from the right */
+/* Aktivert søkefelt som skyves inn fra høyre */
 .header-search.active .search-input {
-    right: 0;  /* Move it into view */
-    opacity: 1;
-    z-index: 1;
+    right: 0;  /* Skyver feltet inn i visningen */
+    opacity: 1; /* Gjør feltet synlig */
+    z-index: 1; /* Legger feltet over andre elementer */
 }
 
-.header-bottom nav {
-    padding: 2% 15%;
-}
-
-.header-bottom-link span {
-    font-size: 1.125rem;
+/* Stiler for navigasjonsmenyen i nedre del av headeren */
+.header-link {
+    padding: 0 10px;
+    font-size: 1.25rem;
     font-weight: 700;
     color: white;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
 }
+
+.header-link:hover {
+    border-bottom-color: white;
+}
+
 
 .menu-icon {
     width: 20px;
@@ -573,6 +590,7 @@ h4{
 	top: 0;
 	z-index: 1000; /* Ensure it stays on top */
 }
+
 
 .header-right {
 	display: flex;
@@ -598,6 +616,7 @@ h4{
 	padding: 2% 15%;
 	background: #2D3142;
 }
+
 ion-icon {
 	color: white;
 }
@@ -620,9 +639,6 @@ ion-icon {
 	display: none;
 }
 
-#top-header{
-    margin: 5px;
-}
 
 /* Full-Screen Menu Styling */
 .menu {
@@ -636,16 +652,19 @@ ion-icon {
 	align-items: center;
 	z-index: 999;
 	padding-top: 1rem; /*Push menu content down to not overlap with header*/
+
 }
 
 .menu.show {
 	display: flex;
+    
 }
 
 .menu-items {
 	text-align: left;
 	margin-left: 15%;
 }
+
 
 /* making the menu items list under eachother and making them  white for good visibility.
  also giving them reasonable sizes in rem, not px for better accessability*/
@@ -685,6 +704,7 @@ ion-icon {
 	font-weight: 400;
 	line-height: 2.25rem;
 	margin-top: 0.313rem;
+    text-align: center;
 }
 
 
@@ -692,9 +712,7 @@ a {
 	text-decoration: none;
 }
 
-li {
-	list-style: none;
-}
+
 .metadata-list {
 	display: flex;
 	flex-wrap: wrap; /*Learnt to use flex-wrap from https://www.w3schools.com/css/css3_flexbox_container.asp*/
@@ -703,6 +721,7 @@ li {
 	position: relative;
 	flex: 100%;
     width: 100%;
+    hyphens: auto;
 }
 .metadata-list-item {
 	border-top: 0.0575rem solid black;
@@ -735,6 +754,7 @@ span {
 .article-wrapper-para {
 	font-size: 24px;
 	line-height: 36px;
+    text-align: center;
 }
 
 .accordion-h2 {
@@ -767,18 +787,17 @@ span {
 	position: relative;
 	transition: height 0.3s cubic-bezier(0.24, 0.59, 0.38, 0.94);
 }
-@media(max-width:850px){
-    .accordion-text{
-        padding-left: 25px;
-        padding-right: 0px;
-    }
-}
+
 
 .accordion-text-para {
 	font-family: inherit;
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 27px;
+}
+.bold-p{
+    font-weight: bold;
+    margin-bottom: 0.4rem;
 }
 
 .a-list {
@@ -788,6 +807,7 @@ span {
 	line-height: 27px;
 	list-style: none;
 	margin-top: 18px;
+    hyphens: auto;
 }
 
 .a-list li {
@@ -871,11 +891,7 @@ span {
 	border-top: 1px solid black;
     padding-top: 15px;
 }
-@media(max-width:850px){
-    .subject{
-        width: 100%;
-    }
-}
+
 
 .study-plan a {
     text-decoration: none;
@@ -919,7 +935,7 @@ span {
     display: flex;
     flex-wrap: wrap;
     gap: 2%;
-    width: 90%;
+    width: 100%;
     padding: 2% 0;
     margin: 0 auto;
 }
@@ -947,6 +963,7 @@ span {
 .OtherStudies-cards {
     padding: 1rem;
     background-color: #fff;
+    hyphens: auto;
 }
 
 .OtherStudies-title {
@@ -966,6 +983,7 @@ span {
     line-height: 1.2;
     color: #333;
     margin-bottom: 0.6rem;
+    height: 9.375rem; /* Sets a fixed height for figcaption elements */
 }
 .hidden {
     display: none;
@@ -988,17 +1006,7 @@ span {
 .show-more-btn:hover {
     background-color: #955c22;;
 }
-@media /*learnt to use @media from https://www.w3schools.com/css/css3_mediaqueries.asp */(max-width:800px){
-	.main-content{
-		text-align: center;
-	}
-}
-@media (max-width:800px){
-    .subjects{
-        flex-direction: column;
-        flex:100%;
-    }
-}
+
 
 .Study-Stories-section {
     width: 100vw; /* Full skjermbredde */
@@ -1015,15 +1023,15 @@ span {
     width: 100%; /* Sørg for at den dekker hele bredden på sin seksjon */
     margin: 0 auto; /* Sentraliser eventuelle subelementer */
     padding: 0 4%; /* Litt side-padding hvis ønsket */
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
-
 
 
 .Study-Stories-article {
   width: 100%;
+  flex: 1 1 calc(50% - 20px);
   height: 100%;
   padding: 2%;
   color: black;
@@ -1164,14 +1172,7 @@ span {
     flex-direction: row;
     justify-content: center;
 }
-@media (max-width:700px){
-    .footer-container,.footer-content{
-        flex-direction: column;
-        flex: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-}
+
 
 .footer-content {
     padding: 5%;
@@ -1302,20 +1303,21 @@ span {
     width: 75%;
 }
 
+
 /* Css for GitPage */
 
-.GitPage-main {
+.gitpage-main {
     display: block;
     max-width: 100%;
     text-align: center;
 }
 
-.GitPage-p-main {
+.gitpage-p-main {
     margin: 0 auto 2rem auto;
     width: 65%;
 }
 
-.GitPage-figure {
+.gitpage-figure {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1323,24 +1325,104 @@ span {
     text-align: center;
 }
 
-.GitPage-img {
+.gitpage-img {
     display: flex;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
 }
 
-.GitPage-pic-1 {
-    width: 60%;
+.gitpage-pic-1 {
+    width: 95%;
     margin: 0 auto;
-    height: auto;
+    height: 60%;
 }
 
-.GitPage-img figcaption {
+.gitpage-img figcaption {
     text-align: center;
     font-size: smaller;
     padding-bottom: 2rem;
     width: 75%;
+}
+.gitpage-list{
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+}
+
+.gitpage-list li{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+@media(max-width:450px)/*learnt to use @media from https://www.w3schools.com/css/css3_mediaqueries.asp */{
+    .article-wrapper{
+        padding: 50px 5%;
+    }
+    .video-player{
+        height: 50vw;
+    }
+}
+
+@media(max-width:500px){
+    .header-search.active .search-input {
+        width: 8.125rem; /* Reduces the width of the search input to 160px when active on very small screens */
+    }
+}
+
+@media(max-width:650px){
+    .header-up, .header-bottom {
+		padding: 3%;
+	} 
+    .menu-items{
+        margin-left: 5%;
+    }
+}
+
+@media (max-width:700px){
+    .footer-container,.footer-content{
+        flex-direction: column;
+        flex: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* W3Schools - "CSS Media Queries" - https://www.w3schools.com/css/css3_mediaqueries.asp */
+
+@media (max-width:800px){
+	.main-content{
+		text-align: center;
+	}
+
+    .subjects{
+        flex-direction: column;
+        flex:100%;
+    }
+}
+
+@media(max-width:850px){
+    .accordion-text{
+        padding-left: 25px;
+        padding-right: 0px;
+    }
+
+    .subject{
+        width: 100%;
+    }
+
+    .Study-Stories-container{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .accessibility-img {
+        flex-direction: column;
+    }
 }
 
 
