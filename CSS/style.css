@@ -5,7 +5,7 @@ html{
 /*lar ikke oss scrolle i x-retning. låser den slik at den kun kan scrolles nedover,
 og holder contentet innenfor rammene.*/
 html,body{
-    overflow-x: hidden;
+    overflow-x: hidden; /*https://www.w3schools.com/cssref/css3_pr_overflow-x.php*/
 }
 /* Setter grunnleggende standarder for alle elementer */
 * {
@@ -431,7 +431,7 @@ span {
     display: flex;
     flex:50%;
 	flex-wrap: wrap;
-	flex-direction: row;
+	flex-direction: row; /*https://stackoverflow.com/questions/44931576/splitting-divs-into-2-columns*/
     justify-content: 30%;
     margin: 5px;
 }
