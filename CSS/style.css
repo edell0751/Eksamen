@@ -112,17 +112,34 @@ h4 {
     z-index: 1; /* Legger feltet over andre elementer */
 }
 
+<<<<<<< HEAD
 /* Stiler for navigasjonsmenyen i nedre del av headeren */
+=======
+>>>>>>> origin/main
 .header-bottom nav {
     padding: 2% 15%; /* Justerer avstanden til sidene for å sentrere */
 }
 
+<<<<<<< HEAD
 /* Stil for linker i navigasjonsmenyen */
 .header-bottom-link span {
     font-size: 1.125rem; /* Setter skriftstørrelsen for tydelighet */
     font-weight: 700; /* Gjør teksten fet */
     color: white; /* Setter fargen til hvit for kontrast */
     border-bottom: 2px solid white; /* Understreker med en hvit linje */
+=======
+.header-link {
+    padding: 0 10px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.header-link:hover {
+    border-bottom-color: white;
+>>>>>>> origin/main
 }
 
 
@@ -188,9 +205,6 @@ ion-icon {
 	display: none;
 }
 
-#top-header{
-    margin: 5px;
-}
 
 /* Full-Screen Menu Styling */
 .menu {
