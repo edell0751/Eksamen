@@ -924,78 +924,6 @@ span {
     margin-bottom: 10px;
 }
 
-
-/* Justerer padding for artikler for bedre plassutnyttelse på små skjermer */
-@media(max-width:450px) {
-    .article-wrapper {
-        padding: 50px 5%; 
-    }
-    .video-player {
-        height: 50vw; /* Justerer videohøyden for å holde proporsjoner på små skjermer */
-    }
-}
-
-/* Reduserer søkeboksens bredde når den er aktiv på små skjermer */
-@media(max-width:500px){
-    .header-search.active .search-input {
-        width: 8.125rem; 
-    }
-}
-
-/* Reduserer padding i headeren for å gi bedre plass på små skjermer */
-@media(max-width:650px){
-    .header-up, .header-bottom {
-        padding: 3%;
-    } 
-    .menu-items{
-        margin-left: 5%; /* Sentraliserer menyen for små skjermer ved å justere margin */
-    }
-}
-
-/* Endrer footer-layout til vertikal kolonne for bedre plassutnyttelse */
-@media (max-width:700px){
-    .footer-container, .footer-content {
-        flex-direction: column;
-        flex: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-/* Sentraliserer tekst i hovedinnholdet for bedre lesbarhet på små skjermer */
-@media (max-width:800px){
-    .main-content {
-        text-align: center;
-    }
-
-    .subjects {
-        flex-direction: column; /* Endrer layout for fagene til en vertikal liste */
-        flex: 100%; /* Sørger for at hvert fag tar opp hele bredden */
-    }
-
-    /* Stabler bilder relatert til tilgjengelighet vertikalt på små skjermer */
-    .accessibility-img, .gitpage-img{
-        flex-direction: column;
-    }
-}
-
-/* Øker padding for teksten i FAQ-seksjonen for bedre plass på små skjermer */
-@media(max-width:850px){
-    .accordion-text {
-        padding-left: 25px;
-        padding-right: 0px;
-    }
-
-    .subject {
-        width: 100%; /* Sørger for at hvert fag tar opp hele bredden i en vertikal layout */
-    }
-
-    .Study-Stories-container {
-        flex-direction: column; /* Endrer layouten for studenthistorier til vertikal kolonne */
-    }
-}
-
-
 /*CSS ACTIVITY*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
@@ -1419,6 +1347,77 @@ span {
     color: white;
 
 }
+
+/* Justerer padding for artikler for bedre plassutnyttelse på små skjermer */
+@media(max-width:450px) {
+    .article-wrapper {
+        padding: 50px 5%; 
+    }
+    .video-player {
+        height: 50vw; /* Justerer videohøyden for å holde proporsjoner på små skjermer */
+    }
+}
+
+/* Reduserer søkeboksens bredde når den er aktiv på små skjermer */
+@media(max-width:500px){
+    .header-search.active .search-input {
+        width: 8.125rem; 
+    }
+}
+
+/* Reduserer padding i headeren for å gi bedre plass på små skjermer */
+@media(max-width:650px){
+    .header-up, .header-bottom {
+        padding: 3%;
+    } 
+    .menu-items{
+        margin-left: 5%; /* Sentraliserer menyen for små skjermer ved å justere margin */
+    }
+}
+
+/* Endrer footer-layout til vertikal kolonne for bedre plassutnyttelse */
+@media (max-width:700px){
+    .footer-container, .footer-content {
+        flex-direction: column;
+        flex: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Sentraliserer tekst i hovedinnholdet for bedre lesbarhet på små skjermer */
+@media (max-width:800px){
+    .main-content {
+        text-align: center;
+    }
+
+    .subjects {
+        flex-direction: column; /* Endrer layout for fagene til en vertikal liste */
+        flex: 100%; /* Sørger for at hvert fag tar opp hele bredden */
+    }
+
+    /* Stabler bilder relatert til tilgjengelighet vertikalt på små skjermer */
+    .accessibility-img, .gitpage-img{
+        flex-direction: column;
+    }
+}
+
+/* Øker padding for teksten i FAQ-seksjonen for bedre plass på små skjermer */
+@media(max-width:850px){
+    .accordion-text {
+        padding-left: 25px;
+        padding-right: 0px;
+    }
+
+    .subject {
+        width: 100%; /* Sørger for at hvert fag tar opp hele bredden i en vertikal layout */
+    }
+
+    .Study-Stories-container {
+        flex-direction: column; /* Endrer layouten for studenthistorier til vertikal kolonne */
+    }
+}
+
 /* Scalling */
 @media screen and (max-width: 580px){ /* Makes sure it stays above other elements */
         
