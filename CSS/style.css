@@ -18,8 +18,8 @@ html,body,footer{
 
 /* Stiler for lenker */
 a {
-    color: black; /* Setter tekstfarge til sort */
-	text-decoration: none; /* Fjerner understreking */
+    color: black; 
+	text-decoration: none; 
 }
 
 /* Stiler for hovedoverskrift (h1), brukt i "title"-seksjonen */
@@ -30,7 +30,7 @@ h1 {
 
 /* Standard stil for body, angir bakgrunnsfarge */
 body {
-    background-color: #F1E4E8; /* Lys bakgrunnsfarge */
+    background-color: #F1E4E8; 
 }
 
 /* Stiler for seksjonsoverskrifter (h2) */
@@ -38,7 +38,7 @@ h2 {
     margin-top: 0.313rem;
     margin-bottom: 0.625rem;
     font-size: 2rem;
-    text-align: center; /* Sentraliserer teksten */
+    text-align: center; 
 }
 
 /* Stiler for underoverskrifter (h3) i mindre seksjoner */
@@ -112,22 +112,17 @@ h4 {
     z-index: 1; /* Legger feltet over andre elementer */
 }
 
-<<<<<<< HEAD
 /* Stiler for navigasjonsmenyen i nedre del av headeren */
-=======
->>>>>>> origin/main
 .header-bottom nav {
     padding: 2% 15%; /* Justerer avstanden til sidene for å sentrere */
 }
 
-<<<<<<< HEAD
 /* Stil for linker i navigasjonsmenyen */
 .header-bottom-link span {
     font-size: 1.125rem; /* Setter skriftstørrelsen for tydelighet */
     font-weight: 700; /* Gjør teksten fet */
     color: white; /* Setter fargen til hvit for kontrast */
     border-bottom: 2px solid white; /* Understreker med en hvit linje */
-=======
 .header-link {
     padding: 0 10px;
     font-size: 1.25rem;
@@ -136,10 +131,10 @@ h4 {
     border-bottom: 2px solid transparent;
     transition: border-color 0.3s;
 }
+}
 
 .header-link:hover {
     border-bottom-color: white;
->>>>>>> origin/main
 }
 
 
@@ -990,5 +985,4 @@ span {
         flex-direction: column;
     }
 }
-
 
