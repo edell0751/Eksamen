@@ -90,6 +90,76 @@ html, body {
     gap: 20px;  /* Adds space between the stacked elements */
     width: 755px;
 }
+/* Global styles for activity section */
+.activity-section {
+    background-image: url('../Images/f1background.jpeg');
+    background-size: cover; /* Ensures the background scales proportionally */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: fixed;
+    width: 100%; /* Full width */
+    height: 100vh; /* Match the viewport height */
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.activity-content {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between elements */
+    width: 755px;
+    text-align: center;
+}
+
+.activity-section .h1-activity {
+    font-size: 60px;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3), 5px 5px 70px rgba(0, 0, 0, 0.15);
+}
+
+.activity-section .activity-text {
+    font-size: 18px;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.read-more-button {
+    display: flex;
+    background-color: red;
+    text-decoration: none;
+    border-radius: 100px;
+    color: white;
+    width: 10rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+@media screen and (min-width: 601px) {
+    div.example {
+      font-size: 80px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    div.example {
+      font-size: 20px;
+    }
+
+  }
+
+
+
+
+   
+
+
 
 .read-more-button {
     display: flex;
@@ -220,6 +290,13 @@ html, body {
     color: black;
 }
 
+@media screen and (max-width: 768px) {
+    .f1box-container {
+        width: 325px; /* Maintain the fixed width */
+        height: 400px; /* beholde en bestemt hø */
+        margin: 2px auto; /* Center the boxes horizontally */
+    }
+}
 
 /* Slideshow container */
 .f1-drivers {
@@ -438,22 +515,36 @@ html, body {
 @media screen and (max-width: 580px){ /* Makes sure it stays above other elements */
         
 
-    .activity-nav {
-        position: fixed;
-        z-index: 1000; /* Makes sure it stays above other elements */
-    }
-    .activity-nav a {
-        float: none; /* Disable floating */
-        display: block; /* Ensure block-level behavior */
-        text-align: left; /* Align text to the left */
-        margin: 10px 0; /* Add spacing between items */
-    }
-    .activity-nav li {
-        display: block; /* Stack list items vertically */
-        width: 100%; /* Ensure full width */
-    }
+  
     
 }
+@media screen and (max-width: 580px) {
+    .header-activity {
+        position: absolute; /* Ensures the header stays at the top */
+        top: 0;
+        left: 0;
+        height: 70px; /* Adjust height for smaller screens */
+        width: 100%; /* Full width */
+        z-index: 1000; /* Ensure it stays on top of other content */
+
+    }
+
+
+    .activity-nav {
+        padding-left: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .activity-nav li {
+        display: block; /* Stack navigation items vertically */
+        margin: 5px 0; /* Add spacing between items */
+    }
+
+    .activity-nav a {
+        font-size: 1rem; /* Adjust font size for readability */
+    }
+}
+
+
 
 
 /* CSS INDEX */
