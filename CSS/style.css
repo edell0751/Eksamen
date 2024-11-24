@@ -1192,7 +1192,7 @@ span {
     font-weight: 500;
     margin-top: 0.5rem; /* Legger til plass på toppen av listen */
     margin-left: 0; /* Justerer i forhold til venstre padding til .f1-content */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Glatt overgang */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Myk overgang */
 }
 .f1Teams-button:hover {
     background: white;
@@ -1202,15 +1202,15 @@ span {
 @media screen and (max-width: 768px) {
     .f1box-container {
         width: 325px; /* Maintain the fixed width */
-        height: 400px; /* beholde en bestemt hø */
-        margin: 2px auto; /* Center the boxes horizontally */
+        height: 400px; /* beholde en bestemt høyde */
+        margin: 2px auto; /* Sentrerer boksene horisontalt */
     }
 }
 
 /* Slideshow container */
 .f1-drivers {
     width: 100%;
-    min-height: 400px; /* Ensure it doesn't shrink too much */
+    min-height: 400px; /* Sørger for at den ikke minskes for mye */
     position: relative;
     background: rgba(24, 24, 24, 0.98);
     color: white;
@@ -1245,7 +1245,7 @@ span {
   }
 
   .mySlides img {
-    width: 70%; /* Set the image width as a percentage of its container */
+    width: 70%; /* Setter bredden som en prosent av containeren*/
     height: 79%; 
     border: 2px solid; /* Kant rundt bildet */
     border-image: linear-gradient(to bottom, aqua, aqua, rgb(49, 133, 133)) 1 100%;
@@ -1253,7 +1253,7 @@ span {
     margin: 0 auto; 
 }
   
-  /* Next & previous buttons */
+  /* "Next"- og "previous"-knapper */
   .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -1269,16 +1269,16 @@ span {
     user-select: none;
   }
   
-  /* Position the "next button" to the right */
+  /* Posisjonerer knappene */
 .prev {
-    left: 20px; /* Distance from the left edge */
+    left: 20px; 
 }
 
 .next {
-    right: 20px; /* Distance from the right edge */
+    right: 20px; 
 }
   
-  /* On hover, add a black background color with a little bit see-through */
+  /* Justere design når man hovrer over knappen*/
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
   }
@@ -1295,25 +1295,27 @@ span {
   }
 
   
-  /* Fading animation */
+  /* Fading-animasjon */ /*https://www.w3schools.com/w3css/w3css_slideshow.asp*/
   .fade {
     animation-name: fade;
     animation-duration: 1.5s;
   }
   
+ 
   @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
   }
+
  .f1Drivers-hover{
-    position: absolute; /* Position the overlay over the image */
+    position: absolute; /* Plasserer overlegget over bildet */
     top: 0;
     left: 0;
-    width: 100%; /* Match the image's width */
-    height: 100%; /* Match the image's height */
-    backdrop-filter: blur(10px);
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.3s ease; 
+    width: 100%; /* Tilpasser overleggets bredde til bildet */
+    height: 100%; /* Tilpasser overleggets høyde til bildet */
+    backdrop-filter: blur(10px); /* Legger til uskarphet på overlegget */
+    opacity: 0; /* Skjuler overlegget som standard */
+    transition: opacity 0.3s ease; /* Myk overgang for synlighet */
 
 }
 .mySlides:hover .f1Drivers-hover {
