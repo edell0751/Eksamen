@@ -1363,11 +1363,11 @@ span {
         float: none; /* Disable floating */
         display: block; /* Ensure block-level behavior */
         text-align: left; /* Align text to the left */
-        margin: 10px 0; /* Add spacing between items */
+        margin: 10px 0; /* Lager mellomrom mellom innhold */
     }
     .activity-nav li {
         display: block; /* Stack list items vertically */
-        width: 100%; /* Ensure full width */
+        width: 100%; /* Sikrer full bredde */
     }
     
 }
