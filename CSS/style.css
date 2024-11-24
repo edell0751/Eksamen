@@ -911,7 +911,6 @@ span {
 .gitpage-list {
     width: auto;
     text-align: center;
-    list-style-type: none;
     padding: 7px;
     position: relative;
 }
