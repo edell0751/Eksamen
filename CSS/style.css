@@ -91,6 +91,7 @@ h4{
     .header-search.active .search-input {
         width: 160px; /* Reduces the width of the search input to 160px when active on very small screens */
     }
+}
 
 .header-right {
     display: flex;
