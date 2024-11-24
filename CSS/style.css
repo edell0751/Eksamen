@@ -46,6 +46,8 @@ h4{
 }
 
 
+
+
 .header-up {
     display: flex; /*Learnt to use display flex from https://www.w3schools.com/css/css3_flexbox.asp*/
     justify-content: space-between;
@@ -578,6 +580,7 @@ span {
     line-height: 1.2;
     color: #333;
     margin-bottom: 0.6rem;
+    height: 9.375rem; /* Sets a fixed height for figcaption elements */
 }
 .hidden {
     display: none;
