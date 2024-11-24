@@ -12,6 +12,7 @@ html,body,footer{
 	padding: 0%;
 	box-sizing: border-box;
 	font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
+    list-style: none;
 }
 a {
     color: black;
@@ -187,11 +188,7 @@ h4{
 	padding: 2% 15%;
 	background: #2D3142;
 }
-@media(max-width:500px){
-    .header-bottom ,.header-up{
-        padding: 2% 5%;
-    }
-}
+
 ion-icon {
 	color: white;
 }
@@ -242,11 +239,7 @@ ion-icon {
 	text-align: left;
 	margin-left: 15%;
 }
-@media(max-width:500px){
-    .menu-items{
-        margin-left: 5%;
-    }
-}
+
 
 /* making the menu items list under eachother and making them  white for good visibility.
  also giving them reasonable sizes in rem, not px for better accessability*/
@@ -262,11 +255,6 @@ ion-icon {
 /*  it sections the class to keep its almost centered position*/
  .article-wrapper{
 	padding: 50px 15%;
-}
-@media(max-width:450px){
-    .article-wrapper{
-        padding: 50px 5%;
-    }
 }
 
 
@@ -299,9 +287,7 @@ a {
 	text-decoration: none;
 }
 
-li {
-	list-style: none;
-}
+
 .metadata-list {
 	display: flex;
 	flex-wrap: wrap; /*Learnt to use flex-wrap from https://www.w3schools.com/css/css3_flexbox_container.asp*/
@@ -376,12 +362,7 @@ span {
 	position: relative;
 	transition: height 0.3s cubic-bezier(0.24, 0.59, 0.38, 0.94);
 }
-@media(max-width:850px){
-    .accordion-text{
-        padding-left: 25px;
-        padding-right: 0px;
-    }
-}
+
 
 .accordion-text-para {
 	font-family: inherit;
@@ -408,7 +389,7 @@ span {
 	margin-bottom: 0.625rem;
 	padding-left: 0.9375rem;
 	position: relative;
-	list-style: disc;
+	list-style: none;
 }
 
 .a-list li a {
@@ -485,11 +466,7 @@ span {
 	border-top: 1px solid black;
     padding-top: 15px;
 }
-@media(max-width:850px){
-    .subject{
-        width: 100%;
-    }
-}
+
 
 .study-plan a {
     text-decoration: none;
@@ -561,6 +538,7 @@ span {
 .OtherStudies-cards {
     padding: 1rem;
     background-color: #fff;
+    hyphens: auto;
 }
 
 .OtherStudies-title {
@@ -603,17 +581,7 @@ span {
 .show-more-btn:hover {
     background-color: #955c22;;
 }
-@media /*learnt to use @media from https://www.w3schools.com/css/css3_mediaqueries.asp */(max-width:800px){
-	.main-content{
-		text-align: center;
-	}
-}
-@media (max-width:800px){
-    .subjects{
-        flex-direction: column;
-        flex:100%;
-    }
-}
+
 
 .Study-Stories-section {
     width: 100vw; /* Full skjermbredde */
@@ -634,11 +602,7 @@ span {
     flex-wrap: wrap;
     gap: 20px;
 }
-@media(max-width:850px){
-    .Study-Stories-container{
-        flex-direction: column;
-    }
-}
+
 
 .Study-Stories-article {
   width: 100%;
@@ -783,14 +747,7 @@ span {
     flex-direction: row;
     justify-content: center;
 }
-@media (max-width:700px){
-    .footer-container,.footer-content{
-        flex-direction: column;
-        flex: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-}
+
 
 .footer-content {
     padding: 5%;
@@ -921,20 +878,21 @@ span {
     width: 75%;
 }
 
+
 /* Css for GitPage */
 
-.GitPage-main {
+.gitpage-main {
     display: block;
     max-width: 100%;
     text-align: center;
 }
 
-.GitPage-p-main {
+.gitpage-p-main {
     margin: 0 auto 2rem auto;
     width: 65%;
 }
 
-.GitPage-figure {
+.gitpage-figure {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -942,29 +900,105 @@ span {
     text-align: center;
 }
 
-.GitPage-img {
+.gitpage-img {
     display: flex;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
 }
 
-.GitPage-pic-1 {
-    width: 60%;
+.gitpage-pic-1 {
+    width: 95%;
     margin: 0 auto;
-    height: auto;
+    height: 60%;
 }
 
-.GitPage-img figcaption {
+.gitpage-img figcaption {
     text-align: center;
     font-size: smaller;
     padding-bottom: 2rem;
     width: 75%;
 }
+.gitpage-list{
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+}
+
+.gitpage-list li{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+@media(max-width:450px){
+    .article-wrapper{
+        padding: 50px 5%;
+    }
+}
+
+@media(max-width:500px){
+    .header-bottom ,.header-up{
+        padding: 2% 5%;
+    }
+}
+
+@media(max-width:500px){
+    .menu-items{
+        margin-left: 5%;
+    }
+}
+
+@media (max-width:700px){
+    .footer-container,.footer-content{
+        flex-direction: column;
+        flex: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* W3Schools - "CSS Media Queries" - https://www.w3schools.com/css/css3_mediaqueries.asp */
+
+@media (max-width:800px){
+	.main-content{
+		text-align: center;
+	}
+}
+
+@media (max-width:800px){
+    .subjects{
+        flex-direction: column;
+        flex:100%;
+    }
+}
 
 
+@media(max-width:850px){
+    .accordion-text{
+        padding-left: 25px;
+        padding-right: 0px;
+    }
+}
 
+@media(max-width:850px){
+    .subject{
+        width: 100%;
+    }
+}
 
+@media(max-width:850px){
+    .Study-Stories-container{
+        flex-direction: column;
+    }
+}
 
+@media (max-width: 768px) {
+    .accessibility-img {
+        flex-direction: column;
+    }
+}
 
 
