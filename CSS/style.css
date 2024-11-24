@@ -1042,28 +1042,6 @@ span {
     font-size: 16px;
 }
 
-@media screen and (min-width: 601px) {
-    div.example {
-      font-size: 80px;
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    div.example {
-      font-size: 20px;
-    }
-
-  }
- 
-  @media screen and (max-width: 480px) {
-    .f1-drivers .h3-activity {
-        font-size: 1.3rem; /* Reduserer font størrelse for veldig små skjermer */
-    }
-}  
-
-
-
-
 .read-more-button {
     display: flex;
     background-color: red;
@@ -1441,6 +1419,9 @@ span {
         height: 45vh; /* Slightly taller for very small screens */
         padding: 10px; /* Further reduce padding */
     }
+    .f1-drivers .h3-activity {
+        font-size: 1.3rem; /* Reduserer font størrelse for veldig små skjermer */
+    }
 }
 
 @media screen and (max-width: 580px) {
@@ -1467,6 +1448,18 @@ span {
     }
 }
 
+@media screen and (max-width: 600px) {
+    div.example {
+      font-size: 20px;
+    }
+
+  }
+
+@media screen and (min-width: 601px) {
+    div.example {
+      font-size: 80px;
+    }
+  }
 
 /* Reduserer padding i headeren for å gi bedre plass på små skjermer */
 @media(max-width:650px){
