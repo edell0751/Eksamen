@@ -7,100 +7,127 @@ og holder contentet innenfor rammene.*/
 html,body,footer{
     overflow-x: hidden;
 }
+/* Setter grunnleggende standarder for alle elementer */
 * {
-	margin: 0%;
-	padding: 0%;
-	box-sizing: border-box;
-	font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
-    list-style: none;
-}
-a {
-    color: black;
-	text-decoration: none;
-}
-h1{
-    font-size: 3rem;
-    text-align: center;
+	margin: 0; /* Fjerner standard marger for alle elementer */
+	padding: 0; /* Fjerner standard padding */
+	box-sizing: border-box; /* Inkluderer padding og border i elementers totale bredde/høyde */
+	font-family: Moderat, Avenir, Helvetica, Arial, sans-serif; /* Setter standard fontfamilie */
+    list-style: none; /* Fjerner standard punktliste på lister */
 }
 
-body{
-    background-color: #F1E4E8;
+/* Stiler for lenker */
+a {
+    color: black; /* Setter tekstfarge til sort */
+	text-decoration: none; /* Fjerner understreking */
 }
-h2{
+
+/* Stiler for hovedoverskrift (h1), brukt i "title"-seksjonen */
+h1 {
+    font-size: 3rem;
+    text-align: center; /* Sentraliserer teksten */
+}
+
+/* Standard stil for body, angir bakgrunnsfarge */
+body {
+    background-color: #F1E4E8; /* Lys bakgrunnsfarge */
+}
+
+/* Stiler for seksjonsoverskrifter (h2) */
+h2 {
     margin-top: 0.313rem;
     margin-bottom: 0.625rem;
     font-size: 2rem;
-    text-align: center;
+    text-align: center; /* Sentraliserer teksten */
 }
 
+/* Stiler for underoverskrifter (h3) i mindre seksjoner */
 h3 {
     font-size: 1.75rem;
     margin-bottom: 0.9rem;
     text-align: center;
 }
-h4{
+
+/* Stiler for mindre underoverskrifter (h4) i artikler */
+h4 {
     font-size: 1rem;
     margin-bottom: 0.2rem;
     text-align: center;
-    font-weight: bold;
-
+    font-weight: bold; /* Øker vekten på teksten for bedre synlighet */
 }
 
+/* Øverste del av headeren, organiserer logo, søk, og meny */
 .header-up {
-    display: flex; /*Learnt to use display flex from https://www.w3schools.com/css/css3_flexbox.asp*/
-    justify-content: space-between;
-    padding: 2% 15%;
-
+    display: flex; /* Bruker flex for å justere elementer horisontalt */
+    justify-content: space-between; /* Fordeler plass mellom logo og ikoner */
+    padding: 2% 15%; /* Polstring for å holde elementer innenfor kanten */
 }
 
+/* Container for elementer på høyre side av headeren */
 .header-right {
     display: flex;
-    gap: 30px;
-    position: relative;
-    
+    gap: 30px; /* Avstand mellom søkefeltet og menyikonet */
+    position: relative; /* Muliggjør posisjonering av underliggende elementer */
 }
 
+
+/* Stiler for søkefunksjonen i headeren */
 .header-search {
-    display: flex;
-    align-items: center;
-    position: relative;
+    display: flex; /* Justerer elementer horisontalt */
+    align-items: center; /* Sentraliserer elementer vertikalt */
+    position: relative; /* For å posisjonere søkeikon og input relativt til container */
 }
 
+/* Tekststil for søketiketten */
 .header-search p {
-    font-weight: 700;
-    text-transform: uppercase;
+    font-weight: 700; /* Gjør teksten fet for synlighet */
+    text-transform: uppercase; /* Endrer tekst til store bokstaver */
 }
 
+/* Stil for søkeikon */
 .search-icon {
-    width: 20px;
-    cursor: pointer;
+    width: 20px; /* Setter bredde på ikonet */
+    cursor: pointer; /* Angir at elementet er klikkbart */
 }
 
+/* Stiler for søkefeltet (skjult som standard) */
 .search-input {
     position: absolute;
-    right: -300px;  /* Hidden to the right */
-    opacity: 0;
+    right: -300px;  /* Plasserer inputfeltet utenfor skjermen til høyre */
+    opacity: 0; /* Gjør feltet usynlig til det aktiveres */
     width: 250px;
     padding: 8px;
-    border: 1px solid black;
-    border-radius: 4px;
-    transition: all 0.4s ease;
+    border: 1px solid black; /* Legger til en sort ramme */
+    border-radius: 4px; /* Runde hjørner for inputfeltet */
+    transition: all 0.4s ease; /* Glatt overgang når feltet vises */
     font-size: 1rem;
-    background: #fff;
-    z-index: -1;
+    background: #fff; /* Hvit bakgrunnsfarge for inputfeltet */
+    z-index: -1; /* Legger feltet under andre elementer som standard */
 }
 
-/* Active class to slide input from the right */
+/* Aktivert søkefelt som skyves inn fra høyre */
 .header-search.active .search-input {
-    right: 0;  /* Move it into view */
-    opacity: 1;
-    z-index: 1;
+    right: 0;  /* Skyver feltet inn i visningen */
+    opacity: 1; /* Gjør feltet synlig */
+    z-index: 1; /* Legger feltet over andre elementer */
 }
 
+<<<<<<< HEAD
+/* Stiler for navigasjonsmenyen i nedre del av headeren */
+=======
+>>>>>>> origin/main
 .header-bottom nav {
-    padding: 2% 15%;
+    padding: 2% 15%; /* Justerer avstanden til sidene for å sentrere */
 }
 
+<<<<<<< HEAD
+/* Stil for linker i navigasjonsmenyen */
+.header-bottom-link span {
+    font-size: 1.125rem; /* Setter skriftstørrelsen for tydelighet */
+    font-weight: 700; /* Gjør teksten fet */
+    color: white; /* Setter fargen til hvit for kontrast */
+    border-bottom: 2px solid white; /* Understreker med en hvit linje */
+=======
 .header-link {
     padding: 0 10px;
     font-size: 1.25rem;
@@ -112,7 +139,9 @@ h4{
 
 .header-link:hover {
     border-bottom-color: white;
+>>>>>>> origin/main
 }
+
 
 .menu-icon {
     width: 20px;
