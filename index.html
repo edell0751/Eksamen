@@ -13,66 +13,78 @@
 </head>
 <body>
 	<header>
-        <div class="header-up">
-            <div class="header-left">
-                <a href="index.html" class="logo-header">
-                    <picture>
-                    <img src="bilder/Oslomet-logo-hvit.png" alt="OsloMet - Front page">
-                    </picture>   
-                </a>
-            </div>
-            <div class="header-right">
-                <div class="header-search">
-                    <p class="search-text">Søk</p>
-                    <ion-icon name="search-outline" class="search-icon"></ion-icon>
-                    <input type="text" class="search-input" placeholder="Søk..." aria-label="Search"/>
-                </div>
-                <div class="header-menu">
-                    <p>Meny</p>
-                    <ion-icon name="menu-outline" class="menu-icon hamburger"></ion-icon>
-                    <ion-icon name="close-outline" class="menu-icon close"></ion-icon>
-                </div>
-            </div>
-        </div>
-        <nav class="header-bottom">
-            <a href="index.html" class="header-bottom-link">
-                <ion-icon name="chevron-forward-outline"></ion-icon>
-                <span id="top-header">Home</span>
-            </a>
-
-            <a href="Activity.html" class="header-bottom-link">
-                <span id="top-header"> Activity</span>
-            </a>
-
-            <a href="Accessibility.html" class="header-bottom-link">
-                <span id="top-header"> Accessibility</span>
-            </a>
-
+		<!-- Øvre del av headeren som inneholder logo og søke- og menyikoner -->
+		<div class="header-up">
+			<div class="header-left">
+				<!-- Logo som lenker til hovedsiden -->
+				<a href="index.html" class="logo-header">
+					<picture>
+						<!-- Logo bilde for OsloMet -->
+						<img src="bilder/Oslomet-logo-hvit.png" alt="OsloMet - Forside">
+					</picture>
+				</a>
+			</div>
+			<div class="header-right">
+				<!-- Seksjon for søkefunksjon -->
+				<div class="header-search">
+					<p class="search-text">Søk</p>
+					<!-- Søkeikon for å aktivere søk -->
+					<ion-icon name="search-outline" class="search-icon"></ion-icon>
+					<!-- Søkeinputfelt for brukere -->
+					<input type="text" class="search-input" placeholder="Søk..." aria-label="Søk"/>
+				</div>
+				<!-- Menyikon som aktiverer en meny (mobilvennlig design) -->
+				<div class="header-menu">
+					<p>Meny</p>
+					<!-- Åpne meny-ikon -->
+					<ion-icon name="menu-outline" class="menu-icon hamburger"></ion-icon>
+					<!-- Lukk meny-ikon -->
+					<ion-icon name="close-outline" class="menu-icon close"></ion-icon>
+				</div>
+			</div>
+		</div>
+		<!-- Navigasjonsmeny for nettsiden -->
+		<nav class="header-bottom">
+			<!-- Lenker til de forskjellige sidene activity, hjem(index), accessibility og gitpage -->
+			<a href="index.html" class="header-bottom-link">
+				<ion-icon name="chevron-forward-outline"></ion-icon>
+				<span id="top-header">Home</span>
+			</a>
+	
+			<a href="Activity.html" class="header-bottom-link">
+				<span id="top-header">Activity</span>
+			</a>
+	
+			<a href="Accessibility.html" class="header-bottom-link">
+				<span id="top-header">Accessibility</span>
+			</a>
+	
 			<a href="Gitpage.html" class="header-bottom-link">
-                <span id="top-header"> GitPage</span>
-            </a>
-
-        </nav>
-    </header>
+				<span id="top-header">GitPage</span>
+			</a>
+		</nav>
+	</header>
+	
     <main>
 
+		<!-- Fullskjermmeny som vises når menyikonet aktiveres -->
 		<div class="menu" id="fullMenu">
 			<div class="menu-items">
-				<a href="https://www.oslomet.no/studier">Studier</a>
-				<a href="https://www.oslomet.no/forskning">Forskningen vår</a>
-				<a href="https://www.oslomet.no/om/samarbeid">Samarbeid</a>
-				<a href="https://www.oslomet.no/ub">Universitetsbiblioteket</a>
-				<a href="https://www.oslomet.no/om">Om OsloMet</a>
-				<a href="https://www.oslomet.no/om/kontakt">Kontakt</a>
-				<a href="https://www.oslomet.no/om/for-studenter">For studenter</a>
-				<a href="https://www.oslomet.no/studier/studieoversikt">Studieoversikt</a>
+				<!-- Hovedmeny med lenker til ulike seksjoner på OsloMet-nettsiden -->
+				<a href="https://www.oslomet.no/studier">Studier</a> <!-- Lenke til siden for studier -->
+				<a href="https://www.oslomet.no/forskning">Forskningen vår</a> <!-- Lenke til forskningssiden -->
+				<a href="https://www.oslomet.no/om/samarbeid">Samarbeid</a> <!-- Lenke til informasjon om samarbeid -->
+				<a href="https://www.oslomet.no/ub">Universitetsbiblioteket</a> <!-- Lenke til Universitetsbiblioteket -->
+				<a href="https://www.oslomet.no/om">Om OsloMet</a> <!-- Lenke til generell informasjon om OsloMet -->
+				<a href="https://www.oslomet.no/om/kontakt">Kontakt</a> <!-- Lenke til kontaktsiden -->
+				<a href="https://www.oslomet.no/om/for-studenter">For studenter</a> <!-- Lenke til ressurser for studenter -->
+				<a href="https://www.oslomet.no/studier/studieoversikt">Studieoversikt</a> <!-- Lenke til full oversikt over studier -->
 			</div>
 		</div>
 
+		<!-- Seksjon for å vise en relevant YouTube-video om bachelorstudier i matematisk modellering -->
         <section class="article-wrapper">
-			<!-- henter inn video fra youtube og tilegner den egenskaper som fullscreen osv
-			 fikser også på title, som gjør det tilgjengelig for screen readers 
-			 og få meg seg hva iframe inneholder.-->
+			<!-- Integrerer en video fra YouTube som støtter flere funksjoner som fullskjerm og autoplay -->
 			<iframe
 				class="video-player"
 				src="https://www.youtube.com/embed/Ip6CrMXGrkE?si=ogHdIJ88Ny_nK7ub"
@@ -83,23 +95,32 @@
 			></iframe>
 
 
-
+			<!-- Hovedinnhold som presenterer informasjon om bachelorprogrammet -->
             <div class="main-content">
+				<!-- Tittelområde for studiet -->
                 <div class="title">
+					 <!-- Hovedoverskrift som viser studieprogrammet -->
 					<h1>
 						Matematisk modellering og datavitenskap - ingeniør
 					</h1>
 					<p class="headline-para">Bachelorprogram</p>
 				</div>
+				<!-- Liste med metadata for programmet, som beskriver nøkkeldetaljer -->
                 <div class="metadata-list">
+					<!-- Hvert element i metadata-listen representerer én detalj -->
                     <div class="metadata-list-item">
+						<!-- Overskrift for detaljen: Studiested -->
                         <span class="metadata-headline">Studiested</span>
+						<!-- Innhold for denne detaljen -->
                         <ul class="items">
                             <li>Pilestredet i oslo</li>
                         </ul>
                     </div>
+
                     <div class="metadata-list-item">
+						<!-- Overskrift for detaljen: Varighet -->
                         <span class="metadata-headline">Varighet</span>
+						 <!-- Innhold for denne detaljen -->
                         <ul class="items">
                             <li>3 år</li>
                         </ul>
@@ -146,24 +167,30 @@
             </div>
 
         </section>
+
+		<!-- Seksjon som beskriver innholdet i bachelorstudiet og gir viktig informasjon -->
         <section class="article-wrapper">
+			 <!-- Innledningstekst for studiet -->
 			<article class="article-wrapper-heading">
 				<p class="article-wrapper-para">
 					Få innsikt i matematiske modeller og datadrevne metoder som kan løse
 					mange praktiske og samfunnsnyttige oppgaver.
 				</p>
 			</article>
+			<!-- FAQ (Frequently asked questions): Første seksjon om opptakskrav -->
 			<article class="article-faq">
 				<div class="accordion-block">
+					<!-- Tittel og knapp for å åpne/lukke innhold -->
 					<h2 class="accordion-h2">
 						<button class="accordion-btn" aria-label="Åpne seksjonen for opptakskrav"></button>
 						<span>Opptakskrav og poeng</span>
 					</h2>
+					<!-- Tekst og detaljer om opptakskrav -->
 					<div class="accordion-text">
 						<p class="accordion-text-para">
 							For å søke på dette programmet må du ha
 						</p>
-
+						<!-- Liste over opptakskrav -->
 						<ul class="a-list">
 							<li>
 								<a href="#" class="">
@@ -181,7 +208,8 @@
 							Det kan være konkurranse om plassene. Ved forrige opptak kom alle
 							kvalifiserte søkere inn.
 						</p>
-						
+
+						 <!-- Informasjon om forkurs for søkere uten studiekompetanse -->
 						<p class="accordion-text-para para-3">
 							Hvis du mangler generell studiekompetanse eller enkelte fag fra
 							videregående skole, kan du søke på dette studiet om du har <a href="#" class="para-3-links">bestått
@@ -190,6 +218,8 @@
 					</div>
 				</div>
 			</article>
+
+			<!-- FAQ: Andre seksjon om hvordan man søker -->
 			<article class="article-faq">
 				<div class="accordion-block">
 					<h2 class="accordion-h2">
@@ -200,22 +230,26 @@
 						<p class="accordion-text-para">
 							Du søker på Samordna opptak med studiekode 215 503.
 						</p>
-
+						<!-- Liste med søknadsfrister -->
 						<ul class="a-list">
 							<li>15. april: ordinær søknadsfrist</li>
 							<li>1. mars: frist for enkelte søkere</li>
 						</ul>
+
+						<!-- Lenke til mer informasjon om søknadsprosessen -->
 						<a href="#" class="para-3-links">Mer om å søke på bachelor</a>
                         
 					</div>
 				</div>
 			</article>
+			<!-- FAQ: Tredje seksjon om hva studiet lærer bort -->
 			<article class="article-faq">
 				<div class="accordion-block">
 					<h2 class="accordion-h2">
 						<button class="accordion-btn" aria-label="Åpne seksjonen for hva lærer du?"></button>
 						<span>Hva lærer du?</span>
 					</h2>
+					<!-- Generell beskrivelse av faglig innhold i studiet -->
 					<div class="accordion-text">
 						<p class="accordion-text-para">
 							Bachelor i matematisk modellering og datavitenskap kobler sammen
@@ -232,20 +266,23 @@
 							ta.
 						</p>
 						<br>
-						<h4>Statistiske og datadrevne metoder</h4>
+						<!-- Første spesialisering -->
+						<p class="bold-p">Statistiske og datadrevne metoder</p>
 						<p class="accordion-text-para 3">Du lærer om hvordan du kan bruke målte data koblet med datadrevne
 							og statistiske metoder til å gjøre beregninger, for eksempel av fremtidige strømpriser.
 							Du lærer hvordan du kan løse komplekse og sammensatte problemer, og utforske høydimensjonale datatyper.
 							Moderne metoder innen maskinlæring og kunstig intelligens står sentralt.
 						</p>
 						<br>
-						<h4>Vitenskapelige beregninger</h4>
+						<!-- Andre spesialisering -->
+						<p class="bold-p">Vitenskapelige beregninger</p>
 						<p class="accordion-text-para 3">Du lærer å lage effektive algoritmer, datastrukturer og kildekoder
 							 for å løse matematiske og fysiske problemer med numeriske metoder.
 							Du lærer å utvikle kildekode og metodikk knyttet til medisinsk teknologi, biologiske prosesser og annet.
 						</p>
 						<br>
-						<h4>Matematikk og fysikk</h4>
+						<!-- Tredje spesialisering -->
+						<p class="bold-p">Matematikk og fysikk</p>
 						<p class="accordion-text-para 3">Du utforsker algebraiske strukturer, blant annet knyttet til dyp læring og kunstig intelligens.
 							Du lærer differensialgeometri på flater, gruppeteori og kodeteori; matematiske strukturer, representasjonsteori og kategoriteori.
 							I fysikk lærer du om termodynamikk og statistisk fysikk.
@@ -254,24 +291,33 @@
 					</div>
 				</div>
 			</article>
+			
+			<!-- FAQ: Fjerde seksjon om studiets oppbygning og oversikt -->
+			 <!-- Seksjon som viser studiets oppbygging i form av en studieplan -->
 			<article class="article-faq">
 				<div class="accordion-block">
 					<h2 class="accordion-h2">
 						<button class="accordion-btn" aria-label="Åpne seksjonen for studiets oppbygning"></button>
 						<span>Studiets oppbygging</span>
 					</h2>
+
+					<!-- Tekst og struktur for studieplanen -->
 					<div class="accordion-text no-padding">
 						<div class="study-plan">
+							 <!-- Første studieår -->
 							<h2>1. studieår</h2>
 
+							 <!-- Første semester -->
 							<div class="semester">
 								<h3>1. semester</h3>
+
+								 <!-- Liste over emner i første semester -->
 								<div class="subjects">
 									<div class="subject">
 										<a href="#">Diskret matematikk</a><br>
 										<div class="flex">
 											<span>DAPE1300</span><br>
-											<span>10 stp.</span>
+											<span>10 stp.</span><!-- Studiepoeng -->
 										</div>
 									</div>
 									<div class="subject">
@@ -298,6 +344,7 @@
 								</div>
 							</div>
 
+							<!-- Andre semester -->
 							<div class="semester">
 								<h3>2. semester</h3>
 								<div class="subjects">
@@ -324,10 +371,11 @@
 									</div>
 								</div>
 							</div>
-
+							<!-- Andre studieår -->
 							<h2>2. studieår</h2>
 
 							<div class="semester">
+								<!-- tredje semester -->
 								<h3>3. semester</h3>
 								<div class="subjects">
 									<div class="subject">
@@ -348,6 +396,7 @@
 							</div>
 
 							<div class="semester">
+								<!-- fjerde semester -->
 								<h3>4. semester</h3>
 								<div class="subjects">
 									<div class="subject">
@@ -359,12 +408,16 @@
 									</div>
 								</div>
 							</div>
-							<h5 class="semester-headline">
+
+							 <!-- Ekstra spesialisering: Matematikk og fysikk, legger til en ekstra headline -->
+							<h3 class="semester-headline">
 								Emnegruppe: Matematikk og fysikk
-							</h5>
+							</h3>
 							<br><br>
 
+							<!-- Hvordan de som velger denne gruppens semestere ser ut.-->
 							<div class="semester">
+								<!-- tredje semester -->
 								<h3>3. semester</h3>
 								<div class="subjects">
 									<div class="subject">
@@ -379,6 +432,7 @@
 							</div>
 
 							<div class="semester">
+								<!-- fjerde semester -->
 								<h3>4. semester</h3>
 								<div class="subjects">
 									<div class="subject">
@@ -398,12 +452,13 @@
 								</div>
 							</div>
 
-							<h5 class="semester-headline">
+							<h3 class="semester-headline">
 								Emnegruppe: Statistiske og datadrevne metoder
-							</h5>
+							</h3>
 							<br><br>
 
 							<div class="semester">
+								<!-- tredje semester -->
 								<h3>3. semester</h3>
 								<div class="subjects">
 									<div class="subject">
@@ -417,6 +472,7 @@
 							</div>
 
 							<div class="semester">
+								<!-- fjerde semester -->
 								<h3>4. semester</h3>
 								<div class="subjects">
 									<div class="subject">
@@ -430,6 +486,7 @@
 										<a href="#">Visualisering</a><br>
 										<div class="flex">
 											<span>ADSE3200</span><br>
+											<!-- Valgfag, legges imellom kode til fag og studiepoengene -->
 											<span>Valgfag</span><br>
 											<span>10 stp.</span>
 										</div>
@@ -446,12 +503,13 @@
 							</div>
 							
 
-							<h5 class="semester-headline">
+							<h3 class="semester-headline">
 								Emnegruppe: Vitenskapelige beregninger
-							</h5>
+							</h3>
 							<br><br>
 
 							<div class="semester">
+								<!-- tredje semester -->
 								<h3>3. semester</h3>
 								<div class="subjects">
 									<div class="subject">
@@ -465,6 +523,7 @@
 							</div>
 
 							<div class="semester">
+								<!-- fjerde semester -->
 								<h3>4. semester</h3>
 								<div class="subjects">
 									<div class="subject">
@@ -486,9 +545,11 @@
 								</div>
 							</div>
 
+							<!-- tredje Studieår -->
 							<h2>3. studieår</h2>
 
 							<div class="semester">
+								<!-- femte semester -->
 								<h3>5. semester</h3>
 								<div class="subjects">
 									<div class="subject">
@@ -502,6 +563,7 @@
 							</div>
 
 							<div class="semester">
+								<!-- sjette semester -->
 								<h3>6. semester</h3>
 								<div class="subjects">
 									<div class="subject">
@@ -514,12 +576,13 @@
 								</div>
 							</div>
 
-							<h5 class="semester-headline">
+							<h3 class="semester-headline">
 								Emnegruppe: Matematikk og fysikk
-							</h5>
+							</h3>
 							<br><br>
 
 							<div class="semester">
+								<!-- femte semester -->
 								<h3>5. semester</h3>
 								<div class="subjects">
 									<div class="subject">
@@ -566,6 +629,7 @@
 						</div>
 
 						<div class="semester">
+							<!-- Sjette semester -->
 							<h3>6. semester</h3>
 							<div class="subjects">
 								<div class="subject">
@@ -612,12 +676,13 @@
 						</div>
 					</div>
 
-							<h5 class="semester-headline">
+							<h3 class="semester-headline">
 								Emnegruppe: Statistiske og datadrevne metoder
-							</h5>
+							</h3>
 							<br><br>
 
 							<div class="semester">
+								<!-- femte semester -->
 								<h3>5. semester</h3>
 								<div class="subjects">
 									<div class="subject">
@@ -664,6 +729,7 @@
 						</div>
 
 							<div class="semester">
+								<!-- sjette semester -->
 								<h3>6. semester</h3>
 								<div class="subjects">
 									<div class="subject">
@@ -701,12 +767,13 @@
 								</div>
 							</div>
 
-							<h5 class="semester-headline">
+							<h3 class="semester-headline">
 								Emnegruppe: Vitenskapelige beregninger
-							</h5>
+							</h3>
 							<br><br>
 
 							<div class="semester">
+								<!-- femte semester -->
 								<h3>5. semester</h3>
 								<div class="subjects">
 									<div class="subject">
@@ -758,6 +825,7 @@
 								</div>
 							</div>
 						<div class="semester">
+							<!-- sjette semester -->
 							<h3>6. semester</h3>
 							<div class="subjects">
 								<div class="subject">
@@ -796,17 +864,21 @@
 					</div>
 				</div>	
 			</article>
+			<!-- FAQ: Femte seksjon om Undervisningen -->
+			<!-- Seksjon som beskriver hvordan undervisningen er organisert i programmet -->
 			<article class="article-faq">
 				<div class="accordion-block">
+				  <!-- Tittel med knapp for å utvide/lukke innholdet -->
 					<h2 class="accordion-h2">
 						<button class="accordion-btn" aria-label="Åpne seksjonen for Hvordan foregår undervisningen?"></button>
 						<span>Hvordan foregår undervisningen?</span>
 					</h2>
+					 <!-- Beskrivelse av undervisningsmetoder -->
 					<div class="accordion-text">
 						<p class="accordion-text-para">
 							Undervisningen er en kombinasjon av
 						</p>
-
+						<!-- Liste over ulike undervisningsmetoder som brukes i studiet -->
 						<ul class="a-list">
 							<li>prosjektarbeid</li>
 							<li>workshop</li>
@@ -818,6 +890,7 @@
 							<li>gruppearbeid</li>
 							<li>arbeidslivsrelevant bacheloroppgave</li>
 						</ul>
+						<!-- Informasjon om arbeidsmengde per uke -->
 						<p class="accordion-text-para para-2">
 							For å gjennomføre studiet på normert tid, må du regne med å bruke
 							om lag 40 timer per uke på studierelatert arbeid gjennom hele
@@ -826,12 +899,17 @@
 					</div>
 				</div>
 			</article>
+
+			<!-- FAQ: sjette seksjon om studiets  mulige yrker og bruksområder -->
+			<!-- Seksjon som beskriver mulige yrker og bruksområder etter fullført studie -->
 			<article class="article-faq">
 				<div class="accordion-block">
+					 <!-- Tittel med knapp for å utvide/lukke innholdet -->
 					<h2 class="accordion-h2">
 						<button class="accordion-btn" aria-label="Åpne seksjonen for Hva kan du jobbe som?"></button>
 						<span>Hva kan du jobbe som?</span>
 					</h2>
+					<!-- Detaljert beskrivelse av arbeidsmuligheter -->
 					<div class="accordion-text">
 						<p class="accordion-text-para">
 							Med dette studiet får du IT-kompetanse som er etterspurt i
@@ -850,12 +928,17 @@
 					</div>
 				</div>
 			</article>
+
+			<!-- FAQ: syvende seksjon om utveksling-->
 			<article class="article-faq">
 				<div class="accordion-block">
+					 <!-- Tittel med knapp for å utvide/lukke innholdet -->
 					<h2 class="accordion-h2">
 						<button class="accordion-btn" aria-label="Åpne seksjonen for Utveksling"></button>
 						<span>Utveksling</span>
 					</h2>
+
+					<!-- beskrivelse av muligheten -->
 					<div class="accordion-text">
 						<p class="accordion-text-para">
 							Du kan dra på utveksling i femte semester.
@@ -863,17 +946,24 @@
 					</div>
 				</div>
 			</article>
+
+			<!-- FAQ: åttende seksjon om studiets kostnad -->
 			<article class="article-faq">
 				<div class="accordion-block">
+					<!-- Tittel med knapp for å utvide/lukke innholdet -->
 					<h2 class="accordion-h2">
 						<button class="accordion-btn" aria-label="Åpne seksjonen for Hva koster det?"></button>
 						<span>Hva koster det?</span>
 					</h2>
+					<!-- beskrivelse av semesteravgiften -->
 					<div class="accordion-text">
+						<!-- Informasjon om semesteravgift -->
 						<p class="accordion-text-para">
 							<a href="#" class="para-3-links">Du betaler en semesteravgift hver semester ( student.oslomet.no )</a>
 						</p>
 						<br>
+
+						<!-- Informasjon om studieavgift for internasjonale studenter -->
 
 						<p class="accordion-text-para 2">
 							<a href="#" class="para-3-links">Er du internasjonal student fra utenfor EU og EØS, 
@@ -884,23 +974,29 @@
 					</div>
 				</div>
 			</article>
+
+			<!-- FAQ: niende seksjon om studiets veier videre hos oslomet -->
 			<article class="article-faq">
 				<div class="accordion-block">
+					<!-- Tittel med knapp for å utvide/lukke innholdet -->
 					<h2 class="accordion-h2">
 						<button class="accordion-btn" aria-label="Åpne seksjonen for Videre studiemuligheter ved OsloMet"></button>
 						<span>Videre studiemuligheter ved OsloMet</span>
 					</h2>
+					 <!-- Beskrivelse av masterprogrammer tilgjengelig etter bachelor -->
 					<div class="accordion-text">
 						<p class="accordion-text-para">
 							Vi har et Masterprogram man kan søke seg inn på etter fullført bachelor.
 						</p>
-
+						<!-- Liste over masterprogrammer ved OsloMet -->
 						<ul class="a-list">
 							<li>
 								<a href="https://www.oslomet.no/studier/tkd/anvendt-data-informasjonsteknologi">
 									<span>Anvendt data-  og informasjonsteknologi (ACIT)</span>
 								</a>
 						</ul>
+
+						 <!-- Informasjon om konkurranse om plasser -->
 						<p class="accordion-text-para para-2">
 							Det kan være konkurranse om plassene.
 						</p>
@@ -908,87 +1004,103 @@
 				</div>
 			</article>
 
-        
+
+			<!-- Seksjon som viser historier fra studenter ved OsloMet -->
             <section class="Study-Stories-section">
                 <h2>Studenthistorier</h2>
                 <div class="Study-Stories-container">
-                  <!-- Four div elements, for each research article, with same class containing a title and text 
-                    wrapped in an a-element to make it interactive -->
-                  <!-- First research article -->
+                  <!-- Fire div elementer, som hver er en studenthistorie fortalt. disse har samme klasse og har en passende tittel
+				   . de ligger inne i et a-element slik at den kan gjøres interaktiv med hover-effekt.--> 
+
+                  <!-- Første artikkel: Inneholder en lenke med tittel og kort beskrivelse -->
                   <article class="Study-Stories-article">
                     <a href="https://www.oslomet.no/studier/studenthistorier/spa-fremtiden-matematikk-datavitenskap" target="_blank">
-                      <!-- SOURCE: https://www.oslomet.no/studier/studenthistorier/spa-fremtiden-matematikk-datavitenskap -->
+                      <!-- KILDE: https://www.oslomet.no/studier/studenthistorier/spa-fremtiden-matematikk-datavitenskap -->
                       <p class="Study-Stories-title">Spå framtiden med matematikk og datavitenskap</p>
-                      <!-- Text for the title -->
+                       <!-- Tittel på artikkelen -->
                       <p class="Study-Stories-caption">Har du lyst til å finne ut hva som vil skje i fremtiden? Lær å bruke verktøy for å forutsi alt fra været og strømprisene til utviklingen i boligmarkedet.</p>
                     </a>
                   </article>
-                  <!-- Second research article -->
+
+                   <!-- Andre artikkel: Lenke med tittel og beskrivelse -->
                   <article class="Study-Stories-article">
                     <a href="https://www.oslomet.no/studier/studenthistorier/interessen-for-geoteknikk-oker" target="_blank">
-                      <!-- SOURCE: https://www.oslomet.no/studier/studenthistorier/interessen-for-geoteknikk-oker  -->
+                      <!-- KILDE: https://www.oslomet.no/studier/studenthistorier/interessen-for-geoteknikk-oker  -->
                       <p class="Study-Stories-title">Interessen for geoteknikk øker</p>
+					    <!-- Kort beskrivelse som fremhever relevansen til ingeniørfaget -->
                       <p class="Study-Stories-caption"> Geoteknikk har raskt fanget interessen til kommende ingeniører. Dette speiler behovet i bransjen.</p>
                     </a>
                   </article>
-                  <!-- Third research article -->
+                	<!-- Tredje artikkel: Lenke med tittel og tekstlig beskrivelse -->
                   <article class="Study-Stories-article">
                     <a href="https://www.oslomet.no/studier/studenthistorier/spennende-praksis"
                       target="_blank">
-                        <!-- SOURCE: https://www.oslomet.no/studier/studenthistorier/spennende-praksis  -->
+					  <!-- Tittel som presenterer historien -->
+                        <!-- KILDE: https://www.oslomet.no/studier/studenthistorier/spennende-praksis  -->
                         <p class="Study-Stories-title">Spennende praksis</p>
+						<!-- Beskrivelse av praksiserfaringene til studentene -->
                         <p class="Study-Stories-caption">Motestudent Rebecca fra Manchester hadde sin praksis hos Helly Hansen.
                              Medstudent Thomas dro omvendt vei, til Skottland og veveriet Johnstons of Elgin.</p>
                     </a>
                   </article>
-                  <!-- Fourth research article --> 
+                  <!-- Fjerde artikkel: Lenke med tittel og en personlig refleksjon -->
                   <article class="Study-Stories-article">
                     <a href="https://www.oslomet.no/forskning/forskningsnyheter/bilderboker-de-minste" target="_blank">
-                        <!-- SOURCE: https://www.oslomet.no/forskning/forskningsnyheter/bilderboker-de-minste  -->
+						 <!-- Tittel som reflekterer nytten av erfaringen -->
+                        <!-- KILDE: https://www.oslomet.no/forskning/forskningsnyheter/bilderboker-de-minste  -->
                         <p class="Study-Stories-title">– Styrevervet ga meg mye da jeg skulle søke jobb </p>
+						<!-- Beskrivelse som forklarer hvordan erfaringen hjalp studenten i karrieren -->
                         <p class="Study-Stories-caption">Som studentvalgt fakultetsstyremedlem fikk Grace nyttig innsikt i hvordan beslutninger blir tatt. 
                             Det ga ham gode kort å komme med da han skulle søke jobb.
                          </p>
                     </a>
                   </article>
                 </div>
-                <!-- Link to an external page on a new tab -->
+
+                <!-- Lenke til hovedsiden for flere historier. Åpnes i ny fane -->
                 <a href="https://www.oslomet.no/studier/studenthistorier" target="_blank" class="study-stories-button">
                     <p>Les flere studenthistorier</p>
                 </a>
-                
               </section>
           
-
+			<!-- Seksjon som presenterer andre studier som kan være interessante -->
             <section class="Otherstudies">
+				<!-- Overskrift for seksjonen -->
+
                 <h2>Du er også kanskje interresert i disse? </h2>
+
+				 <!-- Container som holder artikler om andre studier -->
                 <div class="OtherStudies-container">
-                  <!-- three figure elements with same class containing a photo with a belonging title and caption 
-                    wrapped in an a-element to make it interactive -->
-                  <!-- First OtherStudies article -->
+
+                  <!-- Tre figur elementer med samme klasse som innehar et bilde med en passende tittel og tekst. wrapped i et a-element for å gjøre de interaktive. -->
+
+                   <!-- Første artikkel: Anvendt Datateknologi -->
                   <figure class="OtherStudies-column">
-                    <a href="https://www.oslomet.no/studier/tkd/anvendt-datateknologi"
-                      target="_blank">
-                     <!-- Image wrapped in a picture element for flexibility-->
+					<a href="https://www.oslomet.no/studier/tkd/anvendt-datateknologi" target="_blank" class="Linkforfigure">
+
+                     <!-- Bildet pakket inn i et <picture>-element for fleksibilitet -->
                       <picture>
-                        <!-- Photo: Oslomet Anvendt Datateknologi front page , from https://www.oslomet.no/studier/tkd/anvendt-datateknologi  -->
+                        <!-- KILDE TIL BILDE: Oslomet Anvendt Datateknologi front page , from https://www.oslomet.no/studier/tkd/anvendt-datateknologi  -->
                         <img src="./bilder/anvendt.jpg" alt="Anvendt datateknologi" class="OtherStudies-img">
                       </picture>
+
+					  <!-- Bildetekst som beskriver studiet -->
                       <figcaption class="OtherStudies-cards">
-                        <!-- Caption defined in different p-classes to style them differently with ease -->
+
+						<!-- ulike p klasser for å kunne endre looken deres enkelt -->
                         <p class="OtherStudies-title">Anvendt Datateknologi</p>
                         <p class="OtherStudies-faculty">Varighet: 3 år <br> Studiested: Oslo <br> Omfang: Heltid</p>
                         <p class="OtherStudies-explanation">Lær hvordan du utvikler nye løsninger for samspill mellom mennesker og datateknologi.
                             Fra andre studieår kan du spesialisere deg i enda mer programmering eller brukerforståelse.</p>
                       </figcaption>
-                    </a>
+					</a>
                   </figure>
 
-                  <!-- Second OtherStudies article -->
+                  <!-- Andre artikkel: Bioteknologi og kjemi ingeniør -->
                   <figure class="OtherStudies-column">
-                    <a href="https://www.oslomet.no/studier/tkd/bioteknologi-kjemiingenior" target="_blank">
+                    <a href="https://www.oslomet.no/studier/tkd/bioteknologi-kjemiingenior" target="_blank" class="Linkforfigure">
                       <picture>
-                        <!-- Photo: Benjamin, A. Ward. , from https://www.oslomet.no/studier/tkd/bioteknologi-kjemiingenior  -->
+                        <!-- KILDE TIL BILDE: Benjamin, A. Ward. , from https://www.oslomet.no/studier/tkd/bioteknologi-kjemiingenior  -->
                         <img src="./bilder/bioteknologi.jpg" alt="Bioteknologi og kjemi ingeniør " class="OtherStudies-img">
                       </picture>
                       <figcaption class="OtherStudies-cards">
@@ -997,13 +1109,14 @@
                         <p class="OtherStudies-explanation">Som bioteknologi- og kjemiingeniør kan du blant annet jobbe med medisinsk forskning,
                              bioanalytiske og rettsmedisinske analyser, legemidler, matvarer, vannrensing og biodrivstoff.</p>
                       </figcaption>
-                    </a>
+					</a>
                   </figure>
-                  <!-- third OtherStudies article -->
+				  
+                  <!-- Tredje artikkel: Byggingeniør -->
                   <figure class="OtherStudies-column">
-                    <a href="https://www.oslomet.no/studier/tkd/byggingenior" target="_blank">
+                    <a href="https://www.oslomet.no/studier/tkd/byggingenior" target="_blank" class="Linkforfigure">
                       <picture>
-                        <!-- Photo: Oslomet Byggingeniør front page , from https://www.oslomet.no/studier/tkd/byggingenior -->
+                        <!-- KILDEL TIL BILDE: Oslomet Byggingeniør front page , from https://www.oslomet.no/studier/tkd/byggingenior -->
                         <img src="./bilder/byggingeniør.jpg" alt="byggingeniør" class="OtherStudies-img">
                       </picture>
                       <figcaption class="OtherStudies-cards">
@@ -1012,15 +1125,16 @@
                         <p class="OtherStudies-explanation">Som byggingeniør er du ettertraktet i arbeidsmarkedet og 
                             jobber med moderne teknologi innen konstruksjonsteknikk, vann og miljø, infrastruktur og byutvikling.</p>
                       </figcaption>
-                    </a>
+					</a>
                   </figure>
 
-                  <!-- fourth OtherStudies article, which is also hidden under the "vis flere" button -->
-                  
+                  <!-- Flere artikler som er skjult under "Vis flere"-knappen -->
+				
+				  <!-- Fjerde artikkel, som er skjult under "Vis flere"-knappen -->
                   <figure class="OtherStudies-column hidden">
-                    <a href="https://www.oslomet.no/studier/tkd/dataingenior" target="_blank">
+					<a href="https://www.oslomet.no/studier/tkd/dataingenior" target="_blank" class="Linkforfigure">
                       <picture>
-                        <!-- Photo: Benjamin, A. Ward. , from https://www.oslomet.no/studier/tkd/dataingenior  -->
+                        <!-- KILDE TIL BILDE: Benjamin, A. Ward. , from https://www.oslomet.no/studier/tkd/dataingenior  -->
                         <img src="./Bilder/dataingeniør.jpg" alt="dataingeniør" class="OtherStudies-img">
                       </picture>
                       <figcaption class="OtherStudies-cards">
@@ -1029,16 +1143,15 @@
                         <p class="OtherStudies-explanation">Ønsker du å utvikle dataprogrammer for <br> web, mobil, eller datasentre?<br>
                         	 Er du glad i naturfag og matematikk? Dataingeniørstudiet kan være veien til det store målet.
 							 etter en kul og morsom studietid vil arbeidslivet by på masse kult!</p>
-                      </figcaption>
-                    </a>
+                      </figcaption>  
+					</a>                  
                   </figure>
 
-                    <!-- fifth OtherStudies article, which is also hidden under the "vis flere" button -->
-
-                  <figure class="OtherStudies-column hidden">
-                    <a href="https://www.oslomet.no/studier/tkd/elektronikkingenior" target="_blank">
+                    <!-- Femte artikkel, som er skjult under "Vis flere"-knappen -->
+                  <figure class="OtherStudies-column hidden">       
+					<a href="https://www.oslomet.no/studier/tkd/elektronikkingenior" target="_blank" class="Linkforfigure">            
                       <picture>
-                        <!-- Photo: Benjamin, A. Ward. , from https://www.oslomet.no/studier/tkd/elektronikkingenior  -->
+                        <!-- KILDE TIL BILDE: Benjamin, A. Ward. , from https://www.oslomet.no/studier/tkd/elektronikkingenior  -->
                         <img src="./bilder/elektronikk.jpg" alt="elektronikkingeniør" class="OtherStudies-img">
                       </picture>
                       <figcaption class="OtherStudies-cards">
@@ -1051,12 +1164,11 @@
                     </a>
                   </figure>
 
-                  <!-- sixth OtherStudies article, which is also hidden under the "vis flere" button -->
-
+                   <!-- sjette artikkel, som er skjult under "Vis flere"-knappen -->
                   <figure class="OtherStudies-column hidden">
-                    <a href="https://www.oslomet.no/studier/tkd/informasjonsteknologi" target="_blank">
+					<a href="https://www.oslomet.no/studier/tkd/informasjonsteknologi" target="_blank" class="Linkforfigure">
                       <picture>
-                        <!-- Photo: Benjamin, A. Ward. , from https://www.oslomet.no/studier/tkd/informasjonsteknologi   -->
+                        <!-- KILDE TIL BILDE: Benjamin, A. Ward. , from https://www.oslomet.no/studier/tkd/informasjonsteknologi   -->
                         <img src="./bilder/informasjonsteknologi.jpg" alt="informasjonsteknologi" class="OtherStudies-img">
                       </picture>
                       <figcaption class="OtherStudies-cards">
@@ -1064,16 +1176,15 @@
                         <p class="OtherStudies-faculty">Varighet: 3 år <br> Studiested: Oslo <br> Omfang: Heltid</p>
                         <p class="OtherStudies-explanation">Ta OsloMets mest omfattende utdanning innen programmering og app-utvikling.
                              Du får mulighet til å studere bredt og dypt innen design, utvikling, administrasjon og vedlikehold av datasystem.</p>
-                      </figcaption>
-                    </a>
+                      </figcaption>   
+					</a>
                   </figure>
 
-                  <!-- seventh OtherStudies article, which is also hidden under the "vis flere" button -->
-
+                   <!-- syvende artikkel, som er skjult under "Vis flere"-knappen -->
                   <figure class="OtherStudies-column hidden">
-                    <a href="https://www.oslomet.no/studier/tkd/maskiningenior" target="_blank">
+					<a href="https://www.oslomet.no/studier/tkd/maskiningenior" target="_blank" class="Linkforfigure">
                       <picture>
-                        <!-- Photo: Benjamin, A. Ward. , from https://www.oslomet.no/studier/tkd/maskiningenior  -->
+                        <!-- KILDE TIL BILDE: Benjamin, A. Ward. , from https://www.oslomet.no/studier/tkd/maskiningenior  -->
                         <img src="./bilder/Maskiningeniør.jpg" alt="Maskiningeniør" class="OtherStudies-img">
                       </picture>
                       <figcaption class="OtherStudies-cards">
@@ -1082,16 +1193,15 @@
                         <p class="OtherStudies-explanation">En maskiningeniør blir ofte omtalt som den klassiske ingeniøren.
                              Studiet er for deg som vil bruke kunnskaper innen matematikk, fysikk og materialvitenskap
                               til å designe og utvikle teknisk utstyr og anlegg som kan brukes på alle samfunnsområder.</p>
-                      </figcaption>
-                    </a>
+                      </figcaption>   
+					</a>               
                   </figure>
 
-                  <!-- eighth OtherStudies article, which is also hidden under the "vis flere" button -->
-
-                  <figure class="OtherStudies-column hidden">
-                    <a href="https://www.oslomet.no/studier/tkd/tre-termin-ingenior" target="_blank">
+                   <!-- åttende artikkel, som er skjult under "Vis flere"-knappen -->
+                  <figure class="OtherStudies-column hidden">         
+					<a href="https://www.oslomet.no/studier/tkd/tre-termin-ingenior" target="_blank" class="Linkforfigure">         
                       <picture>
-                        <!-- Photo: Benjamin, A. Ward. , from https://www.oslomet.no/studier/tkd/tre-termin-ingenior  -->
+                        <!-- KILDE TIL BILDE: Benjamin, A. Ward. , from https://www.oslomet.no/studier/tkd/tre-termin-ingenior  -->
                         <img src="./bilder/tre-terminsordning.jpg" alt="Tre-terminsordning til ingeniørutdanning" class="OtherStudies-img">
                       </picture>
                       <figcaption class="OtherStudies-cards">
@@ -1100,40 +1210,61 @@
                         <p class="OtherStudies-explanation">Tre-terminsordningen er et tilbud til deg som har generell studiekompetanse, 
                             men som mangler nødvendig matematikk og/eller fysikk for opptak til ingeniørutdanning.</p>
                       </figcaption>
-                    </a>
+					</a>
                   </figure>
-                  
                 </div>
+
+				<!-- Knapp som viser flere studier ved å bruke en JavaScript-funksjon -->
             <button class="show-more-btn" onclick="toggleExtraCards()" aria-label="Åpne seksjonen for ekstra studier under knappen">Vis flere</button>
         </section>
 
+		<!-- Seksjon som gir informasjon om studiested og kontaktmuligheter -->
 		<section class="Study-info">
 			<br>
+
+			 <!-- Overskrift for seksjonen om studiested -->
             <h2>Studiested:</h2>
+
+			<!-- Lenke til informasjonssiden for studiested Pilestredet -->
             <a class="bold-underline-link" href="https://www.oslomet.no/om/studiested-pilestredet" target="_blank">Studiested Pilestredet</a>
             <br>
+
+			<!-- Overskrift for seksjonen om spørsmål relatert til utdanningen -->
             <h2>Spørsmål om utdanningen?</h2>
+
+			<!-- Lenke til OsloMets kontaktskjema for spørsmål om utdanning -->
             <a class="bold-underline-link" href="https://www.oslomet.no/kontaktskjema#Jeg%20vil%20bli%20student"
             target="_blank">Har du spørsmål om utdanningen, kontakt oss gjennom vårt kontaktskjema</a>
             <br>
+
+			<!-- Lenke til en dedikert side for faglig leder -->
             <a href="https://www.oslomet.no/om/ansatt/krhel3944/" target="_blank">
+
+				<!-- Figur som inneholder et bilde av faglig leder og beskrivende tekst -->
 			    <figure class="OtherStudies-row">
+
+					 <!-- Bildet av faglig leder pakket inn i <picture> for fleksibilitet -->
 				    <picture>
+						<!-- KILDE TIL BILDE: https://www.oslomet.no/om/ansatt/krhel3944/ -->
 				        <img src="./bilder/KristofferHellton.jpg" alt="KristofferHellton" class="medium-image">
 				    </picture>
+
+					 <!-- Informasjon om faglig leder -->
 				    <figcaption>
+
+						<!-- Artikkel som strukturerer teksten inne i figuren -->
 					    <article class="article-inside-figure">
                             <h3>Faglig leder</h3>
                             <h4>Kristoffer Herland Hellton</h4>
                             <p>førstemansuensis</p>
+
+							 <!-- Kontaktinformasjon inkludert telefonnummer og e-post -->
                             <p>+47 672 37 240 | kristoffer.hellton@oslomet.no</p>
 					    </article>
 				    </figcaption>
 			    </figure>
             </a>
 		</section>
-
-
     </main>
 
     <footer class="footer">
@@ -1167,10 +1298,10 @@
             <div class="footer-content">
                 <h3 class="title-footer">Sosiale Medier</h3>
                 <ul class="footer-social-icons">
-                    <li><a class="footer-link" href="#"><ion-icon name="logo-instagram"></ion-icon></i> Instagram</a></li>
-                    <li><a class="footer-link" href="#"><ion-icon name="logo-facebook"></ion-icon></i> Facebook</a></li>
-                    <li><a class="footer-link" href="#"><ion-icon name="logo-twitter"></ion-icon></i> X</a></li>
-                    <li><a class="footer-link" href="#"><ion-icon name="logo-linkedin"></ion-icon></i> LinkedIn</a></li>
+                    <li><a class="footer-link" href="#"><ion-icon name="logo-instagram"></ion-icon></i></a></li>
+                    <li><a class="footer-link" href="#"><ion-icon name="logo-facebook"></ion-icon></i></a></li>
+                    <li><a class="footer-link" href="#"><ion-icon name="logo-twitter"></ion-icon></i></a></li>
+                    <li><a class="footer-link" href="#"><ion-icon name="logo-linkedin"></ion-icon></i></a></li>
                 </ul>
 				<br>
             </div> 
