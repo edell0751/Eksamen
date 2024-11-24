@@ -897,6 +897,9 @@ span {
     .article-wrapper{
         padding: 50px 5%;
     }
+    .video-player{
+        height: 50vw;
+    }
 }
 
 @media(max-width:500px){
