@@ -1108,8 +1108,8 @@ span {
     display: flex;
     text-decoration: none;
     color: white;
-    width: 6rem; /* Adjusted width */
-    height: 2rem; /* Adjusted height */
+    width: 6rem; /* Justere bredde */
+    height: 2rem; /* Justere høyde */
     justify-content: center;
     align-items: center;
     border-radius: 4px;
