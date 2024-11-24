@@ -136,6 +136,7 @@ h4{
     z-index: 1;
 }
 
+
 .header-bottom nav {
     padding: 2% 15%;
 }
@@ -161,6 +162,7 @@ h4{
 	z-index: 1000; /* Ensure it stays on top */
 }
 
+
 .header-right {
 	display: flex;
 	gap: 30px;
@@ -178,12 +180,17 @@ h4{
 .header-menu p {
 	font-weight: 700;
 	text-transform: uppercase;
-	color: black;
+	color: white;
 }
 
 .header-bottom {
 	padding: 2% 15%;
 	background: #2D3142;
+}
+@media(max-width:500px){
+    .header-bottom ,.header-up{
+        padding: 2% 5%;
+    }
 }
 ion-icon {
 	color: white;
@@ -232,6 +239,11 @@ ion-icon {
 .menu-items {
 	text-align: left;
 	margin-left: 15%;
+}
+@media(max-width:500px){
+    .menu-items{
+        margin-left: 5%;
+    }
 }
 
 /* making the menu items list under eachother and making them  white for good visibility.
