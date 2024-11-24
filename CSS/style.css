@@ -1253,7 +1253,7 @@ span {
     margin: 0 auto; 
 }
   
-  /* Next & previous buttons */
+  /* "Next"- og "Previous"-knapp*/
   .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -1269,13 +1269,13 @@ span {
     user-select: none;
   }
   
-  /* Position the "next button" to the right */
+  /* Plasserer knappene */
 .prev {
-    left: 20px; /* Distance from the left edge */
+    left: 20px; 
 }
 
 .next {
-    right: 20px; /* Distance from the right edge */
+    right: 20px; 
 }
   
   /* On hover, add a black background color with a little bit see-through */
