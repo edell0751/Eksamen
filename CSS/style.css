@@ -332,13 +332,10 @@ span {
 
 .accordion-text {
 	display: none; /* I utgangspunktet gjemt*/
-	margin-bottom: 30px;
 	overflow: hidden;
-	padding-left: 75px;
-	padding-right: 120px;
-	padding-top: 35px;
+	padding: 35px 120px 30px 75px;
 	position: relative;
-	transition: height 0.3s cubic-bezier(0.24, 0.59, 0.38, 0.94);
+	transition: height 0.3s ease;
 }
 
 
@@ -493,7 +490,6 @@ span {
 }
 
 .OtherStudies-column {
-    width: 100%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s; /* https://www.w3schools.com/css/css3_transitions.asp */
     overflow: hidden; /*https://www.w3schools.com/cssref/pr_pos_overflow.php*/
@@ -653,13 +649,6 @@ span {
 }
 
 /* Bilder og andre seksjoner */
-
-.hr-short {
-    width: 40%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 .medium-image {
     width: 130px;
     height: auto;
@@ -874,6 +863,7 @@ span {
 .gitpage-p-main {
     margin: 0 auto 2rem;
     width: 65%;
+    text-align: center;
 }
 
 /* Flexbox-layout for figurer, vertikal og sentrert */

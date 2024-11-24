@@ -1,8 +1,11 @@
+// KILDE; JS HTML DOM - https://www.w3schools.com/js/ 
 document.addEventListener("DOMContentLoaded", function() {
     const header = document.querySelector("header");
     const sectionOne = document.querySelector(".activity-section");
 
     const sectionOneOptions = { rootMargin: "-100px 0px 0px 0px"};
+
+    //KILDE; JS FUNCTIONS - https://www.w3schools.com/js/
 
     const sectionOneObserver = new IntersectionObserver(function(entries, sectionOneObserver) {
         entries.forEach(entry => {
@@ -18,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 let slideIndex = 1;
 
+//KILDE; JS FUNCTIONS - https://www.w3schools.com/js/
 // Sikrer at den første sliden er synlig når siden laster
 document.addEventListener("DOMContentLoaded", function() {
     showSlides(slideIndex);
@@ -47,6 +51,8 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active"; // Fremhever tilsvarende dot
 }
 
+
+//KILDE; JS FUNCTIONS - https://www.w3schools.com/js/
 function toggleTeams() {
     const moreTeams = document.getElementById("moreTeams");
     const toggleBtn = document.getElementById("toggleBtn");
@@ -60,7 +66,7 @@ function toggleTeams() {
     }
 }
 
-
+//KILDE; JS FUNCTIONS - https://www.w3schools.com/js/
 function toggleExtraCards() {
     const extraCards = document.querySelectorAll('.OtherStudies-container .OtherStudies-column:nth-child(n+4)');
     const btn = document.querySelector('.show-more-btn');
@@ -103,6 +109,7 @@ function toggleExtraCards() {
             '.header-search .search-input'
         );
 
+        //KILDE; JS TUTORIAL - https://www.w3schools.com/js/
         // Viser search input når search-ikon blir klikket
         searchIcon.addEventListener('click', (e) => {
             e.stopPropagation(); // Forhindrer dette klikket i å utløse page click event
