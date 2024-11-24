@@ -193,6 +193,11 @@ ion-icon {
 	text-align: left;
 	margin-left: 15%;
 }
+@media(max-width:500px){
+    .menu-items{
+        margin-left: 5%;
+    }
+}
 
 /* making the menu items list under eachother and making them  white for good visibility.
  also giving them reasonable sizes in rem, not px for better accessability*/
