@@ -853,18 +853,18 @@ span {
 
 /* Css for GitPage */
 
-.GitPage-main {
+.gitpage-main {
     display: block;
     max-width: 100%;
     text-align: center;
 }
 
-.GitPage-p-main {
+.gitpage-p-main {
     margin: 0 auto 2rem auto;
     width: 65%;
 }
 
-.GitPage-figure {
+.gitpage-figure {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -872,26 +872,25 @@ span {
     text-align: center;
 }
 
-.GitPage-img {
+.gitpage-img {
     display: flex;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
 }
 
-.GitPage-pic-1 {
+.gitpage-pic-1 {
     width: 60%;
     margin: 0 auto;
     height: auto;
 }
 
-.GitPage-img figcaption {
+.gitpage-img figcaption {
     text-align: center;
     font-size: smaller;
     padding-bottom: 2rem;
     width: 75%;
 }
-
 
 
 
