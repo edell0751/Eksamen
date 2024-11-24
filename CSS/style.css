@@ -332,7 +332,7 @@ span {
 }
 
 .accordion-text {
-	display: none; /* Initially hidden */
+	display: none; /* I utgangspuntket gjemt*/
 	margin-bottom: 30px;
 	overflow: hidden;
 	padding-left: 75px;
