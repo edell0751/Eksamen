@@ -52,6 +52,46 @@ h4{
     padding: 2% 15%;
 
 }
+@media(max-width:500px){
+    .header-up, .header-bottom {
+		padding: 3%;
+	} 
+
+
+	.header-bottom-link span {
+		font-size: 1.025rem;
+	}
+
+    .header-search.active .search-input {
+		right: -24px;
+		opacity: 1;
+		z-index: 1;
+		width: 200px;
+		padding: 8px;
+		font-size: 1rem;
+	}
+
+	.search-input {
+		position: absolute;
+		right: 0;
+		opacity: 0;
+		width: 0;
+		padding: 0;
+		border: 1px solid #222;
+		border-radius: 4px;
+		transition: all 0.4s ease;
+		font-size: 0;
+		background: #fff;
+		z-index: -1;
+	}
+
+}
+
+@media (max-width: 376px) {
+    .header-search.active .search-input {
+        width: 8.125rem; /* Reduces the width of the search input to 160px when active on very small screens */
+    }
+}
 
 .header-right {
     display: flex;
@@ -96,6 +136,7 @@ h4{
     z-index: 1;
 }
 
+
 .header-bottom nav {
     padding: 2% 15%;
 }
@@ -121,6 +162,7 @@ h4{
 	z-index: 1000; /* Ensure it stays on top */
 }
 
+
 .header-right {
 	display: flex;
 	gap: 30px;
@@ -145,6 +187,7 @@ h4{
 	padding: 2% 15%;
 	background: #2D3142;
 }
+
 ion-icon {
 	color: white;
 }
@@ -194,6 +237,7 @@ ion-icon {
 	margin-left: 15%;
 }
 
+
 /* making the menu items list under eachother and making them  white for good visibility.
  also giving them reasonable sizes in rem, not px for better accessability*/
 
@@ -208,11 +252,6 @@ ion-icon {
 /*  it sections the class to keep its almost centered position*/
  .article-wrapper{
 	padding: 50px 15%;
-}
-@media(max-width:450px){
-    .article-wrapper{
-        padding: 50px 5%;
-    }
 }
 
 
@@ -322,12 +361,7 @@ span {
 	position: relative;
 	transition: height 0.3s cubic-bezier(0.24, 0.59, 0.38, 0.94);
 }
-@media(max-width:850px){
-    .accordion-text{
-        padding-left: 25px;
-        padding-right: 0px;
-    }
-}
+
 
 .accordion-text-para {
 	font-family: inherit;
@@ -431,11 +465,7 @@ span {
 	border-top: 1px solid black;
     padding-top: 15px;
 }
-@media(max-width:850px){
-    .subject{
-        width: 100%;
-    }
-}
+
 
 .study-plan a {
     text-decoration: none;
@@ -507,6 +537,7 @@ span {
 .OtherStudies-cards {
     padding: 1rem;
     background-color: #fff;
+    hyphens: auto;
 }
 
 .OtherStudies-title {
@@ -548,17 +579,7 @@ span {
 .show-more-btn:hover {
     background-color: #955c22;;
 }
-@media /*learnt to use @media from https://www.w3schools.com/css/css3_mediaqueries.asp */(max-width:800px){
-	.main-content{
-		text-align: center;
-	}
-}
-@media (max-width:800px){
-    .subjects{
-        flex-direction: column;
-        flex:100%;
-    }
-}
+
 
 .Study-Stories-section {
     width: 100vw; /* Full skjermbredde */
@@ -579,11 +600,7 @@ span {
     flex-wrap: wrap;
     gap: 20px;
 }
-@media(max-width:850px){
-    .Study-Stories-container{
-        flex-direction: column;
-    }
-}
+
 
 .Study-Stories-article {
   width: 100%;
@@ -728,14 +745,7 @@ span {
     flex-direction: row;
     justify-content: center;
 }
-@media (max-width:700px){
-    .footer-container,.footer-content{
-        flex-direction: column;
-        flex: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-}
+
 
 .footer-content {
     padding: 5%;
@@ -907,9 +917,63 @@ span {
     width: 75%;
 }
 
+@media(max-width:450px){
+    .article-wrapper{
+        padding: 50px 5%;
+    }
+}
+
+@media(max-width:500px){
+    .header-bottom ,.header-up{
+        padding: 2% 5%;
+    }
+}
+
+@media(max-width:500px){
+    .menu-items{
+        margin-left: 5%;
+    }
+}
+
+@media (max-width:700px){
+    .footer-container,.footer-content{
+        flex-direction: column;
+        flex: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media /*learnt to use @media from https://www.w3schools.com/css/css3_mediaqueries.asp */(max-width:800px){
+	.main-content{
+		text-align: center;
+	}
+}
+
+@media (max-width:800px){
+    .subjects{
+        flex-direction: column;
+        flex:100%;
+    }
+}
 
 
+@media(max-width:850px){
+    .accordion-text{
+        padding-left: 25px;
+        padding-right: 0px;
+    }
+}
 
+@media(max-width:850px){
+    .subject{
+        width: 100%;
+    }
+}
 
-
+@media(max-width:850px){
+    .Study-Stories-container{
+        flex-direction: column;
+    }
+}
 
