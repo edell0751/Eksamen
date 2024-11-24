@@ -133,13 +133,13 @@ h4 {
     cursor: pointer;
 }
 .header-up {
-	display: flex;
+	display: flex; 
 	justify-content: space-between;
 	padding: 2% 15%;
 	background-color: #2D3142;
-	position: sticky;
+	position: sticky; /* Gjør headeren fast øverst på siden ved scroll */
 	top: 0;
-	z-index: 1000; /* Ensure it stays on top */
+	z-index: 1000; /* Plasserer headeren over andre elementer på siden */
 }
 
 
@@ -174,8 +174,7 @@ ion-icon {
 
 .menu-icon.hamburger,
 .menu-icon.close {
-    font-size: 1.25rem; /* For hamburger-knappen og lukk-knappen*/ /* KOMMENTAR SOM IKKE SKAL MED I ENDELIG KODE
-    SER UT TIL AT DEN HAR EN MAKS-GRENSE PÅ 20PX TF?*/
+    font-size: 1.25rem; /* For hamburger-knappen og lukk-knappen*/
   }
 
 .logo-header img {  /*justerer størrelse på logo i header*/
@@ -332,7 +331,7 @@ span {
 }
 
 .accordion-text {
-	display: none; /* I utgangspuntket gjemt*/
+	display: none; /* I utgangspunktet gjemt*/
 	margin-bottom: 30px;
 	overflow: hidden;
 	padding-left: 75px;
