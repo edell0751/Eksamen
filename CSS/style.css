@@ -874,6 +874,7 @@ span {
 .gitpage-p-main {
     margin: 0 auto 2rem;
     width: 65%;
+    text-align: center;
 }
 
 /* Flexbox-layout for figurer, vertikal og sentrert */
