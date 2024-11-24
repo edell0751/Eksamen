@@ -876,6 +876,7 @@ span {
     width: 75%;
 }
 
+
 /* Css for GitPage */
 
 .GitPage-main {
@@ -974,6 +975,13 @@ span {
 @media(max-width:850px){
     .Study-Stories-container{
         flex-direction: column;
+    }
+}
+
+/* W3Schools - "CSS Media Queries" - https://www.w3schools.com/css/css3_mediaqueries.asp */
+@media (max-width: 768px) {
+    .accessibility-img {
+        flex-direction: column; /* Endrer fra rad til kolonne */
     }
 }
 
