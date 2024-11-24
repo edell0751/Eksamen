@@ -538,7 +538,6 @@ span {
     line-height: 1.2;
     color: #333;
     margin-bottom: 0.6rem;
-    height: 9.375rem; /* Fast høyde for beskrivende tekst */
 }
 
 /* Skjuler elementer som har denne klassen */
