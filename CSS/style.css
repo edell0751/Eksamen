@@ -1032,3 +1032,451 @@ span {
         flex-direction: column;
     }
 }
+
+/*CSS ACTIVITY*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Fixed header styling */
+.header-activity {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    z-index: 1000; /* Ensure header is on top */    
+    background: transparent;
+}
+
+.activity-nav {
+    margin-top: 20px;
+    padding-left: 200px;
+}
+
+.f1-logo{
+    float: left;
+    margin-left: 10px;
+    
+}
+.f1-logo img {
+    width: 150px;
+    height: 100px;
+}
+
+.activity-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: large;
+    transition: 0.3s ease-in-out;;
+}
+
+.activity-nav a:hover {
+    color: aqua;
+}
+.activity-nav li{
+    list-style: none;
+    display: inline-block;
+    margin: 15px 20px;
+    text-transform: uppercase;
+   
+}
+
+
+/* Main section layout */
+.activity-main {
+    margin-top: 0px;
+    width: 100%;
+}
+
+/* Activity section styling */
+.activity-section {
+    background-image: url('../Images/f1background.jpeg'); /* Ensure the image path is correct */
+    background-size: cover; /* Ensures the background scales proportionally */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: fixed;
+    width: 100%; /* Spans the full width of the screen */
+    height: 100vh; /* Fixed height to match the viewport */
+    display: flex;
+    align-items: center; /* Centers content vertically */
+    justify-content: center; /* Centers content horizontally */
+    padding: 20px;
+    box-sizing: border-box; 
+}
+.activity-content {
+    display: flex;
+    flex-direction: column;  /* Stacks the elements vertically */
+    justify-content: center;  /* Aligns the children (title, subtitle, button) vertically */
+    align-items: center;  /* Centers them horizontally */
+    gap: 20px;  /* Adds space between the stacked elements */
+    width: 755px;
+}
+
+.read-more-button {
+    display: flex;
+    background-color: red;
+    text-decoration: none;
+    border-radius: 100px;
+    color: rgb(255, 255, 255);
+    width: 10rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+
+}
+.activity-nav a::after {
+    content: ""; /* Creates an empty pseudo-element */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px; /* Thickness of the line */
+    background-color: aqua; /* Color of the underline */
+    transition: width 0.3s ease; /* Controls animation speed */
+}
+.activity-nav a :hover::after {
+    width: 100%; /* Extends the line to full width */
+}
+.nav-scrolled {
+    background: linear-gradient(
+        180deg,
+        rgba(45, 45, 28, 1) 10%,
+        rgba(45, 45, 28, 0.75) 40%,
+        rgba(45, 45, 28, 0.5) 64%,
+        rgba(255, 255, 255, 0) 100%
+      );;
+}
+.activity-section .h1-activity {
+    
+    font-size: 60px;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3), 5px 5px 70px rgba(0, 0, 0, 0.15);
+    text-align: center;
+
+}
+.activity-section .activity-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15); 
+}
+.read-more-button p {
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+.activity-title {
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 0.866);
+}
+.f1-teams .moreTeams-section * {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+.f1-teams {
+    display: flex;
+    justify-content: center;  
+    flex-wrap: wrap;
+    min-width: 100%;
+    background: #181818;
+    height: 100%;
+    gap: 50px;
+    padding-top: 100px;
+}
+.f1box-container{
+    background-color: #181818;
+    border-radius: 8px;
+    border-right: solid 2px;
+	border-left: 0;
+    border-image: linear-gradient(to bottom, aqua, aqua, rgb(49, 133, 133)) 1 100%;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 2px 100px 100px 100px;
+}
+
+.f1-content li {
+    color: white;
+    margin-top: 5px;
+    font-size: 1.1rem;
+}
+.f1box-container img {
+    width: 325px;
+    height: 180px;
+
+}
+.f1-content {
+    padding: 16px;
+}
+.f1box-container h2 {
+    font-size: 1.5rem;
+    color: white;
+    text-align: left;
+    margin: 0;
+}
+
+.f1box-container ul {
+    list-style-type: none;
+    border-bottom: 1px solid white;
+}
+.f1box-container a {
+    text-decoration: none;
+    color: white
+}
+
+.f1Teams-button {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    width: 6rem; /* Adjusted width */
+    height: 2rem; /* Adjusted height */
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    font-weight: 500;
+    margin-top: 0.5rem; /* Adds space from the list */
+    margin-left: 0; /* Aligns with the left padding of .f1-content */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+.f1Teams-button:hover {
+    background: white;
+    color: black;
+}
+
+
+/* Slideshow container */
+.f1-drivers {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    background: rgba(24, 24, 24, 0.98);
+    color: white;
+    height: 80vh; /* Set a smaller height */
+    padding: 20px;
+  }
+  
+  /* Hide the images by50%default */
+  .mySlides {
+    height: 100%; /* Ensure slides take full height of the section */
+    width: 100%; /* Allow flexibility for responsive design */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center images inside slides */
+    overflow: hidden; 
+
+  }
+
+  .mySlides img {
+    width: 70%; /* Set the image width as a percentage of its container */
+    height: 79%; /* Maintain aspect ratio */
+    border: 2px solid; /* Add the border around the image */
+    border-image: linear-gradient(to bottom, aqua, aqua, rgb(49, 133, 133)) 1 100%;
+    display: block; /* Ensure the image behaves like a block element */
+    margin: 0 auto; /* Center the image within the container */
+}
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: aqua;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+.prev {
+    left: 20px; /* Distance from the left edge */
+}
+
+.next {
+    right: 20px; /* Distance from the right edge */
+}
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+ 
+
+  
+
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+ .f1Drivers-hover{
+    position: absolute; /* Position the overlay over the image */
+    top: 0;
+    left: 0;
+    width: 100%; /* Match the image's width */
+    height: 100%; /* Match the image's height */
+    backdrop-filter: blur(10px);
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; 
+
+}
+.mySlides:hover .f1Drivers-hover {
+    opacity: 1; /* Show the overlay on hover */
+}
+.f1-drivers .h3-activity {
+    font-size: 30px; /* Adjust font size if needed */
+    font-weight: 300;
+    color: white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    display: grid;
+    grid-template-columns: 50px max-content 50px; /* Set fixed width for the lines */
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.f1-drivers .h3-activity:after .h3-activity:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    height: 5px;
+    background-color: rgba(24, 24, 24, 0.98);
+}
+
+/* Source:  https://codepen.io/vedadesigns/pen/GPxYZg */
+
+.f1-drivers h4 {
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 0;
+    color: white;
+    text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.9); 
+}
+.hover-list {
+    position: absolute; /* Allow precise placement */
+    top: 50%; /* Move to 50% of the container's height */
+    left: 50%; /* Move to 50% of the container's width */
+    transform: translate(-50%, -50%); /* Center perfectly */
+    text-align: center; /* Centred text when it hovers */
+    text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.9); 
+}
+
+.hover-list ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    color: aqua;
+}
+
+.hover-list li {
+    margin: 5px 0; /* Add spacing between items */
+    font-size: 20px; /* Adjust font size */
+    color: white;
+    
+}
+.button-container {
+    display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    background-color: #181818;
+    padding-bottom: 15px;
+}
+
+#moreTeams {
+    display: none; /* Initially hidden */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px; /* Add gap to match `.f1-teams` */
+    padding-top: 100px; /* Add padding to match `.f1-teams` */
+    background-color: #181818; /* Consistent background */
+
+}
+
+#moreTeams.visible {
+    display: flex;
+} 
+
+#toggleBtn {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color: #181818; /* Match the box color */
+    color: white;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    border: 1px solid white; /* Optional border for visibility */
+    margin-top: 0; /* Ensure no extra space above */
+}
+
+#toggleBtn:hover {
+    background-color: white;
+    color: black;
+}
+
+.activity-footer {
+    background-color: #2D3142;    
+    width: 100%;
+    height: auto;
+    padding: 20px; /* Ensure padding for content */
+    text-align: center;
+    color: white;
+
+}
+/* Scalling */
+@media screen and (max-width: 580px){ /* Makes sure it stays above other elements */
+        
+
+    .activity-nav {
+        position: fixed;
+        z-index: 1000; /* Makes sure it stays above other elements */
+    }
+    .activity-nav a {
+        float: none; /* Disable floating */
+        display: block; /* Ensure block-level behavior */
+        text-align: left; /* Align text to the left */
+        margin: 10px 0; /* Add spacing between items */
+    }
+    .activity-nav li {
+        display: block; /* Stack list items vertically */
+        width: 100%; /* Ensure full width */
+    }
+    
+}
+
+
+
+
