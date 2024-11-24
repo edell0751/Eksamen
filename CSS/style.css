@@ -993,6 +993,76 @@ span {
     gap: 20px;  /* Legger til mellomrom mellom stablede elementer */
     width: 755px;
 }
+/* Global styles for activity section */
+.activity-section {
+    background-image: url('../Bilder/f1background.jpeg');
+    background-size: cover; /* Ensures the background scales proportionally */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: fixed;
+    width: 100%; /* Full width */
+    height: 100vh; /* Match the viewport height */
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.activity-content {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between elements */
+    width: 755px;
+    text-align: center;
+}
+
+.activity-section .h1-activity {
+    font-size: 60px;
+    color: white; 
+}
+
+.activity-section .activity-text {
+    font-size: 18px;
+    color: white;
+}
+
+.read-more-button {
+    display: flex;
+    background-color: red;
+    text-decoration: none;
+    border-radius: 100px;
+    color: white;
+    width: 10rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+@media screen and (min-width: 601px) {
+    div.example {
+      font-size: 80px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    div.example {
+      font-size: 20px;
+    }
+
+  }
+ 
+  @media screen and (max-width: 480px) {
+    .f1-drivers .h3-activity {
+        font-size: 1.3rem; /* Further reduce font size for very short screens */
+    }
+}  
+
+
+
 
 .read-more-button {
     display: flex;
@@ -1030,7 +1100,7 @@ span {
 }
 .activity-section .h1-activity {
     
-    font-size: 3.75rem;
+    font-size: 60px;
     color: white;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3), 5px 5px 70px rgba(0, 0, 0, 0.15);
     text-align: center;
@@ -1038,7 +1108,7 @@ span {
 }
 .activity-section .activity-text {
     font-family: "Roboto", sans-serif;
-    font-size: 1.125rem;
+    font-size: 18px;
     color: white;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15); 
 }
@@ -1085,6 +1155,12 @@ span {
     height: 180px;
 
 }
+#sauber {
+    background-color: green;
+}
+#mercedes {
+    background-color: black;
+}
 .f1-content {
     padding: 16px;
 }
@@ -1123,17 +1199,39 @@ span {
     color: black;
 }
 
+@media screen and (max-width: 768px) {
+    .f1box-container {
+        width: 325px; /* Maintain the fixed width */
+        height: 400px; /* beholde en bestemt hø */
+        margin: 2px auto; /* Center the boxes horizontally */
+    }
+}
 
 /* Slideshow container */
 .f1-drivers {
     width: 100%;
+    min-height: 400px; /* Ensure it doesn't shrink too much */
     position: relative;
-    margin: auto;
     background: rgba(24, 24, 24, 0.98);
     color: white;
-    height: 80vh; /* Set a smaller height */
+    height: 50vw; /* Set a smaller height */
     padding: 20px;
   }
+
+@media screen and (max-width: 768px) {
+    .f1-drivers {
+        height: 50vh; /* Make the height 50% of the viewport */
+        min-height: 250px; /* Ensure a minimum height */
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .f1-drivers {
+        height: 45vh; /* Slightly taller for very small screens */
+        padding: 10px; /* Further reduce padding */
+    }
+}  
   
   /* Hide the images by50%default */
   .mySlides {
@@ -1165,7 +1263,7 @@ span {
     padding: 16px;
     color: aqua;
     font-weight: bold;
-    font-size: 1.125rem;
+    font-size: 18px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -1188,7 +1286,7 @@ span {
   /* Caption text */
   .text {
     color: #f2f2f2;
-    font-size: 0.938rem;
+    font-size: 15px;
     padding: 8px 12px;
     position: absolute;
     bottom: 8px;
@@ -1222,7 +1320,7 @@ span {
     opacity: 1; /* Show the overlay on hover */
 }
 .f1-drivers .h3-activity {
-    font-size: 1.875rem; /* Adjust font size if needed */
+    font-size: 30px; /* Adjust font size if needed */
     font-weight: 300;
     color: white;
     letter-spacing: 1px;
@@ -1236,7 +1334,7 @@ span {
     justify-content: center;
 }
 
-.f1-drivers .h3-activity:after .h3-activity:before {
+.f1-drivers .h3-activity:after, .h3-activity:before {
     content: " ";
     display: block;
     border-bottom: 1px solid white;
@@ -1244,6 +1342,7 @@ span {
     height: 5px;
     background-color: rgba(24, 24, 24, 0.98);
 }
+
 
 /* Source:  https://codepen.io/vedadesigns/pen/GPxYZg */
 
@@ -1269,13 +1368,14 @@ span {
 .hover-list ul {
     list-style-type: none; /* Remove bullet points */
     margin: 0;
+    margin-left: 10px;
     padding: 0;
     color: aqua;
 }
 
 .hover-list li {
     margin: 5px 0; /* Add spacing between items */
-    font-size: 1.25rem; /* Adjust font size */
+    font-size: 20px; /* Adjust font size */
     color: white;
     
 }
@@ -1332,6 +1432,59 @@ span {
     color: white;
 
 }
+/* Scalling */
+
+@media screen and (max-width: 580px) {
+    .header-activity {
+        position: absolute; /* Ensures the header stays at the top */
+        top: 0;
+        left: 0;
+        height: 70px; /* Adjust height for smaller screens */
+        width: 100%; /* Full width */
+        z-index: 1000; /* Ensure it stays on top of other content */
+
+    }
+
+
+
+    .activity-nav {
+        padding-left: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .activity-nav li {
+        display: block; /* Stack navigation items vertically */
+        margin: 5px 0; /* Add spacing between items */
+    }
+
+    .activity-nav a {
+        font-size: 1rem; /* Adjust font size for readability */
+    }
+}
+@media screen and (max-height: 768px) {
+    .f1-drivers h4 {
+        font-size: 1.5rem; /* Smaller font size for shorter screens */
+    }
+
+    .f1-drivers ul li {
+        font-size: 0.9rem; /* Reduce font size for list items */
+    }
+}
+
+@media screen and (max-height: 480px) {
+    .f1-drivers h4 {
+        font-size: 1.2rem; /* Further reduce font size for very short screens */
+    }
+
+    .f1-drivers ul li {
+        font-size: 0.8rem; /* Even smaller for very short screens */
+    }
+}
+@media screen and (max-width: 768px) {
+    .f1-drivers .h3-activity {
+        font-size: 1.5rem; /* Smaller font size for larger screens */
+    }
+}
+
 
 /* W3schools - "CSS Media Queries" - https://www.w3schools.com/css/css3_mediaqueries.asp */
 
@@ -1352,25 +1505,6 @@ span {
     }
 }
 
-@media screen and (max-width: 580px){ /* Makes sure it stays above other elements */
-        
-
-    .activity-nav {
-        position: fixed;
-        z-index: 1000; /* Makes sure it stays above other elements */
-    }
-    .activity-nav a {
-        float: none; /* Disable floating */
-        display: block; /* Ensure block-level behavior */
-        text-align: left; /* Align text to the left */
-        margin: 10px 0; /* Add spacing between items */
-    }
-    .activity-nav li {
-        display: block; /* Stack list items vertically */
-        width: 100%; /* Ensure full width */
-    }
-    
-}
 
 /* Reduserer padding i headeren for å gi bedre plass på små skjermer */
 @media(max-width:650px){
