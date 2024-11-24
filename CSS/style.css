@@ -1426,25 +1426,25 @@ span {
 
 @media screen and (max-width: 580px) {
     .header-activity {
-        position: absolute; /* Ensures the header stays at the top */
+        position: absolute; /* Sørger for at header blir på toppen */
         top: 0;
         left: 0;
-        height: 70px; /* Adjust height for smaller screens */
-        width: 100%; /* Full width */
-        z-index: 1000; /* Ensure it stays on top of other content */
+        height: 70px; /* Justerer høyde for mindre skjermer */
+        width: 100%; /* Full bredde */
+        z-index: 1000; /* Sørger for at det forblir på toppen av annet innhold */
     }
 
     .activity-nav {
-        padding-left: 15px; /* Adjust padding for smaller screens */
+        padding-left: 15px; /* Justerer padding for mindre skjermer */
     }
 
     .activity-nav li {
-        display: block; /* Stack navigation items vertically */
-        margin: 5px 0; /* Add spacing between items */
+        display: block; /* Stabler navigation items vertikalt */
+        margin: 5px 0; /* Legger til rom mellom items  */
     }
 
     .activity-nav a {
-        font-size: 1rem; /* Adjust font size for readability */
+        font-size: 1rem; /* Justerer font størrelse for enklere lesing */
     }
 }
 
