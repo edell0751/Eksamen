@@ -1110,7 +1110,9 @@ span {
     background: #181818;
     height: 100%;
     gap: 50px;
-    padding-top: 100px;
+    padding-top: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 .f1box-container{
     background-color: #181818;
@@ -1120,7 +1122,6 @@ span {
     border-image: linear-gradient(to bottom, aqua, aqua, rgb(49, 133, 133)) 1 100%;
     overflow: hidden;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    margin: 2px 100px 100px 100px;
 }
 
 .f1-content li {
@@ -1175,14 +1176,6 @@ span {
 .f1Teams-button:hover {
     background: white;
     color: black;
-}
-
-@media screen and (max-width: 768px) {
-    .f1box-container {
-        width: 325px; /* Maintain the fixed width */
-        height: 400px; /* beholde en bestemt hø */
-        margin: 2px auto; /* Center the boxes horizontally */
-    }
 }
 
 /* Slideshow container */
@@ -1356,7 +1349,8 @@ span {
     display: flex;
     justify-content: center; /* Centers the button horizontally */
     background-color: #181818;
-    padding-bottom: 15px;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 #moreTeams {
@@ -1364,7 +1358,9 @@ span {
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px; /* Add gap to match `.f1-teams` */
-    padding-top: 100px; /* Add padding to match `.f1-teams` */
+    padding-bottom: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
     background-color: #181818; /* Consistent background */
 
 }
@@ -1472,8 +1468,8 @@ span {
     }
 
   }
-
-@media screen and (min-width: 601px) {
+  
+  @media screen and (min-width: 601px) {
     div.example {
       font-size: 80px;
     }
@@ -1513,7 +1509,6 @@ span {
     .f1box-container {
         width: 325px; /* Maintain the fixed width */
         height: 400px; /* beholde en bestemt hø */
-        margin: 2px auto; /* Center the boxes horizontally */
     }
 }
 
