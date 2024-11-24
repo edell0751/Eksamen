@@ -12,6 +12,7 @@ html,body,footer{
 	padding: 0%;
 	box-sizing: border-box;
 	font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
+    list-style: none;
 }
 a {
     color: black;
@@ -386,7 +387,7 @@ span {
 	margin-bottom: 0.625rem;
 	padding-left: 0.9375rem;
 	position: relative;
-	list-style: disc;
+	list-style: none;
 }
 
 .a-list li a {
