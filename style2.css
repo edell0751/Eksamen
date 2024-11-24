@@ -147,18 +147,19 @@ html, body {
     font-size: 2.5rem;
     color: rgba(255, 255, 255, 0.866);
 }
-.f1-teams * {
-    font-family: 'Poppins', sans-serif;
+.f1-teams .moreTeams-section * {
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
-
 }
 .f1-teams {
     display: flex;
     justify-content: center;  
     flex-wrap: wrap;
-    width: 100%;
+    min-width: 100%;
     background: #181818;
     height: 100%;
+    gap: 50px;
+    padding-top: 100px;
 }
 .f1box-container{
     background-color: #181818;
@@ -168,11 +169,8 @@ html, body {
     border-image: linear-gradient(to bottom, aqua, aqua, rgb(49, 133, 133)) 1 100%;
     overflow: hidden;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    margin: 50px;
+    margin: 2px 100px 100px 100px;
 }
-
-
-
 
 .f1-content li {
     color: white;
@@ -381,11 +379,21 @@ html, body {
     color: white;
     
 }
+.button-container {
+    display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    background-color: #181818;
+    padding-bottom: 20px;
+}
 
 #moreTeams {
     display: none; /* Initially hidden */
     flex-wrap: wrap;
     justify-content: center;
+    gap: 50px; /* Add gap to match `.f1-teams` */
+    padding-top: 100px; /* Add padding to match `.f1-teams` */
+    background-color: #181818; /* Consistent background */
+
 }
 
 #moreTeams.visible {
@@ -393,7 +401,7 @@ html, body {
 } 
 
 #toggleBtn {
-    display: flex;
+    display: inline-block;
     justify-content: center;
     align-items: center;
     background-color: #181818; /* Match the box color */
@@ -402,12 +410,12 @@ html, body {
     height: 3rem;
     border-radius: 4px;
     text-decoration: none;
-    margin-bottom: 10px;
     font-weight: 500;
     font-size: 1rem;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
-    cursor: pointer; /* Make it look clickable */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
     border: 1px solid white; /* Optional border for visibility */
+    margin-top: 0; /* Ensure no extra space above */
 }
 
 #toggleBtn:hover {

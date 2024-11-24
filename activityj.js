@@ -48,18 +48,18 @@ function showSlides(n) {
 }
 
 function toggleTeams() {
-    var moreTeams = document.getElementById("moreTeams");
-    var toggleBtn = document.getElementById("toggleBtn");
+    const moreTeams = document.getElementById("moreTeams");
+    const toggleBtn = document.getElementById("toggleBtn");
 
-    // Toggle visibility and button text
     if (moreTeams.style.display === "none" || moreTeams.style.display === "") {
-        moreTeams.style.display = "flex"; // Ensure consistent layout
+        moreTeams.style.display = "flex"; // Show additional teams
         toggleBtn.innerHTML = "<p>Show Less Teams</p>";
     } else {
-        moreTeams.style.display = "none";
+        moreTeams.style.display = "none"; // Hide additional teams
         toggleBtn.innerHTML = "<p>Show More Teams</p>";
     }
 }
+
 
 function toggleExtraCards() {
     const extraCards = document.querySelectorAll('.OtherStudies-container .OtherStudies-column:nth-child(n+4)');
