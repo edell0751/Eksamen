@@ -189,6 +189,15 @@ ion-icon {
 	height: auto;
 }
 
+.menu-icon{
+    width: 20px;
+}
+
+.close{
+    display: none;
+}
+
+
 /* Stil for fullskjermmenyen */
 .menu {
 	position: fixed;
