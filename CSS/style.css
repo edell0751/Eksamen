@@ -500,12 +500,15 @@ span {
     background-color: #fff;
     hyphens: auto;
 }
+/* Styling for elementer i "OtherStudies" seksjonen */
 
+/* Tittel: Fet skrift og moderat skriftstørrelse */
 .OtherStudies-title {
     font-weight: bold;
     font-size: 1.2rem;
 }
 
+/* Fakultetsnavn: Mørkere tekstfarge og litt mindre skriftstørrelse */
 .OtherStudies-faculty {
     font-weight: 600;
     color: #5b7588;
@@ -513,18 +516,21 @@ span {
     font-size: 1rem;
 }
 
+/* Forklaringstekst: Gråfarge, linjehøyde og fast høyde for innholdet */
 .OtherStudies-explanation {
     font-size: 1rem;
     line-height: 1.2;
     color: #333;
     margin-bottom: 0.6rem;
-    height: 9.375rem; /* Sets a fixed height for figcaption elements */
+    height: 9.375rem; /* Fast høyde for beskrivende tekst */
 }
+
+/* Skjuler elementer som har denne klassen */
 .hidden {
     display: none;
 }
 
-
+/* "Show More" knapp: Størrelse, farge og hover-effekt */
 .show-more-btn {
     display: block;
     width: fit-content;
@@ -539,34 +545,37 @@ span {
 }
 
 .show-more-btn:hover {
-    background-color: #955c22;;
+    background-color: #955c22; /* Mørkere bakgrunn ved hover */
 }
 
+
+/* Study-Stories-seksjon og container */
 
 .Study-Stories-section {
     width: 100vw; /* Full skjermbredde */
-    margin-bottom: 2%; /* adding a little margin */
-    padding: 8% 0; /* Tilpass padding etter behov */
+    margin-bottom: 2%; /* Litt margin */
+    padding: 8% 0; /* Tilpasset padding */
     background-color: #f6f6f3;
-    position: relative; /* Sørg for at den bryter ut fra omkringliggende rammen */
-    left: 50%; /* Plasser i midten */
-    transform: translateX(-50%); /* Juster slik at den dekker hele bredden */
+    position: relative; /* Bryter ut fra rammen */
+    left: 50%; 
+    transform: translateX(-50%); /* Sentrerer */
+    text-align: center; /* Sentraliserer innhold */
 }
-
 
 .Study-Stories-container {
-    width: 100%; /* Sørg for at den dekker hele bredden på sin seksjon */
-    margin: 0 auto; /* Sentraliser eventuelle subelementer */
-    padding: 0 4%; /* Litt side-padding hvis ønsket */
+    width: 100%; /* Full bredde */
+    margin: 0 auto; /* Sentraliserer */
+    padding: 0 4%; /* Litt side-padding */
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 20px; /* Avstand mellom artikler */
 }
 
+/* Artikler i Study-Stories-seksjonen */
 
 .Study-Stories-article {
   width: 100%;
-  flex: 1 1 calc(50% - 20px);
+  flex: 1 1 calc(50% - 20px); /* To kolonner med mellomrom */
   height: 100%;
   padding: 2%;
   color: black;
@@ -574,12 +583,10 @@ span {
 }
 
 .Study-Stories-article:hover {
-  background-color: #70858462;
+  background-color: #70858462; /* Hover-effekt */
 }
 
-.Study-Stories-container .Study-Stories-article:nth-child(even) {
-  justify-self: end;
-}
+/* Styling for linkene og titlene */
 .Study-Stories-article a {
   color: black;
   text-decoration: none;
@@ -590,29 +597,19 @@ span {
   font-weight: 500;
 }
 
-.Study-Stories-column p {
-  margin-left: 0.4em;
-}
-
-.rStudy-Stories-arrow {
-  float: right;
-}
-
-.Study-Stories-caption{
+.Study-Stories-caption {
   font-size: 1rem;
 }
 
-.Study-Stories-section {
-    text-align: center; /* Sentrerer knappen og annet innhold */
-}
+/* Knapper og lenker */
 
 .study-stories-button {
-    display: inline-block; /* For å tillate sentrering */
-    width: fit-content; /* Tilpasser seg tekstinnholdet */
-    padding: 1rem 2rem; /* Bruker rem for responsiv padding */
-    font-size: 1.2rem; /* Større skriftstørrelse for mer fremtredende tekst */
+    display: inline-block;
+    width: fit-content;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    background-color: #EF8354; /* Knappens bakgrunnsfarge */
+    background-color: #EF8354; 
     border: none;
     text-decoration: none;
     transition: background-color 0.3s ease;
@@ -621,43 +618,44 @@ span {
 }
 
 .study-stories-button:hover {
-    background-color: #955c22; /* Mørkere farge ved hover */
+    background-color: #955c22; /* Mørkere ved hover */
 }
 
-.bold-underline-link{
-    display: block; /* Gjør linken til et blokkelement */
-    text-align: center; /* Sentrerer knappeteksten */
-    text-decoration:underline darkorange;
+.bold-underline-link {
+    display: block;
+    text-align: center;
+    text-decoration: underline darkorange;
     font-size: 1.2em;
     font-weight: bold;
     transition: transform 0.2s;
 }
 
-.bold-underline-link:hover{
+.bold-underline-link:hover {
     text-decoration: underline black;
     font-weight: bolder;
     transform: scale(1.05);
 }
 
-.hr-short{
-	width: 40%;
-	margin-top: 10px;
-	margin-bottom: 10px;
+/* Bilder og andre seksjoner */
 
+.hr-short {
+    width: 40%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.medium-image{
-	width: 130px;
-	height: auto;
-    margin-right: 20px; /* Avstand mellom bilde og tekst */;
+.medium-image {
+    width: 130px;
+    height: auto;
+    margin-right: 20px;
     display: block;
 }
 
 .OtherStudies-row {
     align-self: center;
-	display: flex;       /* Gjør containeren fleksibel for horisontal plassering */
+    display: flex;
     flex-direction: row;
-  	align-items: center; /* Vertikalt sentrerer bildet og teksten */
+    align-items: center;
     width: 355px;
     margin: auto;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -668,37 +666,44 @@ span {
 }
 
 .OtherStudies-row:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Hover-effekt på rad */
 }
 
+/* Artikkel-innhold i figuren */
 .article-inside-figure {
-	margin-left:none;  /* Legger litt avstand mellom bildet og teksten */
-	max-width: 80%;     /* Sørger for at teksten ikke blir for bred */
+    margin-left: none;
+    max-width: 80%;
     flex-wrap: wrap;
-  }
-  
-  .article-inside-figure h3,h4 {
-	margin: none;
-	color: #333;
-  }
-  
-  .article-inside-figure p {
-	margin: none;
-	color: #555;
-	font-size: 0.9em;
-  }
+}
 
-.study-info h2,p,button {
+.article-inside-figure h3, h4 {
+    margin: none;
+    color: #333;
+}
+
+.article-inside-figure p {
+    margin: none;
+    color: #555;
+    font-size: 0.9em;
+}
+
+/* Justerer sentreringen av h2, p, button i .study-info */
+.study-info h2, p, button {
     align-items: center;
 }
 
+
+/* Footer-styling */
+
+/* Bakgrunn, padding og full bredde for footer */
 .footer {
-    background: #2D3142;
-    padding-top: 50px;
-    width: 100%;
-    margin: 0;
+    background: #2D3142; /* Mørk bakgrunnsfarge */
+    padding-top: 50px; /* Topp-padding for luft */
+    width: 100%; /* Full bredde */
+    margin: 0; /* Fjerner margin */
 }
 
+/* Footer-container: Sentralisering og fleksibel layout */
 .footer-container {
     width: 100%;
     max-width: 1140px;
@@ -708,40 +713,23 @@ span {
     justify-content: center;
 }
 
-
+/* Footer-innhold: Sentralisert tekst og padding */
 .footer-content {
     padding: 5%;
-	color: white;
+    color: white; /* Hvit tekst */
     text-align: center;
 }
 
-
-
-.footer-content p {
-    width: 11.8rem;
-    margin: auto;
-    padding: 0.438rem;
-}
-
-.footer-content ul {
-    text-align: center;
-	
-}
-
+/* Footer-liste: Sentraliserer og fjerner punktmerking */
 .footer-list {
-    padding: 0;
-	
-}
-
-.footer-list li {
     width: auto;
     text-align: center;
     list-style-type: none;
     padding: 7px;
     position: relative;
-	
 }
 
+/* Hover-effekt på listeelementene (linje under ved hover) */
 .footer-list li::before {
     content: '';
     position: absolute;
@@ -755,9 +743,10 @@ span {
 }
 
 .footer-list li:hover::before {
-    width: 70px;
+    width: 70px; /* Øker linjebredden på hover */
 }
 
+/* Sosiale ikoner: Sentralisering og hover-effekt */
 .footer-social-icons {
     text-align: center;
     padding: 0;
@@ -767,23 +756,25 @@ span {
     display: inline-block;
     text-align: center;
     padding: 0.313rem;
-    transition: transform 0.3s ease; /* Smooth scaling effect */
+    transition: transform 0.3s ease;
 }
 
 .footer-social-icons li:hover {
-    transform: scale(1.2); /* Gjør ikonene større ved hover */
-    color:#EF8354 ;
+    transform: scale(1.2); /* Større ikoner på hover */
+    color: #EF8354;
 }
 
+/* Footer-lenker: Farge og hover-effekt */
 .footer-link {
     color: white;
     transition: color 0.3s ease;
 }
 
 .footer-link:hover {
-    color: #EF8354; /* Endrer fargen til oransje */
+    color: #EF8354; /* Oransje farge ved hover */
 }
 
+/* Bunnlinje i footer: Oransje bakgrunn og sentralisert tekst */
 .footer-bottom-bar {
     background: #EF8354;
     text-align: center;
@@ -792,22 +783,21 @@ span {
     width: 100%;
 }
 
+/* Bunnlinje-tekst: Fet og sentrert */
 .footer-bottom-bar p {
     font-weight: bold;
     margin: 0;
     font-size: 1rem;
     padding: 0.45rem;
 }
-/* CSS FOR ACCESSIBILITY*/
+
+/* Accessibility-styling */
+
+/* Sentraliserer hovedinnhold og bilder relatert til tilgjengelighet */
 .accessibility-main {
     display: block;
     max-width: 100%;
     text-align: center;
-}
-
-.accessibility-p-main {
-    margin: 0 auto 2rem auto;
-    width: 65%;
 }
 
 .accessibility-figure {
@@ -825,6 +815,7 @@ span {
     align-items: center;
 }
 
+/* Tilpasser bildestørrelse for tilgjengelighet */
 .accessibility-pic-1 {
     width: 60%;
     margin: 0 auto;
@@ -839,19 +830,23 @@ span {
 }
 
 
-/* Css for GitPage */
 
+/* GitPage CSS */
+
+/* Hovedinnhold: Sentraliserer tekst og setter full bredde */
 .gitpage-main {
     display: block;
     max-width: 100%;
     text-align: center;
 }
 
+/* Sentraliserer avsnitt med 65% bredde og bunnmarg */
 .gitpage-p-main {
-    margin: 0 auto 2rem auto;
+    margin: 0 auto 2rem;
     width: 65%;
 }
 
+/* Flexbox-layout for figurer, vertikal og sentrert */
 .gitpage-figure {
     display: flex;
     flex-direction: column;
@@ -860,6 +855,7 @@ span {
     text-align: center;
 }
 
+/* Sentraliserer bilde */
 .gitpage-img {
     display: flex;
     margin: 0 auto;
@@ -867,19 +863,23 @@ span {
     align-items: center;
 }
 
+/* Bildestørrelse, 95% bredde og 60% høyde */
 .gitpage-pic-1 {
     width: 95%;
     margin: 0 auto;
     height: 60%;
 }
 
+/* Sentraliserer bildetekst med mindre skrift */
 .gitpage-img figcaption {
     text-align: center;
     font-size: smaller;
     padding-bottom: 2rem;
     width: 75%;
 }
-.gitpage-list{
+
+/* Liste uten punktmerking, sentrert */
+.gitpage-list {
     width: auto;
     text-align: center;
     list-style-type: none;
@@ -887,38 +887,44 @@ span {
     position: relative;
 }
 
-.gitpage-list li{
+/* Sentraliserer listeelementer med 10px mellomrom */
+.gitpage-list li {
     text-align: center;
     width: 100%;
     margin-bottom: 10px;
 }
 
-@media(max-width:450px)/*learnt to use @media from https://www.w3schools.com/css/css3_mediaqueries.asp */{
-    .article-wrapper{
-        padding: 50px 5%;
+
+/* Justerer padding for artikler for bedre plassutnyttelse på små skjermer */
+@media(max-width:450px) {
+    .article-wrapper {
+        padding: 50px 5%; 
     }
-    .video-player{
-        height: 50vw;
+    .video-player {
+        height: 50vw; /* Justerer videohøyden for å holde proporsjoner på små skjermer */
     }
 }
 
+/* Reduserer søkeboksens bredde når den er aktiv på små skjermer */
 @media(max-width:500px){
     .header-search.active .search-input {
-        width: 8.125rem; /* Reduces the width of the search input to 160px when active on very small screens */
+        width: 8.125rem; 
     }
 }
 
+/* Reduserer padding i headeren for å gi bedre plass på små skjermer */
 @media(max-width:650px){
     .header-up, .header-bottom {
-		padding: 3%;
-	} 
+        padding: 3%;
+    } 
     .menu-items{
-        margin-left: 5%;
+        margin-left: 5%; /* Sentraliserer menyen for små skjermer ved å justere margin */
     }
 }
 
+/* Endrer footer-layout til vertikal kolonne for bedre plassutnyttelse */
 @media (max-width:700px){
-    .footer-container,.footer-content{
+    .footer-container, .footer-content {
         flex-direction: column;
         flex: 100%;
         justify-content: center;
@@ -926,38 +932,37 @@ span {
     }
 }
 
-/* W3Schools - "CSS Media Queries" - https://www.w3schools.com/css/css3_mediaqueries.asp */
-
+/* Sentraliserer tekst i hovedinnholdet for bedre lesbarhet på små skjermer */
 @media (max-width:800px){
-	.main-content{
-		text-align: center;
-	}
+    .main-content {
+        text-align: center;
+    }
 
-    .subjects{
-        flex-direction: column;
-        flex:100%;
+    .subjects {
+        flex-direction: column; /* Endrer layout for fagene til en vertikal liste */
+        flex: 100%; /* Sørger for at hvert fag tar opp hele bredden */
     }
 }
 
+/* Øker padding for teksten i FAQ-seksjonen for bedre plass på små skjermer */
 @media(max-width:850px){
-    .accordion-text{
+    .accordion-text {
         padding-left: 25px;
         padding-right: 0px;
     }
 
-    .subject{
-        width: 100%;
+    .subject {
+        width: 100%; /* Sørger for at hvert fag tar opp hele bredden i en vertikal layout */
     }
 
-    .Study-Stories-container{
-        flex-direction: column;
+    .Study-Stories-container {
+        flex-direction: column; /* Endrer layouten for studenthistorier til vertikal kolonne */
     }
 }
 
+/* Stabler bilder relatert til tilgjengelighet vertikalt på små skjermer */
 @media (max-width: 768px) {
     .accessibility-img {
         flex-direction: column;
     }
 }
-
-
