@@ -70,6 +70,8 @@ html, body {
 /* Activity section styling */
 .activity-section {
     background-image: url('../Images/f1background.jpeg'); /* Ensure the image path is correct */
+    background-color: rgba(0, 0, 0, 0.25); /* Transparent layer */
+    background-blend-mode: overlay; /* Blend the color with the image */
     background-size: cover; /* Ensures the background scales proportionally */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents tiling */
@@ -118,14 +120,12 @@ html, body {
 
 .activity-section .h1-activity {
     font-size: 60px;
-    color: white;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3), 5px 5px 70px rgba(0, 0, 0, 0.15);
+    color: white; 
 }
 
 .activity-section .activity-text {
     font-size: 18px;
     color: white;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .read-more-button {
@@ -153,11 +153,13 @@ html, body {
     }
 
   }
+ 
+  @media screen and (max-width: 480px) {
+    .f1-drivers .h3-activity {
+        font-size: 1.3rem; /* Further reduce font size for very short screens */
+    }
+}  
 
-
-
-
-   
 
 
 
@@ -252,6 +254,12 @@ html, body {
     height: 180px;
 
 }
+#sauber {
+    background-color: green;
+}
+#mercedes {
+    background-color: black;
+}
 .f1-content {
     padding: 16px;
 }
@@ -301,13 +309,28 @@ html, body {
 /* Slideshow container */
 .f1-drivers {
     width: 100%;
+    min-height: 400px; /* Ensure it doesn't shrink too much */
     position: relative;
-    margin: auto;
     background: rgba(24, 24, 24, 0.98);
     color: white;
-    height: 80vh; /* Set a smaller height */
+    height: 50vw; /* Set a smaller height */
     padding: 20px;
   }
+
+@media screen and (max-width: 768px) {
+    .f1-drivers {
+        height: 50vh; /* Make the height 50% of the viewport */
+        min-height: 250px; /* Ensure a minimum height */
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .f1-drivers {
+        height: 45vh; /* Slightly taller for very small screens */
+        padding: 10px; /* Further reduce padding */
+    }
+}  
   
   /* Hide the images by50%default */
   .mySlides {
@@ -448,6 +471,7 @@ html, body {
 .hover-list ul {
     list-style-type: none; /* Remove bullet points */
     margin: 0;
+    margin-left: 10px;
     padding: 0;
     color: aqua;
 }
@@ -512,12 +536,7 @@ html, body {
 
 }
 /* Scalling */
-@media screen and (max-width: 580px){ /* Makes sure it stays above other elements */
-        
 
-  
-    
-}
 @media screen and (max-width: 580px) {
     .header-activity {
         position: absolute; /* Ensures the header stays at the top */
@@ -528,6 +547,7 @@ html, body {
         z-index: 1000; /* Ensure it stays on top of other content */
 
     }
+
 
 
     .activity-nav {
