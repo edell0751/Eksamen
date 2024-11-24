@@ -4,7 +4,7 @@ html{
 
 /*lar ikke oss scrolle i x-retning. låser den slik at den kun kan scrolles nedover,
 og holder contentet innenfor rammene.*/
-html,body,footer{
+html,body{
     overflow-x: hidden;
 }
 /* Setter grunnleggende standarder for alle elementer */
@@ -264,16 +264,18 @@ a {
 	text-decoration: none;
 }
 
+.metadata-list, .a-list, .OtherStudies-cards{
+    hyphens: auto;
+}
 
 .metadata-list {
 	display: flex;
-	flex-wrap: wrap; /*Learnt to use flex-wrap from https://www.w3schools.com/css/css3_flexbox_container.asp*/
+	flex-wrap: wrap; /* https://www.w3schools.com/css/css3_flexbox_container.asp */
 	margin-top: 50px;
     margin-right: auto;
 	position: relative;
 	flex: 100%;
     width: 100%;
-    hyphens: auto;
 }
 .metadata-list-item {
 	border-top: 0.0575rem solid black;
@@ -330,7 +332,7 @@ span {
 }
 
 .accordion-text {
-	display: none; /* Initially hidden */
+	display: none; /* I utgangspuntket gjemt*/
 	margin-bottom: 30px;
 	overflow: hidden;
 	padding-left: 75px;
@@ -353,13 +355,11 @@ span {
 }
 
 .a-list {
-	font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
 	font-size: 1.125;
 	font-weight: 400;
 	line-height: 27px;
 	list-style: none;
 	margin-top: 18px;
-    hyphens: auto;
 }
 
 .a-list li {
@@ -474,6 +474,7 @@ span {
 
 .flex {
 	display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 5px;
 }
@@ -515,7 +516,6 @@ span {
 .OtherStudies-cards {
     padding: 1rem;
     background-color: #fff;
-    hyphens: auto;
 }
 /* Styling for elementer i "OtherStudies" seksjonen */
 
@@ -824,6 +824,7 @@ span {
 }
 .accessibility-p-main{
     margin-bottom: 2.5rem;
+    margin-top: 1.5rem;
     width: 70%;
     margin-left: auto;
     margin-right: auto;
@@ -882,6 +883,7 @@ span {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-bottom: 3rem;
 }
 
 /* Sentraliserer bilde */
@@ -1436,27 +1438,6 @@ span {
     .Study-Stories-container {
         flex-direction: column; /* Endrer layouten for studenthistorier til vertikal kolonne */
     }
-}
-
-/* Scalling */
-@media screen and (max-width: 580px){ /* Makes sure it stays above other elements */
-        
-
-    .activity-nav {
-        position: fixed;
-        z-index: 1000; /* Makes sure it stays above other elements */
-    }
-    .activity-nav a {
-        float: none; /* Disable floating */
-        display: block; /* Ensure block-level behavior */
-        text-align: left; /* Align text to the left */
-        margin: 10px 0; /* Add spacing between items */
-    }
-    .activity-nav li {
-        display: block; /* Stack list items vertically */
-        width: 100%; /* Ensure full width */
-    }
-    
 }
 
 
