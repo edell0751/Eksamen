@@ -1442,10 +1442,7 @@ span {
         height: 70px; /* Adjust height for smaller screens */
         width: 100%; /* Full width */
         z-index: 1000; /* Ensure it stays on top of other content */
-
     }
-
-
 
     .activity-nav {
         padding-left: 15px; /* Adjust padding for smaller screens */
@@ -1460,28 +1457,22 @@ span {
         font-size: 1rem; /* Adjust font size for readability */
     }
 }
-@media screen and (max-height: 768px) {
+
+@media screen and (max-width: 480px) {
     .f1-drivers h4 {
-        font-size: 1.5rem; /* Smaller font size for shorter screens */
+        font-size: 1.2rem; /* Reduserer font størrelsen enda mer for mindre skjærmer */
     }
 
     .f1-drivers ul li {
-        font-size: 0.9rem; /* Reduce font size for list items */
-    }
-}
-
-@media screen and (max-height: 480px) {
-    .f1-drivers h4 {
-        font-size: 1.2rem; /* Further reduce font size for very short screens */
-    }
-
-    .f1-drivers ul li {
-        font-size: 0.8rem; /* Even smaller for very short screens */
+        font-size: 0.8rem; /* Enda mindre størrelse for enda mindre skjærm */
     }
 }
 @media screen and (max-width: 768px) {
-    .f1-drivers .h3-activity {
-        font-size: 1.5rem; /* Smaller font size for larger screens */
+    .f1-drivers .h3-activity,  .f1-drivers h4 {
+        font-size: 1.5rem; /* Mindre font størrelse for mindre skjærm */
+    }
+    .f1-drivers ul li {
+        font-size: 0.9rem; /* Reduserer font størrelse for liste gjenstander */
     }
 }
 
