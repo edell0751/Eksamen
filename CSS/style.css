@@ -497,6 +497,7 @@ span {
 .OtherStudies-cards {
     padding: 1rem;
     background-color: #fff;
+    hyphens: auto;
 }
 
 .OtherStudies-title {
