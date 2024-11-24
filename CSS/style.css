@@ -113,16 +113,6 @@ h4 {
 }
 
 /* Stiler for navigasjonsmenyen i nedre del av headeren */
-.header-bottom nav {
-    padding: 2% 15%; /* Justerer avstanden til sidene for å sentrere */
-}
-
-/* Stil for linker i navigasjonsmenyen */
-.header-bottom-link span {
-    font-size: 1.125rem; /* Setter skriftstørrelsen for tydelighet */
-    font-weight: 700; /* Gjør teksten fet */
-    color: white; /* Setter fargen til hvit for kontrast */
-    border-bottom: 2px solid white; /* Understreker med en hvit linje */
 .header-link {
     padding: 0 10px;
     font-size: 1.25rem;
@@ -130,7 +120,6 @@ h4 {
     color: white;
     border-bottom: 2px solid transparent;
     transition: border-color 0.3s;
-}
 }
 
 .header-link:hover {
