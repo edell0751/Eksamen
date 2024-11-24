@@ -817,10 +817,16 @@ span {
 /* Accessibility-styling */
 
 /* Sentraliserer hovedinnhold og bilder relatert til tilgjengelighet */
-.accessibility-main {
+.accessibility-main-section {
     display: block;
     max-width: 100%;
     text-align: center;
+}
+.accessibility-p-main{
+    margin-bottom: 2.5rem;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .accessibility-figure {
