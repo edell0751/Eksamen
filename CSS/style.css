@@ -4,7 +4,7 @@ html{
 
 /*lar ikke oss scrolle i x-retning. låser den slik at den kun kan scrolles nedover,
 og holder contentet innenfor rammene.*/
-html,body,footer{
+html,body{
     overflow-x: hidden;
 }
 /* Setter grunnleggende standarder for alle elementer */
