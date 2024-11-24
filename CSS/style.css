@@ -517,13 +517,13 @@ span {
 }
 /* Styling for elementer i "OtherStudies" seksjonen */
 
-/* Tittel: Fet skrift og moderat skriftstørrelse */
+
 .OtherStudies-title {
     font-weight: bold;
     font-size: 1.2rem;
 }
 
-/* Fakultetsnavn: Mørkere tekstfarge og litt mindre skriftstørrelse */
+
 .OtherStudies-faculty {
     font-weight: 600;
     color: #5b7588;
@@ -531,7 +531,6 @@ span {
     font-size: 1rem;
 }
 
-/* Forklaringstekst: Gråfarge, linjehøyde og fast høyde for innholdet */
 .OtherStudies-explanation {
     font-size: 1rem;
     line-height: 1.2;
@@ -567,9 +566,9 @@ span {
 /* Study-Stories-seksjon og container */
 
 .Study-Stories-section {
-    width: 100vw; /* Full skjermbredde */
-    margin-bottom: 2%; /* Litt margin */
-    padding: 8% 0; /* Tilpasset padding */
+    width: 100vw; 
+    margin-bottom: 2%; 
+    padding: 8% 0; 
     background-color: #f6f6f3;
     position: relative; /* Bryter ut fra rammen */
     left: 50%; 
@@ -578,9 +577,9 @@ span {
 }
 
 .Study-Stories-container {
-    width: 100%; /* Full bredde */
+    width: 100%; 
     margin: 0 auto; /* Sentraliserer */
-    padding: 0 4%; /* Litt side-padding */
+    padding: 0 4%; 
     display: flex;
     flex-wrap: wrap;
     gap: 20px; /* Avstand mellom artikler */
@@ -712,10 +711,10 @@ span {
 
 /* Bakgrunn, padding og full bredde for footer */
 .footer {
-    background: #2D3142; /* Mørk bakgrunnsfarge */
-    padding-top: 50px; /* Topp-padding for luft */
-    width: 100%; /* Full bredde */
-    margin: 0; /* Fjerner margin */
+    background: #2D3142;
+    padding-top: 50px; 
+    width: 100%; 
+    margin: 0; 
 }
 
 /* Footer-container: Sentralisering og fleksibel layout */
@@ -731,7 +730,7 @@ span {
 /* Footer-innhold: Sentralisert tekst og padding */
 .footer-content {
     padding: 5%;
-    color: white; /* Hvit tekst */
+    color: white; 
     text-align: center;
 }
 
