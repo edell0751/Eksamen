@@ -1348,6 +1348,8 @@ span {
 
 }
 
+/* W3schools - "CSS Media Queries" - https://www.w3schools.com/css/css3_mediaqueries.asp */
+
 /* Justerer padding for artikler for bedre plassutnyttelse på små skjermer */
 @media(max-width:450px) {
     .article-wrapper {
@@ -1418,7 +1420,7 @@ span {
     }
 }
 
-/* Scalling */
+/* Scaling */
 @media screen and (max-width: 580px){ /* Makes sure it stays above other elements */
         
 
