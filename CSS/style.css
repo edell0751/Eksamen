@@ -1422,16 +1422,6 @@ span {
     background-color: white;
     color: black;
 }
-
-.activity-footer {
-    background-color: #2D3142;    
-    width: 100%;
-    height: auto;
-    padding: 20px; /* Ensure padding for content */
-    text-align: center;
-    color: white;
-
-}
 /* Scalling */
 
 @media screen and (max-width: 580px) {
