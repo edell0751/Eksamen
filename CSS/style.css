@@ -1180,11 +1180,9 @@ span {
 /* Slideshow container */
 .f1-drivers {
     width: 100%;
-    min-height: 400px; /* Sørger for at den ikke minskes for mye */
     position: relative;
     background: rgba(24, 24, 24, 0.98);
     color: white;
-    height: 80vh; /* Mindre høyde */
     padding: 20px;
   }
   
@@ -1192,15 +1190,11 @@ span {
   .mySlides {
     height: 100%; /* Sørger for at bildene tar hele høyden til seksjonen */
     width: 100%; 
-    height: 100%; /* Sørger for at bildene tar hele høyden til seksjonen */
-    width: 100%; 
     display: flex;
     justify-content: center;
     align-items: center; /* Sentraliserer bildene inne i seksjonen */
     overflow: hidden;
     align-items: center; /* Sentraliserer bildene inne i seksjonen */
-    overflow: hidden;
-
   }
 
   .mySlides img {
@@ -1418,10 +1412,7 @@ span {
     .f1-drivers ul li {
         font-size: 0.8rem; /* Enda mindre størrelse for enda mindre skjærm */
     }
-    .f1-drivers {
-        height: 45vh; /* Litt høyere for veldig små skjermer */
-        padding: 10px; /* Redusert padding */
-    }
+
     .f1-drivers .h3-activity {
         font-size: 1.3rem; /* Reduserer font størrelse for veldig små skjermer */
     }
@@ -1489,11 +1480,6 @@ span {
     }
     .f1-drivers ul li {
         font-size: 0.9rem; /* Reduserer font størrelse for liste gjenstander */
-    }
-    .f1-drivers {
-        height: 50vh; /* Setter høyden til 50 % av synlig skjermhøyde (viewport) */
-        min-height: 250px; /* Sikrer en minimumshøyde på 250px for å unngå at elementet blir for lite */
-        padding: 15px; /* Reduserer padding for mindre skjermer */
     }
     
     .f1box-container {
