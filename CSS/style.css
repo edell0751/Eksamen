@@ -191,7 +191,7 @@ ion-icon {
 }
 
 
-/* Full-Screen Menu Styling */
+/* Full-Screen Meny stil */
 .menu {
 	position: fixed;
 	top: 0;
@@ -217,8 +217,8 @@ ion-icon {
 }
 
 
-/* making the menu items list under eachother and making them  white for good visibility.
- also giving them reasonable sizes in rem, not px for better accessability*/
+/* Gjør slik at menyelementene listes under hverandre og gjør dem hvite for god synlighet.
+   Gir dem også fornuftige størrelser i rem i stedet for px for bedre tilgjengelighet */
 
 .menu-items a {
 	display: block;
@@ -228,7 +228,7 @@ ion-icon {
     color: white;
 	
 }
-/*  it sections the class to keep its almost centered position*/
+/* Inndeler klassen for å beholde dens nesten sentrerte posisjon */
  .article-wrapper{
 	padding: 50px 15%;
 }
