@@ -61,7 +61,11 @@ h4 {
 .header-up {
     display: flex; /* Bruker flex for å justere elementer horisontalt */
     justify-content: space-between; /* Fordeler plass mellom logo og ikoner */
-    padding: 2% 15%; /* Polstring for å holde elementer innenfor kanten */
+    padding: 2% 15% 0%; /* Polstring for å holde elementer innenfor kanten */
+    background-color: #2D3142;
+	position: sticky; /* Gjør headeren fast øverst på siden ved scroll */
+	top: 0;
+	z-index: 1000; /* Plasserer headeren over andre elementer på siden */
 }
 
 /* Container for elementer på høyre side av headeren */
@@ -132,16 +136,6 @@ h4 {
     width: 20px;
     cursor: pointer;
 }
-.header-up {
-	display: flex; 
-	justify-content: space-between;
-	padding: 2% 15%;
-	background-color: #2D3142;
-	position: sticky; /* Gjør headeren fast øverst på siden ved scroll */
-	top: 0;
-	z-index: 1000; /* Plasserer headeren over andre elementer på siden */
-}
-
 
 .header-right {
 	display: flex;
