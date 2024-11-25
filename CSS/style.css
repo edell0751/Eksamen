@@ -1042,28 +1042,6 @@ span {
     font-size: 16px;
 }
 
-@media screen and (min-width: 601px) {
-    div.example {
-      font-size: 80px;
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    div.example {
-      font-size: 20px;
-    }
-
-  }
- 
-  @media screen and (max-width: 480px) {
-    .f1-drivers .h3-activity {
-        font-size: 1.3rem; /* Reduserer font størrelse for veldig små skjermer */
-    }
-}  
-
-
-
-
 .read-more-button {
     display: flex;
     background-color: red;
@@ -1132,7 +1110,9 @@ span {
     background: #181818;
     height: 100%;
     gap: 50px;
-    padding-top: 100px;
+    padding-top: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 .f1box-container{
     background-color: #181818;
@@ -1142,7 +1122,6 @@ span {
     border-image: linear-gradient(to bottom, aqua, aqua, rgb(49, 133, 133)) 1 100%;
     overflow: hidden;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    margin: 2px 100px 100px 100px;
 }
 
 .f1-content li {
@@ -1184,61 +1163,42 @@ span {
     display: flex;
     text-decoration: none;
     color: white;
-    width: 6rem; /* Adjusted width */
-    height: 2rem; /* Adjusted height */
+    width: 6rem; /* Justere bredde */
+    height: 2rem; /* Justere høyde */
     justify-content: center;
     align-items: center;
     border-radius: 4px;
     font-weight: 500;
-    margin-top: 0.5rem; /* Adds space from the list */
-    margin-left: 0; /* Aligns with the left padding of .f1-content */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    margin-top: 0.5rem; /* Legger til plass på toppen av listen */
+    margin-left: 0; /* Justerer i forhold til venstre padding til .f1-content */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Myk overgang */
 }
 .f1Teams-button:hover {
     background: white;
     color: black;
 }
 
-@media screen and (max-width: 768px) {
-    .f1box-container {
-        width: 325px; /* Maintain the fixed width */
-        height: 400px; /* beholde en bestemt hø */
-        margin: 2px auto; /* Center the boxes horizontally */
-    }
-}
-
 /* Slideshow container */
 .f1-drivers {
     width: 100%;
-    min-height: 400px; /* Ensure it doesn't shrink too much */
+    min-height: 400px; /* Sørger for at den ikke minskes for mye */
     position: relative;
     background: rgba(24, 24, 24, 0.98);
     color: white;
-    height: 50vw; /* Set a smaller height */
+    height: 80vh; /* Mindre høyde */
     padding: 20px;
   }
-
-@media screen and (max-width: 768px) {
-    .f1-drivers {
-        height: 50vh; /* Make the height 50% of the viewport */
-        min-height: 250px; /* Ensure a minimum height */
-        padding: 15px; /* Reduce padding for smaller screens */
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .f1-drivers {
-        height: 45vh; /* Slightly taller for very small screens */
-        padding: 10px; /* Further reduce padding */
-    }
-}  
   
-  /* Hide the images by50%default */
+  
   .mySlides {
+    height: 100%; /* Sørger for at bildene tar hele høyden til seksjonen */
+    width: 100%; 
     height: 100%; /* Sørger for at bildene tar hele høyden til seksjonen */
     width: 100%; 
     display: flex;
     justify-content: center;
+    align-items: center; /* Sentraliserer bildene inne i seksjonen */
+    overflow: hidden;
     align-items: center; /* Sentraliserer bildene inne i seksjonen */
     overflow: hidden;
 
@@ -1248,12 +1208,16 @@ span {
     width: 70%; /* Set the image width as a percentage of its container */
     height: 79%; 
     border: 2px solid; /* Kant rundt bildet */
+    height: 79%; 
+    border: 2px solid; /* Kant rundt bildet */
     border-image: linear-gradient(to bottom, aqua, aqua, rgb(49, 133, 133)) 1 100%;
+    display: block; 
+    margin: 0 auto; 
     display: block; 
     margin: 0 auto; 
 }
   
-  /* Next & previous buttons */
+  /* "Next"- og "Previous"-knapp*/
   .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -1269,16 +1233,16 @@ span {
     user-select: none;
   }
   
-  /* Position the "next button" to the right */
+  /* Posisjonerer knappene */
 .prev {
-    left: 20px; /* Distance from the left edge */
+    left: 20px; 
 }
 
 .next {
-    right: 20px; /* Distance from the right edge */
+    right: 20px; 
 }
   
-  /* On hover, add a black background color with a little bit see-through */
+  /* Justere design når man hovrer over knappen*/
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
   }
@@ -1295,25 +1259,27 @@ span {
   }
 
   
-  /* Fading animation */
+  /* Fading-animasjon */ /*https://www.w3schools.com/w3css/w3css_slideshow.asp*/
   .fade {
     animation-name: fade;
     animation-duration: 1.5s;
   }
   
+ 
   @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
   }
+
  .f1Drivers-hover{
-    position: absolute; /* Position the overlay over the image */
+    position: absolute; /* Plasserer overlegget over bildet */
     top: 0;
     left: 0;
-    width: 100%; /* Match the image's width */
-    height: 100%; /* Match the image's height */
-    backdrop-filter: blur(10px);
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.3s ease; 
+    width: 100%; /* Tilpasser overleggets bredde til bildet */
+    height: 100%; /* Tilpasser overleggets høyde til bildet */
+    backdrop-filter: blur(10px); /* Legger til uskarphet på overlegget */
+    opacity: 0; /* Skjuler overlegget som standard */
+    transition: opacity 0.3s ease; /* Myk overgang for synlighet */
 
 }
 .mySlides:hover .f1Drivers-hover {
@@ -1383,7 +1349,8 @@ span {
     display: flex;
     justify-content: center; /* Centers the button horizontally */
     background-color: #181818;
-    padding-bottom: 15px;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 #moreTeams {
@@ -1391,7 +1358,9 @@ span {
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px; /* Add gap to match `.f1-teams` */
-    padding-top: 100px; /* Add padding to match `.f1-teams` */
+    padding-bottom: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
     background-color: #181818; /* Consistent background */
 
 }
@@ -1422,60 +1391,16 @@ span {
     background-color: white;
     color: black;
 }
-/* Scaling for all sites */
 
-@media screen and (max-width: 580px) {
-    .header-activity {
-        position: absolute; /* Ensures the header stays at the top */
-        top: 0;
-        left: 0;
-        height: 70px; /* Adjust height for smaller screens */
-        width: 100%; /* Full width */
-        z-index: 1000; /* Ensure it stays on top of other content */
+.activity-footer {
+    background-color: #2D3142;    
+    width: 100%;
+    height: auto;
+    padding: 20px; /* Ensure padding for content */
+    text-align: center;
+    color: white;
 
-    }
-
-
-
-    .activity-nav {
-        padding-left: 15px; /* Adjust padding for smaller screens */
-    }
-
-    .activity-nav li {
-        display: block; /* Stack navigation items vertically */
-        margin: 5px 0; /* Add spacing between items */
-    }
-
-    .activity-nav a {
-        font-size: 1rem; /* Adjust font size for readability */
-    }
 }
-@media screen and (max-height: 768px) {
-    .f1-drivers h4 {
-        font-size: 1.5rem; /* Smaller font size for shorter screens */
-    }
-
-    .f1-drivers ul li {
-        font-size: 0.9rem; /* Reduce font size for list items */
-    }
-}
-
-@media screen and (max-height: 480px) {
-    .f1-drivers h4 {
-        font-size: 1.2rem; /* Further reduce font size for very short screens */
-    }
-
-    .f1-drivers ul li {
-        font-size: 0.8rem; /* Even smaller for very short screens */
-    }
-}
-@media screen and (max-width: 768px) {
-    .f1-drivers .h3-activity {
-        font-size: 1.5rem; /* Smaller font size for larger screens */
-    }
-}
-
-
 
 /* W3schools - "CSS Media Queries" - https://www.w3schools.com/css/css3_mediaqueries.asp */
 
@@ -1496,6 +1421,59 @@ span {
     }
 }
 
+@media screen and (max-width: 480px) {
+    .f1-drivers h4 {
+        font-size: 1.2rem; /* Reduserer font størrelsen enda mer for mindre skjærmer */
+    }
+
+    .f1-drivers ul li {
+        font-size: 0.8rem; /* Enda mindre størrelse for enda mindre skjærm */
+    }
+    .f1-drivers {
+        height: 45vh; /* Slightly taller for very small screens */
+        padding: 10px; /* Further reduce padding */
+    }
+    .f1-drivers .h3-activity {
+        font-size: 1.3rem; /* Reduserer font størrelse for veldig små skjermer */
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .header-activity {
+        position: absolute; /* Sørger for at header blir på toppen */
+        top: 0;
+        left: 0;
+        height: 70px; /* Justerer høyde for mindre skjermer */
+        width: 100%; /* Full bredde */
+        z-index: 1000; /* Sørger for at det forblir på toppen av annet innhold */
+    }
+
+    .activity-nav {
+        padding-left: 15px; /* Justerer padding for mindre skjermer */
+    }
+
+    .activity-nav li {
+        display: block; /* Stabler navigation items vertikalt */
+        margin: 5px 0; /* Legger til rom mellom items  */
+    }
+
+    .activity-nav a {
+        font-size: 1rem; /* Justerer font størrelse for enklere lesing */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div.example {
+      font-size: 20px;
+    }
+
+  }
+  
+  @media screen and (min-width: 601px) {
+    div.example {
+      font-size: 80px;
+    }
+  }
 
 /* Reduserer padding i headeren for å gi bedre plass på små skjermer */
 @media(max-width:650px){
@@ -1514,6 +1492,23 @@ span {
         flex: 100%;
         justify-content: center;
         align-items: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    .f1-drivers .h3-activity,  .f1-drivers h4 {
+        font-size: 1.5rem; /* Mindre font størrelse for mindre skjærm */
+    }
+    .f1-drivers ul li {
+        font-size: 0.9rem; /* Reduserer font størrelse for liste gjenstander */
+    }
+    .f1-drivers {
+        height: 50vh; /* Make the height 50% of the viewport */
+        min-height: 250px; /* Ensure a minimum height */
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+    .f1box-container {
+        width: 325px; /* Maintain the fixed width */
+        height: 400px; /* beholde en bestemt hø */
     }
 }
 
