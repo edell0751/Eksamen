@@ -191,7 +191,7 @@ ion-icon {
 }
 
 
-/* Full-Screen Menu Styling */
+/* Full-Screen Meny stil */
 .menu {
 	position: fixed;
 	top: 0;
@@ -217,8 +217,8 @@ ion-icon {
 }
 
 
-/* making the menu items list under eachother and making them  white for good visibility.
- also giving them reasonable sizes in rem, not px for better accessability*/
+/* Gjør slik at menyelementene listes under hverandre og gjør dem hvite for god synlighet.
+   Gir dem også fornuftige størrelser i rem i stedet for px for bedre tilgjengelighet */
 
 .menu-items a {
 	display: block;
@@ -228,7 +228,7 @@ ion-icon {
     color: white;
 	
 }
-/*  it sections the class to keep its almost centered position*/
+/* Inndeler klassen for å beholde dens nesten sentrerte posisjon */
  .article-wrapper{
 	padding: 50px 15%;
 }
@@ -945,11 +945,10 @@ span {
 }
 
 .activity-nav a {
-    color: white;
+    color: #ff0000;
     text-decoration: none;
     font-weight: 600;
     font-size: large;
-    transition: 0.3s ease-in-out;;
 }
 
 .activity-nav a:hover {
@@ -1283,17 +1282,17 @@ span {
 
 }
 .mySlides:hover .f1Drivers-hover {
-    opacity: 1; /* Show the overlay on hover */
+    opacity: 1; /* Viser overlegget når man hovrer */
 }
 .f1-drivers .h3-activity {
-    font-size: 30px; /* Adjust font size if needed */
+    font-size: 30px; 
     font-weight: 300;
     color: white;
     letter-spacing: 1px;
     text-transform: uppercase;
 
     display: grid;
-    grid-template-columns: 50px max-content 50px; /* Set fixed width for the lines */
+    grid-template-columns: 50px max-content 50px; /* Stiller fast bredde for linjene */
     grid-template-rows: 27px 0;
     grid-gap: 20px;
     align-items: center;
@@ -1301,7 +1300,7 @@ span {
 }
 
 .f1-drivers .h3-activity:after, .h3-activity:before {
-    content: " ";
+    content: " "; /*Kun for stil/dekorasjon - pseudoelementene brukt her krever en content-verdi for å synliggjøres*/
     display: block;
     border-bottom: 1px solid white;
     border-top: 1px solid white;
@@ -1310,7 +1309,7 @@ span {
 }
 
 
-/* Source:  https://codepen.io/vedadesigns/pen/GPxYZg */
+/* Kilde:  https://codepen.io/vedadesigns/pen/GPxYZg */
 
 .f1-drivers h4 {
     display: flex;
@@ -1323,16 +1322,16 @@ span {
     text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.9); 
 }
 .hover-list {
-    position: absolute; /* Allow precise placement */
-    top: 50%; /* Move to 50% of the container's height */
-    left: 50%; /* Move to 50% of the container's width */
-    transform: translate(-50%, -50%); /* Center perfectly */
-    text-align: center; /* Centred text when it hovers */
+    position: absolute; /* Presis plassering */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); /* Sørger for perfekt sentrering */ /*https://www.w3schools.com/css/css3_2dtransforms.asp*/
+    text-align: center; 
     text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.9); 
 }
 
 .hover-list ul {
-    list-style-type: none; /* Remove bullet points */
+    list-style-type: none; /* Fjerner punkter fra liste */
     margin: 0;
     margin-left: 10px;
     padding: 0;
@@ -1340,28 +1339,28 @@ span {
 }
 
 .hover-list li {
-    margin: 5px 0; /* Add spacing between items */
-    font-size: 20px; /* Adjust font size */
+    margin: 5px 0; /* Avstand mellom innhold */
+    font-size: 20px; 
     color: white;
     
 }
 .button-container {
     display: flex;
-    justify-content: center; /* Centers the button horizontally */
+    justify-content: center; /* Knapp sentrert horisontalt */
     background-color: #181818;
     padding-bottom: 50px;
     padding-top: 50px;
 }
 
 #moreTeams {
-    display: none; /* Initially hidden */
+    display: none; /* I utganspunktet gjemt*/
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px; /* Add gap to match `.f1-teams` */
+    gap: 50px; /* Inkludedre gap for å slik at det passer inn, likt `.f1-teams` */
     padding-bottom: 50px;
     padding-left: 25px;
     padding-right: 25px;
-    background-color: #181818; /* Consistent background */
+    background-color: #181818; /* Fast bakgrunn*/
 
 }
 
@@ -1373,7 +1372,7 @@ span {
     display: inline-block;
     justify-content: center;
     align-items: center;
-    background-color: #181818; /* Match the box color */
+    background-color: #181818; /* Lik farge som boksene*/
     color: white;
     width: 10rem;
     height: 3rem;
@@ -1383,23 +1382,13 @@ span {
     font-size: 1rem;
     transition: background-color 0.3s ease, color 0.3s ease;
     cursor: pointer;
-    border: 1px solid white; /* Optional border for visibility */
-    margin-top: 0; /* Ensure no extra space above */
+    border: 1px solid white; /* Kant for synlighet*/
+    margin-top: 0; /* Sikrer ingen avstand på topp */
 }
 
 #toggleBtn:hover {
     background-color: white;
     color: black;
-}
-
-.activity-footer {
-    background-color: #2D3142;    
-    width: 100%;
-    height: auto;
-    padding: 20px; /* Ensure padding for content */
-    text-align: center;
-    color: white;
-
 }
 
 /* W3schools - "CSS Media Queries" - https://www.w3schools.com/css/css3_mediaqueries.asp */
@@ -1430,8 +1419,8 @@ span {
         font-size: 0.8rem; /* Enda mindre størrelse for enda mindre skjærm */
     }
     .f1-drivers {
-        height: 45vh; /* Slightly taller for very small screens */
-        padding: 10px; /* Further reduce padding */
+        height: 45vh; /* Litt høyere for veldig små skjermer */
+        padding: 10px; /* Redusert padding */
     }
     .f1-drivers .h3-activity {
         font-size: 1.3rem; /* Reduserer font størrelse for veldig små skjermer */
@@ -1502,13 +1491,14 @@ span {
         font-size: 0.9rem; /* Reduserer font størrelse for liste gjenstander */
     }
     .f1-drivers {
-        height: 50vh; /* Make the height 50% of the viewport */
-        min-height: 250px; /* Ensure a minimum height */
-        padding: 15px; /* Reduce padding for smaller screens */
+        height: 50vh; /* Setter høyden til 50 % av synlig skjermhøyde (viewport) */
+        min-height: 250px; /* Sikrer en minimumshøyde på 250px for å unngå at elementet blir for lite */
+        padding: 15px; /* Reduserer padding for mindre skjermer */
     }
+    
     .f1box-container {
-        width: 325px; /* Maintain the fixed width */
-        height: 400px; /* beholde en bestemt hø */
+        width: 325px; /* Beholder en fast bredde */
+        height: 400px; /* beholde en bestemt høyde */
     }
 }
 
