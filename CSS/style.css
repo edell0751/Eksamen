@@ -937,7 +937,7 @@ span {
 
 /* Bildestørrelse, 95% bredde og 60% høyde */
 .gitpage-pic-1 {
-    width: 95%;
+    width: 85%;
     margin: 0 auto;
     height: 60%;
 }
