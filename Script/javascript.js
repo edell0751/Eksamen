@@ -1,4 +1,5 @@
 // KILDE; JS HTML DOM - https://www.w3schools.com/js/ 
+// KILDE: https://www.w3schools.com/howto/howto_js_navbar_slide.asp
 document.addEventListener("DOMContentLoaded", function() {
     const header = document.querySelector("header");
     const sectionOne = document.querySelector(".activity-section");
@@ -19,6 +20,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     sectionOneObserver.observe(sectionOne);
 });
+
+// kilde: https://www.w3schools.com/howto/howto_js_slideshow.asp
 let slideIndex = 1;
 
 //KILDE; JS FUNCTIONS - https://www.w3schools.com/js/

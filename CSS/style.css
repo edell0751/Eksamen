@@ -972,7 +972,7 @@ span {
 
 /* Activity section styling */
 .activity-section {
-    background-image: url('../Images/f1background.jpeg'); /* Sørger for riktig path */
+    background-image: url('../Images/f1background.jpeg'); /* Sørger for riktig path */ /* bilde: uploaed av renger08(forfatter ikke oppgitt), fra https://wallpapercave.com/w/ZQtWdzJ */
     background-size: cover; /* Sørger for at bakgrunnen scaler proposjonelt */
     background-position: center; /* Sentrerer bildet */
     background-repeat: no-repeat; /* Forhindrer tiling */
