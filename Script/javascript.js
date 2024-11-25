@@ -129,16 +129,25 @@ function toggleExtraCards() {
 
         document.querySelectorAll('.accordion-h2').forEach((accordion) => {
             accordion.addEventListener('click', function () {
-                // Skrur på den aktive klassen i accordion header
+                // Veksle 'active' klassen på accordion header
+                this.classList.toggle('active');
                 
-        
-                // Velger tilsvarende accordion-text og skrur på displayet
+                // Velg tilhørende accordion-text
                 let accordionText = this.nextElementSibling;
                 if (accordionText.style.display === 'block') {
-                    accordionText.style.display = 'none';
+                    accordionText.style.display = 'none'; // Skjul innhold
                 } else {
-                    accordionText.style.display = 'block';
+                    accordionText.style.display = 'block'; // Vis innhold
+                }
+        
+                // Finn accordion-knappen
+                const button = this.querySelector('.accordion-btn');
+                if (this.classList.contains('active')) {
+                    button.style.backgroundImage = "url('https://www.oslomet.no/build/images/minus-icon.svg')"; // Sett minusikon
+                } else {
+                    button.style.backgroundImage = "url('https://www.oslomet.no/build/images/plus-icon.svg')"; // Sett plusikon
                 }
             });
         });
+        
         
