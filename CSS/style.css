@@ -234,161 +234,192 @@ ion-icon {
 }
 
 
+/* Styling for en videospiller */
 .video-player {
-	width: 100%;
-	height: 40vw;
-    border: 8px solid #EF8354;
+	width: 100%; /* Videospilleren fyller hele bredden til containeren */
+	height: 40vw; /* Høyden er proporsjonal med bredden (40% av viewport-bredden) */
+	border: 8px solid #EF8354; /* Tykk oransje kantlinje rundt videospilleren */
 }
 
+/* Styling for hovedinnholdet på siden */
 .main-content {
-	margin-top: 5%;
-    width: 100%;
+	margin-top: 5%; /* Gir avstand mellom toppen av containeren og innholdet */
+	width: 100%; /* Containeren strekker seg over hele bredden */
 }
 
+/* Styling for tittelområdet */
 .title {
-	font-size: 3rem;
-
+	font-size: 3rem; /* Stor fontstørrelse for å fremheve tittelen */
 }
 
+
+/* Spesifikk styling for en paragraf inne i tittelområdet */
 .title .headline-para {
-	font-size: 1.5rem;
-	font-weight: 400;
-	line-height: 2.25rem;
-	margin-top: 0.313rem;
-    text-align: center;
+	font-size: 1.5rem; /* Mindre fontstørrelse enn hovedtittelen */
+	font-weight: 400; /* Normal (ikke fet) tekstvekt */
+	line-height: 2.25rem; /* Gir vertikal avstand mellom linjer for bedre lesbarhet */
+	margin-top: 0.313rem; /* Liten avstand mellom tittelen og paragrafen */
+	text-align: center; /* Sentrerer teksten horisontalt */
 }
 
 
+/* Styling for alle lenker */
 a {
-	text-decoration: none;
+	text-decoration: none; /* Fjerner standard understreking av lenker */
 }
 
-.metadata-list, .a-list, .OtherStudies-cards{
-    hyphens: auto;
+/* Aktivert orddeling for spesifikke elementer */
+.metadata-list, .a-list, .OtherStudies-cards {
+	hyphens: auto; /* Lar tekst brytes automatisk ved passende steder for bedre lesbarhet */
 }
 
+/* https://www.w3schools.com/css/css3_flexbox_container.asp */
+
+/* Container for metadata-liste */
 .metadata-list {
-	display: flex;
-	flex-wrap: wrap; /* https://www.w3schools.com/css/css3_flexbox_container.asp */
-	margin-top: 50px;
-    margin-right: auto;
-	position: relative;
-	flex: 100%;
-    width: 100%;
+	display: flex; /* Bruker flexbox for å arrangere innhold horisontalt */
+	flex-wrap: wrap; /* Tillater innhold å brytes til flere linjer ved behov */
+	margin-top: 50px; /* Gir avstand fra innholdet over */
+	margin-right: auto; /* Sentraliserer elementene ved bruk av flexbox */
+	position: relative; /* Gir mulighet for posisjonering av innhold innenfor containeren */
+	flex: 100%; /* Containeren fyller hele bredden */
+	width: 100%; /* Sikrer at elementene strekker seg over hele containerens bredde */
 }
+
+/* Styling for individuelle metadata-elementer */
 .metadata-list-item {
-	border-top: 0.0575rem solid black;
-	flex: 1 0 calc(43%);
-	font-size: 1.125rem;
-	line-height: 1.5;
-	margin-right: 1.25rem;
-	padding-bottom: 1.75rem;
-	padding-top: 1.25rem;
-	width: calc(25% - 1.25rem);
-    text-align: center;
+	border-top: 0.0575rem solid black; /* Tynn svart kant øverst på hvert element */
+	flex: 1 0 calc(43%); /* Gir fleksibel bredde og høyde basert på containerens plass */
+	font-size: 1.125rem; /* Tekststørrelse for lesbarhet */
+	line-height: 1.5; /* Vertikal avstand mellom linjer for bedre lesbarhet */
+	margin-right: 1.25rem; /* Gir avstand mellom elementene horisontalt */
+	padding-bottom: 1.75rem; /* Innvendig avstand nederst for visuell balanse */
+	padding-top: 1.25rem; /* Innvendig avstand øverst for visuell balanse */
+	width: calc(25% - 1.25rem); /* Sikrer konsistent bredde på elementer */
+	text-align: center; /* Sentrerer tekst horisontalt */
 }
+
+/* Generell styling for <span>-elementer */
 span {
-	font-size: 1.25rem;
-	font-weight: 700;
+	font-size: 1.25rem; /* Passer for fremhevet tekst som underoverskrifter */
+	font-weight: 700; /* Gjør teksten fet for å fremheve den */
 }
+
+/* FAQ-seksjoner */
 .article-faq {
-	margin-bottom: 20px;
-	padding: 30px 10%;
-	border-bottom: 1px solid #e2e2e2;
+	margin-bottom: 20px; /* Gir luft mellom FAQ-seksjoner */
+	padding: 30px 10%; /* Justerer innvendig avstand for konsistent layout */
+	border-bottom: 1px solid #e2e2e2; /* Skiller hver seksjon med en lys linje */
 }
 
+
+/* Overskriftscontainer i artikler */
 .article-wrapper-heading {
-	width: 62%;
-	margin: 0 auto;
-	border-bottom: 1px solid #e2e2e2;
-	padding-bottom: 40px;
+	width: 62%; /* Begrenser bredden for å holde fokus på innholdet */
+	margin: 0 auto; /* Sentrerer containeren horisontalt */
+	border-bottom: 1px solid #e2e2e2; /* Skaper en visuell separasjon fra innholdet nedenfor */
+	padding-bottom: 40px; /* Legger luft under overskriften for å gi plass */
 }
 
+/* Paragrafer i artikkelwrapperen */
 .article-wrapper-para {
-	font-size: 1.5rem;
-	line-height: 36px;
-    text-align: center;
+	font-size: 1.5rem; /* Stor tekst for fremtredende innhold */
+	line-height: 36px; /* Øker linjeavstanden for bedre lesbarhet */
+	text-align: center; /* Sentrerer teksten for et balansert utseende */
 }
 
+/* Overskriften til en accordion-seksjon */
 .accordion-h2 {
-	display: flex;
-	align-items: center;
-	gap: 35px;
-	cursor: pointer;
+	display: flex; /* Bruker flexbox for å arrangere innhold horisontalt */
+	align-items: center; /* Justerer innholdet vertikalt midtstilt */
+	gap: 35px; /* Legger mellomrom mellom overskriften og eventuelle ikoner */
+	cursor: pointer; /* Endrer markøren til en peker for å indikere interaktivitet */
 }
 
+/* Knapp for å åpne/lukke accordion-seksjonen */
 .accordion-btn {
-	background-color: #EF8354;
-	background-image: url(https://www.oslomet.no/build/images/plus-icon.svg);
-	background-position: 50%;
-	background-repeat: no-repeat;
-	border: none;
-	cursor: pointer;
-	display: inline-block;
-	height: 2.5rem;
-	min-width: 2.5rem;
-	width: 2.5rem;
+	background-color: #EF8354; /* Oransje bakgrunnsfarge for knappen */
+	background-image: url(https://www.oslomet.no/build/images/plus-icon.svg); /* Plus-ikon hentet fra oslomet sin side for å indikere at seksjonen kan åpnes */
+	background-position: 50%; /* Plasserer ikonet i midten av knappen */
+	background-repeat: no-repeat; /* Hindrer at ikonet gjentas */
+	border: none; /* Fjerner standard kantlinje */
+	cursor: pointer; /* Markøren blir en peker for interaktivitet */
+	display: inline-block; /* Holder knappen som en inline-blokk */
+	height: 2.5rem; /* Høyden på knappen */
+	min-width: 2.5rem; /* Minimum bredde for å holde formen kvadratisk */
+	width: 2.5rem; /* Bredden på knappen */
 }
 
+/* Tekst som vises når accordion-seksjonen er utvidet */
 .accordion-text {
-	display: none; /* I utgangspunktet gjemt*/
-	overflow: hidden;
-	padding: 35px 120px 30px 75px;
-	position: relative;
-	transition: height 0.3s ease;
+	display: none; /* Teksten er skjult som standard */
+	overflow: hidden; /* Hindrer innholdet fra å flyte utenfor containeren */
+	padding: 35px 120px 30px 75px; /* Innvendig avstand for konsistent layout */
+	position: relative; /* Gjør det mulig å posisjonere barn-elementer relativt til containeren */
+	transition: height 0.3s ease; /* Glatt overgang når høyden endres ved utvidelse */
 }
 
 
+/* Styling for paragrafer i accordion-seksjoner */
 .accordion-text-para {
-	font-family: inherit;
-	font-size: 1.125rem;
-	font-weight: 400;
-	line-height: 27px;
-}
-.bold-p{
-    font-weight: bold;
-    margin-bottom: 0.4rem;
+	font-family: inherit; /* Bruker samme font som parent-elementet */
+	font-size: 1.125rem; /* Middels skriftstørrelse for lesbarhet */
+	font-weight: 400; /* Normal tekstvekt */
+	line-height: 27px; /* Tilpasset linjeavstand for bedre lesbarhet */
 }
 
+/* Styling for fremhevede paragrafer */
+.bold-p {
+	font-weight: bold; /* Gjør teksten fet for å fremheve viktig informasjon */
+	margin-bottom: 0.4rem; /* Gir luft under paragrafen for separasjon */
+}
+
+/* Styling for lister i accordion-seksjoner */
 .a-list {
-	font-size: 1.125;
-	font-weight: 400;
-	line-height: 27px;
-	list-style: none;
-	margin-top: 18px;
+	font-size: 1.125rem; /* Konsistent skriftstørrelse for listeinnhold */
+	font-weight: 400; /* Normal tekstvekt */
+	line-height: 27px; /* God linjeavstand for lesbarhet */
+	list-style: none; /* Fjerner standard listepunkt for tilpasset styling */
+	margin-top: 18px; /* Gir avstand fra innholdet over listen */
 }
 
+/* Styling for individuelle listeelementer */
 .a-list li {
-	margin-bottom: 0.625rem;
-	padding-left: 0.9375rem;
-	position: relative;
-	list-style: disc;
+	margin-bottom: 0.625rem; /* Avstand mellom listeelementer for klar struktur */
+	padding-left: 0.9375rem; /* Innrykk for listepunkt */
+	position: relative; /* Brukes for plassering av pseudo-elementer som punkter */
+	list-style: disc; /* Angir en disk som standard listepunkt */
 }
 
+/* Styling for lenker i listeelementer */
 .a-list li a {
-	
-	font-size: 1.125rem;
-	font-weight: 700;
-	text-decoration: none;
-	transition: border 0.1s cubic-bezier(0.24, 0.59, 0.38, 0.94);
+	font-size: 1.125rem; /* Konsistent størrelse for lenker i listen */
+	font-weight: 700; /* Gjør lenker fetere for å fremheve dem */
+	text-decoration: none; /* Fjerner standard understreking */
+	transition: border 0.1s cubic-bezier(0.24, 0.59, 0.38, 0.94); /* Glatt overgang for border-effekter */
 }
 
+/* Styling for <span> inne i lenker i en liste */
 .a-list li a span {
-    text-decoration: underline #EF8354;
-	padding-bottom: 0.0625rem;
+	text-decoration: underline #EF8354; /* Understreker teksten med en oransje farge */
+	padding-bottom: 0.0625rem; /* Liten avstand mellom teksten og understrekingen */
 }
 
+/* Marginjustering for spesifikke paragrafer */
 .para-2,
 .para-3 {
-	margin-top: 20px;
-}
-.para-3-links{
-    text-decoration: underline #EF8354;
-    font-weight: 700;
+	margin-top: 20px; /* Legger til avstand over disse paragrafene */
 }
 
+/* Styling for lenker i para-3-seksjonen */
+.para-3-links {
+	text-decoration: underline #EF8354; /* Understreker teksten med en oransje farge */
+	font-weight: 700; /* Gjør teksten fet for å fremheve viktigheten */
+}
+
+/* Styling for aktiv tilstand på accordion-knapp */
 .accordion-h2.active .accordion-btn {
-	background-image: url(https://www.oslomet.no/build/images/minus-icon.svg);
+	background-image: url(https://www.oslomet.no/build/images/minus-icon.svg); /* Bytter pluss-ikonet til et minus-ikon når accordion er åpen, gjennom java*/
 }
 
 /* For å utvide og kollapse */
@@ -396,97 +427,113 @@ span {
 	display: block;
 }
 
+/* Hovedcontainer for studieplanen */
 .study-plan {
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
+    width: 100%; /* Fyller hele bredden av parent-elementet */
+    margin: 0 auto; /* Sentrerer containeren horisontalt */
+    padding: 20px; /* Innvendig avstand for å gi luft rundt innholdet */
+    background-color: #fff; /* Setter hvit bakgrunn for kontrast mot omgivelsene */
 }
 
-.study-plan h2 {	
-	font-size: 1.25rem;
-    background-color: #f4f4f4;
-    padding: 8px 8px 8px 20px;
+/* Overskrifter (H2) i studieplanen */
+.study-plan h2 {
+	font-size: 1.25rem; /* Relativt stor tekststørrelse for å fremheve H2 */
+    background-color: #f4f4f4; /* Lys grå bakgrunn for visuell inndeling */
+    padding: 8px 8px 8px 20px; /* Innvendig avstand for balansert layout */
 }
 
+/* Overskrifter (H3) i studieplanen */
 .study-plan h3 {
-	font-size: 1.125rem;
+	font-size: 1.125rem; /* Mindre enn H2 for å vise hierarkisk struktur */
 }
 
-
-.study-plan h2,.study-plan h3 {
-    margin-bottom: 10px;
-    color: #333;
+/* Felles styling for H2 og H3 i studieplanen */
+.study-plan h2, .study-plan h3 {
+    margin-bottom: 10px; /* Avstand under overskriftene for å skille dem fra innholdet */
+    color: #333; /* Mørk grå farge for god lesbarhet */
 }
 
+/* Styling for semesterseksjoner */
 .semester {
-    margin-bottom: 10%;
+    margin-bottom: 10%; /* Gir luft mellom semesterseksjonene */
 }
 
+/* Styling for fagseksjoner */
 .subjects {
-    display: flex;
-    flex:50%;
-	flex-wrap: wrap;
-	flex-direction: row; /*https://stackoverflow.com/questions/44931576/splitting-divs-into-2-columns*/
-    justify-content: 30%;
-    margin: 5px;
+    display: flex; /* Bruker flexbox for å arrangere fag i rader */
+    flex: 50%; /* Hvert element får halvparten av containerens bredde */
+    flex-wrap: wrap; /* Tillater bryting til flere linjer om nødvendig */
+
+    flex-direction: row; /* Arrangerer elementene horisontalt */ /* KILDE;https://stackoverflow.com/questions/44931576/splitting-divs-into-2-columns*/
+
+    justify-content: 30%; /* Plassering av innhold, men her virker det uvanlig og kan kreve justering */
+    margin: 5px; /* Avstand mellom fagseksjonene */
 }
 
+/* Individuelle fag i studieplanen */
 .subject {
-    text-align: left;
-	width: 25%;
-    margin-right: 20px;
-	border-top: 1px solid black;
-    padding-top: 15px;
+    text-align: left; /* Justerer teksten til venstre for en profesjonell layout */
+	width: 25%; /* Faget tar opp en fjerdedel av bredden til containeren */
+    margin-right: 20px; /* Avstand mellom fagene horisontalt */
+	border-top: 1px solid black; /* Tynn svart linje øverst for visuell separasjon */
+    padding-top: 15px; /* Innvendig avstand over for å gi luft */
 }
 
-
+/* Lenker i studieplanen */
 .study-plan a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-    position: relative;
-	font-size: 0.875rem;
+    text-decoration: none; /* Fjerner standard understrek for lenker */
+    color: #000; /* Svart tekst for kontrast og lesbarhet */
+    font-weight: bold; /* Gjør lenkene mer fremtredende */
+    position: relative; /* Gjør det mulig å posisjonere pseudo-elementer som etterfølgende linjer */
+	font-size: 0.875rem; /* Mindre tekststørrelse for å passe inn i designet */
 }
 
+
+/* element som legger til en linje under lenker */
 .study-plan a::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #EF8354;
-    bottom: 0;
-    left: 0;
+    content: ''; /* Tomt innhold som fungerer som en dekorativ linje */
+    position: absolute; /* Posisjonerer linjen i forhold til lenken */
+    width: 100%; /* Linjen dekker hele bredden av lenken */
+    height: 2px; /* Tynn linje for designet */
+    background-color: #EF8354; /* Oransje linje for visuell fremheving */
+    bottom: 0; /* Plasserer linjen ved bunnen av lenken */
+    left: 0; /* Starter linjen fra venstre */
 }
 
+/* Styling for span-elementer i studieplanen */
 .study-plan span {
-    font-size: 0.875rem;
-    color: #666;
+    font-size: 0.875rem; /* Liten tekst for tilleggsinformasjon */
+    color: #666; /* Mørk grå farge for mindre viktig tekst */
 }
 
+/* Styling for elementer uten padding */
 .no-padding {
-	padding: 35px 0;
+	padding: 35px 0; /* Vertikal padding for balanse i layout */
 }
 
+
+/* Fleksibel layout for å organisere elementer horisontalt og vertikalt */
 .flex {
-	display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 5px;
+	display: flex; /* Bruker flexbox for å arrangere elementer horisontalt */
+    flex-wrap: wrap; /* Tillater bryting til neste linje når plassen er begrenset */
+    justify-content: space-between; /* Fordeler elementer jevnt med mellomrom mellom dem */
+    margin-top: 5px; /* Gir litt avstand fra elementene over */
 }
 
+/* Overskrift for semestre i studieplanen */
 .semester-headline {
-	font-size: 1.125rem;
-	color: #222222;
+	font-size: 1.125rem; /* Relativt stor skrift for å fremheve overskriften */
+	color: #222222; /* Mørk grå farge for god kontrast og profesjonelt utseende */
 }
 
+/* Container for andre studierelaterte elementer */
 .OtherStudies-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2%;
-    width: 100%;
-    padding: 2% 0;
-    margin: 0 auto;
+    display: flex; /* Bruker flexbox for å arrangere innhold */
+    flex-wrap: wrap; /* Tillater innhold å brytes til flere linjer */
+    gap: 2%; /* Legger til avstand mellom elementene */
+    width: 100%; /* Fyller hele bredden av parent-elementet */
+    padding: 2% 0; /* Vertikal padding for luft rundt innholdet */
+    margin: 0 auto; /* Sentrerer containeren horisontalt */
 }
 
 .OtherStudies-column {
@@ -500,19 +547,23 @@ span {
 	margin-bottom: 2%;
 }
 
+/* Effekter når en kolonne for andre studierelaterte elementer blir hoveret over */
 .OtherStudies-column:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Øker størrelsen med 5% for å fremheve interaktivitet */
 }
 
+/* Styling for bilder i seksjonen for andre studierelaterte elementer */
 .OtherStudies-img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Bildet fyller hele bredden av parent-elementet */
+    height: auto; /* Beholder bildets proporsjoner for å unngå forvrengning */
 }
 
+/* Styling for kortene i seksjonen for andre studierelaterte elementer */
 .OtherStudies-cards {
-    padding: 1rem;
-    background-color: #fff;
+    padding: 1rem; /* Legger til innvendig avstand rundt innholdet */
+    background-color: #fff; /* Setter hvit bakgrunn for kontrast og ren design */
 }
+
 /* Styling for elementer i "OtherStudies" seksjonen */
 
 /* Tittel: Fet skrift og moderat skriftstørrelse */
