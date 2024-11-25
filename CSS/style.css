@@ -945,11 +945,10 @@ span {
 }
 
 .activity-nav a {
-    color: white;
+    color: #e31a02;
     text-decoration: none;
     font-weight: 600;
     font-size: large;
-    transition: 0.3s ease-in-out;;
 }
 
 .activity-nav a:hover {
